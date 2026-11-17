@@ -1,0 +1,10 @@
+{
+	"id": "drowned-city-quests",
+	"title": "The Drowned City Quests",
+	"author": "creazy231",
+	"version": "1.0.0",
+	"license": "CC-BY-4.0",
+	"website": "https://polestar.guide/community/drowned-city-quests",
+	"source": "Written for WoW Forever from the game's quest data, players' recordings and a recorded run of my own",
+	"folder": "PolestarPack_drowned-city-quests"
+}
