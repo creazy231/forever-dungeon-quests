@@ -4,7 +4,7 @@ This folder is a pack, the source of a community addon for Polestar:
 `pack.json` describes it and
 `guides/*.guide` hold its guides, written in Polestar's guide format
 (docs/GUIDE_CHEATSHEET.md on one page, docs/GUIDE_FORMAT.md in full, in
-Polestar's source). Every guide id starts with `drowned-city-quests/`. The `polestar`
+Polestar's source). Every guide id starts with `forever-dungeon-quests/`. The `polestar`
 command comes from a Polestar clone (`npm link` in it) and `forge` from the
 same clone (`cargo build --release -p forge` in its `rust/`, on your PATH);
 run both from this folder.

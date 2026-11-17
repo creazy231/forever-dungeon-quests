@@ -1,10 +1,10 @@
 {
-	"id": "drowned-city-quests",
-	"title": "The Drowned City Quests",
+	"id": "forever-dungeon-quests",
+	"title": "Forever Dungeon Quests",
 	"author": "creazy231",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"license": "CC-BY-4.0",
-	"website": "https://polestar.guide/community/drowned-city-quests",
-	"source": "Written for WoW Forever from the game's quest data, players' recordings and a recorded run of my own",
-	"folder": "PolestarPack_drowned-city-quests"
+	"website": "https://polestar.guide/community/forever-dungeon-quests",
+	"source": "Written for WoW Forever's new dungeons from the game's quest data, players' recordings and recorded runs of my own",
+	"folder": "PolestarPack_forever-dungeon-quests"
 }

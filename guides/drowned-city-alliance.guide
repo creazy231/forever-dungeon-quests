@@ -1,4 +1,4 @@
-guide drowned-city-quests/alliance
+guide forever-dungeon-quests/drowned-city-alliance
 title The Drowned City (Alliance)
 category Dungeons
 folder The Drowned City
@@ -35,7 +35,7 @@ why Every Alliance quest of the Drowned City in one run, lead-ins included.
 # the run. Krazek in Booty Bay gives both factions 95789 Shady Saltseers and
 # 95791 The Saltseer Captain, from level 34.
 #
-# Inside: as in the Horde guide (drowned-city-quests/horde), the goals stand
+# Inside: as in the Horde guide (forever-dungeon-quests/drowned-city-horde), the goals stand
 # at the entrance (@21.8,27.6, Sunken Hollow) with `group 5`, and the steps
 # follow a run of my own. The fetishes are an `along` goal for the whole run,
 # until the hand-in to Dibbs.
