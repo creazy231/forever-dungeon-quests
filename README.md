@@ -23,6 +23,7 @@ Polestar.
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | Gnomeregan | Dun Morogh | Horde, Alliance | 29 to 38 |
 | Razorfen Kraul | The Barrens | Horde, Alliance | 29 to 38 |
+| Scarlet Monastery | Tirisfal Glades | Horde, Alliance | 30 to 46 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
@@ -260,6 +261,28 @@ with one folder per dungeon.
 - Left out: the Horde's Hearts of Zeal and the second An Unholy Alliance
   (they need Scarlet Monastery and Razorfen Downs), and the Alliance
   Shamans' Storm, Earth, and Fire, which the data hands in to a Horde NPC.
+
+## Scarlet Monastery
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Scarlet Monastery (Horde) | The Undercity | Thunder Bluff, Thousand Needles, Stonetalon, Ashenvale, the Undercity, the four wings, back again, Alterac |
+| Scarlet Monastery (Alliance) | Brother Crowley, Stormwind | Ironforge, Dalaran's lake, Desolace, Southshore, the wings, back again |
+
+- Four dungeons in one: the Graveyard (levels 30 to 38), the Library (33 to
+  41), the Armory (36 to 44) and the Cathedral (38 to 46), each with its own
+  door in the monastery's courtyard in Tirisfal. The guides take them in
+  that order; the Graveyard holds no Alliance quest.
+- The Horde guide takes Dorn Plainstalker's tests and Braug Dimspirit's Test
+  of Lore first, and Hearts of Zeal for characters who finished Razorfen
+  Kraul's Going, Going, Guano!. The Alliance guide takes Brother Anton's
+  Down the Scarlet Path, which waits for level 37 for the Undead Ravagers.
+- Mages of both sides get their Rituals of Power chain.
+- Left out: the Rogues' Eye of Bhossca (it needs Shadowfang Keep), the
+  Mages' Mage's Wand (it needs another quest of Tabetha's) and the Alliance
+  Paladins' chain around Aeonas, whose first quest has no giver in the data.
+- Where Magus Olvek's book is in the monastery is still open: if you know,
+  tell me.
 
 ## The Drowned City
 

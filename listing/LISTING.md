@@ -30,6 +30,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **City of Dalaran** (by Lordamere Lake, levels 28 to 35): Horde and Alliance. Wordeen Voidglare's chain, Melisara and Doctor Martin Felben for the Horde; Shylamiir, Andromath and Emissary Jacques for the Alliance; Modera's image, one run after a recorded one (Atrexis to the Mana Devourer) and every hand-in.
 - **Gnomeregan** (Dun Morogh, levels 29 to 38): Horde and Alliance. Rig Wars and Scooty for the Horde; Klockmort, Castpipe, Overspark, Ozzie, Shoni and Mekkatorque for the Alliance; Kernobee, the Sparklematic and the ring for both; one run (Grubbis to Thermaplugg) and every hand-in.
 - **Razorfen Kraul** (the Barrens, levels 29 to 38): Horde and Alliance. Blueleaf Tubers, Willix, Charlga's quests (A Vengeful Fate, The Crone of the Kraul, An Unholy Alliance), Guano and Mortality Wanes, the Warriors' and Shamans' class chains, one run after a recorded one and every hand-in.
+- **Scarlet Monastery** (Tirisfal Glades, levels 30 to 46): Horde and Alliance. All four wings; Into The Scarlet Monastery and the Test of Lore chain for the Horde, In the Name of the Light and Brother Anton's chain for the Alliance; the books, Hearts of Zeal, Vorrel's Revenge, the Mages' Rituals of Power, and every hand-in.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
 
 - **Krol'dok Stronghold** (Riverglades, levels 40 to 47): Horde and Alliance. The whole Riverglades chain that opens its quests (Rog'mar's for the Horde, Farholde Keep's for the Alliance), one run (Grox to Mugg, Tunk's moulding) and every hand-in.
@@ -121,3 +122,7 @@ Adds Gnomeregan for the Horde and the Alliance.
 ## Changelog for 2.16.0
 
 Adds Razorfen Kraul for the Horde and the Alliance, with the run in the order of a recorded one.
+
+## Changelog for 2.17.0
+
+Adds Scarlet Monastery, all four wings, for the Horde and the Alliance.

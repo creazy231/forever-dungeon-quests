@@ -1,0 +1,150 @@
+guide forever-dungeon-quests/scarlet-monastery-alliance
+title Scarlet Monastery (Alliance)
+category Dungeons
+folder Scarlet Monastery
+faction Alliance
+levels 34-46
+zone Stormwind City
+keywords Scarlet Monastery, Library, Armory, Cathedral, Tirisfal, Brother Crowley, Brother Anton, Desolace, Undead Ravager, Raleigh the Devout, Southshore, Librarian Mae Paledust, Mythology of the Titans, Magus Olvek, Past Due, Tabetha, Magus Tirth, Rituals of Power, Loksey, Doan, Herod, Fairbanks, Mograine, Whitemane, dungeon
+reward item 6829 6830 6831 11262
+reward item 276898 276899
+reward item 7746
+why Every Alliance quest of Scarlet Monastery's wings, lead-ins included.
+
+# Scarlet Monastery's Alliance quests in one guide: Brother Crowley's chain
+# through Brother Anton to Raleigh the Devout, the pick-ups in Ironforge and
+# by Dalaran (for Mages their Rituals of Power chain too), the wings one after
+# the other, then the hand-ins. Steps already done are passed over, so the
+# guide picks up wherever the chain stands.
+#
+# The quests: Brother Crowley's 6141 Brother Anton -> 261 Down the Scarlet
+# Path (thirty Undead Ravagers in Desolace) -> 1052 (to Raleigh the Devout) ->
+# 1053 In the Name of the Light (Loksey, Herod, Mograine, Whitemane);
+# Librarian Mae Paledust's 1050 Mythology of the Titans (in the Library);
+# Magus Olvek's 96800 Past Due (The Lost Magic of the Runemasters). Mages:
+# 1947 Journey to the Marsh -> Tabetha's 1949 -> Magus Tirth's 1950 -> 1951
+# Rituals of Power (in the Library).
+#
+# Left out: the Rogues' 78676 The Eye of Bhossca (its chain needs Shadowfang
+# Keep); the Mages' 1952 Mage's Wand (it also needs Tabetha's 1948 Items of
+# Power, outside this chain); the Paladins' chain around Aeonas (79945, 79946,
+# 79963, 79970), whose first quest has no giver in the data.
+#
+# Inside: nothing in the data places the bosses or the books inside, so their
+# goals stand at the monastery's door (@82.6,33.8, Tirisfal) with `group 5`.
+# The wings come in the client's group finder's level order (Library 33-41,
+# Armory 36-44, Cathedral 38-46; the Graveyard, 30-38, holds no Alliance
+# quest), each its own instance with its own door in the courtyard, and the
+# bosses in the client's dungeon journal's order within them. Every quest goal
+# is counted by the quest log, so a group that takes them in another order
+# still gets each step ticked. The monastery stands in Horde land.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The data names no source for The Lost Magic of
+#   the Runemasters.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json); the wings' own doors: runs of my own (as a
+#   Horde character), each wing entered through its own door.
+# - The wings and their levels: the client's group finder; the bosses: its
+#   dungeon journal (as Polestar's Codex page holds it).
+# - The Undead Ravagers are level 37 to 38 (data/forever), so that step waits
+#   for 37.
+# INGAME: where in the monastery is The Lost Magic of the Runemasters?
+
+step Brother Crowley
+  tip In Stormwind.
+  accept 6141
+
+step Jennea Cannon
+  only Mage
+  accept 1947 npc 5497
+
+step Librarian Mae Paledust
+  zone Ironforge
+  accept 1050
+
+step Magus Olvek
+  zone Alterac Mountains
+  accept 96800
+
+step Brother Anton
+  zone Desolace
+  turnin 6141
+  accept 261
+
+step Down the Scarlet Path
+  level 37
+  kill 11561 x30 quest 261.1
+
+step Brother Anton
+  turnin 261
+  accept 1052
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1947
+  accept 1949
+
+step Magus Tirth
+  only Mage
+  zone Thousand Needles
+  turnin 1949
+  accept 1950
+
+step "Plucky" Johnson
+  only Mage
+  kill 6626 quest 1950.1
+
+step Magus Tirth
+  only Mage
+  turnin 1950
+  accept 1951
+
+step Raleigh the Devout
+  zone Hillsbrad Foothills
+  turnin 1052
+  accept 1053
+
+step To the Scarlet Monastery
+  zone Tirisfal Glades
+  tip Dungeons for five players, each its own wing with its own door in the monastery's courtyard, in Horde land: the Library (levels 33 to 41), the Armory (36 to 44) and the Cathedral (38 to 46).
+  enter "Scarlet Monastery" @82.6,33.8
+
+step The Library
+  tip Houndmaster Loksey is for Raleigh, Arcanist Doan comes after him, and the books lie about the halls.
+  kill 3974 quest 1053.4 @82.6,33.8 group 5
+  collect 5536 quest 1050.1 @82.6,33.8 group 5
+  collect 7274 quest 1951.1 @82.6,33.8 group 5 only Mage
+
+step The Lost Magic of the Runemasters
+  tip The data names no source for Magus Olvek's book: look for it in the monastery.
+  collect 273169 quest 96800.1 @82.6,33.8 group 5
+
+step The Armory
+  tip Herod, the Armory's boss, is for Raleigh.
+  kill 3975 quest 1053.3 @82.6,33.8 group 5
+
+step The Cathedral
+  tip High Inquisitor Fairbanks, Scarlet Commander Mograine and High Inquisitor Whitemane: the last two are for Raleigh.
+  kill 3976 quest 1053.2 @82.6,33.8 group 5
+  kill 3977 quest 1053.1 @82.6,33.8 group 5
+
+step Raleigh the Devout
+  zone Hillsbrad Foothills
+  turnin 1053
+
+step Magus Olvek
+  zone Alterac Mountains
+  turnin 96800
+
+step Librarian Mae Paledust
+  zone Ironforge
+  turnin 1050
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1951
