@@ -29,8 +29,8 @@ why Every Alliance quest of Stratholme, with the second run Betina's and the Duk
 # - Smokey LaRue's 5214 The Great Ezra Grimm; Leonid Barthalomew's 5243
 #   Houses of the Holy; Caretaker Alen's 5281 -> Egan's 5282 The Restless
 #   Souls.
-# - For characters who handed in 5462 (in the Scholomance guide), Leonid's
-#   5463 -> 5464 Menethil's Gift.
+# - Menethil's Gift (5463 and 5464) is in the Scholomance guide, where its
+#   chain starts and ends.
 # - Paladins: Orthas' 84330 A Wee Bit O' Necromancy.
 #
 # Left out: 5122 The Medallion of Faith (repeatable in the data) and 5125
@@ -41,8 +41,8 @@ why Every Alliance quest of Stratholme, with the second run Betina's and the Duk
 # Myranda; the Dungeon Set 2 and Valthalak quests.
 #
 # Inside: nothing in the data places the bosses or the objects inside, so
-# their goals stand at the main gate (@26.5,10.4, Eastern Plaguelands) with
-# `group 5`. The client's group finder lists two sides, each for five players
+# their goals stand at the main gate (@26.5,10.4, Eastern Plaguelands) or,
+# for the Scourge half, at the service entrance (@41.5,17.7), with `group 5`. The client's group finder lists two sides, each for five players
 # of level 58 to 60: the Main Gate (the Scarlet half: Hearthsinger Forresten,
 # Timmy the Cruel, Malor the Zealous, Cannon Master Willey, Archivist
 # Galford, Balnazzar) and the Service Gate (the Scourge half: The Unforgiven,
@@ -56,12 +56,13 @@ why Every Alliance quest of Stratholme, with the second run Betina's and the Duk
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The quest texts place the painting in the
 #   Scarlet Bastion and the Scourge Data in the ziggurats.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json): the main gate, in the live client's map of
 #   the Eastern Plaguelands, so the guide's coordinates are live ones (`coords
-#   live`). The data places no Service Gate.
-# INGAME: where is the Service Gate, and where inside do the archives,
-#   Menethil's Gift and the Scourge Data stand?
+#   live`). The Service Gate is the Elders' Square Service Entrance
+#   (objects.json 175369; 41.5,17.7 on the live map, as entrances.json
+#   notes): the Scourge half's goals stand there.
+# INGAME: where inside do the archives and the Scourge Data stand?
 
 step Tirion Fordring
   accept 5542
@@ -127,10 +128,6 @@ step Smokey LaRue
 step Leonid Barthalomew the Revered
   accept 5243
 
-step Leonid Barthalomew the Revered
-  when turnedin 5462
-  accept 5463
-
 step Duke Nicholas Zverenhoff
   accept 5251
 
@@ -143,7 +140,7 @@ step Egan
   accept 5282
 
 step To Stratholme
-  tip Two sides for five players of level 58 to 60: the Main Gate here, the Service Gate on the far side of the city.
+  tip Two sides for five players of level 58 to 60: the Main Gate here, and the Service Gate at the Elders' Square service entrance, where the guide sends you for the Scourge half.
   enter "Stratholme" @26.5,10.4
 
 step Flesh, holy water and souls
@@ -169,15 +166,9 @@ step Of Love and Family
   tip The painting hangs in the Scarlet Bastion.
   collect 14679 quest 5848.1 @26.5,10.4 group 5
 
-step Menethil's Gift
-  when onquest 5463
-  tip Place the Keepsake of Remembrance upon it.
-  turnin 5463 object 176631 @26.5,10.4
-  accept 5464 object 176631 @26.5,10.4
-
 step Maleki the Pallid
   only Paladin
-  collect 227690 quest 84330.1 @26.5,10.4 group 5
+  collect 227690 quest 84330.1 @41.5,17.7 group 5
 
 step Before you leave
   label leave
@@ -205,10 +196,6 @@ step Smokey LaRue
 step Leonid Barthalomew the Revered
   turnin 5243
 
-step Leonid Barthalomew the Revered
-  when onquest 5464
-  turnin 5464
-
 step Duke Nicholas Zverenhoff
   turnin 5251
 
@@ -219,6 +206,9 @@ step The Head of Balnazzar
 step Duke Nicholas Zverenhoff
   when onquest 5262
   turnin 5262
+
+step Duke Nicholas Zverenhoff
+  when turnedin 5262
   accept 5263
 
 step Tirion Fordring
@@ -227,16 +217,16 @@ step Tirion Fordring
 
 step Back into Stratholme
   tip The second run, for the Scourge Data and Baron Rivendare.
-  enter "Stratholme" @26.5,10.4
+  enter "Stratholme" @41.5,17.7
 
 step The Active Agent
   tip Search the ziggurats for new Scourge Data.
-  collect 13176 quest 5213.1 @26.5,10.4 group 5
+  collect 13176 quest 5213.1 @41.5,17.7 group 5
 
 step Baron Rivendare
   when onquest 5263
   tip The last encounter in the client's journal.
-  collect 13251 quest 5263.1 @26.5,10.4 group 5
+  collect 13251 quest 5263.1 @41.5,17.7 group 5
 
 step Betina Bigglezink
   tip At Light's Hope.
@@ -245,6 +235,9 @@ step Betina Bigglezink
 step Duke Nicholas Zverenhoff
   when onquest 5263
   turnin 5263
+
+step Duke Nicholas Zverenhoff
+  when turnedin 5263
   accept 5264
 
 step Lord Maxwell Tyrosus

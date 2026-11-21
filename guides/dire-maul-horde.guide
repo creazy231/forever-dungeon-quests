@@ -48,8 +48,9 @@ why Every Horde quest of Dire Maul's three wings in one run, lead-ins included.
 # Midsummer and Thorium Brotherhood quests.
 #
 # Inside: nothing in the data places the bosses, the NPCs or the objects
-# inside, so their goals stand at the gate (@59.2,45.1, Feralas) with
-# `group 5`. The client's group finder lists three wings, each its own
+# inside, so their goals stand at their wing's door in the courtyard past the
+# gate (East 64.8,30.2, West 60.3,30.2, North 62.5,24.9, from entrances.json's
+# note) with `group 5`. The client's group finder lists three wings, each its own
 # instance with its own door in the ruins: East (levels 54 to 60, the
 # Warpwood Quarter), West (56 to 60, the Athenaeum) and North (56 to 60, the
 # Gordok wing); the guide takes them in that order, the bosses in the
@@ -64,7 +65,7 @@ why Every Horde quest of Dire Maul's three wings in one run, lead-ins included.
 #   The Felvine Shard comes from the Felvine, the Gauntlet of Gordok Might
 #   from The Prince's Chest, the Ogre Tannin from a basket; the data has no
 #   source for the Sealed Reliquary itself.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json): the Dire Maul gate.
 # - The wings and their levels: the client's group finder; the bosses: its
 #   dungeon journal (as Polestar's Codex page holds it).
@@ -114,195 +115,195 @@ step To Dire Maul
 
 step Pusillin
   tip In the Warpwood Quarter. The imp has Azj'Tordin's Book of Incantations.
-  collect 18261 quest 7441.1 @59.2,45.1 group 5
+  collect 18261 quest 7441.1 @64.8,30.2 group 5
 
 step Lethtendris
-  collect 18426 quest 7489.1 @59.2,45.1 group 5
+  collect 18426 quest 7489.1 @64.8,30.2 group 5
 
 step Alzzin the Wildshaper
   tip With Alzzin's demise, take a shard from the Felvine for the Reliquary of Purity.
-  collect 18501 @59.2,45.1 group 5
-  complete 5526 @59.2,45.1 group 5
+  collect 18501 @64.8,30.2 group 5
+  complete 5526 @64.8,30.2 group 5
 
 step The Shen'dralar Ancient
   tip In the Athenaeum's wing. Destroy the guardians around the five pylons that power the Prison of Immol'thar.
-  accept 7461 @59.2,45.1
+  accept 7461 @60.3,30.2
 
 step Immol'thar
-  kill 11496 quest 7461.1 @59.2,45.1 group 5
+  kill 11496 quest 7461.1 @60.3,30.2 group 5
 
 step Prince Tortheldrin
-  kill 11486 quest 7461.2 @59.2,45.1 group 5
+  kill 11486 quest 7461.2 @60.3,30.2 group 5
 
 step The Shen'dralar Ancient
-  turnin 7461 @59.2,45.1
-  accept 7877 @59.2,45.1
+  turnin 7461 @60.3,30.2
+  accept 7877 @60.3,30.2
 
 step The Treasure of the Shen'dralar
   tip In the Athenaeum.
-  turnin 7877 object 179517 @59.2,45.1
+  turnin 7877 object 179517 @60.3,30.2
 
 step Telmius Dreamseeker
-  interact 179544 quest 7481.1 @59.2,45.1 group 5
+  interact 179544 quest 7481.1 @60.3,30.2 group 5
 
 step Lorekeeper Lydros
   only Mage
   when available 7463
   level 60
-  accept 7463 @59.2,45.1
+  accept 7463 @60.3,30.2
 
 step Knot Thimblejack
   tip Chained inside the Gordok wing.
-  accept 5518 @59.2,45.1
+  accept 5518 @62.5,24.9
 
 step Free Knot!
   when available 5525
   level 57
-  accept 5525 @59.2,45.1
+  accept 5525 @62.5,24.9
 
 step Gordok Shackle Key
   when onquest 5525
   tip The Gordok guards and ogres drop it.
-  collect 18250 quest 5525.1 @59.2,45.1 group 5
+  collect 18250 quest 5525.1 @62.5,24.9 group 5
 
 step Ogre Tannin
-  collect 18240 quest 5518.4 @59.2,45.1 group 5
+  collect 18240 quest 5518.4 @62.5,24.9 group 5
 
 step Knot Thimblejack
-  turnin 5518 @59.2,45.1
+  turnin 5518 @62.5,24.9
 
 step Knot freed
   when onquest 5525
-  turnin 5525 @59.2,45.1
+  turnin 5525 @62.5,24.9
 
 step Stomper Kreeg
   when available 5528
   level 57
-  accept 5528 @59.2,45.1
+  accept 5528 @62.5,24.9
 
 step The Gordok Taste Test
   when onquest 5528
-  turnin 5528 @59.2,45.1
+  turnin 5528 @62.5,24.9
 
 step Captain Kromcrush
   tip The Gauntlet of Gordok Might lies in The Prince's Chest.
-  accept 7703 @59.2,45.1
+  accept 7703 @62.5,24.9
 
 step In Demand
   when onquest 96076
   tip Alzzin the Wildshaper drops the Felvine Seed, King Gordok the ring, Prince Tortheldrin the Ancient Memento.
-  collect 272020 quest 96076.1 @59.2,45.1 group 5
-  collect 272022 quest 96076.2 @59.2,45.1 group 5
-  collect 272021 quest 96076.3 @59.2,45.1 group 5
+  collect 272020 quest 96076.1 @64.8,30.2 group 5
+  collect 272022 quest 96076.2 @62.5,24.9 group 5
+  collect 272021 quest 96076.3 @60.3,30.2 group 5
 
 step The Prince's Chest
   when onquest 7703
-  collect 18336 quest 7703.1 @59.2,45.1 group 5
+  collect 18336 quest 7703.1 @60.3,30.2 group 5
 
 step Captain Kromcrush
   when onquest 7703
-  turnin 7703 @59.2,45.1
+  turnin 7703 @62.5,24.9
 
 step Hydrospawn
   only Mage
   when onquest 7463
   tip In the Warpwood Quarter.
-  collect 18299 quest 7463.1 @59.2,45.1 group 5
+  collect 18299 quest 7463.1 @64.8,30.2 group 5
 
 step Lorekeeper Lydros
   only Mage
   when onquest 7463
-  turnin 7463 @59.2,45.1
+  turnin 7463 @60.3,30.2
 
 step Garona: A Study on Stealth and Treachery
   only Rogue
   when has 18356
-  accept 7498 @59.2,45.1
+  accept 7498 @60.3,30.2
 
 step Lorekeeper Kildrath
   only Rogue
   when onquest 7498
-  turnin 7498 @59.2,45.1
+  turnin 7498 @60.3,30.2
 
 step Codex of Defense
   only Warrior
   when has 18357
-  accept 7499 @59.2,45.1
+  accept 7499 @60.3,30.2
 
 step Lorekeeper Kildrath
   only Warrior
   when onquest 7499
-  turnin 7499 @59.2,45.1
+  turnin 7499 @60.3,30.2
 
 step The Arcanist's Cookbook
   only Mage
   when has 18358
-  accept 7500 @59.2,45.1
+  accept 7500 @60.3,30.2
 
 step Lorekeeper Kildrath
   only Mage
   when onquest 7500
-  turnin 7500 @59.2,45.1
+  turnin 7500 @60.3,30.2
 
 step The Light and How To Swing It
   only Paladin
   when has 18359
-  accept 7501 @59.2,45.1
+  accept 7501 @60.3,30.2
 
 step Lorekeeper Mykos
   only Paladin
   when onquest 7501
-  turnin 7501 @59.2,45.1
+  turnin 7501 @60.3,30.2
 
 step Harnessing Shadows
   only Warlock
   when has 18360
-  accept 7502 @59.2,45.1
+  accept 7502 @60.3,30.2
 
 step Lorekeeper Mykos
   only Warlock
   when onquest 7502
-  turnin 7502 @59.2,45.1
+  turnin 7502 @60.3,30.2
 
 step The Greatest Race of Hunters
   only Hunter
   when has 18361
-  accept 7503 @59.2,45.1
+  accept 7503 @60.3,30.2
 
 step Lorekeeper Mykos
   only Hunter
   when onquest 7503
-  turnin 7503 @59.2,45.1
+  turnin 7503 @60.3,30.2
 
 step Holy Bologna: What the Light Won't Tell You
   only Priest
   when has 18362
-  accept 7504 @59.2,45.1
+  accept 7504 @60.3,30.2
 
 step Lorekeeper Javon
   only Priest
   when onquest 7504
-  turnin 7504 @59.2,45.1
+  turnin 7504 @60.3,30.2
 
 step Frost Shock and You
   only Shaman
   when has 18363
-  accept 7505 @59.2,45.1
+  accept 7505 @60.3,30.2
 
 step Lorekeeper Javon
   only Shaman
   when onquest 7505
-  turnin 7505 @59.2,45.1
+  turnin 7505 @60.3,30.2
 
 step The Emerald Dream...
   only Druid
   when has 18364
-  accept 7506 @59.2,45.1
+  accept 7506 @60.3,30.2
 
 step Lorekeeper Javon
   only Druid
   when onquest 7506
-  turnin 7506 @59.2,45.1
+  turnin 7506 @60.3,30.2
 
 step Talo Thornhoof
   zone Feralas

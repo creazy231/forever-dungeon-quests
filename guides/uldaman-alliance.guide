@@ -45,6 +45,9 @@ why Every Alliance quest of Uldaman in one run, lead-ins included.
 #   1955 The Exorcism -> 1956 Power in Uldaman (the Obsidian Sentinel's power
 #   source) -> 1957 Mana Surges -> 1958 Celestial Power (both at Tabetha).
 #
+# Follow-up: Theldurin the Lost's 727 To Ironforge for Yagyin's Digest (to
+# Gerrig Bonegrip in the Forlorn Cavern).
+#
 # Left out: 1192 Indurium Ore and 3375 Replacement Phial (repeatable), with
 # Indurium Ore's racing-camp chain (1104 to 1194); the Platinum Discs' 2963,
 # the next step beyond.
@@ -64,7 +67,7 @@ why Every Alliance quest of Uldaman in one run, lead-ins included.
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. Talvash's Scrying Bowl is an object inside
 #   Uldaman there; Find the Gems' text says the Phial of Scrying calls him.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -293,6 +296,7 @@ step Rigglefuzz
 
 step Theldurin the Lost
   turnin 709
+  accept 727
 
 step Prospector Ironband
   zone Loch Modan
@@ -314,6 +318,10 @@ step Advisor Belgrum
 
 step Prospector Stormpike
   turnin 2240
+
+step Gerrig Bonegrip
+  tip In the Forlorn Cavern.
+  turnin 727
 
 step Krom Stoutarm
   turnin 1360

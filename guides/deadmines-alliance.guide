@@ -53,7 +53,11 @@ why Every Alliance quest of the Deadmines in one run, with the Defias Brotherhoo
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The escort's end and the Detonator's spot are
 #   the data's; Rough Dynamite has no source there (an engineer's make).
-# - The door: players' recordings, as Polestar's Codex holds them
+# - Lint warns that the undead miners' and Foreman Thistlenettle's spawns
+#   and players' recordings lie some 270 yards from the door: the data gives
+#   them where the instance lies under Westfall, and they stand inside, so
+#   their goals stay at the door.
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -95,11 +99,6 @@ step Alba Fairmoon
 step The State of the Mines
   kill 1236 x4 quest 92745.1
   kill 1426 x6 quest 92745.2
-
-step Miners' cards and the Foreman
-  tip The undead miners carry the Miners' Union Cards; Foreman Thistlenettle carries his badge.
-  collect 1894 x4 quest 168.1
-  collect 1875 quest 167.1
 
 step Alba Fairmoon
   turnin 92745
@@ -145,10 +144,6 @@ step Sprite Jumpsprocket
   turnin 92749
   accept 92752
 
-step Wilder Thistlenettle
-  turnin 168
-  turnin 167
-
 step Gryan Stoutmantle
   zone Westfall
   turnin 141
@@ -181,9 +176,14 @@ step To the Deadmines
   tip A dungeon for five players of level 17 to 26.
   enter "The Deadmines" @42.5,71.7
 
-step Red Silk Bandanas
+step Red Silk Bandanas and Union Cards
   along until leave
   collect 915 x10 quest 214.1 @42.5,71.7 group 5 -- The Defias inside drop them, the Defias Watchmen too.
+  collect 1894 x4 quest 168.1 @42.5,71.7 group 5 -- The undead miners carry the Miners' Union Cards.
+
+step Foreman Thistlenettle
+  tip He carries his badge.
+  collect 1875 quest 167.1 @42.5,71.7 group 5
 
 step Sneed's Shredder
   tip Rhahk'Zor comes first in the client's journal, then Sneed in his Shredder. The Shredder gives up the Gnoam Sprecklesprocket.
@@ -201,8 +201,9 @@ step Edwin VanCleef
 
 step Before you leave
   label leave
-  tip Whatever is still short of the bandanas, finish it before you go.
+  tip Whatever is still short of the bandanas and the cards, finish it before you go.
   collect 915 x10 quest 214.1 @42.5,71.7 group 5
+  collect 1894 x4 quest 168.1 @42.5,71.7 group 5
 
 step Alba Fairmoon
   tip At the mines' exit.
@@ -224,6 +225,10 @@ step Scout Riell
 step Baros Alexston
   zone Stormwind City
   turnin 373
+
+step Wilder Thistlenettle
+  turnin 168
+  turnin 167
 
 step Shoni the Shilent
   turnin 2040

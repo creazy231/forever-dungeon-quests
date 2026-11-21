@@ -41,7 +41,7 @@ why Every Horde quest of Blackfathom Deeps in one run, lead-in included.
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -73,6 +73,9 @@ step Je'neu Sancrea
 step Je'neu Sancrea
   when onquest 6564
   turnin 6564
+
+step Je'neu Sancrea
+  when turnedin 6564
   accept 6565
 
 step To Blackfathom Deeps

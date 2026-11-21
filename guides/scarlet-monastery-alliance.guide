@@ -23,11 +23,11 @@ why Every Alliance quest of Scarlet Monastery's wings, lead-ins included.
 # Librarian Mae Paledust's 1050 Mythology of the Titans (in the Library);
 # Magus Olvek's 96800 Past Due (The Lost Magic of the Runemasters). Mages:
 # 1947 Journey to the Marsh -> Tabetha's 1949 -> Magus Tirth's 1950 -> 1951
-# Rituals of Power (in the Library).
+# Rituals of Power (in the Library), and Tabetha's 1948 Items of Power -> 1952
+# Mage's Wand.
 #
 # Left out: the Rogues' 78676 The Eye of Bhossca (its chain needs Shadowfang
-# Keep); the Mages' 1952 Mage's Wand (it also needs Tabetha's 1948 Items of
-# Power, outside this chain); the Paladins' chain around Aeonas (79945, 79946,
+# Keep); the Paladins' chain around Aeonas (79945, 79946,
 # 79963, 79970), whose first quest has no giver in the data.
 #
 # Inside: nothing in the data places the bosses or the books inside, so their
@@ -42,15 +42,15 @@ why Every Alliance quest of Scarlet Monastery's wings, lead-ins included.
 # Sources (facts only):
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
-#   Codex page for the dungeon. The data names no source for The Lost Magic of
-#   the Runemasters.
-# - The door: players' recordings, as Polestar's Codex holds them
+#   Codex page for the dungeon. The data has The Lost Magic of the
+#   Runemasters come from an object (650929) it places nowhere.
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json); the wings' own doors: runs of my own (as a
 #   Horde character), each wing entered through its own door.
 # - The wings and their levels: the client's group finder; the bosses: its
 #   dungeon journal (as Polestar's Codex page holds it).
-# - The Undead Ravagers are level 37 to 38 (data/forever), so that step waits
-#   for 37.
+# - The Undead Ravagers are level 37 to 38 (data/forever); the step says so
+#   rather than waiting, so a lower character can go on with the rest.
 # INGAME: where in the monastery is The Lost Magic of the Runemasters?
 
 step Brother Crowley
@@ -75,7 +75,7 @@ step Brother Anton
   accept 261
 
 step Down the Scarlet Path
-  level 37
+  tip The Undead Ravagers are level 37 to 38.
   kill 11561 x30 quest 261.1
 
 step Brother Anton
@@ -87,6 +87,7 @@ step Tabetha
   zone Dustwallow Marsh
   turnin 1947
   accept 1949
+  accept 1948
 
 step Magus Tirth
   only Mage
@@ -120,7 +121,7 @@ step The Library
   collect 7274 quest 1951.1 @82.6,33.8 group 5 only Mage
 
 step The Lost Magic of the Runemasters
-  tip The data names no source for Magus Olvek's book: look for it in the monastery.
+  tip The data has Magus Olvek's book come from an object it places nowhere: look for it in the monastery.
   collect 273169 quest 96800.1 @82.6,33.8 group 5
 
 step The Armory
@@ -144,7 +145,25 @@ step Librarian Mae Paledust
   zone Ironforge
   turnin 1050
 
+step Items of Power
+  only Mage
+  zone Arathi Highlands
+  tip One Jade (many mobs drop it now and then) and the Bolt Charged Bramble.
+  collect 1529 x1 anywhere
+  collect 7272 quest 1948.2
+
 step Tabetha
   only Mage
   zone Dustwallow Marsh
   turnin 1951
+
+step Tabetha
+  only Mage
+  when complete 1948
+  turnin 1948
+
+step Tabetha
+  only Mage
+  when turnedin 1948
+  accept 1952
+  turnin 1952

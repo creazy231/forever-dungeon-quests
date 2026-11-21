@@ -5,7 +5,7 @@ folder Uldaman
 faction Horde
 levels 41-51
 zone Orgrimmar
-keywords Uldaman, Badlands, Kargath, Orgrimmar, Dran Droffers, Shattered Necklace, Jarkal Mossmeld, Remains of a Paladin, gems, Patrick Garrett, Rigglefuzz, Theldurin the Lost, Scorched Guardian, Discs of Norgannon, Sage Truthseeker, Bena Winterhoof, Revelosh, Ironaya, Obsidian Sentinel, Galgann Firehammer, Grimlok, Archaedas, dungeon
+keywords Uldaman, Badlands, Kargath, Orgrimmar, Dran Droffers, Shattered Necklace, Jarkal Mossmeld, Remains of a Paladin, gems, Patrick Garrett, Rigglefuzz, Theldurin the Lost, Discs of Norgannon, Sage Truthseeker, Bena Winterhoof, Revelosh, Ironaya, Obsidian Sentinel, Galgann Firehammer, Grimlok, Archaedas, dungeon
 reward item 9522 10358 10359 270055
 reward item 4746 270074 270075
 reward item 7888
@@ -27,8 +27,7 @@ why Every Horde quest of Uldaman, with the second run the necklace chain needs.
 #   Source -> 2340 Deliver the Gems (to Dran) -> 2341 Take 3 (back to Jarkal).
 #   2339 opens only after 2318 is handed in at Kargath, and its gems drop only
 #   while it is held: that is the second run.
-# - Jarkal Mossmeld's 2258 Badlands Reagent Run -> 2202 Uldaman Reagent Run ->
-#   2203 Badlands Reagent Run II (the Scorched Guardians' blood).
+# - Jarkal Mossmeld's 2258 Badlands Reagent Run -> 2202 Uldaman Reagent Run.
 # - Patrick Garrett's 2342 Reclaimed Treasures; Rigglefuzz's 2418 Power
 #   Stones; Theldurin the Lost's 709 Solution to Doom; the Discs of Norgannon's
 #   2278 -> 2280 The Platinum Discs (to Sage Truthseeker) -> 2440 (to Bena
@@ -37,8 +36,11 @@ why Every Horde quest of Uldaman, with the second run the necklace chain needs.
 #   1955 The Exorcism -> 1956 Power in Uldaman (the Obsidian Sentinel's power
 #   source) -> 1957 Mana Surges -> 1958 Celestial Power (both at Tabetha).
 #
+# Follow-up: Theldurin the Lost's 728 To the Undercity for Yagyin's Digest
+# (to Keeper Bel'dugur).
+#
 # Left out: 1192 Indurium Ore (repeatable) with its racing-camp chain (1104
-# to 1194); the Platinum Discs' 2965, the next step beyond.
+# to 1194); 2203 Badlands Reagent Run II (an Alchemy quest); the Platinum Discs' 2965, the next step beyond.
 #
 # Inside: nothing in the data places the bosses, the Remains or the objects
 # inside, so their goals stand at the door (@44.6,12.1, Badlands) with
@@ -54,13 +56,11 @@ why Every Horde quest of Uldaman, with the second run the necklace chain needs.
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The necklace and the gems are quest items
 #   there: they drop only while their quest is held.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
 #   41 to 51).
-# - The Scorched Guardians are elites of level 43 to 45 (data/forever), so that
-#   step waits for 43.
 # - Lint warns that the door is more than 50 yards from the Magenta Cap
 #   Clusters outside; the goal stays at the door for the ones inside.
 # INGAME: where inside do the Remains of a Paladin and the Discs of Norgannon
@@ -184,21 +184,13 @@ step Jarkal Mossmeld
   turnin 2338
   accept 2339
   turnin 2202
-  accept 2203
 
 step Rigglefuzz
   turnin 2418
 
 step Theldurin the Lost
   turnin 709
-
-step Badlands Reagent Run II
-  level 43
-  tip Use the empty vessels on the Scorched Guardians, elite dragons: bring help.
-  collect 7867 x3 quest 2203.1
-
-step Jarkal Mossmeld
-  turnin 2203
+  accept 728
 
 step Back into Uldaman
   tip The second run, for Jarkal's gems and power source.
@@ -229,6 +221,9 @@ step Dran Droffers
 step Patrick Garrett
   zone Undercity
   turnin 2342
+
+step Keeper Bel'dugur
+  turnin 728
 
 step Jarkal Mossmeld
   zone Badlands

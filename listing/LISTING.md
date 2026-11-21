@@ -46,12 +46,12 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Blackmaw Hold** (Azshara, levels 55 to 60): Horde and Alliance. Beneath Nordrassil and the root caps, Blackmaw Magic, Ogtinc's claws and tusks, Ekkal's pouches, Gatekeeper Rageroar's Blackmaw Reclamation, the necklace, the Horde Paladins' Reliquary of Tyr, one run (Withermaw to the Unbound Spirit) and every hand-in.
 - **Dire Maul** (Feralas, levels 56 to 60): Horde and Alliance, all three wings. Lethtendris's Web, Elven Legends, Pusillin, Shards of the Felvine, The Madness Within and the Shen'dralar treasure, Knot's quests and the Ogre Suit, the Taste Test, Unfinished Gordok Business, In Demand, Arcane Refreshment, the class books, and every hand-in.
 
-- **Blackrock Spire** (Blackrock Mountain, levels 57 to 60): Horde and Alliance, the Lower Spire first, then both Spires with up to ten players. The Seal of Ascension, Kibler's and Ragged John's quests, Urok Doomhowl, Egg Freezing, the Snakestone, The Demon Forge, the Eye of the Emberseer, Maxwell's and Drakkisath's quests for the Alliance, Warlord's Command to For The Horde! for the Horde, and every hand-in.
-- **Stratholme** (Eastern Plaguelands, levels 58 to 60): Horde and Alliance, both sides and a second run. Tirion Fordring's chain to Of Love and Family, Betina's and the Duke's chains, Ezra Grimm, Houses of the Holy, The Restless Souls, Menethil's Gift, Nathanos' chain to Ramstein for the Horde, and every hand-in.
-- **Scholomance** (Caer Darrow, levels 58 to 60): Horde and Alliance. Eva Sarkhoff's chain from Krastinov to Kirtonos, Marduke's chain to Ras Frostwhisper, the Barov Family Fortune and The Last Barov, Plagued Hatchlings, and every hand-in.
+- **Blackrock Spire** (Blackrock Mountain, levels 57 to 60): Horde and Alliance, the Lower Spire first, then both Spires with up to ten players. The Seal of Ascension quests, Kibler's and Ragged John's quests, Urok Doomhowl, Egg Freezing, the Eye of the Emberseer, Maxwell's and Drakkisath's quests for the Alliance, Warlord's Command to For The Horde! for the Horde, and every hand-in.
+- **Stratholme** (Eastern Plaguelands, levels 58 to 60): Horde and Alliance, both sides and a second run. Tirion Fordring's chain to Of Love and Family, Betina's and the Duke's chains, Ezra Grimm, Houses of the Holy, The Restless Souls, Nathanos' chain to Ramstein for the Horde, and every hand-in.
+- **Scholomance** (Caer Darrow, levels 58 to 60): Horde and Alliance. Eva Sarkhoff's chain from Krastinov to Kirtonos, Marduke's chain through Stratholme's Menethil's Gift to Ras Frostwhisper, the Barov Family Fortune and The Last Barov, Plagued Hatchlings, and every hand-in.
 - **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
 
-Every one of WoW Forever's new dungeons is in. The classic dungeons follow in later versions.
+Every one of WoW Forever's new dungeons is in, and so is every classic dungeon from Ragefire Chasm to Scholomance.
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
 
@@ -176,3 +176,7 @@ Adds Stratholme for the Horde and the Alliance, with a second run.
 ## Changelog for 2.27.0
 
 Adds Scholomance for the Horde and the Alliance.
+
+## Changelog for 2.28.0
+
+A review pass. Follow-up quests no longer drop when the quest before them is handed in, and a new check keeps it so. The Deadmines' miners' quests move into the run. Maraudon's Woodwyrd step no longer waits on the wrong line. Blackrock Spire no longer says the seal opens the Upper Spire (Forever's takes no key), and its gemstones are optional. Stratholme's Scourge half leads to the service entrance, Dire Maul's goals to each wing's door. Menethil's Gift moves into the Scholomance guide, so the Ras Frostwhisper chain works in any order. Gahz'rilla's scale is optional for a group without a mallet. More follow-ups: In Nightmares, Mura Runetotem, Final Passage, Items of Power and Mage's Wand, the Warriors' armour, Storm, Earth, and Fire, Eyes on the Sky, Yagyin's Digest, Shadow of the Past. Profession quests are out everywhere. The Stockade and Scarlet Monastery guides no longer stop for a level at their start, and the doors' source is named right.

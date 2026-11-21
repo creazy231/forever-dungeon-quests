@@ -65,7 +65,7 @@ why Every Alliance quest of the Sunken Temple in one run, class quests and lead-
 #   Hakkar, which the Shade of Hakkar or the Avatar of Hakkar drops; the data
 #   has no source for the Filled Egg itself. The voodoo feathers come from six
 #   named trolls inside.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels

@@ -30,7 +30,8 @@ why Every Alliance quest of the Stockade in one run, lead-ins included.
 # Left out: none of the Alliance's. The Stockade is a city dungeon of the
 # Alliance (its door is in Stormwind), so the pack has no Horde guide for it.
 # The Bazil Thredd chain's steps apply only once The Unsent Letter is handed
-# in, since it starts in the Deadmines.
+# in, since it starts in the Deadmines. 393 Shadow of the Past, Baros'
+# follow-up, goes to Master Mathias Shaw.
 #
 # Inside: nothing in the data places the bosses inside, so their goals stand
 # at the door (@52.4,70.0, Stormwind; Forever's map frame, hence `coords
@@ -43,9 +44,9 @@ why Every Alliance quest of the Stockade in one run, lead-ins included.
 # Sources (facts only):
 # - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
 #   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
-#   the dungeon. The Dark Irons of Dun Modr are level 27 to 31, so that step
-#   waits for 30.
-# - The door: players' recordings, as Polestar's Codex holds them
+#   the dungeon. The Dark Irons of Dun Modr are level 27 to 31; the step says
+#   so rather than waiting, so a lower character can go on with the rest.
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -56,7 +57,7 @@ step Motley Garmason
   accept 303
 
 step The Dark Iron War
-  level 30
+  tip The Dark Irons of Dun Modr are level 27 to 31.
   kill 1051 x10 quest 303.1
   kill 1053 x5 quest 303.2
   kill 1052 x5 quest 303.3
@@ -81,6 +82,9 @@ step Baros Alexston
 step Warden Thelwater
   when onquest 389
   turnin 389
+
+step Warden Thelwater
+  when turnedin 389
   accept 391
 
 step Guard Berton
@@ -136,11 +140,22 @@ step Warden Thelwater
 step Warden Thelwater
   when onquest 391
   turnin 391
+
+step Warden Thelwater
+  when turnedin 391
   accept 392
 
 step Baros Alexston
   when onquest 392
   turnin 392
+
+step Baros Alexston
+  when turnedin 392
+  accept 393
+
+step Master Mathias Shaw
+  when onquest 393
+  turnin 393
 
 step Nikova Raskol
   turnin 388

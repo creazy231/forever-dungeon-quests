@@ -27,6 +27,10 @@ why Every Horde quest of the Wailing Caverns in one run, lead-ins included.
 # Eradication; Mutanus's Glowing Shard (item 10441) starts 6981 The Glowing
 # Shard (Sputtervalve in Ratchet, then Falla Sagewind).
 #
+# Follow-ups: Falla Sagewind's 3369 In Nightmares (to Hamuul Runetotem on
+# Elder Rise) after The Glowing Shard; Tonga Runetotem's 3301 Mura Runetotem
+# (to the Sepulcher) after Altered Beings.
+#
 # Left out: nothing of the Horde's.
 #
 # Inside: nothing in the data places the bosses inside, so their goals stand
@@ -42,7 +46,7 @@ why Every Horde quest of the Wailing Caverns in one run, lead-ins included.
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The Forgotten Pools' spot is the data's.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -77,6 +81,7 @@ step Altered Beings
 step Tonga Runetotem
   turnin 880
   accept 1489
+  accept 3301
 
 step Arch Druid Hamuul Runetotem
   zone Thunder Bluff
@@ -180,6 +185,7 @@ step Sputtervalve
 step Falla Sagewind
   tip Back on the hill above the caverns.
   turnin 6981
+  accept 3369
 
 step Nara Wildmane
   zone Thunder Bluff
@@ -187,3 +193,12 @@ step Nara Wildmane
 
 step Apothecary Zamah
   turnin 962
+
+step Arch Druid Hamuul Runetotem
+  tip On Elder Rise.
+  turnin 3369
+
+step Mura Runetotem
+  zone Silverpine Forest
+  tip In the Sepulcher.
+  turnin 3301

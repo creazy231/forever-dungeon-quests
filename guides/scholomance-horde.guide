@@ -5,14 +5,15 @@ folder Scholomance
 faction Horde
 levels 58-60
 zone Eastern Plaguelands
+coords live
 keywords Scholomance, Caer Darrow, Western Plaguelands, Eva Sarkhoff, Doctor Theolen Krastinov, Krastinov's Bag of Horrors, Jandice Barov, Kirtonos the Herald, Blood of Innocents, Magistrate Marduke, Ras Frostwhisper, Keepsake of Remembrance, Stromgarde, Leonid Barthalomew, Soulbound Keepsake, Alexi Barov, Barov Family Fortune, The Last Barov, Weldon Barov, Betina Bigglezink, Plagued Hatchlings, Skeleton Key, Light's Hope, the Bulwark, dungeon
 why Every Horde quest of Scholomance, with the short returns to Eva Sarkhoff its chain needs.
 
 # Scholomance's Horde quests in one guide: Betina Bigglezink at Light's
 # Hope, Alexi Barov at the Bulwark, Eva Sarkhoff by the gate on Caer
 # Darrow, the run with short returns to Eva between its parts, Magistrate
-# Marduke's chain through Stromgarde and Light's Hope, Ras Frostwhisper once
-# the Stratholme guide's Menethil's Gift is done, then the hand-ins. Steps
+# Marduke's chain through Stromgarde, Light's Hope and a short trip into
+# Stratholme for Menethil's Gift, then Ras Frostwhisper and the hand-ins. Steps
 # already done are passed over, so the guide picks up wherever the chain
 # stands.
 #
@@ -20,8 +21,8 @@ why Every Horde quest of Scholomance, with the short returns to Eva Sarkhoff its
 # - Eva Sarkhoff's 5382 Doctor Theolen Krastinov, the Butcher -> 5515
 #   Krastinov's Bag of Horrors -> 5384 Kirtonos the Herald -> Magistrate
 #   Marduke's 5461 The Human, Ras Frostwhisper -> 5462 The Dying, Ras
-#   Frostwhisper (to Leonid Barthalomew) -> (5463 and 5464 Menethil's Gift, in
-#   the Stratholme guide) -> 5465 Soulbound Keepsake -> 5466 The Lich, Ras
+#   Frostwhisper (to Leonid Barthalomew) -> Leonid's 5463 -> 5464 Menethil's
+#   Gift (in Stratholme) -> 5465 Soulbound Keepsake -> 5466 The Lich, Ras
 #   Frostwhisper. Each of Eva's quests opens only after the last is handed in
 #   outside: she stands by the gate, so the guide steps out and back in.
 # - Alexi Barov's 5341 Barov Family Fortune -> 5342 The Last Barov.
@@ -53,12 +54,13 @@ why Every Horde quest of Scholomance, with the short returns to Eva Sarkhoff its
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon (its note on the Skeleton Key too).
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
 #   58 to 60).
-# INGAME: where inside are the Barov deeds and the porch's brazier? Which
+# INGAME: where inside are the Barov deeds and the porch's brazier, and
+#   where in Stratholme is Menethil's Gift? Which
 #   Darkreaver Menace does Sagorne Creststrider give?
 
 step Betina Bigglezink
@@ -145,29 +147,41 @@ step Magistrate Marduke
 
 step Leonid Barthalomew the Revered
   zone Eastern Plaguelands
-  tip At Light's Hope. Menethil's Gift, next, is in the Stratholme guide.
+  tip At Light's Hope.
   turnin 5462
+  accept 5463
 
 step Betina Bigglezink
   turnin 5529
 
+step Into Stratholme
+  tip Through the main gate, for Menethil's Gift.
+  enter "Stratholme" @26.5,10.4
+
+step Menethil's Gift
+  tip Place the Keepsake of Remembrance upon it.
+  turnin 5463 object 176631 @26.5,10.4
+  accept 5464 object 176631 @26.5,10.4
+
 step Leonid Barthalomew the Revered
-  when turnedin 5464
+  tip At Light's Hope.
+  turnin 5464
   accept 5465
 
 step Magistrate Marduke
-  when onquest 5465
   zone Western Plaguelands
   turnin 5465
   accept 5466
 
+step Back into Scholomance
+  tip For Ras Frostwhisper.
+  enter "Scholomance" @69.7,73.2
+
 step Ras Frostwhisper
-  when onquest 5466
   tip Use the Soulbound Keepsake on him.
   collect 13626 quest 5466.1 @69.7,73.2 group 5
 
 step Magistrate Marduke
-  when onquest 5466
   turnin 5466
 
 step Alexi Barov

@@ -53,7 +53,7 @@ why Every Alliance quest of Gnomeregan in one run, lead-ins included.
 #   Codex page for the dungeon. The Sparklematic wants three silver coins, as
 #   2951's text says; Talvash thirty, as 2948's says. The ring drops from the
 #   Dark Iron Agents (35% in the data).
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -156,6 +156,9 @@ step The Sparklematic 5200
 step The Sparklematic 5200
   when onquest 2945
   turnin 2945 @24.3,39.8
+
+step The Sparklematic 5200
+  when turnedin 2945
   accept 2947 @24.3,39.8
 
 step Mekgineer Thermaplugg
@@ -188,6 +191,9 @@ step High Tinker Mekkatorque
 step Talvash del Kissel
   when onquest 2947
   turnin 2947
+
+step Talvash del Kissel
+  when turnedin 2947
   accept 2948
 
 step Gnome Improvement

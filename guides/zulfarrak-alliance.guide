@@ -46,7 +46,8 @@ why Every Alliance quest of Zul'Farrak in one run, lead-ins included.
 # Qiaga the Keeper, an elite on top of the Altar of Zul, drops the Sacred
 # Mallet; used at the altar at the very top of Jintha'Alor it becomes the
 # Mallet. The guide passes Qiaga for The Altar of Zul anyway, so the Sacred
-# Mallet is an optional goal there.
+# Mallet is an optional goal there. Gahz'rilla's scale is optional too, for a
+# group without a mallet; Wizzle's hand-in comes once the quest is done.
 #
 # Inside: nothing in the data places the bosses, Sergeant Bly or the graves
 # inside, so their goals stand at the door (@38.7,20.1, Tanaris) with
@@ -65,7 +66,7 @@ why Every Alliance quest of Zul'Farrak in one run, lead-ins included.
 # - The Mallet of Zul'Farrak: the Codex page's note on it (the gong, one
 #   mallet per group, Qiaga, Jintha'Alor); the data has Qiaga, an elite of
 #   level 50 at the Altar of Zul, drop the Sacred Mallet every time.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
@@ -112,11 +113,8 @@ step Gryphon Master Talonaxe
   accept 2989
 
 step The Altar of Zul
-  tip Check the top of the altar. It is full of elites: bring help.
+  tip Check the top of the altar. It is full of elites: bring help. If no one in your group has the Mallet of Zul'Farrak: Qiaga the Keeper, the elite on top, drops the Sacred Mallet; used at the altar at the very top of Jintha'Alor it becomes the Mallet, which calls Gahz'rilla.
   complete 2989 @48.98,68.66
-
-step The Sacred Mallet
-  tip Only if no one in your group has the Mallet of Zul'Farrak: Qiaga the Keeper, the elite on top of the altar, drops the Sacred Mallet. Use it at the altar at the very top of Jintha'Alor to make the Mallet, which calls Gahz'rilla.
   collect 9241 optional
 
 step Gryphon Master Talonaxe
@@ -192,7 +190,7 @@ step Hydromancer Velratha
 
 step Gahz'rilla
   tip Gahz'rilla comes only when the gong by the sacred pool is rung with the Mallet of Zul'Farrak; one mallet does it for the group.
-  collect 8707 quest 2770.1 @38.7,20.1 group 5
+  collect 8707 quest 2770.1 @38.7,20.1 group 5 optional
 
 step Theka the Martyr
   tip After Antu'sul in the client's journal. Theka drops the First Mosh'aru Tablet.
@@ -232,6 +230,9 @@ step The Distress Beacon
 step Homing Robot OOX-17/TN
   when onquest 351
   turnin 351
+
+step Homing Robot OOX-17/TN
+  when turnedin 351
   accept 648
 
 step Rescue OOX-17/TN!
@@ -245,6 +246,7 @@ step Yeh'kinya
   accept 4787
 
 step Wizzle Brassbolts
+  when complete 2770
   zone Thousand Needles
   turnin 2770
 

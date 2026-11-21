@@ -41,7 +41,7 @@ why Every Horde quest of Ragefire Chasm in one run, lead-ins included.
 #   the dungeon. The insignia drops from the Burning Blade Fanatics and
 #   Apprentices (level 9 to 11), the books from the Searing Blade Cultists and
 #   Warlocks inside.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels

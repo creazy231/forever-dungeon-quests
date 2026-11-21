@@ -71,7 +71,7 @@ why Every Horde quest of Blackrock Depths, with the second run Thrall's chain ne
 #   Lint warns that the door is more than 50 yards from the Anvilrage
 #   Wardens and the essences' sources outside (in the Searing Gorge); those
 #   goals stay at the door for the ones inside.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels

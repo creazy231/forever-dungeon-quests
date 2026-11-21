@@ -27,11 +27,12 @@ why Every Horde quest of Scarlet Monastery's four wings, lead-ins included.
 # Truthseeker's 1049 Compendium of the Fallen (for Orcs, Tauren and Trolls);
 # Vorrel Sengutz' 1051 Vorrel's Revenge (taken inside; the ring from Nancy
 # Vishas, for Monika Sengutz). Mages: 1947 Journey to the Marsh -> Tabetha's
-# 1949 -> Magus Tirth's 1950 -> 1951 Rituals of Power (in the Library).
+# 1949 -> Magus Tirth's 1950 -> 1951 Rituals of Power (in the Library), and
+# Tabetha's 1948 Items of Power -> 1952 Mage's Wand. Test of Lore's follow-up
+# 1394 Final Passage goes to Dorn Plainstalker in Thousand Needles.
 #
 # Left out: the Rogues' 78676 The Eye of Bhossca (its chain needs Shadowfang
-# Keep); the Mages' 1952 Mage's Wand (it also needs Tabetha's 1948 Items of
-# Power, outside this chain); 1394, Test of Lore's next step.
+# Keep).
 #
 # Inside: nothing in the data places the bosses, Vorrel or the books inside,
 # so their goals stand at the monastery's door (@82.6,33.8, Tirisfal) with
@@ -47,7 +48,7 @@ why Every Horde quest of Scarlet Monastery's four wings, lead-ins included.
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The leap, the answers and Parqual's last test
 #   are the data's spots for those objectives.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - Runs of my own on 2026-11-14 and 15 (Horde, level 36 to 38), recorded with
 #   Polestar's recorder: the Graveyard (Vishas, then Thalnos), the Library
@@ -130,6 +131,7 @@ step Tabetha
   zone Dustwallow Marsh
   turnin 1947
   accept 1949
+  accept 1948
 
 step Magus Tirth
   only Mage
@@ -209,6 +211,7 @@ step Parqual's test
 
 step Parqual Fintallas
   turnin 6628
+  accept 1394
 
 step Nancy Vishas
   zone Alterac Mountains
@@ -225,7 +228,29 @@ step Sage Truthseeker
   zone Thunder Bluff
   turnin 1049
 
+step Items of Power
+  only Mage
+  zone Arathi Highlands
+  tip One Jade (many mobs drop it now and then) and the Bolt Charged Bramble.
+  collect 1529 x1 anywhere
+  collect 7272 quest 1948.2
+
 step Tabetha
   only Mage
   zone Dustwallow Marsh
   turnin 1951
+
+step Tabetha
+  only Mage
+  when complete 1948
+  turnin 1948
+
+step Tabetha
+  only Mage
+  when turnedin 1948
+  accept 1952
+  turnin 1952
+
+step Dorn Plainstalker
+  zone Thousand Needles
+  turnin 1394

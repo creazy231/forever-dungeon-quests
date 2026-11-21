@@ -66,7 +66,7 @@ why Every Horde quest of Maraudon in one run, lead-ins included.
 #   by Magra, in the caves (35.17,60.14); the data has no source for the
 #   amulet itself. The vial comes from an Earth Song Splash, An'she's
 #   Radiance from a Shard of Pure Light.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json). The client's group finder lists Maraudon as
 #   one dungeon, not as wings.
 # - The dungeon's size, levels and bosses: the client's group finder and
@@ -147,7 +147,7 @@ step Mithera
 step Woodwyrd
   turnin 93594
   accept 93404
-  talk 254674 quest 93404.1
+  talk 254674
 
 step Willow
   zone Desolace

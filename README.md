@@ -40,8 +40,8 @@ Polestar.
 | Scholomance | Western Plaguelands, on Caer Darrow | Horde, Alliance | 58 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
-Every one of WoW Forever's new dungeons is in. The classic dungeons, from
-Ragefire Chasm to Scholomance, follow in later versions.
+Every one of WoW Forever's new dungeons is in, and so is every classic
+dungeon, from Ragefire Chasm to Scholomance.
 
 ## What every guide does
 
@@ -192,8 +192,8 @@ with one folder per dungeon.
 
 - The dungeon is for five players of level 24 to 32. Its door is in
   Stormwind. It is a city dungeon of the Alliance, so there is no Horde guide.
-- Motley Garmason's Dark Iron War waits for level 30, as its Dark Irons are
-  level 27 to 31.
+- Motley Garmason's Dark Iron War sends you after Dark Irons of level 27 to
+  31; the step says so rather than waiting.
 - Bazil Thredd's chain (The Stockade Riots, then The Curious Visitor) starts
   with The Unsent Letter from the Deadmines: its steps show once you have
   handed the letter in.
@@ -269,8 +269,10 @@ with one folder per dungeon.
 - Warriors (Fire Hardened Mail, Brutal Armor) and Shamans (Elemental Aid)
   get their class chains too, whose steps only they see.
 - Left out: the Horde's Hearts of Zeal and the second An Unholy Alliance
-  (they need Scarlet Monastery and Razorfen Downs), and the Alliance
-  Shamans' Storm, Earth, and Fire, which the data hands in to a Horde NPC.
+  (they need Scarlet Monastery and Razorfen Downs).
+- Follow-ups in: the Warriors' armour quests, the Alliance Shamans' Storm,
+  Earth, and Fire (handed in to Veyric Thunderhame) and the Horde Shamans'
+  Eyes on the Sky.
 
 ## Scarlet Monastery
 
@@ -286,11 +288,12 @@ with one folder per dungeon.
 - The Horde guide takes Dorn Plainstalker's tests and Braug Dimspirit's Test
   of Lore first, and Hearts of Zeal for characters who finished Razorfen
   Kraul's Going, Going, Guano!. The Alliance guide takes Brother Anton's
-  Down the Scarlet Path, which waits for level 37 for the Undead Ravagers.
-- Mages of both sides get their Rituals of Power chain.
-- Left out: the Rogues' Eye of Bhossca (it needs Shadowfang Keep), the
-  Mages' Mage's Wand (it needs another quest of Tabetha's) and the Alliance
-  Paladins' chain around Aeonas, whose first quest has no giver in the data.
+  Down the Scarlet Path, whose Undead Ravagers are level 37 to 38.
+- Mages of both sides get their Rituals of Power chain, then Items of Power
+  and Mage's Wand. The Horde also gets Final Passage after Test of Lore.
+- Left out: the Rogues' Eye of Bhossca (it needs Shadowfang Keep) and the
+  Alliance Paladins' chain around Aeonas, whose first quest has no giver in
+  the data.
 - Where Magus Olvek's book is in the monastery is still open: if you know,
   tell me.
 
@@ -373,7 +376,9 @@ they are the same guides. This addon is where they get their updates.
   Kargath, and its gems drop only while it is held.
 - Mages of both sides get Power in Uldaman, then Mana Surges and Celestial
   Power at Tabetha.
-- Left out: Indurium Ore and Replacement Phial (repeatable).
+- Left out: Indurium Ore and Replacement Phial (repeatable), and for the
+  Horde the Alchemy quest Badlands Reagent Run II. Yagyin's Digest, Solution
+  to Doom's follow-up, goes to Ironforge or the Undercity.
 
 ## Zul'Farrak
 
@@ -387,7 +392,7 @@ they are the same guides. This addon is where they get their updates.
 - Gahz'rilla comes only when the gong by the sacred pool is rung with the
   Mallet of Zul'Farrak, one per group. Both guides pass Qiaga the Keeper,
   whose Sacred Mallet becomes the Mallet at the very top of Jintha'Alor;
-  that goal is optional.
+  that goal and Gahz'rilla's scale are optional.
 - The Alliance guide takes Gryphon Master Talonaxe's chain to Nekrum's
   Medallion and The Divination. The Horde guide takes the Venom Bottles to
   The Spider God; Summoning Shadra, its follow-up, is an elite of level 55
@@ -520,8 +525,8 @@ they are the same guides. This addon is where they get their updates.
 - The client lists three wings, each its own instance behind the Dire Maul
   gate in Feralas: East (the Warpwood Quarter, 54 to 60), West (the
   Athenaeum, 56 to 60) and North (the Gordok wing, 56 to 60). The guides
-  take them in that order and go back into a wing where a quest asks for
-  it.
+  take them in that order, each wing's goals at its own door in the
+  courtyard, and go back into a wing where a quest asks for it.
 - Both sides: Lethtendris's Web, Elven Legends, Pusillin, Shards of the
   Felvine (with the Reliquary of Purity from Silithus), The Madness Within
   and the Shen'dralar treasure, Free Knot!, The Gordok Ogre Suit (bring the
@@ -542,11 +547,10 @@ they are the same guides. This addon is where they get their updates.
 
 - The client lists the Lower Spire (five players, 55 to 60) and the Upper
   Spire (ten players, 59 to 60). The guides run the Lower Spire first, then
-  go back with up to ten players: the Seal of Ascension, forged in the
-  Wyrmbog, opens the Upper Spire. Most quests ask for level 57.
-- Both sides: the Seal of Ascension, Kibler's pets and eggs, Mother's Milk,
-  Urok Doomhowl, Tinkee's chain to Egg Freezing, the Snakestone, The Demon
-  Forge, Duke Hydraxis' chain to the Eye of the Emberseer, The Matron
+  go back with up to ten players into the Upper Spire, which in Forever
+  takes no key. Most quests ask for level 57.
+- Both sides: the Seal of Ascension quests, Kibler's pets and eggs, Mother's
+  Milk, Urok Doomhowl, Tinkee's chain to Egg Freezing, Duke Hydraxis' chain to the Eye of the Emberseer, The Matron
   Protectorate, Pip Quickwit's quest, and The Final Tablets after the
   Sunken Temple. Alliance: Bijou and Maxwell's Mission, General
   Drakkisath's Command and Demise, Put Her Down, Doomrigger's Clasp, End
@@ -554,7 +558,8 @@ they are the same guides. This addon is where they get their updates.
   Pack Mistress, Bijou's report, The Darkstone Tablet.
 - Left out: the Onyxia attunement (Drakefire Amulet; What the Wind
   Carries and on), Blackhand's Command (Blackwing Lair), Egg Collection (it
-  would need a third run), two breadcrumbs, the chromatic armour quests
+  would need a third run), two breadcrumbs, the Blacksmithing quests (the Snakestone, The Demon
+  Forge), the chromatic armour quests
   (Stratholme, Scholomance), the Dungeon Set 2 and Valthalak quests.
 
 ## Stratholme
@@ -566,13 +571,14 @@ they are the same guides. This addon is where they get their updates.
 
 - The client lists two sides, each for five players of level 58 to 60: the
   Main Gate (the Scarlet half) and the Service Gate (the Scourge half). The
-  guides lead to the main gate; the data places no Service Gate.
+  guides lead to the main gate for the Scarlet half and to the Elders'
+  Square service entrance for the Scourge half.
 - Both guides run the city twice: The Active Agent and Above and Beyond
   open only after hand-ins at Light's Hope.
 - Both sides: Tirion Fordring's chain from Demon Dogs to Of Love and Family
   and Find Myranda, The Flesh Does Not Lie, The Great Ezra Grimm, Houses of
-  the Holy, The Archivist to Lord Maxwell Tyrosus, The Restless Souls, and
-  Menethil's Gift after the Scholomance chain. Alliance Paladins: A Wee Bit
+  the Holy, The Archivist to Lord Maxwell Tyrosus, and The Restless Souls
+  (Menethil's Gift is in the Scholomance guide). Alliance Paladins: A Wee Bit
   O' Necromancy. Horde: Nathanos Blightcaller's chain to Ramstein.
 - Left out: The Medallion of Faith (repeatable) and Aurius' Reckoning after
   it, the other repeatables, the Blacksmithing quests, the paladin epic
@@ -583,16 +589,16 @@ they are the same guides. This addon is where they get their updates.
 
 | Guide | Starts at | Takes you to |
 |---|---|---|
-| Scholomance (Horde) | Betina Bigglezink, Light's Hope | The Bulwark, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Ras Frostwhisper after Stratholme, Chillwind Camp |
-| Scholomance (Alliance) | Betina Bigglezink, Light's Hope | Chillwind Camp, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Ras Frostwhisper after Stratholme, the Bulwark |
+| Scholomance (Horde) | Betina Bigglezink, Light's Hope | The Bulwark, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Stratholme for Menethil's Gift, Ras Frostwhisper, Chillwind Camp |
+| Scholomance (Alliance) | Betina Bigglezink, Light's Hope | Chillwind Camp, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Stratholme for Menethil's Gift, Ras Frostwhisper, the Bulwark |
 
 - The dungeon is for five players of level 58 to 60. Its gate on Caer
   Darrow needs the Skeleton Key; one key opens it for the group, and
   Polestar's Dungeons window lists the key's chain.
 - Eva Sarkhoff's chain (Krastinov, his Bag of Horrors, Kirtonos) opens one
   quest at a time outside by the gate, so the guides step out and back in.
-  Magistrate Marduke's chain runs through Stromgarde, Light's Hope and the
-  Stratholme guide's Menethil's Gift to Ras Frostwhisper.
+  Magistrate Marduke's chain runs through Stromgarde, Light's Hope and a
+  short trip into Stratholme for Menethil's Gift, to Ras Frostwhisper.
 - Both sides: Plagued Hatchlings, the Barov Family Fortune and The Last
   Barov (in the other side's camp).
 - Left out: the repeatables, Dawn's Gambit (its chain runs through

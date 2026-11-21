@@ -29,6 +29,9 @@ why Every Horde quest of Razorfen Kraul in one run, lead-ins included.
 # Cloudseer's 79360 Elemental Aid (Charlga's Tattered Note, for Rau
 # Cliffrunner).
 #
+# Follow-ups: Thun'grim Firegaze's 1848 Brutal Hauberk (Warriors) and Rau
+# Cliffrunner's 79364 Eyes on the Sky (Shamans, to Prate Cloudseer).
+#
 # Left out: 1113 Hearts of Zeal, Faranell's follow-up (Scarlet Monastery), and
 # 6521 An Unholy Alliance, Varimathras' (Razorfen Downs): they are in those
 # dungeons' guides. 1531 and 96136 Call of Air are the same Shaman lead-in from
@@ -46,7 +49,7 @@ why Every Horde quest of Razorfen Kraul in one run, lead-ins included.
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon. The guano drops from the Kraul Bats and the
 #   Blind Hunter.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - A run of my own on 2026-11-11 (Horde, five players, level 31), recorded
 #   with Polestar's recorder and shared with Polestar Client: the bosses in the
@@ -164,11 +167,18 @@ step Mebok Mizzyrix
 step Thun'grim Firegaze
   only Warrior
   turnin 1838
+  accept 1848
+  turnin 1848
 
 step Rau Cliffrunner
   only Shaman
   zone Thousand Needles
   turnin 79360
+  accept 79364
+
+step Prate Cloudseer
+  only Shaman
+  turnin 79364
 
 step Auld Stonespire
   zone Thunder Bluff

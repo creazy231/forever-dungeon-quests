@@ -35,7 +35,7 @@ why Every Horde quest of the Excavation Site in one run, lead-in included.
 # - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
 #   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
 #   the dungeon.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - A run of my own on 2026-11-12 (Horde, five players, level 33), recorded
 #   with Polestar's recorder and shared with Polestar Client: Saltspine,

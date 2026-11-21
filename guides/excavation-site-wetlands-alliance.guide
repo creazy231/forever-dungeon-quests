@@ -47,7 +47,7 @@ why Every Alliance quest of the Excavation Site in one run, lead-ins included.
 # - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
 #   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
 #   the dungeon.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - A run of my own on 2026-11-12 (Horde, five players), which the Horde
 #   guide's header describes: the bosses' order and the raptors around

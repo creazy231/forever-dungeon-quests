@@ -30,8 +30,11 @@ why Every Alliance quest of Razorfen Kraul in one run, lead-ins included.
 # 94789 Call of Air -> Veyric Thunderhame's 96264 Elemental Aid (Charlga's
 # Tattered Note).
 #
-# Left out: 79358 Storm, Earth, and Fire, the Shamans' follow-up, whose ender
-# in the data (Rau Cliffrunner) is a Horde NPC.
+# Follow-ups: Furen Longbeard's 1782 Furen's Armor (Warriors) and Veyric
+# Thunderhame's 79358 Storm, Earth, and Fire (Shamans: Twisted Totems from the
+# Mirefin, the Lost Ones, the Dustbelcher and the Maraudine), handed in to
+# Veyric, whom the data lists as an ender beside the Horde's Rau Cliffrunner.
+# Left out: nothing of the Alliance's.
 #
 # Inside: nothing in the data places the bosses, Heralath or Willix inside, so
 # their goals stand at the door (@42.9,90.2, The Barrens) with `group 5`. The
@@ -45,7 +48,7 @@ why Every Alliance quest of Razorfen Kraul in one run, lead-ins included.
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
 #   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
 #   Codex page for the dungeon.
-# - The door: players' recordings, as Polestar's Codex holds them
+# - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
 # - A run of my own on 2026-11-11 (Horde, five players, level 31), recorded
 #   with Polestar's recorder and shared with Polestar Client: the bosses in the
@@ -172,8 +175,40 @@ step Treshala Fallowbrook
 step Veyric Thunderhame
   only Shaman
   turnin 96264
+  accept 79358
 
 step Furen Longbeard
   only Warrior
   zone Stormwind City
   turnin 1701
+  accept 1782
+  turnin 1782
+
+step Twisted Water Totems
+  only Shaman
+  zone Dustwallow Marsh
+  tip The Mirefin murlocs carry them.
+  collect 274046 x5 quest 79358.1
+
+step Twisted Earth Totems
+  only Shaman
+  zone Swamp of Sorrows
+  tip The Lost Ones carry them.
+  collect 274045 x5 quest 79358.2
+
+step Twisted Fire Totems
+  only Shaman
+  zone Badlands
+  tip The Dustbelcher ogres carry them.
+  collect 274044 x5 quest 79358.3
+
+step Twisted Air Totems
+  only Shaman
+  zone Desolace
+  tip The Maraudine centaurs carry them.
+  collect 274047 x5 quest 79358.4
+
+step Veyric Thunderhame
+  only Shaman
+  zone Arathi Highlands
+  turnin 79358 npc 259023
