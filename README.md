@@ -35,6 +35,7 @@ Polestar.
 | Blackrock Depths | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 52 to 60 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | Dire Maul | Feralas | Horde, Alliance | 56 to 60 |
+| Blackrock Spire | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 57 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
 Every one of WoW Forever's new dungeons is in. The classic dungeons, from
@@ -529,6 +530,30 @@ they are the same guides. This addon is where they get their updates.
   Hyjal), the repeatables and the Librams, Quel'Serrar (it needs Onyxia),
   the warlock and paladin epic mount chains, the Dungeon Set 2 and
   Valthalak quests.
+
+## Blackrock Spire
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Blackrock Spire (Horde) | Warlord Goretooth, Kargath | Flame Crest, Tanaris, Azshara, Winterspring, Silithus, the Eastern Plaguelands, the Lower Spire, Kargath, Orgrimmar, the Wyrmbog, both Spires, back again |
+| Blackrock Spire (Alliance) | Tinkee Steamboil, Flame Crest | Morgan's Vigil, Tanaris, Azshara, Winterspring, Silithus, the Eastern Plaguelands, the Lower Spire, Morgan's Vigil, the Wyrmbog, both Spires, back again |
+
+- The client lists the Lower Spire (five players, 55 to 60) and the Upper
+  Spire (ten players, 59 to 60). The guides run the Lower Spire first, then
+  go back with up to ten players: the Seal of Ascension, forged in the
+  Wyrmbog, opens the Upper Spire. Most quests ask for level 57.
+- Both sides: the Seal of Ascension, Kibler's pets and eggs, Mother's Milk,
+  Urok Doomhowl, Tinkee's chain to Egg Freezing, the Snakestone, The Demon
+  Forge, Duke Hydraxis' chain to the Eye of the Emberseer, The Matron
+  Protectorate, Pip Quickwit's quest, and The Final Tablets after the
+  Sunken Temple. Alliance: Bijou and Maxwell's Mission, General
+  Drakkisath's Command and Demise, Put Her Down, Doomrigger's Clasp, End
+  of the Dark Horde at 60. Horde: Warlord's Command to For The Horde!, The
+  Pack Mistress, Bijou's report, The Darkstone Tablet.
+- Left out: the Onyxia attunement (Drakefire Amulet; What the Wind
+  Carries and on), Blackhand's Command (Blackwing Lair), Egg Collection (it
+  would need a third run), two breadcrumbs, the chromatic armour quests
+  (Stratholme, Scholomance), the Dungeon Set 2 and Valthalak quests.
 
 ## The Shaper's Terrace
 

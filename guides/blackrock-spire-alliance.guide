@@ -1,0 +1,353 @@
+guide forever-dungeon-quests/blackrock-spire-alliance
+title Blackrock Spire (Alliance)
+category Dungeons
+folder Blackrock Spire
+faction Alliance
+levels 57-60
+zone Burning Steppes
+keywords Blackrock Spire, Lower Blackrock Spire, Upper Blackrock Spire, Blackrock Mountain, Burning Steppes, Morgan's Vigil, Flame Crest, Marshal Maxwell, Bijou, Message to Maxwell, Maxwell's Mission, General Drakkisath, Helendis Riverhorn, Halycon, Mayara Brightwing, Doomrigger's Clasp, Count Remington Ridgewell, Kibler, Worg Pup, Spire Spider Eggs, Ragged John, Mother's Milk, Mother Smolderweb, Warosh, Urok Doomhowl, Tinkee Steamboil, Egg Freezing, Seal of Ascension, Vaelan, Emberstrife, Duke Hydraxis, Eye of the Emberseer, Kilram, Snakestone, Lorax, The Demon Forge, Goraluk Anvilcrack, Awbee, Haleh, Pip Quickwit, Malyfous Darkhammer, Prospector Ironboot, Mosh'aru, Rend Blackhand, End of the Dark Horde, dungeon
+why Every Alliance quest of Blackrock Spire, the Lower Spire first and the Upper Spire on the second run.
+
+# Blackrock Spire's Alliance quests in one guide: Prospector Ironboot in
+# Tanaris, Duke Hydraxis in Azshara, Winterspring, Silithus, the Eastern
+# Plaguelands, the Burning Steppes (Morgan's Vigil and Flame Crest), a first
+# run in the Lower Spire, the hand-ins and the Seal of Ascension's forging in
+# the Wyrmbog, a second run back through the Lower Spire into the Upper
+# Spire, then the last hand-ins. Steps already done are passed over, so the
+# guide picks up wherever the chain stands.
+#
+# The chains:
+# - Bijou's 5001 Bijou's Belongings -> 5002 Message to Maxwell -> Marshal
+#   Maxwell's 5081 Maxwell's Mission (the second run); Overlord Wyrmthalak's
+#   General Drakkisath's Command 5089 -> 5102 General Drakkisath's Demise.
+# - Helendis Riverhorn's 4701 Put Her Down; Mayara Brightwing's 4764
+#   Doomrigger's Clasp -> 4765 Delivery to Ridgewell.
+# - Kibler's 4729 Kibler's Exotic Pets and 4862 En-Ay-Es-Tee-Why; Ragged
+#   John's 4866 Mother's Milk; Tinkee Steamboil's 4726 Broodling Essence ->
+#   4808 -> Felnok Steelspring's 4809 Chillwind Horns -> 4810 Return to Tinkee
+#   -> 4734 Egg Freezing.
+# - Vaelan's 4742 -> 4743 Seal of Ascension (the key to the Upper Spire).
+# - Warosh's 4867 Urok Doomhowl; Kilram's 5306 Snakestone of the Shadow
+#   Huntress; Lorax's 5126 -> 5127 The Demon Forge; Awbee's 5160 The Matron
+#   Protectorate -> Haleh's 5161; Pip Quickwit's 5047 (to Malyfous
+#   Darkhammer).
+# - Duke Hydraxis' 6804 Poisoned Water and 6805 Stormers and Rumblers -> 6821
+#   Eye of the Emberseer.
+# - For characters who handed in The God Hakkar (3528, in the Sunken Temple
+#   guide), Prospector Ironboot's 5065 The Lost Tablets of Mosh'aru -> 4788
+#   The Final Tablets.
+# - The Head of Rend Blackhand starts 84377 End of the Dark Horde.
+#
+# Left out: 6502 Drakefire Amulet (the Onyxia attunement); 7761 Blackhand's
+# Command (the Blackwing Lair attunement); 4735 Egg Collection (it opens only
+# after Egg Freezing's hand-in outside, so it would need a third run); the
+# breadcrumbs 4907 (behind a Winterspring chain) and 4766 from Stormwind;
+# 5162 and on after Haleh, 6822 The Molten Core after Hydraxis, 8181 after
+# The Final Tablets; 5166 and 5167 (they need Stratholme and Scholomance);
+# the Dungeon Set 2 and Valthalak quests (8931 to 9006).
+#
+# Inside: nothing in the data places the bosses, the NPCs or the objects
+# inside, so their goals stand at the door (@34.8,85.3, Searing Gorge): the
+# Lower Spire's with `group 5`, the Upper Spire's with `group 10`, as the
+# client's group finder lists them (Lower 55 to 60 for five players, Upper 59
+# to 60 for ten). The bosses come in the order of the client's dungeon
+# journal; every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked. Most of these
+# quests ask for level 57, so the guide does.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. Each gemstone of command drops one time in
+#   ten (data/forever); the Forged Seal comes from an object in the Wyrmbog;
+#   the data names no source for the Orb of Draconic Energy that 4743 needs,
+#   nor for the Caged Worg Pup. Lint warns that the door is more than 50
+#   yards from the Unadorned Seal's droppers outside; the goal stays at the
+#   door for the ones inside.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# INGAME: where inside do Vaelan, Bijou, Warosh, Awbee and Pip Quickwit
+#   stand, and where does the Orb of Draconic Energy come from?
+
+step Tinkee Steamboil
+  zone Burning Steppes
+  tip At Flame Crest.
+  accept 4726
+
+step Broodling Essence
+  tip Keep the Draco-Incarcinatrix 900: Tinkee wants it back with the essence.
+  collect 12283 x8 quest 4726.1
+
+step Tinkee Steamboil
+  turnin 4726
+  accept 4808
+
+step Kibler
+  accept 4729
+  accept 4862
+
+step Ragged John
+  accept 4866
+
+step Helendis Riverhorn
+  tip At Morgan's Vigil.
+  accept 4701
+
+step Mayara Brightwing
+  accept 4764
+
+step Prospector Ironboot
+  when turnedin 3528
+  zone Tanaris
+  accept 5065
+
+step Duke Hydraxis
+  zone Azshara
+  accept 6804
+  accept 6805
+
+step Felnok Steelspring
+  zone Winterspring
+  turnin 4808
+  accept 4809
+
+step Chillwind Horns
+  collect 12444 x8 quest 4809.1
+
+step Felnok Steelspring
+  turnin 4809
+  accept 4810
+
+step Kilram
+  accept 5306
+
+step Lorax
+  accept 5126
+  talk 10918 quest 5126.1
+  turnin 5126
+  accept 5127
+
+step Stormers and Rumblers
+  zone Silithus
+  kill 11744 x15 quest 6805.1
+  kill 11746 x15 quest 6805.2
+
+step Poisoned Water
+  zone Eastern Plaguelands
+  tip Use the Aspect of Neptulon on the poisoned elementals.
+  collect 17309 x12 quest 6804.1
+
+step The Lost Tablets of Mosh'aru
+  when onquest 5065
+  zone Eastern Plaguelands
+  collect 12411 quest 5065.1
+  collect 12412 quest 5065.2
+
+step Prospector Ironboot
+  when onquest 5065
+  zone Tanaris
+  turnin 5065
+  accept 4788
+
+step Duke Hydraxis
+  zone Azshara
+  turnin 6804
+  turnin 6805
+  accept 6821
+
+step Tinkee Steamboil
+  zone Burning Steppes
+  tip At Flame Crest.
+  turnin 4810
+  accept 4734
+
+step To Blackrock Spire
+  zone Searing Gorge
+  tip The Lower Spire is for five players of level 55 to 60.
+  enter "Blackrock Spire" @34.8,85.3
+
+step Spire Spider Eggs
+  along until leave
+  collect 12530 x15 quest 4862.1 @34.8,85.3 group 5 -- From the spider eggs inside.
+
+step Scarshield Infiltrator
+  tip Vaelan, as the quest names him, wants the three gemstones of command and an Unadorned Seal of Ascension.
+  accept 4742 @34.8,85.3
+
+step Bijou
+  accept 5001 @34.8,85.3
+  collect 12345 quest 5001.1 @34.8,85.3 group 5
+  turnin 5001 @34.8,85.3
+  accept 5002 @34.8,85.3
+
+step Highlord Omokk
+  tip Each gemstone drops one time in ten. Omokk's Head is for Warosh's quest.
+  collect 12336 quest 4742.1 @34.8,85.3 group 5
+  collect 12534 @34.8,85.3 group 5
+
+step Shadow Hunter Vosh'gajin
+  collect 13352 quest 5306.1 @34.8,85.3 group 5
+
+step War Master Voone
+  collect 12335 quest 4742.2 @34.8,85.3 group 5
+
+step The Final Tablets
+  when onquest 4788
+  collect 12740 quest 4788.1 @34.8,85.3 group 5
+  collect 12741 quest 4788.2 @34.8,85.3 group 5
+
+step Mother Smolderweb
+  tip Let her poison you, then take the poison back to Ragged John.
+  kill 10596 @34.8,85.3 group 5 optional
+
+step Halycon
+  tip Fill the Empty Worg Pup Cage with a worg pup too.
+  kill 10220 quest 4701.1 @34.8,85.3 group 5
+  complete 4729 @34.8,85.3 group 5
+
+step Warosh
+  tip Read Warosh's Scroll. The quest needs the Roughshod Pike and Omokk's Head.
+  accept 4867 @34.8,85.3
+  collect 12533 @34.8,85.3 group 5
+  collect 12712 quest 4867.1 @34.8,85.3 group 5
+  turnin 4867 @34.8,85.3
+
+step Overlord Wyrmthalak
+  tip Wyrmthalak carries General Drakkisath's Command.
+  collect 12337 quest 4742.3 @34.8,85.3 group 5
+  collect 12780 @34.8,85.3 group 5
+  accept 5089 @34.8,85.3
+
+step Doomrigger's Clasp
+  collect 12352 quest 4764.1 @34.8,85.3 group 5
+
+step The Unadorned Seal
+  tip The Scarshield dwarves drop it.
+  collect 12219 quest 4742.4 @34.8,85.3 group 5
+
+step Scarshield Infiltrator
+  turnin 4742 @34.8,85.3
+  accept 4743 @34.8,85.3
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the spider eggs, finish it before you go.
+  collect 12530 x15 quest 4862.1 @34.8,85.3 group 5
+
+step Marshal Maxwell
+  zone Burning Steppes
+  tip At Morgan's Vigil.
+  turnin 5002
+  accept 5081
+  turnin 5089
+  accept 5102
+
+step Helendis Riverhorn
+  turnin 4701
+
+step Mayara Brightwing
+  turnin 4764
+  accept 4765
+
+step Kibler
+  tip At Flame Crest.
+  turnin 4729
+  turnin 4862
+
+step Ragged John
+  talk 9563 quest 4866.1
+  turnin 4866
+
+step The Seal of Ascension
+  zone Dustwallow Marsh
+  tip In the Wyrmbog: beat the ancient drake Emberstrife until his will breaks, then place the Unforged Seal. The quest also needs the Orb of Draconic Energy.
+  collect 12324 quest 4743.1
+
+step Back into Blackrock Spire
+  zone Searing Gorge
+  tip The second run, with up to ten players: Vaelan's seal opens the Upper Spire (levels 59 to 60).
+  enter "Blackrock Spire" @34.8,85.3
+
+step Scarshield Infiltrator
+  turnin 4743 @34.8,85.3
+
+step Maxwell's Mission
+  tip War Master Voone, Highlord Omokk and Overlord Wyrmthalak again.
+  kill 9237 quest 5081.1 @34.8,85.3 group 5
+  kill 9196 quest 5081.2 @34.8,85.3 group 5
+  kill 9568 quest 5081.3 @34.8,85.3 group 5
+
+step Pyroguard Emberseer
+  tip The first encounter of the Upper Spire in the client's journal.
+  collect 17322 quest 6821.1 @34.8,85.3 group 10
+
+step The Rookery
+  tip Use the Eggscilloscope Prototype on an egg.
+  complete 4734 @34.8,85.3 group 10
+
+step Warchief Rend Blackhand
+  tip His head starts End of the Dark Horde, from level 60.
+  collect 227911 @34.8,85.3 group 10
+
+step Pip Quickwit
+  accept 5047 @34.8,85.3
+
+step Goraluk Anvilcrack
+  tip Goraluk carries the Soul Stained Pike; the Unforged Rune Covered Breastplate lies nearby.
+  collect 12847 quest 5127.1 @34.8,85.3 group 10
+  collect 12806 quest 5127.2 @34.8,85.3 group 10
+
+step Awbee
+  accept 5160 @34.8,85.3
+
+step General Drakkisath
+  tip The last encounter in the client's journal.
+  kill 10363 quest 5102.1 @34.8,85.3 group 10
+
+step Marshal Maxwell
+  zone Burning Steppes
+  tip At Morgan's Vigil.
+  turnin 5081
+  turnin 5102
+
+step Tinkee Steamboil
+  tip At Flame Crest.
+  turnin 4734
+
+step Prospector Ironboot
+  when onquest 4788
+  zone Tanaris
+  turnin 4788
+
+step Duke Hydraxis
+  zone Azshara
+  turnin 6821
+
+step Kilram
+  zone Winterspring
+  turnin 5306
+
+step Lorax
+  turnin 5127
+
+step Malyfous Darkhammer
+  turnin 5047
+
+step Haleh
+  turnin 5160
+  accept 5161
+  turnin 5161
+
+step Count Remington Ridgewell
+  zone Stormwind City
+  turnin 4765
+
+step The Head of Rend Blackhand
+  when has 227911
+  level 60
+  accept 84377
+
+step End of the Dark Horde
+  when onquest 84377
+  zone Stormwind City
+  turnin 84377
