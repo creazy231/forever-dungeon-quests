@@ -5,16 +5,16 @@ Not part of the upload zip. Icon: `icon.jpg` (1024 x 1024). Cover: `cover.jpg` (
 
 ## Summary (40 to 140 characters)
 
-Quest guides for WoW Forever's new dungeons: every quest in one route per faction, the run boss by boss. First: The Drowned City.
+Quest guides for WoW Forever's dungeons: every quest in one route per faction, from the first lead-in to the last hand-in.
 
 ## Description (Markdown, at least 150 characters)
 
-A community addon for Polestar with quest guides for WoW Forever's new dungeons. For each dungeon there is one guide per faction that takes every quest of it, from the first lead-in to the last hand-in, with the run itself boss by boss.
+A community addon for Polestar with quest guides for WoW Forever's dungeons. For each dungeon there is one guide per faction that takes every quest of it, from the first lead-in to the last hand-in, with the run itself boss by boss.
 
 - **Every quest of its dungeon in one route**, in an order that walks you there once.
 - **Picks up where you are.** Steps you have already done are passed over.
-- **One run.** Every quest that needs the dungeon is in your log before you go in.
-- **Boss by boss.** Inside, the steps follow a recorded run.
+- **One run.** Every quest that needs the dungeon is in your log before you go in; a second only where a follow-up sends you back in.
+- **Boss by boss.** Inside, the steps follow a recorded run where there is one, else the game's dungeon journal.
 
 ### Dungeons in this version
 
@@ -32,7 +32,7 @@ A community addon for Polestar with quest guides for WoW Forever's new dungeons.
 
 - **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
 
-More dungeons come in later versions.
+Every one of WoW Forever's new dungeons is in. The classic dungeons follow in later versions.
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
 
@@ -40,7 +40,7 @@ Every fact comes from the game's data, players' recordings and runs of my own, n
 
 ## Tags (up to 6)
 
-Dungeons, Quests, Drowned City, Horde, Alliance, WoW Forever
+Dungeons, Quests, Horde, Alliance, WoW Forever, Lead-ins
 
 ## Changelog for 2.0.0
 

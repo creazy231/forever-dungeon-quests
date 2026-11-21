@@ -1,7 +1,7 @@
 # Forever Dungeon Quests
 
 A community addon for [Polestar](https://polestar.guide), the guide addon for
-World of Warcraft: Forever. It has quest guides for WoW Forever's new
+World of Warcraft: Forever. It has quest guides for WoW Forever's
 dungeons: for each dungeon, one guide per faction that takes every quest of
 it, from the first lead-in to the last hand-in, with the run itself boss by
 boss. It is a separate addon by creazy231; it is not made or supported by
@@ -21,7 +21,8 @@ Polestar.
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
-More of WoW Forever's dungeons come in later versions.
+Every one of WoW Forever's new dungeons is in. The classic dungeons, from
+Ragefire Chasm to Scholomance, follow in later versions.
 
 ## What every guide does
 
@@ -30,7 +31,12 @@ More of WoW Forever's dungeons come in later versions.
 - **Picks up where you are.** Steps you have already done are passed over,
   so a guide starts wherever your chain stands.
 - **One run.** Every quest that needs the dungeon is in your log before you
-  go in, so one run is enough.
+  go in, so one run is enough; a second only where a follow-up sends you
+  back in.
+- **What is left out, and why.** Each dungeon's section names the quests a
+  guide leaves out: ones that need another dungeon, a raid, a reputation
+  grind or a world event, repeatable ones, and city dungeons' quests for the
+  other faction.
 - **Boss by boss.** Inside, the steps follow the bosses in the order of a
   recorded run where there is one, else in the order of the game's dungeon
   journal, and each step says which kill, drop or object comes there. Every
@@ -227,11 +233,12 @@ Report a wrong step to creazy231 on the addon's page,
 ## Where the facts come from
 
 Every quest, NPC, item and reward comes from the game's data as Polestar's
-reference data holds it (QuestieDB Forever). Entrances, loot and drops come
-from players' recordings collected by Polestar, and each dungeon's size,
-levels and bosses from the game client's own tables. The way through a
-dungeon comes from a run of my own, recorded with Polestar's recorder.
-Nothing comes from websites or other guides.
+reference data holds it (QuestieDB Forever). Entrances, loot, drops and
+where quests start and end inside come from players' recordings collected by
+Polestar, and each dungeon's size, levels and bosses from the game client's
+own tables. The way through a dungeon comes from a run of my own, recorded
+with Polestar's recorder, where I have one, else from the order of the game's
+dungeon journal. Nothing comes from websites or other guides.
 
 Credits: creazy231. Licence: CC-BY-4.0 (see `LICENSE`).
 
