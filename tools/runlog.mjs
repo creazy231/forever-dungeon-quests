@@ -33,7 +33,8 @@ for (const c of chunks) {
 	for (const line of String(c.text ?? "").split("\n")) {
 		const f = line.split("\t");
 		const kind = f[0], t = Number(f[1]) || 0;
-		const at = new Date((epoch + t) * 1000).toISOString().slice(0, 19).replace("T", " ");
+		// dt is tenths of a second since the chunk's server epoch (docs/RECORDING.md).
+		const at = new Date((epoch + t / 10) * 1000).toISOString().slice(0, 19).replace("T", " ");
 		if (kind === "chunk") { epoch = Number(f[3]) || Math.floor(c.at / 1000); continue; }
 		if (kind === "session") { who = `${f[3]} ${f[4]} ${f[5]} level ${f[7]}`; if (cur) cur.who ??= who; continue; }
 		if (kind === "level" && cur) { cur.events.push(`${at} level ${f[2]}`); continue; }
@@ -62,6 +63,8 @@ if (cur) visits.push(cur);
 
 console.log(`# Recorded visits of instance ${target}: ${visits.length}`);
 for (const v of visits) {
+	// The recorder writes some records late with their own time (a kill after its loot): sort by time, ties in write order.
+	v.events = v.events.map((e, i) => [e, i]).sort((x, y) => (x[0].slice(0, 19) < y[0].slice(0, 19) ? -1 : x[0].slice(0, 19) > y[0].slice(0, 19) ? 1 : x[1] - y[1])).map((x) => x[0]);
 	console.log(`\n## ${v.start} ${v.who ?? ""} (entered from ${v.from})`);
 	for (const e of v.events) console.log(`- ${e}`);
 }

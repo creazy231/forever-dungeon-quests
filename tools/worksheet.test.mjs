@@ -77,3 +77,16 @@ test("vendors are named with their zones, all of them", () => {
 	const q = questBlock(worksheet("ruins-of-lordaeron", "H"), 97291);
 	assert.match(q, /97291\.3 item 8923 .*Ezekiel Graves \(npc 4585\) in Undercity/);
 });
+
+test("runlog: times inside a visit never go backwards (dt is tenths of a second)", () => {
+	const log = run("runlog.mjs", ["2998"]);
+	for (const v of log.split("\n## ").slice(1)) {
+		const times = [...v.matchAll(/^- (\d{4}-\d\d-\d\d \d\d:\d\d:\d\d) /gm)].map((m) => m[1]);
+		assert.deepEqual([...times].sort(), times, v.slice(0, 200));
+	}
+});
+
+test("excavation site alliance: a delivery after the relic is no return trip", () => {
+	// 98824 Prehistoric Prism follows 95810 (the relic drops inside) but needs nothing inside.
+	assert.doesNotMatch(questBlock(worksheet("excavation-site-wetlands", "A"), 98824), /RETURN-TRIP/);
+});

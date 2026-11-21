@@ -266,7 +266,8 @@ function questBlock(q, side, out) {
 	const { order, oneOf } = leadIns(q.id);
 	for (const l of order) objectiveLines(l).forEach((o) => o.elsewhere.forEach((x) => elsewhere.add(x)));
 	if (elsewhere.size) flags.push(`OTHER-INSTANCE ${[...elsewhere].join(", ")}`);
-	const trip = order.find((l) => needsDungeon(l) && endsOutside(l));
+	// A second run only when this quest itself needs the dungeon and a lead-in that needs it too is handed in outside.
+	const trip = objs.some((o) => o.inside) && order.find((l) => needsDungeon(l) && endsOutside(l));
 	if (trip) flags.push(`RETURN-TRIP after ${trip} ${quests[trip]?.title ?? ""}`.trim());
 
 	out.push(`\n### ${q.id} ${q.title} (level ${q.level}, from ${q.minLevel ?? "?"}; ${q.faction ? SIDE[q.faction] : "both"})${flags.length ? "  [" + flags.join("] [") + "]" : ""}`);
