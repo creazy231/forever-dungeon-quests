@@ -1,0 +1,292 @@
+guide forever-dungeon-quests/stratholme-horde
+title Stratholme (Horde)
+category Dungeons
+folder Stratholme
+faction Horde
+levels 58-60
+zone Eastern Plaguelands
+coords live
+keywords Stratholme, Eastern Plaguelands, Light's Hope Chapel, Betina Bigglezink, The Flesh Does Not Lie, The Active Agent, Scourge Data, Smokey LaRue, Ezra Grimm, Leonid Barthalomew, Houses of the Holy, Holy Water, Menethil's Gift, Duke Nicholas Zverenhoff, The Archivist, Balnazzar, Above and Beyond, Baron Rivendare, Lord Maxwell Tyrosus, Caretaker Alen, Egan, Restless Souls, Tirion Fordring, Demon Dogs, Redemption, Of Forgotten Memories, Of Lost Honor, Of Love and Family, Artist Renfray, Myranda the Hag, Nathanos Blightcaller, Ramstein the Gorger, Main Gate, Service Gate, dungeon
+why Every Horde quest of Stratholme, with the second run Betina's and the Duke's chains need.
+
+# Stratholme's Horde quests in one guide: Nathanos Blightcaller, Tirion Fordring's chain through
+# the Plaguelands to Artist Renfray, Light's Hope Chapel, Egan by the city, a
+# first run, the hand-ins at Light's Hope, a second run, then the last
+# hand-ins. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The chains:
+# - Tirion Fordring's 5542 Demon Dogs, 5543 Blood Tinged Skies and 5544
+#   Carrion Grubbage -> 5742 Redemption -> 5781 Of
+#   Forgotten Memories -> 5845 Of Lost Honor -> 5846 Of Love and Family (to
+#   Artist Renfray) -> 5848 Of Love and Family (the painting) -> 5861 Find
+#   Myranda.
+# - Betina Bigglezink's 5212 The Flesh Does Not Lie -> 5213 The Active Agent
+#   (the second run).
+# - Duke Nicholas Zverenhoff's 5251 The Archivist -> the Head of Balnazzar's
+#   5262 The Truth Comes Crashing Down -> 5263 Above and Beyond (the second
+#   run) -> 5264 Lord Maxwell Tyrosus.
+# - Smokey LaRue's 5214 The Great Ezra Grimm; Leonid Barthalomew's 5243
+#   Houses of the Holy; Caretaker Alen's 5281 -> Egan's 5282 The Restless
+#   Souls.
+# - For characters who handed in 5462 (in the Scholomance guide), Leonid's
+#   5463 -> 5464 Menethil's Gift.
+# - Nathanos Blightcaller's 6022 To Kill With Purpose, 6042 Un-Life's Little
+#   Annoyances and 6133 The Ranger Lord's Behest -> 6135 Duskwing, Oh How I
+#   Hate Thee... and 6136 The Corpulent One -> 6163 Ramstein.
+#
+# Left out: 7480 Libram of Protection (as in the Dire Maul guide); 5122 The Medallion of Faith (repeatable in the data) and 5125
+# Aurius' Reckoning after it; the repeatable 5063, 5067, 5068 and 8829; 5305,
+# 8869 and 5307 (Blacksmithing quests); 7642 Collection of Goods (the
+# paladin epic mount chain); 5166 (it needs the Upper Blackrock Spire's
+# Gyth); 5265 and on after Lord Maxwell Tyrosus, 5862 and on after Find
+# Myranda; the Dungeon Set 2 and Valthalak quests.
+#
+# Inside: nothing in the data places the bosses or the objects inside, so
+# their goals stand at the main gate (@26.5,10.4, Eastern Plaguelands) with
+# `group 5`. The client's group finder lists two sides, each for five players
+# of level 58 to 60: the Main Gate (the Scarlet half: Hearthsinger Forresten,
+# Timmy the Cruel, Malor the Zealous, Cannon Master Willey, Archivist
+# Galford, Balnazzar) and the Service Gate (the Scourge half: The Unforgiven,
+# Baroness Anastari, Nerub'enkan, Maleki the Pallid, Magistrate Barthilas,
+# Ramstein the Gorger, Baron Rivendare), in the client's dungeon journal's
+# order. Every quest goal is counted by the quest log, so a group that takes
+# them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The quest texts place the painting in the
+#   Scarlet Bastion and the Scourge Data in the ziggurats.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json): the main gate, in the live client's map of
+#   the Eastern Plaguelands, so the guide's coordinates are live ones (`coords
+#   live`). The data places no Service Gate.
+# INGAME: where is the Service Gate, and where inside do the archives,
+#   Menethil's Gift and the Scourge Data stand?
+
+step Tirion Fordring
+  accept 5542
+  accept 5543
+  accept 5544
+
+step Demon Dogs
+  kill 8596 x20 quest 5542.1
+  kill 8597 x20 quest 5542.2
+  kill 8598 x5 quest 5542.3
+
+step Blood Tinged Skies
+  kill 8600 x30 quest 5543.1
+
+step Carrion Grubbage
+  tip The Carrion Grubs and Devourers give their meat.
+  collect 13853 x15 quest 5544.1
+
+step Tirion Fordring
+  turnin 5542
+  turnin 5543
+  turnin 5544
+  accept 5742
+  talk 1855 quest 5742.1
+  turnin 5742
+  accept 5781
+
+step Of Forgotten Memories
+  tip In the Undercroft, at the southernmost part of the Eastern Plaguelands.
+  collect 14613 quest 5781.1
+
+step Tirion Fordring
+  turnin 5781
+  accept 5845
+
+step Of Lost Honor
+  tip In Northdale, in the northeast of the Eastern Plaguelands.
+  collect 14625 quest 5845.1
+
+step Tirion Fordring
+  turnin 5845
+  accept 5846
+
+step Artist Renfray
+  zone Western Plaguelands
+  tip On the island of Caer Darrow.
+  turnin 5846
+  accept 5848
+
+step Nathanos Blightcaller
+  zone Eastern Plaguelands
+  accept 6022
+  accept 6042
+  accept 6133
+
+step To Kill With Purpose
+  tip In Corin's Crossing: collect 7 pieces of Living Rot in under 10 minutes and combine them with the Mortar and Pestle.
+  complete 6022
+
+step Un-Life's Little Annoyances
+  kill 8601 x20 quest 6042.1
+  kill 8602 x10 quest 6042.2
+
+step The Ranger Lord's Behest
+  tip The Quel'Thalas Registry is in the Quel'Lithien lodge.
+  kill 8565 x8 quest 6133.1
+  kill 8564 x8 quest 6133.2
+  kill 8563 x8 quest 6133.3
+  collect 15847 quest 6133.4
+
+step Nathanos Blightcaller
+  turnin 6022
+  turnin 6042
+  turnin 6133
+  accept 6135
+  accept 6136
+
+step Duskwing
+  collect 15850 quest 6135.1
+
+step Borelgore
+  tip In the northern wastes of the Eastern Plaguelands.
+  kill 11896 quest 6136.1
+
+step Nathanos Blightcaller
+  turnin 6135
+  turnin 6136
+  accept 6163
+
+step Betina Bigglezink
+  zone Eastern Plaguelands
+  tip At Light's Hope.
+  accept 5212
+
+step Smokey LaRue
+  accept 5214
+
+step Leonid Barthalomew the Revered
+  accept 5243
+
+step Leonid Barthalomew the Revered
+  when turnedin 5462
+  accept 5463
+
+step Duke Nicholas Zverenhoff
+  accept 5251
+
+step Caretaker Alen
+  accept 5281
+
+step Egan
+  tip Last seen around Stratholme.
+  turnin 5281
+  accept 5282
+
+step To Stratholme
+  tip Two sides for five players of level 58 to 60: the Main Gate here, the Service Gate on the far side of the city.
+  enter "Stratholme" @26.5,10.4
+
+step Flesh, holy water and souls
+  along until leave
+  collect 13174 x10 quest 5212.1 @26.5,10.4 group 5 -- The plagued dead drop Plagued Flesh Samples.
+  collect 13180 x5 quest 5243.1 @26.5,10.4 group 5 -- From the supply crates that litter the city.
+  kill 11122 x15 quest 5282.1 @26.5,10.4 group 5 -- Use Egan's Blaster on the ghostly citizens, then again on the freed souls.
+
+step Ezra Grimm
+  tip His smoke shop holds Grimm's Premium Tobacco.
+  collect 13172 quest 5214.1 @26.5,10.4 group 5
+
+step Archivist Galford
+  tip Destroy him and burn the archives.
+  kill 10811 quest 5251.1 @26.5,10.4 group 5
+  interact 176245 quest 5251.2 @26.5,10.4 group 5
+
+step Balnazzar
+  tip The last of the Main Gate's encounters in the client's journal. Keep his head: it starts The Truth Comes Crashing Down once The Archivist is handed in.
+  collect 13250 @26.5,10.4 group 5
+
+step Of Love and Family
+  tip The painting hangs in the Scarlet Bastion.
+  collect 14679 quest 5848.1 @26.5,10.4 group 5
+
+step Menethil's Gift
+  when onquest 5463
+  tip Place the Keepsake of Remembrance upon it.
+  turnin 5463 object 176631 @26.5,10.4
+  accept 5464 object 176631 @26.5,10.4
+
+step Ramstein the Gorger
+  collect 15880 quest 6163.1 @26.5,10.4 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the flesh, the holy water and the souls, finish it before you go.
+  collect 13174 x10 quest 5212.1 @26.5,10.4 group 5
+  collect 13180 x5 quest 5243.1 @26.5,10.4 group 5
+  kill 11122 x15 quest 5282.1 @26.5,10.4 group 5
+
+step Egan
+  turnin 5282
+
+step Nathanos Blightcaller
+  turnin 6163
+
+step Betina Bigglezink
+  tip At Light's Hope.
+  turnin 5212
+  accept 5213
+
+step Smokey LaRue
+  turnin 5214
+
+step Leonid Barthalomew the Revered
+  turnin 5243
+
+step Leonid Barthalomew the Revered
+  when onquest 5464
+  turnin 5464
+
+step Duke Nicholas Zverenhoff
+  turnin 5251
+
+step The Head of Balnazzar
+  when has 13250
+  accept 5262
+
+step Duke Nicholas Zverenhoff
+  when onquest 5262
+  turnin 5262
+  accept 5263
+
+step Tirion Fordring
+  turnin 5848
+  accept 5861
+
+step Back into Stratholme
+  tip The second run, for the Scourge Data and Baron Rivendare.
+  enter "Stratholme" @26.5,10.4
+
+step The Active Agent
+  tip Search the ziggurats for new Scourge Data.
+  collect 13176 quest 5213.1 @26.5,10.4 group 5
+
+step Baron Rivendare
+  when onquest 5263
+  tip The last encounter in the client's journal.
+  collect 13251 quest 5263.1 @26.5,10.4 group 5
+
+step Betina Bigglezink
+  tip At Light's Hope.
+  turnin 5213
+
+step Duke Nicholas Zverenhoff
+  when onquest 5263
+  turnin 5263
+  accept 5264
+
+step Lord Maxwell Tyrosus
+  when onquest 5264
+  tip Inside the church.
+  turnin 5264
+
+step Myranda the Hag
+  zone Western Plaguelands
+  tip At Uther's Tomb. Show her Tirion's Gift.
+  turnin 5861

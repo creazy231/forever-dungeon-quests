@@ -47,6 +47,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Dire Maul** (Feralas, levels 56 to 60): Horde and Alliance, all three wings. Lethtendris's Web, Elven Legends, Pusillin, Shards of the Felvine, The Madness Within and the Shen'dralar treasure, Knot's quests and the Ogre Suit, the Taste Test, Unfinished Gordok Business, In Demand, Arcane Refreshment, the class books, and every hand-in.
 
 - **Blackrock Spire** (Blackrock Mountain, levels 57 to 60): Horde and Alliance, the Lower Spire first, then both Spires with up to ten players. The Seal of Ascension, Kibler's and Ragged John's quests, Urok Doomhowl, Egg Freezing, the Snakestone, The Demon Forge, the Eye of the Emberseer, Maxwell's and Drakkisath's quests for the Alliance, Warlord's Command to For The Horde! for the Horde, and every hand-in.
+- **Stratholme** (Eastern Plaguelands, levels 58 to 60): Horde and Alliance, both sides and a second run. Tirion Fordring's chain to Of Love and Family, Betina's and the Duke's chains, Ezra Grimm, Houses of the Holy, The Restless Souls, Menethil's Gift, Nathanos' chain to Ramstein for the Horde, and every hand-in.
 - **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
 
 Every one of WoW Forever's new dungeons is in. The classic dungeons follow in later versions.
@@ -166,3 +167,7 @@ Adds Dire Maul for the Horde and the Alliance, all three wings.
 ## Changelog for 2.25.0
 
 Adds Blackrock Spire for the Horde and the Alliance, Lower and Upper.
+
+## Changelog for 2.26.0
+
+Adds Stratholme for the Horde and the Alliance, with a second run.

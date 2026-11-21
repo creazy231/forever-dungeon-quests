@@ -36,6 +36,7 @@ Polestar.
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | Dire Maul | Feralas | Horde, Alliance | 56 to 60 |
 | Blackrock Spire | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 57 to 60 |
+| Stratholme | Eastern Plaguelands | Horde, Alliance | 58 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
 Every one of WoW Forever's new dungeons is in. The classic dungeons, from
@@ -554,6 +555,28 @@ they are the same guides. This addon is where they get their updates.
   Carries and on), Blackhand's Command (Blackwing Lair), Egg Collection (it
   would need a third run), two breadcrumbs, the chromatic armour quests
   (Stratholme, Scholomance), the Dungeon Set 2 and Valthalak quests.
+
+## Stratholme
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Stratholme (Horde) | Tirion Fordring, the Plaguelands | Caer Darrow, Nathanos Blightcaller, Light's Hope, Egan, the city, Light's Hope, the city again, Uther's Tomb |
+| Stratholme (Alliance) | Tirion Fordring, the Plaguelands | Caer Darrow, Light's Hope, Egan, the city, Light's Hope, the city again, Uther's Tomb |
+
+- The client lists two sides, each for five players of level 58 to 60: the
+  Main Gate (the Scarlet half) and the Service Gate (the Scourge half). The
+  guides lead to the main gate; the data places no Service Gate.
+- Both guides run the city twice: The Active Agent and Above and Beyond
+  open only after hand-ins at Light's Hope.
+- Both sides: Tirion Fordring's chain from Demon Dogs to Of Love and Family
+  and Find Myranda, The Flesh Does Not Lie, The Great Ezra Grimm, Houses of
+  the Holy, The Archivist to Lord Maxwell Tyrosus, The Restless Souls, and
+  Menethil's Gift after the Scholomance chain. Alliance Paladins: A Wee Bit
+  O' Necromancy. Horde: Nathanos Blightcaller's chain to Ramstein.
+- Left out: The Medallion of Faith (repeatable) and Aurius' Reckoning after
+  it, the other repeatables, the Blacksmithing quests, the paladin epic
+  mount chain, the chromatic breastplate (Blackrock Spire), the Librams, the
+  Dungeon Set 2 and Valthalak quests.
 
 ## The Shaper's Terrace
 
