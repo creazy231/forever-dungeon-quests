@@ -84,7 +84,7 @@ with one folder per dungeon.
 | Guide | Starts at | Takes you to |
 |---|---|---|
 | Excavation Site: Wetlands (Horde) | Borstan, Orgrimmar | Hammerfall, the Wetlands, the dungeon, Thunder Bluff, Mulgore |
-| Excavation Site: Wetlands (Alliance) | Dorin Songblade, Lakeshire | Menethil Harbor, the Wetlands, the dungeon, Ironforge, back to Lakeshire |
+| Excavation Site: Wetlands (Alliance) | Dorin Songblade, Redridge Mountains | Menethil Harbor, the Wetlands, the dungeon, Ironforge, back to Redridge |
 
 - The dungeon is for five players of level 26 to 33. Its door is in the
   Wetlands.
@@ -103,7 +103,7 @@ with one folder per dungeon.
 | Guide | Starts at | Takes you to |
 |---|---|---|
 | City of Dalaran (Horde) | Doctor Martin Felben, the Undercity | Tarren Mill, Modera's image by the lake, the dungeon, back to Tarren Mill and the Undercity |
-| City of Dalaran (Alliance) | Shylamiir, Stormwind | Southshore, Modera's image by the lake, the dungeon, back to Stormwind |
+| City of Dalaran (Alliance) | Shylamiir, Stormwind | Hillsbrad Foothills, Modera's image by the lake, the dungeon, back to Stormwind |
 
 - The dungeon is for five players of level 28 to 35; its quests start at 30.
   Its door is on the shore of Lordamere Lake, behind Dalaran's sewers.

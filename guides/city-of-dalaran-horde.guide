@@ -57,7 +57,7 @@ why Every Horde quest of the City of Dalaran in one run, lead-ins included.
 #   (data/forever), so the guide starts at 30 and those steps wait for 33.
 
 step Doctor Martin Felben
-  tip In the Apothecarium.
+  tip In the Undercity.
   accept 96988
 
 step Magus Wordeen Voidglare

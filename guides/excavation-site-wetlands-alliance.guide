@@ -13,7 +13,7 @@ reward item 271716 271766 271767
 why Every Alliance quest of the Excavation Site in one run, lead-ins included.
 
 # The Excavation Site's Alliance quests in one guide: Dorin Songblade in
-# Lakeshire, the pick-ups and lead-ins in Menethil Harbor and the Wetlands,
+# Redridge, the pick-ups and lead-ins in Menethil Harbor and the Wetlands,
 # one run through the dungeon, then the hand-ins. Steps already done are
 # passed over, so the guide picks up wherever the chain stands.
 #
@@ -59,7 +59,7 @@ why Every Alliance quest of the Excavation Site in one run, lead-ins included.
 #   Horror stand?
 
 step Dorin Songblade
-  tip In Lakeshire.
+  tip In Redridge Mountains.
   accept 95772
 
 step James Halloran

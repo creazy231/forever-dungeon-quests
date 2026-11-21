@@ -103,7 +103,7 @@ step A Recipe For Death
 
 step Master Apothecary Faranell
   zone Undercity
-  tip In the Apothecarium.
+  tip In the Undercity.
   turnin 447
   accept 450
 

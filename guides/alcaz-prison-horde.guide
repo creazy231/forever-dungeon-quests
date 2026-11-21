@@ -123,7 +123,7 @@ step Sergeant Ulka
 
 step Connery's Trunk
   zone Westfall
-  tip In Moonbrook, in Westfall: Alliance country, mind its guards on the way.
+  tip In Westfall: Alliance country, mind its guards on the way.
   turnin 96337
 
 step Eitrigg

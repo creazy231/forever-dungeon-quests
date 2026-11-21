@@ -44,7 +44,7 @@ why Every Alliance quest of the Shaper's Terrace in one run.
 #   the explorer's map, and who gives Digestible Research?
 
 step Curator Thorius
-  tip In the Hall of Explorers.
+  tip In Ironforge.
   accept 95924
   accept 95925
 

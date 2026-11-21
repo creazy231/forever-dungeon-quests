@@ -13,7 +13,7 @@ reward item 251962 279849
 why Every Alliance quest of the City of Dalaran in one run, lead-in included.
 
 # The City of Dalaran's Alliance quests in one guide: the pick-ups in
-# Stormwind, Emissary Jacques in Southshore, the Image of Archmage Modera by
+# Stormwind, Emissary Jacques in Hillsbrad Foothills, the Image of Archmage Modera by
 # the lake, one run through the dungeon, then the hand-ins. Steps already done
 # are passed over, so the guide picks up wherever the chain stands.
 #
@@ -64,7 +64,6 @@ step High Sorcerer Andromath
 
 step Emissary Jacques
   zone Hillsbrad Foothills
-  tip In Southshore.
   accept 92432
 
 step Image of Archmage Modera

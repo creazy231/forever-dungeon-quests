@@ -62,7 +62,7 @@ step Archmage Lan'dalock
 
 step Master Mathias Shaw
   zone Stormwind City
-  tip At SI:7.
+  tip In Stormwind.
   accept 95194
 
 step Sully McCleary
@@ -127,7 +127,6 @@ step Sully McCleary
 
 step Connery's Trunk
   zone Westfall
-  tip In Moonbrook.
   turnin 96337
 
 step Master Mathias Shaw

@@ -41,7 +41,7 @@ why Every Horde quest of the Shaper's Terrace in one run.
 #   crystals and the Achromatic Crystal stand?
 
 step Master Apothecary Faranell
-  tip In the Apothecarium.
+  tip In the Undercity.
   accept 95926
 
 step Chemist Fuely
