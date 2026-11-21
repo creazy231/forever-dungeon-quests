@@ -100,3 +100,13 @@ test("a door on a map whose era and Forever frames differ is flagged", () => {
 	assert.match(worksheet("stormwind-stockade", "A"), /FRAME-DIFF/);
 	assert.doesNotMatch(worksheet("the-hall-of-thanes", "A"), /FRAME-DIFF/);
 });
+
+test("the door is the curated entrance (players walking in), not the Codex page's point", () => {
+	assert.match(worksheet("the-hall-of-thanes", "A"), /- entrance: Ironforge 28\.3,47\.6/);
+	assert.match(worksheet("ruins-of-lordaeron", "H"), /- entrance: Tirisfal Glades 63\.2,67\.5/);
+});
+
+test("a quest the data flags repeatable is flagged", () => {
+	// 96246 Blackmaw Pouches (Ekkal's follow-up) is not repeatable in the data.
+	assert.doesNotMatch(worksheet("blackmaw-hold", "H"), /96246[^\n]*REPEATABLE/);
+});

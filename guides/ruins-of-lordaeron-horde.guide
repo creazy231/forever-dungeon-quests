@@ -41,7 +41,7 @@ why Every Horde quest of the Ruins of Lordaeron in one run, lead-ins included.
 #
 # Inside: nothing in the data places the bosses, The Baron, the crest or
 # Edward Heartweaver's trail inside, so their goals stand at the door
-# (@72.7,11.5, the Undercity's map) with `group 5`. The bosses come in the
+# (@63.2,67.5, Tirisfal Glades) with `group 5`. The bosses come in the
 # order of the client's dungeon journal (Witherfang, The Abandoned, The
 # Butcher, the Lordaeron Captain, Viktor the Vile, Bjork, Rath'mael), not of a
 # recorded run. Every quest goal is counted by the quest log, so a group that
@@ -117,6 +117,7 @@ step Apothecary Renferrel
   accept 451
 
 step Lordamere Lake
+  level 18
   tip The Lake Skulkers and Lake Creepers carry the moss; the Vile Fin murlocs carry the tumor.
   collect 3256 x6 quest 451.1
   collect 3257 x6 quest 451.2
@@ -130,41 +131,43 @@ step Theodore Griffs
   accept 95216
 
 step To the Ruins of Lordaeron
+  zone Tirisfal Glades
   tip A dungeon for five players of level 15 to 22, by the Undercity.
-  enter "Ruins of Lordaeron" @72.7,11.5
+  enter "Ruins of Lordaeron" @63.2,67.5
 
 step Intact Limbs
   along until leave
-  collect 268580 x25 quest 92421.1 @72.7,11.5 group 5 -- The skeletons, ghouls and cadavers inside drop them.
+  collect 268580 x25 quest 92421.1 @63.2,67.5 group 5 -- The skeletons, ghouls and cadavers inside drop them.
 
 step Witherfang
   tip The first boss in the client's journal. He drops the Highly Toxic Strain for Theodore Griffs.
-  collect 275443 quest 95216.1 @72.7,11.5 group 5
+  collect 275443 quest 95216.1 @63.2,67.5 group 5
 
 step Edward Heartweaver
   tip Tabitha's quest completes once you find out what became of Edward in the ruins.
-  complete 92401 @72.7,11.5 group 5
+  complete 92401 @63.2,67.5 group 5
 
 step The Baron
   tip An elite inside, not one of the journal's bosses. He drops the Abominable Head, which starts a quest for Master Apothecary Faranell.
-  collect 280438 @72.7,11.5 group 5
-  accept 97288 @72.7,11.5
+  collect 280438 @63.2,67.5 group 5
+  accept 97288 @63.2,67.5
 
 step The Crest of Lordaeron
   tip A crest lies in the ruins. It starts a quest for Oran Snakewrithe in the Undercity.
-  collect 275521 @72.7,11.5 group 5
-  accept 95204 @72.7,11.5
+  collect 275521 @63.2,67.5 group 5
+  accept 95204 @63.2,67.5
 
 step Rath'mael
   tip The last boss in the client's journal, for Deathguard Kristof. The Abandoned, The Butcher, the Lordaeron Captain, Viktor the Vile and Bjork come between Witherfang and him; no quest needs them.
-  kill 250657 quest 92422.1 @72.7,11.5 group 5
+  kill 250657 quest 92422.1 @63.2,67.5 group 5
 
 step Before you leave
   label leave
   tip Whatever is still short of the 25 Intact Limbs, finish it before you go.
-  collect 268580 x25 quest 92421.1 @72.7,11.5 group 5
+  collect 268580 x25 quest 92421.1 @63.2,67.5 group 5
 
 step Master Apothecary Faranell
+  zone Undercity
   turnin 97288
   accept 97289
 

@@ -42,7 +42,7 @@ why Every Alliance quest of the Deadmines in one run, with the Defias Brotherhoo
 # Moon-Kissed Blade, wants three items the data gives no source for.
 #
 # Inside: nothing in the data places the bosses or the forge inside, so their
-# goals stand at the door (@41.9,72.8, Westfall) with `group 5`. The bosses
+# goals stand at the door (@42.5,71.7, Westfall) with `group 5`. The bosses
 # come in the order of the client's dungeon journal (Rhahk'Zor, Sneed, Miner
 # Johnson, Gilnid, Captain Greenskin, Mr. Smite, Cookie, Edwin VanCleef), not
 # of a recorded run. Every quest goal is counted by the quest log, so a group
@@ -133,8 +133,8 @@ step Sprite Jumpsprocket
   accept 92750
 
 step Rough Dynamite
-  tip An engineer's make: craft it or buy it.
-  collect 4358 x10 anywhere
+  tip Buy it at the Auction House, unless you have it.
+  auction 4358 x10
 
 step Jasper Fel
   turnin 92750
@@ -179,30 +179,30 @@ step Alba Fairmoon
 
 step To the Deadmines
   tip A dungeon for five players of level 17 to 26.
-  enter "The Deadmines" @41.9,72.8
+  enter "The Deadmines" @42.5,71.7
 
 step Red Silk Bandanas
   along until leave
-  collect 915 x10 quest 214.1 @41.9,72.8 group 5 -- The Defias inside drop them, the Defias Watchmen too.
+  collect 915 x10 quest 214.1 @42.5,71.7 group 5 -- The Defias inside drop them, the Defias Watchmen too.
 
 step Sneed's Shredder
   tip Rhahk'Zor comes first in the client's journal, then Sneed in his Shredder. The Shredder gives up the Gnoam Sprecklesprocket.
-  collect 7365 quest 2040.1 @41.9,72.8 group 5
+  collect 7365 quest 2040.1 @42.5,71.7 group 5
 
 step The forge
   tip Find the forge hidden in the mines and plant Alba's explosives nearby.
-  complete 92753 @41.9,72.8 group 5
+  complete 92753 @42.5,71.7 group 5
 
 step Edwin VanCleef
   tip The last boss in the client's journal, after Miner Johnson, Gilnid, Captain Greenskin, Mr. Smite and Cookie. He drops his head for Gryan, and An Unsent Letter, which starts a quest for Stormwind.
-  collect 3637 quest 166.1 @41.9,72.8 group 5
-  collect 2874 @41.9,72.8 group 5
-  accept 373 @41.9,72.8
+  collect 3637 quest 166.1 @42.5,71.7 group 5
+  collect 2874 @42.5,71.7 group 5
+  accept 373 @42.5,71.7
 
 step Before you leave
   label leave
   tip Whatever is still short of the bandanas, finish it before you go.
-  collect 915 x10 quest 214.1 @41.9,72.8 group 5
+  collect 915 x10 quest 214.1 @42.5,71.7 group 5
 
 step Alba Fairmoon
   tip At the mines' exit.

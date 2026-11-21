@@ -54,6 +54,14 @@ const objects = load("objects.json");
 const zones = load("zones.json");
 const races = load("races.json");
 const frames = load("map-frames.json");
+// The curated door: players' recordings of where they walked in (Polestar's data/codex/entrances.json).
+const curated = (() => {
+	try {
+		const e = JSON.parse(fs.readFileSync(path.join(opts.data, "..", "codex", "entrances.json"), "utf8")).entrances;
+		const list = Array.isArray(e) ? e : Object.entries(e).map(([key, v]) => ({ key, ...v }));
+		return list.find((x) => x.key === opts.key) ?? null;
+	} catch { return null; }
+})();
 
 const { summary, page } = codex;
 const map = summary.map;
@@ -264,6 +272,7 @@ function questBlock(q, side, out) {
 	const dq = quests[q.id];
 	const flags = [];
 	if (!shipped.has(q.id)) flags.push("NOT-IN-SHIPPED-DATA");
+	if (dq?.repeatable) flags.push("REPEATABLE");
 	const objs = objectiveLines(q.id);
 	const elsewhere = new Set(objs.flatMap((o) => o.elsewhere));
 	const { order, oneOf } = leadIns(q.id);
@@ -310,10 +319,13 @@ function chainLine(id, out) {
 
 function sideSection(side) {
 	const out = [];
-	const ent = page.entrance ?? summary.entrance;
+	const ent = curated ?? page.entrance ?? summary.entrance;
 	out.push(`# ${summary.name} (${opts.key}): ${SIDE[side]}`);
 	out.push(`- levels ${summary.minLevel}-${summary.maxLevel} (floor ${summary.floor}), ${summary.players} players${summary.playersMax ? ` (up to ${summary.playersMax})` : ""}, instance map ${map}, zone ${summary.zoneName ?? zoneName(summary.zone)} (${summary.zone})`);
 	out.push(`- entrance: ${ent ? `${zoneName(ent.map)} ${ent.x},${ent.y}` : "none in the data"}`);
+	const pe = page.entrance;
+	if (curated && pe && (pe.map !== curated.map || Math.hypot(pe.x - curated.x, pe.y - curated.y) > 0.5))
+		out.push(`- (the Codex page's point is ${zoneName(pe.map)} ${pe.x},${pe.y}: a last outdoor position; the door above is the curated one)`);
 	if (ent && JSON.stringify(frames.era?.[ent.map]) !== JSON.stringify(frames.forever?.[ent.map]))
 		out.push(`- FRAME-DIFF: ${zoneName(ent.map)}'s era and Forever map frames differ; the door point is Forever's, so typed coordinates there need \`live\` (or \`coords live\`)`);
 	if (CITY[opts.key] && CITY[opts.key] !== side) out.push(`- CITY-OTHER-SIDE: a city dungeon of the ${SIDE[CITY[opts.key]]}; no ${SIDE[side]} guide`);

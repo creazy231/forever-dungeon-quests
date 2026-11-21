@@ -29,7 +29,7 @@ why Every Horde quest of Blackfathom Deeps in one run, lead-in included.
 # Ruins, which have no giver in the data.
 #
 # Inside: nothing in the data places the bosses, Thaelrid or the Fathom Stone
-# inside, so their goals stand at the door (@15.1,13.2, Ashenvale) with
+# inside, so their goals stand at the door (@14.5,14.2, Ashenvale) with
 # `group 5`. The bosses come in the order of the client's dungeon journal
 # (Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett, Old Serra'kis, Twilight
 # Lord Kelris, Aku'mai; Baron Aquanis optional), not of a recorded run. Every
@@ -77,24 +77,24 @@ step Je'neu Sancrea
 
 step To Blackfathom Deeps
   tip A dungeon for five players of level 24 to 32.
-  enter "Blackfathom Deeps" @15.1,13.2
+  enter "Blackfathom Deeps" @14.5,14.2
 
 step Argent Guard Thaelrid
   tip He waits inside, with a quest for the Horde too.
-  accept 6561 @15.1,13.2
+  accept 6561 @14.5,14.2
 
 step The Fathom Stone
-  collect 16762 quest 6921.1 @15.1,13.2 group 5
+  collect 16762 quest 6921.1 @14.5,14.2 group 5
 
 step Lorgus Jett
   when onquest 6565
   tip The fourth boss in the client's journal, after Ghamoo-ra, Lady Sarevess and Geilhast.
-  kill 12902 quest 6565.1 @15.1,13.2 group 5
+  kill 12902 quest 6565.1 @14.5,14.2 group 5
 
 step Twilight Lord Kelris
   tip The sixth boss in the client's journal, after Old Serra'kis; Aku'mai comes last. Kelris' head is for Bashana Runetotem. Baron Aquanis, a boss off the journal's line, may drop a Strange Water Globe, which starts a quest.
-  collect 5881 quest 6561.1 @15.1,13.2 group 5
-  collect 16782 @15.1,13.2 optional -- The Strange Water Globe, if you meet Baron Aquanis.
+  collect 5881 quest 6561.1 @14.5,14.2 group 5
+  collect 16782 @14.5,14.2 optional -- The Strange Water Globe, if you meet Baron Aquanis.
 
 step Baron Aquanis
   when has 16782

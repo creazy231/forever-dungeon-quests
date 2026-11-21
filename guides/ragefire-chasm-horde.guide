@@ -29,7 +29,7 @@ why Every Horde quest of Ragefire Chasm in one run, lead-ins included.
 # Horde (its door is in Orgrimmar), so the pack has no Alliance guide for it.
 #
 # Inside: nothing in the data places the bosses or Maur Grimtotem inside, so
-# their goals stand at the door (@49.3,95.1, Orgrimmar) with `group 5`. The
+# their goals stand at the door (@52.6,49.0, Orgrimmar) with `group 5`. The
 # bosses come in the order of the client's dungeon journal (Oggleflint,
 # Taragaman the Hungerer, Jergosh the Invoker, Bazzalan), not of a recorded
 # run. Every quest goal is counted by the quest log, so a group that takes
@@ -84,36 +84,36 @@ step Varimathras
 step To Ragefire Chasm
   zone Orgrimmar
   tip A dungeon for five players of level 13 to 18. Its door is in Orgrimmar.
-  enter "Ragefire Chasm" @49.3,95.1
+  enter "Ragefire Chasm" @52.6,49.0
 
 step Troggs, shamans and the books
   along until leave
-  kill 11318 x8 quest 5723.1 @49.3,95.1 group 5
-  kill 11319 x8 quest 5723.2 @49.3,95.1 group 5
-  collect 14395 quest 5725.1 @49.3,95.1 group 5 -- The Searing Blade Cultists and Warlocks carry the books.
-  collect 14396 quest 5725.2 @49.3,95.1 group 5
+  kill 11318 x8 quest 5723.1 @52.6,49.0 group 5
+  kill 11319 x8 quest 5723.2 @52.6,49.0 group 5
+  collect 14395 quest 5725.1 @52.6,49.0 group 5 -- The Searing Blade Cultists and Warlocks carry the books.
+  collect 14396 quest 5725.2 @52.6,49.0 group 5
 
 step Maur Grimtotem
   tip His corpse lies in the chasm. Search it: the satchel is for Rahauro.
-  turnin 5722 @49.3,95.1
-  accept 5724 @49.3,95.1
+  turnin 5722 @52.6,49.0
+  accept 5724 @52.6,49.0
 
 step Taragaman the Hungerer
   tip Oggleflint comes before him in the client's journal. Taragaman's heart is for Neeru Fireblade.
-  collect 14540 quest 5761.1 @49.3,95.1 group 5
+  collect 14540 quest 5761.1 @52.6,49.0 group 5
 
 step Jergosh and Bazzalan
   tip The last two bosses in the client's journal, for Thrall.
-  kill 11518 quest 5728.2 @49.3,95.1 group 5
-  kill 11519 quest 5728.1 @49.3,95.1 group 5
+  kill 11518 quest 5728.2 @52.6,49.0 group 5
+  kill 11519 quest 5728.1 @52.6,49.0 group 5
 
 step Before you leave
   label leave
   tip Whatever is still short of the troggs, the shamans and the books, finish it before you go.
-  kill 11318 x8 quest 5723.1 @49.3,95.1 group 5
-  kill 11319 x8 quest 5723.2 @49.3,95.1 group 5
-  collect 14395 quest 5725.1 @49.3,95.1 group 5
-  collect 14396 quest 5725.2 @49.3,95.1 group 5
+  kill 11318 x8 quest 5723.1 @52.6,49.0 group 5
+  kill 11319 x8 quest 5723.2 @52.6,49.0 group 5
+  collect 14395 quest 5725.1 @52.6,49.0 group 5
+  collect 14396 quest 5725.2 @52.6,49.0 group 5
 
 step Thrall
   turnin 5728

@@ -29,7 +29,7 @@ why Every Horde quest of Alcaz Prison in one run, lead-ins included.
 # Left out: nothing of the Horde's.
 #
 # Inside: nothing in the data places the bosses, Folkar or Mason Connery
-# inside, so their goals stand at the door (@75.4,14.0, Alcaz Island) with
+# inside, so their goals stand at the door (@75.4,13.9, Alcaz Island) with
 # `group 5`. The bosses come in the order of the client's dungeon journal
 # (Overseer Wrex, Tidemistress Ca'zass, Katerina the Cleaner, The Questioner,
 # Blazeroar), not of a recorded run; the journal ties No Orc Left Behind to
@@ -56,7 +56,7 @@ why Every Horde quest of Alcaz Prison in one run, lead-ins included.
 #   it, so its step only applies while the box is in your bags.
 
 step Nazeer Bloodpike
-  tip In the Barrens.
+  tip In the Barrens; he also stands in Dustwallow Marsh.
   accept 95284
 
 step Sergeant Ulka
@@ -73,50 +73,50 @@ step Sergeant Ulka
 
 step To Alcaz Prison
   tip A dungeon for five players of level 48 to 55. Elite Strashaz naga of level 59 to 61 crowd the island around the door.
-  enter "Alcaz Prison" @75.4,14.0
+  enter "Alcaz Prison" @75.4,13.9
 
 step Naga and bandanas
   along until leave
-  kill 255995 x15 quest 96332.1 @75.4,14.0 group 5
-  kill 255373 x8 quest 96332.2 @75.4,14.0 group 5
-  collect 274028 x8 quest 96334.1 @75.4,14.0 group 5 -- The human guards drop them.
+  kill 255995 x15 quest 96332.1 @75.4,13.9 group 5
+  kill 255373 x8 quest 96332.2 @75.4,13.9 group 5
+  collect 274028 x8 quest 96334.1 @75.4,13.9 group 5 -- The human guards drop them.
 
 step Tidemistress Ca'zass
   tip Overseer Wrex comes before her in the client's journal. She drops her head for Sergeant Ulka.
-  collect 273883 quest 96332.3 @75.4,14.0 group 5
+  collect 273883 quest 96332.3 @75.4,13.9 group 5
 
 step Commander Folkar
   tip The client's journal ties him to Katerina the Cleaner, the third boss.
-  turnin 95309 @75.4,14.0
-  accept 95454 @75.4,14.0
+  turnin 95309 @75.4,13.9
+  accept 95454 @75.4,13.9
 
 step Mason Connery
   tip A prisoner. Take his quest before The Questioner dies: the key drops only while it is in your log.
-  accept 96335 @75.4,14.0
+  accept 96335 @75.4,13.9
 
 step The Questioner
   tip The fourth boss in the client's journal. He drops the Ornate Shackle Key.
-  collect 274029 quest 96335.1 @75.4,14.0 group 5
+  collect 274029 quest 96335.1 @75.4,13.9 group 5
 
 step Mason Connery
-  turnin 96335 @75.4,14.0
-  accept 96337 @75.4,14.0
+  turnin 96335 @75.4,13.9
+  accept 96337 @75.4,13.9
 
 step Blazeroar
   tip The last boss. The client's journal ties The Honor of the Kor'kron to him: what became of King Varian, back to Folkar.
-  turnin 95454 @75.4,14.0
-  accept 96369 @75.4,14.0
+  turnin 95454 @75.4,13.9
+  accept 96369 @75.4,13.9
 
 step Commander Folkar
-  turnin 96369 @75.4,14.0
-  accept 95483 @75.4,14.0
+  turnin 96369 @75.4,13.9
+  accept 95483 @75.4,13.9
 
 step Before you leave
   label leave
   tip Whatever is still short for A Little Payback and the bandanas, finish it before you go.
-  kill 255995 x15 quest 96332.1 @75.4,14.0 group 5
-  kill 255373 x8 quest 96332.2 @75.4,14.0 group 5
-  collect 274028 x8 quest 96334.1 @75.4,14.0 group 5
+  kill 255995 x15 quest 96332.1 @75.4,13.9 group 5
+  kill 255373 x8 quest 96332.2 @75.4,13.9 group 5
+  collect 274028 x8 quest 96334.1 @75.4,13.9 group 5
 
 step Sergeant Ulka
   turnin 96332

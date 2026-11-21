@@ -30,7 +30,7 @@ why Every Alliance quest of Blackfathom Deeps in one run, lead-in included.
 # Ruins, which have no giver in the data.
 #
 # Inside: nothing in the data places the bosses, Thaelrid or the chest
-# inside, so their goals stand at the door (@15.1,13.2, Ashenvale) with
+# inside, so their goals stand at the door (@14.5,14.2, Ashenvale) with
 # `group 5`. The bosses come in the order of the client's dungeon journal
 # (Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett, Old Serra'kis, Twilight
 # Lord Kelris, Aku'mai), not of a recorded run. Every quest goal is counted by
@@ -75,31 +75,31 @@ step Gershala Nightwhisper
 step To Blackfathom Deeps
   zone Ashenvale
   tip A dungeon for five players of level 24 to 32.
-  enter "Blackfathom Deeps" @15.1,13.2
+  enter "Blackfathom Deeps" @14.5,14.2
 
 step Brain stems and pendants
   along until leave
-  collect 5952 x8 quest 1275.1 @15.1,13.2 group 5 -- The naga and satyrs inside drop them, Lady Sarevess too.
-  collect 5879 x10 quest 1199.1 @15.1,13.2 group 5 -- The Twilight cultists drop them.
+  collect 5952 x8 quest 1275.1 @14.5,14.2 group 5 -- The naga and satyrs inside drop them, Lady Sarevess too.
+  collect 5879 x10 quest 1199.1 @14.5,14.2 group 5 -- The Twilight cultists drop them.
 
 step Argent Guard Thaelrid
   tip He waits inside.
-  turnin 1198 @15.1,13.2
-  accept 1200 @15.1,13.2
+  turnin 1198 @14.5,14.2
+  accept 1200 @14.5,14.2
 
 step The Lorgalis Manuscript
   tip In a Pitted Iron Chest inside.
-  collect 5359 quest 971.1 @15.1,13.2 group 5
+  collect 5359 quest 971.1 @14.5,14.2 group 5
 
 step Twilight Lord Kelris
   tip The sixth boss in the client's journal, after Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett and Old Serra'kis; Aku'mai comes last. Kelris' head is for Dawnwatcher Selgorm.
-  collect 5881 quest 1200.1 @15.1,13.2 group 5
+  collect 5881 quest 1200.1 @14.5,14.2 group 5
 
 step Before you leave
   label leave
   tip Whatever is still short of the brain stems and the pendants, finish it before you go.
-  collect 5952 x8 quest 1275.1 @15.1,13.2 group 5
-  collect 5879 x10 quest 1199.1 @15.1,13.2 group 5
+  collect 5952 x8 quest 1275.1 @14.5,14.2 group 5
+  collect 5879 x10 quest 1199.1 @14.5,14.2 group 5
 
 step Gershala Nightwhisper
   zone Darkshore

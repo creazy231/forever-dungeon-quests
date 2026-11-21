@@ -5,7 +5,7 @@ folder The Shaper's Terrace
 faction Alliance
 levels 60-60
 zone Ironforge
-keywords Shaper's Terrace, Un'Goro Crater, Curator Thorius, Hall of Explorers, Ironforge, Venomridge, ravasaur, Ironhide Ravasaur, Ravasaur Matriarch, explorer's map, landmarks, Titanosaur, Nanaya, dungeon
+keywords Shaper's Terrace, Un'Goro Crater, Curator Thorius, Hall of Explorers, Ironforge, Venomridge, ravasaur, Ironhide Ravasaur, Ravasaur Matriarch, Cartographer's Kit, landmarks, Titanosaur, Nanaya, dungeon
 why Every Alliance quest of the Shaper's Terrace in one run.
 
 # The Shaper's Terrace's Alliance quests in one guide: Curator Thorius in
@@ -13,8 +13,8 @@ why Every Alliance quest of the Shaper's Terrace in one run.
 #
 # The quests: Curator Thorius' 95924 Panic at the Digsite (Venomridge, six
 # Ravasaur Matriarchs, nine Ironhide Ravasaurs) and 95925 Mapping the Way
-# Forward (the explorer's map, item 271770, filled out at the landmarks
-# inside).
+# Forward (the Explorers' League Cartographer's Kit, item 271770, used
+# at the landmarks inside).
 #
 # Left out: 95790 Digestible Research (fifteen journal pages from the
 # ravasaurs inside, for Curator Thorius): the data names no giver for it,
@@ -33,7 +33,7 @@ why Every Alliance quest of the Shaper's Terrace in one run.
 # - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
 #   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
 #   the dungeon. Mapping the Way Forward has no objective in the data; the
-#   quest gives you the explorer's map.
+#   quest gives you the Explorers' League Cartographer's Kit.
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, level
 #   60).
@@ -41,7 +41,7 @@ why Every Alliance quest of the Shaper's Terrace in one run.
 #   the door, and the data places nothing inside. They stay without, rather
 #   than at a guessed point.
 # INGAME: where is the Shaper's Terrace's door? Where are the landmarks for
-#   the explorer's map, and who gives Digestible Research?
+#   the Cartographer's Kit, and who gives Digestible Research?
 
 step Curator Thorius
   tip In Ironforge.
@@ -58,12 +58,12 @@ step The ravasaurs
   kill 261786 x9 quest 95924.3 group 5
 
 step Venomridge
-  tip The fourth boss in the client's journal, after the Titanosaur, the Ravasaur Hunters and Thunderhoof.
+  tip The fourth boss in the client's journal, after the Titanosaur, the Ravasaur Hunters and Thunderhoof. Digestible Research has no giver in the game's data: if you have it, the ravasaurs here drop its fifteen journal pages, for Curator Thorius.
   kill 261813 quest 95924.1 group 5
 
 step Before you leave
   label leave
-  tip Whatever is still short of the ravasaurs, finish it, and fill out the explorer's map at the landmarks before you go. Seven more bosses follow Venomridge in the client's journal, Nanaya the last; no quest needs them.
+  tip Whatever is still short of the ravasaurs, finish it, and use the Cartographer's Kit at the landmarks before you go. Seven more bosses follow Venomridge in the client's journal, Nanaya the last; no quest needs them.
   kill 253215 x6 quest 95924.2 group 5
   kill 261786 x9 quest 95924.3 group 5
 

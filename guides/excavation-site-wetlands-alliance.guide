@@ -36,7 +36,7 @@ why Every Alliance quest of the Excavation Site in one run, lead-ins included.
 # back is far off this route.
 #
 # Inside: nothing in the data places anything inside, so the goals stand at
-# the door (@50.8,61.1) with `group 5`. The bosses come in the order of a run
+# the door (@47.8,56.2) with `group 5`. The bosses come in the order of a run
 # of my own (as a Horde character: Saltspine, Shadetooth, then the Relic
 # Guardian) with the Highland Horror where the client's journal puts him,
 # third; that run did not meet him. Every quest goal is counted by the quest
@@ -109,36 +109,36 @@ step Rethiel the Greenwarden
 
 step To the Excavation Site
   tip A dungeon for five players of level 26 to 33.
-  enter "Excavation Site: Wetlands" @50.8,61.1
+  enter "Excavation Site: Wetlands" @47.8,56.2
 
 step Thicket Raptor Hides
   along until leave
-  collect 284845 x4 quest 98815.1 @50.8,61.1 group 5 -- The Thicket raptors and Shadetooth drop them.
+  collect 284845 x4 quest 98815.1 @47.8,56.2 group 5 -- The Thicket raptors and Shadetooth drop them.
 
 step Ardin Grassman
   tip Caitlin's husband is somewhere in the site. He has a quest back to her.
-  talk 262681 quest 95647.1 @50.8,61.1
-  turnin 95647 @50.8,61.1
-  accept 95809 @50.8,61.1
+  talk 262681 quest 95647.1 @47.8,56.2
+  turnin 95647 @47.8,56.2
+  accept 95809 @47.8,56.2
 
 step Daewyn Songblade
   tip Dorin's brother is somewhere in the site. He has a quest back to Dorin.
-  turnin 95772 @50.8,61.1
-  accept 95795 @50.8,61.1
+  turnin 95772 @47.8,56.2
+  accept 95795 @47.8,56.2
 
 step Highland Horror
-  tip Saltspine and Shadetooth come first. The Highland Horror, third in the client's journal, drops the Horrible Rootcore.
-  collect 270180 quest 95646.1 @50.8,61.1 group 5
+  tip Third in the client's journal, after Saltspine and Shadetooth; my run did not meet him. The Highland Horror drops the Horrible Rootcore.
+  collect 270180 quest 95646.1 @47.8,56.2 group 5
 
 step Relic Guardian
   tip The last boss. He drops a Titan Relic, which starts a quest for Prospector Whelgar.
-  collect 270865 @50.8,61.1 group 5
-  accept 95810 @50.8,61.1
+  collect 270865 @47.8,56.2 group 5
+  accept 95810 @47.8,56.2
 
 step Before you leave
   label leave
   tip Whatever is still short of the four hides, finish it before you go.
-  collect 284845 x4 quest 98815.1 @50.8,61.1 group 5
+  collect 284845 x4 quest 98815.1 @47.8,56.2 group 5
 
 step Rethiel the Greenwarden
   turnin 95646

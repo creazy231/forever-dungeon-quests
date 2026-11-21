@@ -26,7 +26,7 @@ why Every Horde quest of the Excavation Site in one run, lead-in included.
 # Left out: nothing of the Horde's.
 #
 # Inside: nothing in the data places anything inside, so the goals stand at
-# the door (@50.8,61.1) with `group 5`. The steps follow a run of my own:
+# the door (@47.8,56.2) with `group 5`. The steps follow a run of my own:
 # Saltspine, the raptors and Shadetooth, the Dragonmaw, then the Relic
 # Guardian. Every quest goal is counted by the quest log, so a group that
 # takes them in another order still gets each step ticked.
@@ -36,7 +36,7 @@ why Every Horde quest of the Excavation Site in one run, lead-in included.
 #   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
 #   the dungeon.
 # - The door: players' recordings, as Polestar's Codex holds them
-#   (data/codex/entrances.json); my own run went in at the same point.
+#   (data/codex/entrances.json).
 # - A run of my own on 2026-11-12 (Horde, five players, level 33), recorded
 #   with Polestar's recorder and shared with Polestar Client: Saltspine,
 #   then the Thicket raptors (the meat from Thicket Hunters and Lurkers) and
@@ -64,22 +64,22 @@ step Deathstalker Agent
 
 step To the Excavation Site
   tip A dungeon for five players of level 26 to 33.
-  enter "Excavation Site: Wetlands" @50.8,61.1
+  enter "Excavation Site: Wetlands" @47.8,56.2
 
 step Shadetooth and the raptors
   tip Saltspine comes first. Past him, the Thicket Hunters and Lurkers drop the raptor meat, and so does Shadetooth.
-  collect 271100 quest 95697.1 @50.8,61.1 group 5
+  collect 271100 x4 quest 95697.1 @47.8,56.2 group 5
 
 step The Dragonmaw
   tip The Dragonmaw hold the next part of the site. A Dragonmaw Thaumaturgist drops the Dispatch.
-  kill 275045 x2 quest 95682.1 @50.8,61.1 group 5
-  kill 275044 x4 quest 95682.2 @50.8,61.1 group 5
-  collect 284844 quest 95682.3 @50.8,61.1 group 5
+  kill 275045 x2 quest 95682.1 @47.8,56.2 group 5
+  kill 275044 x4 quest 95682.2 @47.8,56.2 group 5
+  collect 284844 quest 95682.3 @47.8,56.2 group 5
 
 step Relic Guardian
   tip The last boss. He drops a Titan Relic, which starts a quest for Thunder Bluff.
-  collect 270866 @50.8,61.1 group 5
-  accept 95664 @50.8,61.1
+  collect 270866 @47.8,56.2 group 5
+  accept 95664 @47.8,56.2
 
 step Deathstalker Agent
   turnin 95682

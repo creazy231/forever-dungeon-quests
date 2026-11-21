@@ -25,7 +25,7 @@ why Every Alliance quest of the Wailing Caverns in one run, lead-in included.
 # are the Horde's only.
 #
 # Inside: nothing in the data places the bosses inside, so their goals stand
-# at the door (@46.7,35.7, The Barrens) with `group 5`. The bosses come in the
+# at the door (@46.0,36.5, The Barrens) with `group 5`. The bosses come in the
 # order of the client's dungeon journal (Lady Anacondra, Lord Cobrahn, Kresh,
 # Lord Pythas, Skum, Lord Serpentis, Verdan the Everliving, Mutanus the
 # Devourer), not of a recorded run. Every quest goal is counted by the quest
@@ -74,31 +74,31 @@ step The caverns' mouth
 
 step To the Wailing Caverns
   tip A dungeon for five players of level 17 to 24.
-  enter "Wailing Caverns" @46.7,35.7
+  enter "Wailing Caverns" @46.0,36.5
 
 step Hides, essences and the deviates
   along until leave
-  collect 6443 x20 quest 1486.1 @46.7,35.7 group 5 -- The deviate creatures and several bosses drop them.
-  collect 6464 x6 quest 1491.1 @46.7,35.7 group 5 -- The Evolving and Nightmare Ectoplasms inside drop the essence; the Devouring Ectoplasms outside do too.
-  kill 3636 x7 quest 1487.1 @46.7,35.7 group 5
-  kill 5755 x7 quest 1487.2 @46.7,35.7 group 5
-  kill 5761 x7 quest 1487.3 @46.7,35.7 group 5
-  kill 5056 x7 quest 1487.4 @46.7,35.7 group 5
+  collect 6443 x20 quest 1486.1 @46.0,36.5 group 5 -- The deviate creatures and several bosses drop them.
+  collect 6464 x6 quest 1491.1 @46.0,36.5 group 5 -- The Evolving and Nightmare Ectoplasms inside drop the essence; the Devouring Ectoplasms outside do too.
+  kill 3636 x7 quest 1487.1 @46.0,36.5 group 5
+  kill 5755 x7 quest 1487.2 @46.0,36.5 group 5
+  kill 5761 x7 quest 1487.3 @46.0,36.5 group 5
+  kill 5056 x7 quest 1487.4 @46.0,36.5 group 5
 
 step Mutanus the Devourer
   tip The last boss in the client's journal, after the four Fanglords, Kresh, Skum and Verdan the Everliving. He drops a Glowing Shard, which starts a quest.
-  collect 10441 @46.7,35.7 group 5
-  accept 6981 @46.7,35.7
+  collect 10441 @46.0,36.5 group 5
+  accept 6981 @46.0,36.5
 
 step Before you leave
   label leave
   tip Whatever is still short of the hides, the essence and the deviates, finish it before you go.
-  collect 6443 x20 quest 1486.1 @46.7,35.7 group 5
-  collect 6464 x6 quest 1491.1 @46.7,35.7 group 5
-  kill 3636 x7 quest 1487.1 @46.7,35.7 group 5
-  kill 5755 x7 quest 1487.2 @46.7,35.7 group 5
-  kill 5761 x7 quest 1487.3 @46.7,35.7 group 5
-  kill 5056 x7 quest 1487.4 @46.7,35.7 group 5
+  collect 6443 x20 quest 1486.1 @46.0,36.5 group 5
+  collect 6464 x6 quest 1491.1 @46.0,36.5 group 5
+  kill 3636 x7 quest 1487.1 @46.0,36.5 group 5
+  kill 5755 x7 quest 1487.2 @46.0,36.5 group 5
+  kill 5761 x7 quest 1487.3 @46.0,36.5 group 5
+  kill 5056 x7 quest 1487.4 @46.0,36.5 group 5
 
 step Nalpak
   turnin 1486

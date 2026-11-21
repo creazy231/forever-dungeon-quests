@@ -20,7 +20,7 @@ why The Alliance's quests in Shadowfang Keep are class quests: the Rogues' and t
 # follow-up, which has no giver in the data.
 #
 # Inside: nothing in the data places the chest or the helm inside, so their
-# goals stand at the door (@45.0,67.9, Silverpine Forest). Shadowfang Keep is
+# goals stand at the door (@44.8,67.8, Silverpine Forest). Shadowfang Keep is
 # in Horde land.
 #
 # Sources (facts only):
@@ -47,12 +47,12 @@ step The Dead Drop
 step To Shadowfang Keep
   zone Silverpine Forest
   tip A dungeon for five players of level 20 to 30, in Horde land.
-  enter "Shadowfang Keep" @45.0,67.9
+  enter "Shadowfang Keep" @44.8,67.8
 
 step Class quests
   tip Rogues: the Horn of Xelthos is in an Ornamented Chest; its quest asks you to do the job alone, so in a group it may not count. Warriors: the Dragonslayer's Helm is a Discarded Helm in the keep.
-  collect 210183 quest 78261.1 @45.0,67.9 only Rogue
-  collect 209872 quest 78132.1 @45.0,67.9 group 5 only Warrior
+  collect 210183 quest 78261.1 @44.8,67.8 only Rogue
+  collect 209872 quest 78132.1 @44.8,67.8 group 5 only Warrior
 
 step The Dead Drop
   only Rogue

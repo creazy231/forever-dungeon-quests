@@ -29,7 +29,7 @@ why Every Horde quest of Shadowfang Keep in one run.
 # the Horn of Xelthos' follow-up, which has no giver in the data.
 #
 # Inside: nothing in the data places the bosses, Vincent, the book, the chest
-# or the helm inside, so their goals stand at the door (@45.0,67.9, Silverpine
+# or the helm inside, so their goals stand at the door (@44.8,67.8, Silverpine
 # Forest) with `group 5`. The bosses come in the order of the client's dungeon
 # journal (Rethilgore, Razorclaw the Butcher, Baron Silverlaine, Commander
 # Springvale, Odo the Blindwatcher, Fenrus the Devourer, Wolf Master Nandos,
@@ -75,24 +75,24 @@ step The Dead Drop
 
 step To Shadowfang Keep
   tip A dungeon for five players of level 20 to 30.
-  enter "Shadowfang Keep" @45.0,67.9
+  enter "Shadowfang Keep" @44.8,67.8
 
 step Deathstalker Vincent
   tip Find him in the keep: High Executor Hadrec's quest ends with him.
-  turnin 1098 @45.0,67.9
+  turnin 1098 @44.8,67.8
 
 step The Book of Ur
   tip The book lies in the keep.
-  collect 6283 quest 1013.1 @45.0,67.9 group 5
+  collect 6283 quest 1013.1 @44.8,67.8 group 5
 
 step Class quests
   tip Rogues: the Horn of Xelthos is in an Ornamented Chest; its quest asks you to do the job alone, so in a group it may not count. Warriors: the Dragonslayer's Helm is a Discarded Helm in the keep.
-  collect 210183 quest 78261.1 @45.0,67.9 only Rogue
-  collect 209872 quest 78132.1 @45.0,67.9 group 5 only Warrior
+  collect 210183 quest 78261.1 @44.8,67.8 only Rogue
+  collect 209872 quest 78132.1 @44.8,67.8 group 5 only Warrior
 
 step Archmage Arugal
   tip The last boss in the client's journal. His head is for Dalar Dawnweaver.
-  collect 5442 quest 1014.1 @45.0,67.9 group 5
+  collect 5442 quest 1014.1 @44.8,67.8 group 5
 
 step Dalar Dawnweaver
   turnin 1014

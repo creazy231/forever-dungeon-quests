@@ -18,12 +18,13 @@ why Every Horde quest of Blackmaw Hold in one run, lead-in included.
 # Get to the Roots of It (ten Nordrassil Root Caps inside); Muln Earthfury's
 # 97198 Blackmaw Magic (Elder Shaman Bloodmane's totem); Ogtinc's 92069 Claws
 # That Rend, Tusks that Gore (Withermaw and Bonesnout); Ekkal's 97327 Blackmaw
-# Pouches; Gatekeeper Rageroar's 92065 Blackmaw Reclamation (Varrox
+# Pouches -> 96246 Blackmaw Pouches (more, also from the Blackmaw outside);
+# Gatekeeper Rageroar's 92065 Blackmaw Reclamation (Varrox
 # Bleakhoof's head); the Feathered Charm Necklace's 92070 A Lost Memento (for
 # Unele); for Paladins, the Knight of Mourning's 99187 The Reliquary of Tyr
 # (from Bloodmane).
 #
-# Left out: 96246 Blackmaw Pouches, Ekkal's repeat of the pouch quest.
+# Left out: nothing of the Horde's.
 #
 # Inside: no source names the door: Polestar's entrances, its players'
 # recordings and the client's tables have none (checked 2026-11-21). So the
@@ -125,6 +126,14 @@ step Ogtinc
 
 step Ekkal
   turnin 97327
+  accept 96246
+
+step More Blackmaw Pouches
+  tip The Blackmaw and the Legashi of Azshara drop pouches too.
+  collect 273050 quest 96246.1
+
+step Ekkal
+  turnin 96246
 
 step Gatekeeper Rageroar
   turnin 92065

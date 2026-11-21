@@ -181,7 +181,7 @@ with one folder per dungeon.
   Wetlands.
 - Inside, both guides follow a run of mine: Saltspine, the raptors and
   Shadetooth, the Dragonmaw, then the Relic Guardian. The Alliance's
-  Highland Horror, whom my run passed by, comes third, as in the game's
+  Highland Horror, whom my run did not meet, comes third, as in the game's
   journal.
 - The Relic Guardian drops a Titan Relic that starts a quest for each side.
 - Where Ardin Grassman, Daewyn Songblade and the Highland Horror are inside
@@ -202,10 +202,8 @@ with one folder per dungeon.
   entrance, Atrexis, Lyn the Ignored, the Arcane Anomaly, the Fel Ancient,
   the Mana Elemental, the Unstable Sentinel, the Shade of the Archmage, then
   the Mana Devourer.
-- The Horde guide waits for level 33 before Wordeen's lead-ins, whose mobs
+- The Horde guide waits for level 34 before Wordeen's lead-ins, whose mobs
   are level 32 to 35.
-- Where Archmage Celindra stands (Friend of the Kirin Tor) is still open: if
-  you know, tell me.
 
 ## The Drowned City
 
@@ -265,9 +263,8 @@ they are the same guides. This addon is where they get their updates.
   your log. Its follow-up leads to Connery's Trunk in Westfall.
 - State Secrets wants a Document Box whose source the game's data doesn't
   name, so that step only shows when the box is in your bags.
-- Where Commander Folkar, Mason Connery and the window stand inside, and
-  what completes The Return of the King?, are still open: if you know, tell
-  me.
+- Where Commander Folkar, Mason Connery and the window stand inside is still
+  open: if you know, tell me.
 
 ## Blackmaw Hold
 
@@ -283,7 +280,8 @@ they are the same guides. This addon is where they get their updates.
   Tirisfal Glades.
 - Impaan and Varrox may drop the Feathered Charm Necklace, which starts A
   Lost Memento; its steps show only if you have it.
-- Left out: Ekkal's repeat of Blackmaw Pouches.
+- Ekkal's Blackmaw Pouches has a second part: more pouches, which the
+  Blackmaw outside drop too.
 
 ## The Shaper's Terrace
 

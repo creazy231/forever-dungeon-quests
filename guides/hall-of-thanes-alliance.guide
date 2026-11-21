@@ -32,7 +32,7 @@ why Every Alliance quest of the Hall of Thanes in one run, lead-in included.
 #
 # Inside: nothing in the data places the Ghostly Attendant, the treaty, the
 # heirlooms or the bosses inside, so their goals stand at the door
-# (@15.1,86.0, Ironforge) with `group 5`. The bosses come in the order of the
+# (@28.3,47.6, Ironforge) with `group 5`. The bosses come in the order of the
 # client's dungeon journal (Faldrim Anvilmar, Infurnus, Plunder, Durgen
 # Dirgehammer), not of a recorded run. Every quest goal is counted by the quest
 # log, so a group that takes them in another order still gets each step ticked.
@@ -69,33 +69,33 @@ step Thom Filch
 
 step To the Hall of Thanes
   tip A dungeon for five players of level 13 to 18. Its door is in Ironforge.
-  enter "The Hall of Thanes" @15.1,86.0
+  enter "The Hall of Thanes" @28.3,47.6
 
 step The Restless Dead and the heirlooms
   along until leave
-  kill 263389 x15 quest 96394.1 @15.1,86.0 group 5
-  kill 263390 x10 quest 96394.2 @15.1,86.0 group 5
-  collect 274289 x8 quest 96403.1 @15.1,86.0 group 5 -- The heirlooms lie about the halls: click them.
+  kill 263389 x15 quest 96394.1 @28.3,47.6 group 5
+  kill 263390 x10 quest 96394.2 @28.3,47.6 group 5
+  collect 274289 x8 quest 96403.1 @28.3,47.6 group 5 -- The heirlooms lie about the halls: click them.
 
 step Faldrim Anvilmar
   tip A Ghostly Attendant inside asks you to put the spirit of Faldrim Anvilmar to rest. Faldrim is the first boss in the client's journal.
-  accept 96395 @15.1,86.0 group 5
-  kill 261306 quest 96395.1 @15.1,86.0 group 5
+  accept 96395 @28.3,47.6 group 5
+  kill 261306 quest 96395.1 @28.3,47.6 group 5
 
 step Ghostly Attendant
-  turnin 96395 @15.1,86.0
+  turnin 96395 @28.3,47.6
 
 step Durgen Dirgehammer
   tip Infurnus and Plunder come before him in the client's journal; no quest needs them. Durgen drops his head for King Magni.
-  collect 274286 quest 96393.1 @15.1,86.0 group 5
-  collect 281030 @15.1,86.0 optional -- The Treaty of Understanding, if you come across it: it starts a quest for King Magni.
+  collect 274286 quest 96393.1 @28.3,47.6 group 5
+  collect 281030 @28.3,47.6 optional -- The Treaty of Understanding, if you come across it: it starts a quest for King Magni.
 
 step Before you leave
   label leave
   tip Whatever is still short for The Restless Dead and the heirlooms, finish it before you go.
-  kill 263389 x15 quest 96394.1 @15.1,86.0 group 5
-  kill 263390 x10 quest 96394.2 @15.1,86.0 group 5
-  collect 274289 x8 quest 96403.1 @15.1,86.0 group 5
+  kill 263389 x15 quest 96394.1 @28.3,47.6 group 5
+  kill 263390 x10 quest 96394.2 @28.3,47.6 group 5
+  collect 274289 x8 quest 96403.1 @28.3,47.6 group 5
 
 step The Treaty of Understanding
   when has 281030

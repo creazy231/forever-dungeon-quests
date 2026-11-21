@@ -29,7 +29,7 @@ why Every Alliance quest of Alcaz Prison in one run, lead-ins included.
 # Left out: nothing of the Alliance's.
 #
 # Inside: nothing in the data places the bosses, the window or Mason Connery
-# inside, so their goals stand at the door (@75.4,14.0, Alcaz Island) with
+# inside, so their goals stand at the door (@75.4,13.9, Alcaz Island) with
 # `group 5`. The bosses come in the order of the client's dungeon journal
 # (Overseer Wrex, Tidemistress Ca'zass, Katerina the Cleaner, The Questioner,
 # Blazeroar), not of a recorded run; the journal ties The Secret Prison to
@@ -44,15 +44,16 @@ why Every Alliance quest of Alcaz Prison in one run, lead-ins included.
 #   drops only while Mason's quest is in the log.
 # - Players' recordings, as Polestar holds them (data/codex/journal-quests.json):
 #   The Secret Prison handed in inside at a window and Somber News taken
-#   there, Mason's two quests taken inside and the trunk in Westfall.
+#   there, Mason's two quests taken inside and the trunk in Westfall; and
+#   (data/recorded/quests.json) The Return of the King? done at the Theramore
+#   Mage Tower, 66.4,49.4, as its text says (eavesdrop on Jaina with the SI:7
+#   Disguise Kit).
 # - The door, and the elite Strashaz naga of level 59 to 61 around it:
 #   players' recordings (data/codex/entrances.json) and the data's spawns.
 # - The dungeon's size, levels and bosses: the client's group finder and
 #   dungeon journal, as Polestar's Codex page holds them (five players, levels
 #   48 to 55).
-# INGAME: what completes The Return of the King? (no objective in the data;
-#   Sully hands you an SI:7 Disguise Kit with it). Where inside do the window
-#   and Mason Connery stand? Where does the Document Box for State Secrets
+# INGAME: where inside do the window and Mason Connery stand? Where does the Document Box for State Secrets
 #   come from? The data has no source for it, so its step only applies while
 #   the box is in your bags.
 
@@ -76,48 +77,51 @@ step Sully McCleary
   turnin 95196
   accept 95198
 
-step The Return of the King?
-  tip Sully hands you an SI:7 Disguise Kit with the quest.
+step The Mage Tower
+  tip Use the SI:7 Disguise Kit Sully gave you to eavesdrop on Jaina and her inner circle at the Theramore Mage Tower.
+  use 269000 @66.4,49.4
+
+step Sully McCleary
   turnin 95198
   accept 95262
   accept 96381
 
 step To Alcaz Prison
   tip A dungeon for five players of level 48 to 55, on Alcaz Island off north-eastern Dustwallow. Elite Strashaz naga of level 59 to 61 crowd the island around the door.
-  enter "Alcaz Prison" @75.4,14.0
+  enter "Alcaz Prison" @75.4,13.9
 
 step Naga
   along until leave
-  kill 255995 x15 quest 96381.1 @75.4,14.0 group 5
-  kill 255373 x8 quest 96381.2 @75.4,14.0 group 5
+  kill 255995 x15 quest 96381.1 @75.4,13.9 group 5
+  kill 255373 x8 quest 96381.2 @75.4,13.9 group 5
 
 step Tidemistress Ca'zass
   tip Overseer Wrex comes before her in the client's journal. She drops her head for Sully.
-  collect 273883 quest 96381.3 @75.4,14.0 group 5
+  collect 273883 quest 96381.3 @75.4,13.9 group 5
 
 step Mason Connery
   tip A prisoner. Take his quest before The Questioner dies: the key drops only while it is in your log. Katerina the Cleaner, the third boss in the client's journal, comes before The Questioner.
-  accept 96335 @75.4,14.0
+  accept 96335 @75.4,13.9
 
 step The Questioner
   tip The fourth boss in the client's journal. He drops the Ornate Shackle Key.
-  collect 274029 quest 96335.1 @75.4,14.0 group 5
+  collect 274029 quest 96335.1 @75.4,13.9 group 5
 
 step Mason Connery
-  turnin 96335 @75.4,14.0
-  accept 96337 @75.4,14.0
+  turnin 96335 @75.4,13.9
+  accept 96337 @75.4,13.9
 
 step Blazeroar
   tip The last boss. He drops Zarla's Journal. The client's journal ties The Secret Prison to him: at a window, you learn the King's fate.
-  collect 276890 quest 96772.1 @75.4,14.0 group 5
-  turnin 95262 @75.4,14.0
-  accept 95263 @75.4,14.0
+  collect 276890 quest 96772.1 @75.4,13.9 group 5
+  turnin 95262 @75.4,13.9
+  accept 95263 @75.4,13.9
 
 step Before you leave
   label leave
   tip Whatever is still short for A Bit of Wet Work, finish it before you go.
-  kill 255995 x15 quest 96381.1 @75.4,14.0 group 5
-  kill 255373 x8 quest 96381.2 @75.4,14.0 group 5
+  kill 255995 x15 quest 96381.1 @75.4,13.9 group 5
+  kill 255373 x8 quest 96381.2 @75.4,13.9 group 5
 
 step Sully McCleary
   tip Back in Theramore.

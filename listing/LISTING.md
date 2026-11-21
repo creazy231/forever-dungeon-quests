@@ -102,3 +102,7 @@ Adds Shadowfang Keep: the Horde's quests, and the Alliance's class quests for Ro
 ## Changelog for 2.13.0
 
 Adds Blackfathom Deeps for the Horde and the Alliance.
+
+## Changelog for 2.13.1
+
+Fixes from a review: every dungeon's door now stands where players walk in (Polestar's recorded entrances); The Return of the King? sends you to the Theramore Mage Tower; Blackmaw Pouches' second part is in; counts, level waits and a few tips corrected; trade goods are bought at the Auction House.

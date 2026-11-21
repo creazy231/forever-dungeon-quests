@@ -36,7 +36,7 @@ why Every Horde quest of Krol'dok Stronghold in one run, with the Riverglades ch
 # No More!, with no giver, ender or objective: nothing to write it from.
 #
 # Inside: nothing in the data places the bosses or Tunk inside, so their goals
-# stand at the door (@36.9,44.1) with `group 5`. The bosses come in the order
+# stand at the door (@37.5,38.2) with `group 5`. The bosses come in the order
 # of the client's dungeon journal (Slavecrusher Grox, Twilight Commander
 # Zarmok, Handler Ashka, Nar'gurk, Overseer Mugg), not of a recorded run.
 # Every quest goal is counted by the quest log, so a group that takes them in
@@ -187,29 +187,29 @@ step Tran'gul
 
 step To Krol'dok Stronghold
   tip A dungeon for five players of level 40 to 47.
-  enter "Krol'dok Stronghold" @36.9,44.1
+  enter "Krol'dok Stronghold" @37.5,38.2
 
 step Cultist Ears
   along until leave
-  collect 267091 x15 quest 94975.1 @36.9,44.1 group 5 -- The Twilight Grunts and Warlocks drop them, and so does Twilight Commander Zarmok.
+  collect 267091 x15 quest 94975.1 @37.5,38.2 group 5 -- The Twilight Grunts and Warlocks drop them, and so does Twilight Commander Zarmok.
 
 step Tunk
   tip An elite no boss list names. He drops the Krol'dok Moulding, which starts a quest for Kreza Darkthorn in Rog'mar.
-  collect 267137 @36.9,44.1 group 5
-  accept 94973 @36.9,44.1
+  collect 267137 @37.5,38.2 group 5
+  accept 94973 @37.5,38.2
 
 step Nar'gurk
   tip Slavecrusher Grox, Twilight Commander Zarmok and Handler Ashka come before him in the client's journal. He drops the Tome of Twilight.
-  collect 267104 quest 94972.1 @36.9,44.1 group 5
+  collect 267104 quest 94972.1 @37.5,38.2 group 5
 
 step Overseer Mugg
   tip The last boss in the client's journal. The Eye of Mugg is the proof Krom'rosh wants.
-  collect 267086 quest 94968.1 @36.9,44.1 group 5
+  collect 267086 quest 94968.1 @37.5,38.2 group 5
 
 step Before you leave
   label leave
   tip Whatever is still short of the 15 Cultist Ears, finish it before you go.
-  collect 267091 x15 quest 94975.1 @36.9,44.1 group 5
+  collect 267091 x15 quest 94975.1 @37.5,38.2 group 5
 
 step Da'grosh
   turnin 94975
@@ -225,9 +225,9 @@ step Kreza Darkthorn
   accept 94974
 
 step Key Ingredients
-  tip Thick Leather and Iron Bars are trade goods: skin and smelt them, or buy them.
-  collect 4304 x4 anywhere
-  collect 3575 x12 anywhere
+  tip Buy the Thick Leather and the Iron Bars at the Auction House, unless you have them.
+  auction 4304 x4
+  auction 3575 x12
 
 step Kreza Darkthorn
   turnin 94974
