@@ -27,6 +27,7 @@ Polestar.
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Razorfen Downs | The Barrens | Horde, Alliance | 37 to 46 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
+| Uldaman | Badlands | Horde, Alliance | 41 to 51 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
@@ -344,6 +345,26 @@ they are the same guides. This addon is where they get their updates.
   town; its Key Ingredients follow-up wants Thick Leather and Iron Bars.
 - Where Tunk (and, for the Alliance, Zalfan Moonshadow) stand inside is
   still open: if you know, tell me.
+
+## Uldaman
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Uldaman (Horde) | Dran Droffers, Orgrimmar | The Undercity, Kargath, the dungeon twice, back again |
+| Uldaman (Alliance) | Prospector Stormpike, Ironforge | Loch Modan, the Badlands, Ironforge, the dungeon, back again |
+
+- The dungeon is for five players of level 41 to 51. Its door is in the
+  northern Badlands; the caves before it hold Hammertoe Grez, several
+  chests and the urns.
+- The Alliance guide takes A Sign of Hope through to the Tablets of Will,
+  Agmond's Fate, Ghak's reagent runs, the Lost Dwarves and Talvash's
+  necklace, whose gems are handed in inside, at the Scrying Bowl his Phial
+  calls up.
+- The Horde guide runs the dungeon twice: Jarkal Mossmeld's Find the Gems
+  and Power Source opens only after the first run's journal is handed in at
+  Kargath, and its gems drop only while it is held.
+- Mages of both sides get Power in Uldaman.
+- Left out: Indurium Ore and Replacement Phial (repeatable).
 
 ## Alcaz Prison
 

@@ -1,0 +1,332 @@
+guide forever-dungeon-quests/uldaman-alliance
+title Uldaman (Alliance)
+category Dungeons
+folder Uldaman
+faction Alliance
+levels 41-51
+zone Ironforge
+keywords Uldaman, Badlands, Loch Modan, Ironforge, Prospector Stormpike, Prospector Ironband, Agmond, Murdaloc, Ghak Healtouch, Prospector Ryedol, Hammertoe Grez, Historian Karnik, Advisor Belgrum, Tablets of Will, Talvash del Kissel, Shattered Necklace, Krom Stoutarm, Rigglefuzz, Theldurin the Lost, Baelog, Discs of Norgannon, Magellas, Revelosh, Ironaya, Obsidian Sentinel, Galgann Firehammer, Grimlok, Archaedas, dungeon
+reward item 6723 270095
+reward item 9626 9627 270078
+reward item 9522 10358 10359 270055
+reward item 4980 270059 270060
+reward item 4746 270074 270075
+reward item 7673
+reward item 9587
+reward item 3928 6149
+reward item 250947
+why Every Alliance quest of Uldaman in one run, lead-ins included.
+
+# Uldaman's Alliance quests in one guide: the pick-ups and lead-ins between
+# Ironforge, Loch Modan and the Badlands (for Mages their Power in Uldaman
+# chain too), the work in the Badlands and the caves before the door, one run,
+# then the hand-ins. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The chains:
+# - The Crumpled Map's 720 A Sign of Hope -> Prospector Ryedol's 721 (to
+#   Hammertoe Grez) -> 722 Amulet of Secrets -> 723 Prospect of Faith -> 724 (to
+#   Historian Karnik) -> 725 -> 726 -> 762 An Ambassador of Evil -> Advisor
+#   Belgrum's 1139 The Lost Tablets of Will (inside).
+# - Prospector Stormpike's 707 Ironband Wants You! -> Prospector Ironband's
+#   738 Find Agmond -> 739 Murdaloc -> 704 Agmond's Fate (Carved Stone Urns).
+# - Ghak Healtouch's 2500 Badlands Reagent Run -> 17 Uldaman Reagent Run.
+# - Prospector Stormpike's 2398 The Lost Dwarves -> Baelog's 2240 The Hidden
+#   Chamber (inside).
+# - The Shattered Necklace (item 7666) starts 2198 -> Talvash del Kissel's
+#   2199 Lore for a Price -> 2200 Back to Uldaman -> the Remains of a Paladin's
+#   2201 Find the Gems -> 2204 Restoring the Necklace (both at Talvash's
+#   Scrying Bowl, which his Phial of Scrying calls up inside) -> 2361.
+# - Krom Stoutarm's 1360 Reclaimed Treasures; Rigglefuzz's 2418 Power Stones;
+#   Theldurin the Lost's 709 Solution to Doom; the Discs of Norgannon's 2278 ->
+#   2279 The Platinum Discs (to High Explorer Magellas) -> 2439 (to Dinita
+#   Stonemantle).
+# - Mages: 1953 Return to the Marsh -> Tabetha's 1954 The Infernal Orb ->
+#   1955 The Exorcism -> 1956 Power in Uldaman (the Obsidian Sentinel's power
+#   source).
+#
+# Left out: 1192 Indurium Ore and 3375 Replacement Phial (repeatable), with
+# Indurium Ore's racing-camp chain (1104 to 1194); the Mages' 1957 Mana
+# Surges and the Platinum Discs' 2963, the next steps beyond.
+#
+# Inside: nothing in the data places the bosses, Baelog, the Remains or the
+# objects inside, so their goals stand at the door (@44.6,12.1, Badlands)
+# with `group 5`. The bosses come in the order of the client's dungeon
+# journal (Revelosh, the Lost Dwarves, Ironaya, the Obsidian Sentinel, the
+# Ancient Stone Keeper, Galgann Firehammer, Grimlok, Archaedas), not of a
+# recorded run. Every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked. Hammertoe Grez,
+# the chests and the urns stand in the caves on the Badlands map, before the
+# door.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. Talvash's Scrying Bowl is an object inside
+#   Uldaman there; Find the Gems' text says the Phial of Scrying calls him.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   41 to 51).
+# - Mob levels from data/forever set the waits: Murdaloc 42, the Stonevault
+#   Bonesnappers 39 to 40; Magregan Deepshadow and Ambassador Infernus are
+#   elites.
+# - Lint warns that the door is more than 50 yards from the Magenta Cap
+#   Clusters outside; the goal stays at the door for the ones inside.
+# INGAME: where inside do Baelog, the Remains of a Paladin, the Discs of
+#   Norgannon and the Tablet of Will stand?
+
+step Prospector Stormpike
+  tip In Ironforge.
+  accept 707
+  accept 2398
+
+step Krom Stoutarm
+  accept 1360
+
+step Bink
+  only Mage
+  accept 1953 npc 5144
+
+step Prospector Ironband
+  zone Loch Modan
+  turnin 707
+  accept 738
+
+step Ghak Healtouch
+  tip In Thelsamar.
+  accept 2500
+
+step The Crumpled Map
+  zone Badlands
+  accept 720
+
+step Prospector Ryedol
+  turnin 720
+  accept 721
+
+step Rigglefuzz
+  accept 2418
+
+step Theldurin the Lost
+  accept 709
+
+step Agmond's remains
+  turnin 738
+  accept 739
+
+step Murdaloc
+  level 41
+  kill 2945 quest 739.1
+  kill 2893 x12 quest 739.2
+
+step Badlands Reagent Run
+  collect 7847 x5 quest 2500.1
+  collect 7846 x10 quest 2500.2
+  collect 7848 x5 quest 2500.3
+
+step The Shattered Necklace
+  tip The Shadowforge and Stonevault in the Badlands drop it.
+  collect 7666
+  accept 2198
+
+step Hammertoe Grez
+  tip In the caves before Uldaman's door.
+  turnin 721
+  accept 722
+
+step Hammertoe's Amulet
+  tip Magregan Deepshadow, an elite, carries it.
+  collect 4635 quest 722.1
+
+step Hammertoe Grez
+  turnin 722
+  accept 723
+
+step Prospector Ryedol
+  turnin 723
+  accept 724
+
+step Prospector Ironband
+  zone Loch Modan
+  turnin 739
+  accept 704
+
+step Ghak Healtouch
+  turnin 2500
+  accept 17
+
+step Historian Karnik
+  zone Ironforge
+  turnin 724
+  accept 725
+
+step Advisor Belgrum
+  turnin 725
+  accept 726
+
+step Historian Karnik
+  turnin 726
+  accept 762
+
+step Talvash del Kissel
+  turnin 2198
+  accept 2199
+
+step Lore for a Price
+  tip Talvash wants five Silver Bars: buy them at the Auction House, unless you have them.
+  auction 2842 x5
+
+step Talvash del Kissel
+  turnin 2199
+  accept 2200
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1953
+  accept 1954
+
+step The Infernal Orb
+  only Mage
+  zone Desolace
+  tip The Burning Blade Summoners carry it.
+  collect 7291 quest 1954.1
+
+step Tabetha
+  only Mage
+  turnin 1954
+  accept 1955
+
+step The Exorcism
+  only Mage
+  zone Dustwallow Marsh
+  kill 6549 quest 1955.1
+  complete 1955 @45.79,56.97
+
+step Tabetha
+  only Mage
+  turnin 1955
+  accept 1956
+
+step Ambassador Infernus
+  zone Badlands
+  tip An elite: bring help. He carries the bracer.
+  collect 4621 quest 762.1
+
+step The caves before the door
+  tip Krom Stoutarm's Chest, the Ancient Chest with the Tablet of Ryun'eh and the Carved Stone Urns are here, outside the dungeon; so are Magenta Cap Clusters.
+  collect 8027 quest 1360.1
+  collect 4631 quest 709.1
+  collect 4610 x4 quest 704.1
+
+step Advisor Belgrum
+  zone Ironforge
+  turnin 762
+  accept 1139
+
+step To Uldaman
+  zone Badlands
+  tip A dungeon for five players of level 41 to 51.
+  enter "Uldaman" @44.6,12.1
+
+step Stones and caps
+  along until leave
+  collect 8009 x8 quest 2418.1 @44.6,12.1 group 5 -- The Shadowforge drop the power stones.
+  collect 8052 x8 quest 2418.2 @44.6,12.1 group 5
+  collect 8047 x12 quest 17.1 @44.6,12.1 group 5 -- From the Magenta Cap Clusters.
+
+step Remains of a Paladin
+  tip Talvash's slain paladin. Find the Gems follows, with Talvash's Phial of Scrying.
+  turnin 2200 @44.6,12.1
+  accept 2201 @44.6,12.1
+
+step The Lost Dwarves
+  tip Baelog waits with the Lost Dwarves, the second encounter in the client's journal. Read his journal, then explore the hidden chamber.
+  turnin 2398 @44.6,12.1
+  accept 2240 @44.6,12.1
+  complete 2240 @44.6,12.1 group 5
+
+step The ruby and the topaz
+  tip The ruby is in a Shadowforge Cache, the topaz in a Conspicuous Urn.
+  collect 7669 quest 2201.1 @44.6,12.1 group 5
+  collect 7671 quest 2201.3 @44.6,12.1 group 5
+
+step The Tablet of Will
+  collect 5824 quest 1139.1 @44.6,12.1 group 5
+
+step Obsidian Sentinel
+  only Mage
+  tip After Ironaya in the client's journal. He gives up the Obsidian Power Source.
+  collect 8053 quest 1956.1 @44.6,12.1 group 5
+
+step Grimlok
+  tip After the Ancient Stone Keeper and Galgann Firehammer in the client's journal. He drops the sapphire.
+  collect 7670 quest 2201.2 @44.6,12.1 group 5
+
+step Talvash's Scrying Bowl
+  tip Use the Phial of Scrying to reach Talvash, then take his next quest.
+  turnin 2201 object 112877 @44.6,12.1
+  accept 2204 object 112877 @44.6,12.1
+
+step Archaedas
+  tip The last boss. He gives up the necklace's power source.
+  collect 7672 quest 2204.1 @44.6,12.1 group 5
+
+step The Discs of Norgannon
+  tip Speak with the Lore Keeper of Norgannon, then activate the Discs.
+  accept 2278 @44.6,12.1
+  talk 7172 quest 2278.1 @44.6,12.1
+  turnin 2278 @44.6,12.1
+  accept 2279 @44.6,12.1
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the power stones and the caps, finish it before you go.
+  collect 8009 x8 quest 2418.1 @44.6,12.1 group 5
+  collect 8052 x8 quest 2418.2 @44.6,12.1 group 5
+  collect 8047 x12 quest 17.1 @44.6,12.1 group 5
+
+step Rigglefuzz
+  turnin 2418
+
+step Theldurin the Lost
+  turnin 709
+
+step Prospector Ironband
+  zone Loch Modan
+  turnin 704
+
+step Ghak Healtouch
+  turnin 17
+
+step Talvash del Kissel
+  zone Ironforge
+  turnin 2204
+  accept 2361
+
+step Talvash del Kissel
+  turnin 2361
+
+step Advisor Belgrum
+  turnin 1139
+
+step Prospector Stormpike
+  turnin 2240
+
+step Krom Stoutarm
+  turnin 1360
+
+step High Explorer Magellas
+  turnin 2279
+  accept 2439
+
+step Dinita Stonemantle
+  tip In the Vault.
+  turnin 2439
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1956

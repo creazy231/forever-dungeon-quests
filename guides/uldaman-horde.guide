@@ -1,0 +1,249 @@
+guide forever-dungeon-quests/uldaman-horde
+title Uldaman (Horde)
+category Dungeons
+folder Uldaman
+faction Horde
+levels 41-51
+zone Orgrimmar
+keywords Uldaman, Badlands, Kargath, Orgrimmar, Dran Droffers, Shattered Necklace, Jarkal Mossmeld, Remains of a Paladin, gems, Patrick Garrett, Rigglefuzz, Theldurin the Lost, Scorched Guardian, Discs of Norgannon, Sage Truthseeker, Bena Winterhoof, Revelosh, Ironaya, Obsidian Sentinel, Galgann Firehammer, Grimlok, Archaedas, dungeon
+reward item 9522 10358 10359 270055
+reward item 4746 270074 270075
+reward item 7888
+reward item 9587
+reward item 3928 6149
+reward item 250947
+why Every Horde quest of Uldaman, with the second run the necklace chain needs.
+
+# Uldaman's Horde quests in one guide: the pick-ups in Orgrimmar, the
+# Undercity and Kargath (for Mages their Power in Uldaman chain too), the work
+# in the Badlands, a first run, the necklace chain at Kargath, a second run
+# for the gems, then the hand-ins. Steps already done are passed over, so the
+# guide picks up wherever the chain stands.
+#
+# The chains:
+# - Dran Droffers' 2283 Necklace Recovery (the Shattered Necklace) -> 2284
+#   Take 2 (to the Remains of a Paladin inside) -> 2318 Translating the
+#   Journal (to Jarkal Mossmeld) -> 2338 -> 2339 Find the Gems and Power
+#   Source -> 2340 Deliver the Gems (to Dran) -> 2341 Take 3 (back to Jarkal).
+#   2339 opens only after 2318 is handed in at Kargath, and its gems drop only
+#   while it is held: that is the second run.
+# - Jarkal Mossmeld's 2258 Badlands Reagent Run -> 2202 Uldaman Reagent Run ->
+#   2203 Badlands Reagent Run II (the Scorched Guardians' blood).
+# - Patrick Garrett's 2342 Reclaimed Treasures; Rigglefuzz's 2418 Power
+#   Stones; Theldurin the Lost's 709 Solution to Doom; the Discs of Norgannon's
+#   2278 -> 2280 The Platinum Discs (to Sage Truthseeker) -> 2440 (to Bena
+#   Winterhoof).
+# - Mages: 1953 Return to the Marsh -> Tabetha's 1954 The Infernal Orb ->
+#   1955 The Exorcism -> 1956 Power in Uldaman (the Obsidian Sentinel's power
+#   source).
+#
+# Left out: 1192 Indurium Ore (repeatable) with its racing-camp chain (1104
+# to 1194); the Mages' 1957 Mana Surges and the Platinum Discs' 2965, the next
+# steps beyond.
+#
+# Inside: nothing in the data places the bosses, the Remains or the objects
+# inside, so their goals stand at the door (@44.6,12.1, Badlands) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Revelosh, the Lost Dwarves, Ironaya, the Obsidian Sentinel, the Ancient
+# Stone Keeper, Galgann Firehammer, Grimlok, Archaedas), not of a recorded run.
+# Every quest goal is counted by the quest log, so a group that takes them in
+# another order still gets each step ticked. The chests stand in the caves on
+# the Badlands map, before the door.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The necklace and the gems are quest items
+#   there: they drop only while their quest is held.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   41 to 51).
+# - The Scorched Guardians are elites of level 43 to 45 (data/forever), so that
+#   step waits for 43.
+# - Lint warns that the door is more than 50 yards from the Magenta Cap
+#   Clusters outside; the goal stays at the door for the ones inside.
+# INGAME: where inside do the Remains of a Paladin and the Discs of Norgannon
+#   stand?
+
+step Dran Droffers
+  tip In Orgrimmar.
+  accept 2283
+
+step Deino
+  only Mage
+  accept 1953 npc 5885
+
+step Patrick Garrett
+  zone Undercity
+  accept 2342
+
+step Jarkal Mossmeld
+  zone Badlands
+  tip In Kargath.
+  accept 2258
+
+step Rigglefuzz
+  accept 2418
+
+step Theldurin the Lost
+  accept 709
+
+step Badlands Reagent Run
+  collect 7847 x5 quest 2258.1
+  collect 7846 x10 quest 2258.2
+  collect 7848 x5 quest 2258.3
+
+step The Shattered Necklace
+  tip The Shadowforge and Stonevault in the Badlands drop it.
+  collect 7666 quest 2283.1
+
+step The caves before the door
+  tip The Garrett Family Chest and the Ancient Chest with the Tablet of Ryun'eh are here, outside the dungeon.
+  collect 8026 quest 2342.1
+  collect 4631 quest 709.1
+
+step Jarkal Mossmeld
+  turnin 2258
+  accept 2202
+
+step Dran Droffers
+  zone Orgrimmar
+  turnin 2283
+  accept 2284
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1953
+  accept 1954
+
+step The Infernal Orb
+  only Mage
+  zone Desolace
+  tip The Burning Blade Summoners carry it.
+  collect 7291 quest 1954.1
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1954
+  accept 1955
+
+step The Exorcism
+  only Mage
+  kill 6549 quest 1955.1
+  complete 1955 @45.79,56.97
+
+step Tabetha
+  only Mage
+  turnin 1955
+  accept 1956
+
+step To Uldaman
+  zone Badlands
+  tip A dungeon for five players of level 41 to 51.
+  enter "Uldaman" @44.6,12.1
+
+step Stones and caps
+  along until leave
+  collect 8009 x8 quest 2418.1 @44.6,12.1 group 5 -- The Shadowforge drop the power stones.
+  collect 8052 x8 quest 2418.2 @44.6,12.1 group 5
+  collect 8047 x12 quest 2202.1 @44.6,12.1 group 5 -- From the Magenta Cap Clusters.
+
+step Remains of a Paladin
+  tip The slain paladin's journal is for Jarkal Mossmeld.
+  turnin 2284 @44.6,12.1
+  accept 2318 @44.6,12.1
+
+step Obsidian Sentinel
+  only Mage
+  tip After Revelosh, the Lost Dwarves and Ironaya in the client's journal. He gives up the Obsidian Power Source.
+  collect 8053 quest 1956.1 @44.6,12.1 group 5
+
+step The Discs of Norgannon
+  tip Speak with the Lore Keeper of Norgannon, then activate the Discs.
+  accept 2278 @44.6,12.1
+  talk 7172 quest 2278.1 @44.6,12.1
+  turnin 2278 @44.6,12.1
+  accept 2280 @44.6,12.1
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the power stones and the caps, finish it before you go.
+  collect 8009 x8 quest 2418.1 @44.6,12.1 group 5
+  collect 8052 x8 quest 2418.2 @44.6,12.1 group 5
+  collect 8047 x12 quest 2202.1 @44.6,12.1 group 5
+
+step Jarkal Mossmeld
+  tip In Kargath.
+  turnin 2318
+  accept 2338
+
+step Jarkal Mossmeld
+  turnin 2338
+  accept 2339
+  turnin 2202
+  accept 2203
+
+step Rigglefuzz
+  turnin 2418
+
+step Theldurin the Lost
+  turnin 709
+
+step Badlands Reagent Run II
+  level 43
+  tip Use the empty vessels on the Scorched Guardians, elite dragons: bring help.
+  collect 7867 x3 quest 2203.1
+
+step Jarkal Mossmeld
+  turnin 2203
+
+step Back into Uldaman
+  tip The second run, for Jarkal's gems and power source.
+  enter "Uldaman" @44.6,12.1
+
+step The ruby and the topaz
+  tip The ruby is in a Shadowforge Cache, the topaz in a Conspicuous Urn.
+  collect 7669 quest 2339.1 @44.6,12.1 group 5
+  collect 7671 quest 2339.3 @44.6,12.1 group 5
+
+step Grimlok
+  tip After the Ancient Stone Keeper and Galgann Firehammer in the client's journal. He drops the sapphire.
+  collect 7670 quest 2339.2 @44.6,12.1 group 5
+
+step Archaedas
+  tip The last boss. He gives up the power source.
+  collect 7672 quest 2339.4 @44.6,12.1 group 5
+
+step Jarkal Mossmeld
+  turnin 2339
+  accept 2340
+
+step Dran Droffers
+  zone Orgrimmar
+  turnin 2340
+  accept 2341
+
+step Patrick Garrett
+  zone Undercity
+  turnin 2342
+
+step Jarkal Mossmeld
+  zone Badlands
+  turnin 2341
+
+step Sage Truthseeker
+  zone Thunder Bluff
+  turnin 2280
+  accept 2440
+
+step Bena Winterhoof
+  turnin 2440
+
+step Tabetha
+  only Mage
+  zone Dustwallow Marsh
+  turnin 1956
