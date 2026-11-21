@@ -1,0 +1,72 @@
+guide forever-dungeon-quests/shapers-terrace-alliance
+title The Shaper's Terrace (Alliance)
+category Dungeons
+folder The Shaper's Terrace
+faction Alliance
+levels 60-60
+zone Ironforge
+keywords Shaper's Terrace, Un'Goro Crater, Curator Thorius, Hall of Explorers, Ironforge, Venomridge, ravasaur, Ironhide Ravasaur, Ravasaur Matriarch, explorer's map, landmarks, Titanosaur, Nanaya, dungeon
+why Every Alliance quest of the Shaper's Terrace in one run.
+
+# The Shaper's Terrace's Alliance quests in one guide: Curator Thorius in
+# Ironforge, one run through the dungeon, then the hand-ins.
+#
+# The quests: Curator Thorius' 95924 Panic at the Digsite (Venomridge, six
+# Ravasaur Matriarchs, nine Ironhide Ravasaurs) and 95925 Mapping the Way
+# Forward (the explorer's map, item 271770, filled out at the landmarks
+# inside).
+#
+# Left out: 95790 Digestible Research (fifteen journal pages from the
+# ravasaurs inside, for Curator Thorius): the data names no giver for it,
+# and with no door in any source there is no place to send you to take it.
+#
+# Inside: no source names the door: Polestar's entrances, its players'
+# recordings and the client's tables have none (checked 2026-11-21). So the
+# guide names the dungeon without a point, and the goals inside carry none.
+# The bosses come in the order of the client's dungeon journal (Titanosaur,
+# the Ravasaur Hunters, Thunderhoof, Venomridge, the Direhorn Matriarch,
+# Cinder, King Op, Snowtalon, Bolt, Vitrix, Nanaya), not of a recorded run.
+# Every quest goal is counted by the quest log, so a group that takes them in
+# another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon. Mapping the Way Forward has no objective in the data; the
+#   quest gives you the explorer's map.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, level
+#   60).
+# - Lint warns that the inside goals have no coordinates: no source places
+#   the door, and the data places nothing inside. They stay without, rather
+#   than at a guessed point.
+# INGAME: where is the Shaper's Terrace's door? Where are the landmarks for
+#   the explorer's map, and who gives Digestible Research?
+
+step Curator Thorius
+  tip In the Hall of Explorers.
+  accept 95924
+  accept 95925
+
+step To the Shaper's Terrace
+  tip A dungeon for five players of level 60, in Un'Goro Crater.
+  enter "The Shaper's Terrace"
+
+step The ravasaurs
+  along until leave
+  kill 253215 x6 quest 95924.2 group 5
+  kill 261786 x9 quest 95924.3 group 5
+
+step Venomridge
+  tip The fourth boss in the client's journal, after the Titanosaur, the Ravasaur Hunters and Thunderhoof.
+  kill 261813 quest 95924.1 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the ravasaurs, finish it, and fill out the explorer's map at the landmarks before you go. Seven more bosses follow Venomridge in the client's journal, Nanaya the last; no quest needs them.
+  kill 253215 x6 quest 95924.2 group 5
+  kill 261786 x9 quest 95924.3 group 5
+
+step Curator Thorius
+  turnin 95924
+  turnin 95925

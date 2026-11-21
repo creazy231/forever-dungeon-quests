@@ -30,6 +30,8 @@ A community addon for Polestar with quest guides for WoW Forever's new dungeons.
 
 - **Blackmaw Hold** (Azshara, levels 55 to 60): Horde and Alliance. Beneath Nordrassil and the root caps, Blackmaw Magic, Ogtinc's claws and tusks, Ekkal's pouches, Gatekeeper Rageroar's Blackmaw Reclamation, the necklace, the Horde Paladins' Reliquary of Tyr, one run (Withermaw to the Unbound Spirit) and every hand-in.
 
+- **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
+
 More dungeons come in later versions.
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
@@ -71,3 +73,7 @@ Adds Alcaz Prison for the Horde and the Alliance.
 ## Changelog for 2.7.0
 
 Adds Blackmaw Hold for the Horde and the Alliance.
+
+## Changelog for 2.8.0
+
+Adds the Shaper's Terrace for the Horde and the Alliance. Every one of WoW Forever's new dungeons is now in the addon.

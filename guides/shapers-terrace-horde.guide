@@ -1,0 +1,87 @@
+guide forever-dungeon-quests/shapers-terrace-horde
+title The Shaper's Terrace (Horde)
+category Dungeons
+folder The Shaper's Terrace
+faction Horde
+levels 60-60
+zone Undercity
+keywords Shaper's Terrace, Un'Goro Crater, Master Apothecary Faranell, Chemist Fuely, Mayena Earthseeker, Undercity, Mulgore, Achromatic Crystal, crystal, Seeping Slime, Titanosaur, Venomridge, Nanaya, dungeon
+why Every Horde quest of the Shaper's Terrace in one run.
+
+# The Shaper's Terrace's Horde quests in one guide: the pick-ups in the
+# Undercity and Mulgore, one run through the dungeon, then the hand-ins.
+#
+# The quests: Master Apothecary Faranell's 95926 The Dark Crystal (a Drained
+# Crystal Fragment from the Achromatic Crystal, object 648579), Chemist
+# Fuely's 97049 Essence of Seeping Slimes (eight, from the Seeping Slimes)
+# and Mayena Earthseeker's 95928 Crystalline Elements (a Fiery, Charged,
+# Noxious and Moist Crystal, each from its own crystal fragment object:
+# 649099, 649097, 649100, 649103).
+#
+# Left out: nothing of the Horde's.
+#
+# Inside: no source names the door: Polestar's entrances, its players'
+# recordings and the client's tables have none (checked 2026-11-21). So the
+# guide names the dungeon without a point, and the goals inside carry none.
+# No Horde quest is tied to a boss; the client's dungeon journal lists eleven
+# (the Titanosaur first, Nanaya last). Every quest goal is counted by the
+# quest log, so the order inside does not matter.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, level
+#   60).
+# - Lint warns that the inside goals have no coordinates: no source places
+#   the door, and the data places nothing inside. They stay without, rather
+#   than at a guessed point.
+# INGAME: where is the Shaper's Terrace's door, and where inside do the
+#   crystals and the Achromatic Crystal stand?
+
+step Master Apothecary Faranell
+  tip In the Apothecarium.
+  accept 95926
+
+step Chemist Fuely
+  accept 97049
+
+step Mayena Earthseeker
+  zone Mulgore
+  accept 95928
+
+step To the Shaper's Terrace
+  zone Un'Goro Crater
+  tip A dungeon for five players of level 60, in Un'Goro Crater.
+  enter "The Shaper's Terrace"
+
+step Crystals and slimes
+  along until leave
+  collect 271771 quest 95926.1 group 5 -- From the Achromatic Crystal.
+  collect 271894 quest 95928.1 group 5 -- Each crystal comes from its own crystal fragment.
+  collect 271898 quest 95928.2 group 5
+  collect 271902 quest 95928.3 group 5
+  collect 271912 quest 95928.4 group 5
+  collect 276235 x8 quest 97049.1 group 5 -- The Seeping Slimes drop it.
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the crystals, the fragment and the slime essence, finish it before you go.
+  collect 271771 quest 95926.1 group 5
+  collect 271894 quest 95928.1 group 5
+  collect 271898 quest 95928.2 group 5
+  collect 271902 quest 95928.3 group 5
+  collect 271912 quest 95928.4 group 5
+  collect 276235 x8 quest 97049.1 group 5
+
+step Mayena Earthseeker
+  zone Mulgore
+  turnin 95928
+
+step Master Apothecary Faranell
+  zone Undercity
+  turnin 95926
+
+step Chemist Fuely
+  turnin 97049

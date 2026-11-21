@@ -19,6 +19,7 @@ Polestar.
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
+| The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
 More of WoW Forever's dungeons come in later versions.
 
@@ -186,6 +187,18 @@ they are the same guides. This addon is where they get their updates.
 - Impaan and Varrox may drop the Feathered Charm Necklace, which starts A
   Lost Memento; its steps show only if you have it.
 - Left out: Ekkal's repeat of Blackmaw Pouches.
+
+## The Shaper's Terrace
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| The Shaper's Terrace (Horde) | Master Apothecary Faranell, the Undercity | Mulgore, the dungeon, back to Mulgore and the Undercity |
+| The Shaper's Terrace (Alliance) | Curator Thorius, Ironforge | The dungeon, back to Ironforge |
+
+- The dungeon is for five players of level 60, in Un'Goro Crater. No source
+  I may use names its door yet, so the arrow has no point for it or for the
+  goals inside: if you know where it is, tell me.
+- Left out: Digestible Research, whose giver the game's data doesn't name.
 
 ## Next to Polestar's Dungeons window
 
