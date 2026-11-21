@@ -1,0 +1,111 @@
+guide forever-dungeon-quests/shadowfang-keep-horde
+title Shadowfang Keep (Horde)
+category Dungeons
+folder Shadowfang Keep
+faction Horde
+levels 20-30
+zone Undercity
+keywords Shadowfang Keep, Silverpine Forest, Sepulcher, Pyrewood, Undercity, Keeper Bel'dugur, Book of Ur, High Executor Hadrec, Deathstalker Vincent, Dalar Dawnweaver, Arugal, Dead Drop, Horn of Xelthos, Alonso, Dragonslayer's Helm, Rethilgore, Razorclaw, Silverlaine, Springvale, Odo, Fenrus, Nandos, dungeon
+reward item 3324 270023 270024
+reward item 4534 6335 270030
+reward item 6414
+why Every Horde quest of Shadowfang Keep in one run.
+
+# Shadowfang Keep's Horde quests in one guide: Keeper Bel'dugur in the
+# Undercity, High Executor Hadrec and Dalar Dawnweaver at the Sepulcher, one
+# run through the keep, then the hand-ins; for Rogues and Warriors, their
+# class quest too.
+#
+# The quests: Keeper Bel'dugur's 1013 The Book of Ur (from the book inside),
+# High Executor Hadrec's 1098 Deathstalkers in Shadowfang (to Deathstalker
+# Vincent inside), Dalar Dawnweaver's 1014 Arugal Must Die (Arugal's head).
+# Rogues: the Dead Drop's 78261 The Horn of Xelthos (from the Ornamented Chest
+# inside). Warriors: Alonso's 78132 Dragonslayer's Helm (the Discarded Helm
+# inside).
+#
+# Left out: the Warlocks' 1740 The Orb of Soran'ruk (its fragments come from
+# Blackfathom Deeps); the Scourge Paladins' 95036 A Moon-Kissed Blade (it
+# needs the Deadmines' lumber and items the data gives no source for); 78307,
+# the Horn of Xelthos' follow-up, which has no giver in the data.
+#
+# Inside: nothing in the data places the bosses, Vincent, the book, the chest
+# or the helm inside, so their goals stand at the door (@45.0,67.9, Silverpine
+# Forest) with `group 5`. The bosses come in the order of the client's dungeon
+# journal (Rethilgore, Razorclaw the Butcher, Baron Silverlaine, Commander
+# Springvale, Odo the Blindwatcher, Fenrus the Devourer, Wolf Master Nandos,
+# Archmage Arugal), not of a recorded run. Every quest goal is counted by the
+# quest log, so a group that takes them in another order still gets each step
+# ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Horn of Xelthos' text asks you to do the
+#   job alone.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   20 to 30).
+# INGAME: where inside do Deathstalker Vincent, the Book of Ur, the Ornamented
+#   Chest and the Discarded Helm stand?
+
+step Alonso
+  only Warrior
+  zone Ashenvale
+  accept 78132
+
+step Keeper Bel'dugur
+  zone Undercity
+  tip At the Apothecarium.
+  accept 1013
+
+step High Executor Hadrec
+  zone Silverpine Forest
+  tip At the Sepulcher.
+  accept 1098
+
+step Dalar Dawnweaver
+  accept 1014
+
+step The Dead Drop
+  only Rogue
+  tip Near Pyrewood Village.
+  accept 78261
+
+step To Shadowfang Keep
+  tip A dungeon for five players of level 20 to 30.
+  enter "Shadowfang Keep" @45.0,67.9
+
+step Deathstalker Vincent
+  tip Find him in the keep: High Executor Hadrec's quest ends with him.
+  turnin 1098 @45.0,67.9
+
+step The Book of Ur
+  tip The book lies in the keep.
+  collect 6283 quest 1013.1 @45.0,67.9 group 5
+
+step Class quests
+  tip Rogues: the Horn of Xelthos is in an Ornamented Chest; its quest asks you to do the job alone, so in a group it may not count. Warriors: the Dragonslayer's Helm is a Discarded Helm in the keep.
+  collect 210183 quest 78261.1 @45.0,67.9 only Rogue
+  collect 209872 quest 78132.1 @45.0,67.9 group 5 only Warrior
+
+step Archmage Arugal
+  tip The last boss in the client's journal. His head is for Dalar Dawnweaver.
+  collect 5442 quest 1014.1 @45.0,67.9 group 5
+
+step Dalar Dawnweaver
+  turnin 1014
+
+step The Dead Drop
+  only Rogue
+  turnin 78261
+
+step Keeper Bel'dugur
+  zone Undercity
+  turnin 1013
+
+step Alonso
+  only Warrior
+  zone Ashenvale
+  turnin 78132

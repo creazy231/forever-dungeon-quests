@@ -16,6 +16,7 @@ Polestar.
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
 | The Deadmines | Westfall | Alliance | 17 to 26 |
 | Wailing Caverns | The Barrens | Horde, Alliance | 17 to 24 |
+| Shadowfang Keep | Silverpine Forest | Horde; Alliance Rogues and Warriors | 20 to 30 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
@@ -131,6 +132,23 @@ with one folder per dungeon.
   the caves around the door, outside the dungeon.
 - Mutanus the Devourer drops a Glowing Shard, which starts a quest for
   both sides.
+
+## Shadowfang Keep
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Shadowfang Keep (Horde) | Keeper Bel'dugur, the Undercity | The Sepulcher, the keep, back to the Sepulcher and the Undercity |
+| Shadowfang Keep (Alliance) | Alonso, Ashenvale (Warriors) or the Dead Drop near Pyrewood (Rogues) | The keep, back again |
+
+- The dungeon is for five players of level 20 to 30, in Silverpine Forest.
+- The Alliance's quests here are class quests, so its guide is only for
+  Rogues (The Horn of Xelthos) and Warriors (Dragonslayer's Helm). Horde
+  Rogues and Warriors get the same quests in the Horde guide. The Horn of
+  Xelthos asks you to do the job alone.
+- Left out: the Paladins' and the Warlocks' class quests here, whose chains
+  need the Deadmines or Blackfathom Deeps.
+- Where Deathstalker Vincent, the Book of Ur, the chest and the helm are
+  inside is still open: if you know, tell me.
 
 ## Excavation Site: Wetlands
 

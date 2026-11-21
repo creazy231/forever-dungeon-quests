@@ -23,6 +23,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Ruins of Lordaeron** (by the Undercity, levels 15 to 22): Horde. Rear Guard Patrol and A Recipe For Death, the pick-ups in the Undercity, one run (Witherfang to Rath'mael, The Baron's head, the crest), the hand-ins and the Unending Torment chain.
 - **The Deadmines** (Westfall, levels 17 to 26): Alliance. The Defias Brotherhood chain, Alba Fairmoon's chain, Thistlenettle's and Shoni's quests, one run (Rhahk'Zor to VanCleef) and every hand-in.
 - **Wailing Caverns** (the Barrens, levels 17 to 24): Horde and Alliance. Tonga Runetotem's chain and Leaders of the Fang, Serpentbloom, Ratchet's and the druids' quests, one run (the Fanglords to Mutanus) and every hand-in.
+- **Shadowfang Keep** (Silverpine Forest, levels 20 to 30): Horde, and Alliance Rogues and Warriors. The Book of Ur, Deathstalkers in Shadowfang, Arugal Must Die, the Rogues' Horn of Xelthos and the Warriors' Dragonslayer's Helm.
 - **Excavation Site: Wetlands** (the Wetlands, levels 26 to 33): Horde and Alliance. Borstan, Zaruk and the Deathstalker Agent for the Horde; Dorin Songblade, James Halloran, Rethiel's chain and the Grassmans for the Alliance; one run after a recorded one (Saltspine, Shadetooth, the Dragonmaw, the Relic Guardian) and every hand-in.
 - **City of Dalaran** (by Lordamere Lake, levels 28 to 35): Horde and Alliance. Wordeen Voidglare's chain, Melisara and Doctor Martin Felben for the Horde; Shylamiir, Andromath and Emissary Jacques for the Alliance; Modera's image, one run after a recorded one (Atrexis to the Mana Devourer) and every hand-in.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
@@ -92,3 +93,7 @@ Adds the Deadmines for the Alliance.
 ## Changelog for 2.11.0
 
 Adds the Wailing Caverns for the Horde and the Alliance.
+
+## Changelog for 2.12.0
+
+Adds Shadowfang Keep: the Horde's quests, and the Alliance's class quests for Rogues and Warriors.

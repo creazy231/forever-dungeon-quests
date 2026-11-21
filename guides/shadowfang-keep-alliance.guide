@@ -1,0 +1,64 @@
+guide forever-dungeon-quests/shadowfang-keep-alliance
+title Shadowfang Keep (Alliance)
+category Dungeons
+folder Shadowfang Keep
+faction Alliance
+class Rogue, Warrior
+levels 20-30
+zone Ashenvale
+keywords Shadowfang Keep, Silverpine Forest, Pyrewood, Dead Drop, Horn of Xelthos, Alonso, Dragonslayer's Helm, Rogue, Warrior, Arugal, dungeon
+why The Alliance's quests in Shadowfang Keep are class quests: the Rogues' and the Warriors' in one run.
+
+# Shadowfang Keep's Alliance quests are class quests, so this guide is only
+# for Rogues and Warriors: the Dead Drop's 78261 The Horn of Xelthos (from the
+# Ornamented Chest inside) and Alonso's 78132 Dragonslayer's Helm (the
+# Discarded Helm inside).
+#
+# Left out: the Paladins' 1654 and 1806 The Test of Righteousness (they need
+# the Deadmines' lumber); the Warlocks' 1740 The Orb of Soran'ruk (its
+# fragments come from Blackfathom Deeps); 78307, the Horn of Xelthos'
+# follow-up, which has no giver in the data.
+#
+# Inside: nothing in the data places the chest or the helm inside, so their
+# goals stand at the door (@45.0,67.9, Silverpine Forest). Shadowfang Keep is
+# in Horde land.
+#
+# Sources (facts only):
+# - Quests, NPCs, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Horn of Xelthos' text asks you to do the
+#   job alone.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size and levels: the client's group finder, as Polestar's
+#   Codex page holds it (five players, levels 20 to 30).
+# INGAME: where inside do the Ornamented Chest and the Discarded Helm stand?
+
+step Alonso
+  only Warrior
+  accept 78132
+
+step The Dead Drop
+  only Rogue
+  zone Silverpine Forest
+  tip Near Pyrewood Village, in Horde land.
+  accept 78261
+
+step To Shadowfang Keep
+  zone Silverpine Forest
+  tip A dungeon for five players of level 20 to 30, in Horde land.
+  enter "Shadowfang Keep" @45.0,67.9
+
+step Class quests
+  tip Rogues: the Horn of Xelthos is in an Ornamented Chest; its quest asks you to do the job alone, so in a group it may not count. Warriors: the Dragonslayer's Helm is a Discarded Helm in the keep.
+  collect 210183 quest 78261.1 @45.0,67.9 only Rogue
+  collect 209872 quest 78132.1 @45.0,67.9 group 5 only Warrior
+
+step The Dead Drop
+  only Rogue
+  turnin 78261
+
+step Alonso
+  only Warrior
+  zone Ashenvale
+  turnin 78132
