@@ -90,3 +90,8 @@ test("excavation site alliance: a delivery after the relic is no return trip", (
 	// 98824 Prehistoric Prism follows 95810 (the relic drops inside) but needs nothing inside.
 	assert.doesNotMatch(questBlock(worksheet("excavation-site-wetlands", "A"), 98824), /RETURN-TRIP/);
 });
+
+test("a dropper with no place in the data is still named", () => {
+	// The Eye of Mugg (267086) drops from Overlord Mugg, whom the data places nowhere.
+	assert.match(questBlock(worksheet("kroldok-stronghold", "H"), 94968), /94968\.1 item 267086 .*Overlord Mugg \(npc \d+\), no place/);
+});

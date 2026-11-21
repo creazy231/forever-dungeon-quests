@@ -105,7 +105,7 @@ function itemSources(id) {
 	if (!it) return { ...out, text: ["not in the data"] };
 	const npcIds = Object.keys(it.drops?.npc ?? {}).map(Number);
 	const objIds = Object.keys(it.drops?.object ?? {}).map(Number);
-	const inside = [], outside = new Map(), other = new Set(), bosses = [];
+	const inside = [], outside = new Map(), other = new Set(), bosses = [], nowhere = [];
 	for (const nid of npcIds) {
 		const b = bossByNpc.get(nid);
 		const p = placeOf(npcs[nid]);
@@ -114,6 +114,7 @@ function itemSources(id) {
 		for (const z of p.zones) { out.outside = true; if (!outside.has(z)) outside.set(z, []); outside.get(z).push(npcs[nid]?.name ?? `npc ${nid}`); }
 		for (const m of p.others) { other.add(instanceName(m)); }
 		if (onlyElsewhere(p)) p.others.forEach((m) => out.elsewhere.add(instanceName(m)));
+		if (!p.inside && !p.zones.length && !p.others.length) nowhere.push(`${npcs[nid]?.name ?? "npc"} (npc ${nid}), no place in the data`);
 	}
 	for (const oid of objIds) {
 		const b = bossByObject.get(oid);
@@ -128,6 +129,7 @@ function itemSources(id) {
 	if (inside.length) out.text.push(`inside: ${few(inside)}`);
 	for (const [z, names] of outside) out.text.push(`${zoneName(z)}: ${few(names)}`);
 	if (other.size) out.text.push(`other instances: ${[...other].join(", ")}`);
+	if (nowhere.length) out.text.push(...nowhere);
 	if (it.vendors?.length) {
 		const sellers = it.vendors.map((v) => {
 			const n = npcs[v];
