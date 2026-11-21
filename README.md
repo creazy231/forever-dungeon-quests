@@ -326,8 +326,8 @@ they are the same guides. This addon is where they get their updates.
   ritual, Plaguemaw, Glutton, then Amnennar with the Coldbringer's Eye.
 - The Horde's second An Unholy Alliance shows for characters who handed in
   the first, from Razorfen Kraul.
-- Left out: Agamaggan's Blood, the end of a Shen'dralas chain with an item
-  the game's data gives no source for.
+- Left out: Agamaggan's Blood, the end of the Shen'dralas chain: it needs
+  Maraudon's Rot and Regret and Passing the Blame first.
 
 ## Krol'dok Stronghold
 

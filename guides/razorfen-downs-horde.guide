@@ -24,8 +24,9 @@ why Every Horde quest of Razorfen Downs in one run.
 # Alliance (Ambassador Malcin's head, outside the door); inside, Belnistrasz'
 # 3523 Scourge of the Downs -> 3525 Extinguishing the Idol.
 #
-# Left out: 93604 Agamaggan's Blood, the end of a Shen'dralas chain one of
-# whose quests wants an item the data gives no source for.
+# Left out: 93604 Agamaggan's Blood, the end of the Shen'dralas chain: it
+# needs Maraudon's 93404 Rot and Regret and 93601 Passing the Blame first (the
+# Maraudon guide holds them).
 #
 # Inside: nothing in the data places the bosses, Belnistrasz or the Eye
 # inside, so their goals stand at the door (@49.0,93.9, The Barrens) with
