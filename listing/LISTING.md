@@ -41,6 +41,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Maraudon** (Desolace, levels 46 to 55): Horde and Alliance. The Shen'dralas chain to Rot and Regret, the Pariah's Amulet of Union with the five Khans, Legends of Maraudon and the Scepter of Celebras, Twisted Evils, Vyletongue Corruption, Shadowshard Fragments, Corruption of Earth and Seed, Seed of Life, An'she's Radiance for the Horde, and every hand-in.
 - **Alcaz Prison** (Alcaz Island, Dustwallow Marsh, levels 48 to 55): Horde and Alliance. Sergeant Ulka's and Sully McCleary's chains, the story inside (Commander Folkar, the King's fate), Mason Connery's key and trunk, Zarla's Journal, one run (Wrex to Blazeroar) and every hand-in.
 
+- **Sunken Temple** (Swamp of Sorrows, levels 50 to 60): Horde and Alliance. Brohann's chain through Rhapsody Shindigger for the Alliance, Fel'zerul's to the Fetishes of Hakkar for the Horde; Marvon's Stone Circle quests, Jammal'an the Prophet, Muigin's or Larion's haze, The Essence of Eranikus, The God Hakkar after Zul'Farrak, every class's Sunken Temple chain from its trainer, and every hand-in.
 - **Blackmaw Hold** (Azshara, levels 55 to 60): Horde and Alliance. Beneath Nordrassil and the root caps, Blackmaw Magic, Ogtinc's claws and tusks, Ekkal's pouches, Gatekeeper Rageroar's Blackmaw Reclamation, the necklace, the Horde Paladins' Reliquary of Tyr, one run (Withermaw to the Unbound Spirit) and every hand-in.
 
 - **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
@@ -146,3 +147,7 @@ Adds Zul'Farrak for the Horde and the Alliance. Uldaman: Mages now also get Mana
 ## Changelog for 2.21.0
 
 Adds Maraudon for the Horde and the Alliance. Razorfen Downs: the reason Agamaggan's Blood is left out is now the true one (it needs Maraudon's chain first).
+
+## Changelog for 2.22.0
+
+Adds the Sunken Temple for the Horde and the Alliance, with every class's chain.

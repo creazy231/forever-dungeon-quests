@@ -31,6 +31,7 @@ Polestar.
 | Zul'Farrak | Tanaris | Horde, Alliance | 44 to 54 |
 | Maraudon | Desolace | Horde, Alliance | 46 to 55 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
+| Sunken Temple | Swamp of Sorrows | Horde, Alliance | 50 to 60 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
@@ -435,6 +436,29 @@ they are the same guides. This addon is where they get their updates.
   name, so that step only shows when the box is in your bags.
 - Where Commander Folkar, Mason Connery and the window stand inside is still
   open: if you know, tell me.
+
+## Sunken Temple
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Sunken Temple (Horde) | Your class trainer in Orgrimmar, or Fel'zerul in Stonard | The Hinterlands, Feralas, Un'Goro Crater, Tanaris, Ratchet, Azshara and Felwood for some classes, Stonard, the dungeon, back again |
+| Sunken Temple (Alliance) | Brohann Caskbelly, Stormwind | The Swamp of Sorrows, Stormwind, the Hinterlands, Un'Goro Crater, Feralas, Tanaris, Ratchet, Azshara and Felwood for some classes, the dungeon, back again |
+
+- The dungeon is for five players of level 50 to 60. Its door is in the
+  eastern Swamp of Sorrows.
+- Every class with a Sunken Temple quest gets its chain from its trainer, in
+  steps only that class sees: Hunters, Rogues, Mages, Priests, Warlocks,
+  Warriors and Druids on both sides, Paladins for the Alliance, Shamans for
+  the Horde.
+- Both sides: Marvon Rivetseeker's Stone Circle, Into the Depths and Secret
+  of the Circle; Jammal'an the Prophet; the haze for Muigin or Larion and
+  the Bloodpetal quest after it; The Essence of Eranikus; The God Hakkar
+  after Zul'Farrak's chain. The Alliance takes Brohann's chain through
+  Rhapsody Shindigger to the tablets, the Horde Fel'zerul's to the Fetishes
+  of Hakkar.
+- Left out: Eranikus, Tyrant of the Dream (it needs Blackwing Lair), the
+  Essence of Eranikus' second part (it starts from an item, not at the
+  font), The Lost Tablets of Mosh'aru (another NPC gives it).
 
 ## Blackmaw Hold
 

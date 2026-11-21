@@ -1,0 +1,541 @@
+guide forever-dungeon-quests/sunken-temple-horde
+title Sunken Temple (Horde)
+category Dungeons
+folder Sunken Temple
+faction Horde
+levels 50-60
+zone Orgrimmar
+keywords Sunken Temple, Temple of Atal'Hakkar, Swamp of Sorrows, Stonard, Fel'zerul, Pool of Tears, Atal'ai Artifacts, Atal'ai Exile, Fetish of Hakkar, Jammal'an, Witch Doctor Uzer'i, Marvon Rivetseeker, Stone Circle, Altar of Hakkar, Idol of Hakkar, Larion, Liv Rizzlefix, Atal'ai Haze, Zapper Fuel, Bloodpetal Zapper, Yeh'kinya, Egg of Hakkar, Eranikus, Essence Font, Morphaz, Ogtinc, Archmage Xylem, Impsy, Bath'rah the Windwatcher, Fallen Hero of the Horde, Torwa Pathfinder, voodoo feathers, Atal'alarion, Avatar of Hakkar, dungeon
+reward item 1490
+reward item 10773
+reward item 11123 11124 270115
+reward item 10749 10750 10751 270117
+reward item 10455
+why Every Horde quest of the Sunken Temple in one run, class quests and lead-ins included.
+
+# The Sunken Temple's Horde quests in one guide: the pick-ups in Orgrimmar
+# (each class's trainer too), Stonard, the Hinterlands, a round of Kalimdor
+# (Feralas, Un'Goro Crater, Tanaris, Ratchet, and for some classes Azshara and
+# Felwood), back to Stonard, one run, then the hand-ins. Steps already done
+# are passed over, so the guide picks up wherever the chain stands.
+#
+# The chains:
+# - Fel'zerul's 1424 Pool of Tears -> 1429 The Atal'ai Exile -> 1444 Return to
+#   Fel'Zerul -> 1445 The Temple of Atal'Hakkar (twenty Fetishes of Hakkar).
+# - Witch Doctor Uzer'i's 3380 The Sunken Temple -> Marvon Rivetseeker's 3444
+#   The Stone Circle -> 3446 Into the Depths and 3447 Secret of the Circle.
+# - Larion's 4145 Larion and Muigin -> 4147 Marvon's Workshop -> Liv
+#   Rizzlefix's 4146 Zapper Fuel -> 4148 Bloodpetal Zapper.
+# - The Atal'ai Exile's 1446 Jammal'an the Prophet.
+# - Yeh'kinya's 3528 The God Hakkar, for characters who handed in The Ancient
+#   Egg (4787, in the Zul'Farrak guide).
+# - The Essence of Eranikus (from the Shade of Eranikus) starts 3373.
+# - Classes, each from its trainer in Orgrimmar (Druids in Thunder Bluff):
+#   Hunters 8151 -> Ogtinc's 8153 -> 8231 -> 8232 The Green Drake; Rogues 8233
+#   -> Lord Jorach Ravenholdt's 8234 -> Archmage Xylem's 8235 -> 8236 The
+#   Azure Key; Mages 8250 -> Xylem's 8251 -> 8252 -> 8253 Destroy Morphaz;
+#   Priests 8254 -> Ogtinc's 8255 -> 8256 -> 8257 Blood of Morphaz (to Greta
+#   Mosshoof); Shamans 8410 -> Bath'rah the Windwatcher's 8412 -> 8413 Da
+#   Voodoo; Warlocks 8419 -> Impsy's 8421 -> 8422 Trolls of a Feather;
+#   Warriors 8417 -> the Fallen Hero of the Horde's 8423 -> 8424 -> 8425
+#   Voodoo Feathers; Druids 9063 -> Torwa Pathfinder's 9052 -> 9051 -> 9053 A
+#   Better Ingredient.
+#
+# Left out: 8733 Eranikus, Tyrant of the Dream (its chain needs Blackwing
+# Lair); 3374, the Essence of Eranikus' second part (it starts from the
+# Oathstone of Ysera's Dragonflight, not at the Essence Font); 5065 The Lost
+# Tablets of Mosh'aru after The God Hakkar (another NPC gives it).
+#
+# Inside: nothing in the data places the bosses, the troll mini-bosses, the
+# haze mobs, the Altar or Idol of Hakkar or the Essence Font inside, so their
+# goals stand at the door (@69.9,53.5, Swamp of Sorrows) with `group 5`. The
+# bosses come in the order of the client's dungeon journal (Atal'alarion,
+# Avatar of Hakkar, Shade of Eranikus, Hazzas, Morphaz, Weaver, Dreamscythe,
+# Jammal'an the Prophet; Spawn of Hakkar and Ogom the Wretched optional), not
+# of a recorded run. Every quest goal is counted by the quest log, so a group
+# that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The God Hakkar also needs the Essence of
+#   Hakkar, which the Shade of Hakkar or the Avatar of Hakkar drops; the data
+#   has no source for the Filled Egg itself. The voodoo feathers come from six
+#   named trolls inside; the Fetishes of Hakkar from the temple's trolls,
+#   inside and around it. Lint warns that the door is more than 50 yards
+#   from the trolls outside; the goal stays at the door for the ones inside.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   50 to 60). The client also lists a 20-player Sunken Temple; this guide is
+#   the five-player dungeon's.
+# INGAME: where inside do the Altar of Hakkar, the circle of statues, the
+#   Essence Font, the six feather trolls and the haze mobs stand?
+
+step Ormak Grimshot
+  only Hunter
+  tip In Orgrimmar.
+  accept 8151 npc 3352
+
+step Ormok
+  only Rogue
+  zone Orgrimmar
+  accept 8233 npc 3328
+
+step Uthel'nay
+  only Mage
+  zone Orgrimmar
+  accept 8250 npc 7311
+
+step Ur'kyo
+  only Priest
+  zone Orgrimmar
+  accept 8254 npc 6018
+
+step Zevrost
+  only Warlock
+  zone Orgrimmar
+  accept 8419 npc 3326
+
+step Sorek
+  only Warrior
+  zone Orgrimmar
+  accept 8417 npc 3354
+
+step Sagorne Creststrider
+  only Shaman
+  zone Orgrimmar
+  accept 8410 npc 13417
+
+step Turak Runetotem
+  only Druid
+  zone Thunder Bluff
+  accept 9063 npc 3033
+
+step Fel'zerul
+  zone Swamp of Sorrows
+  tip In Stonard.
+  accept 1424
+
+step Pool of Tears
+  collect 6175 x10 quest 1424.1
+
+step Fel'zerul
+  turnin 1424
+  accept 1429
+
+step Fallen Hero of the Horde
+  only Warrior
+  zone Swamp of Sorrows
+  turnin 8417
+  accept 8423
+
+step Warrior Kinship
+  only Warrior
+  zone Blasted Lands
+  kill 5993 x7 quest 8423.1
+
+step Fallen Hero of the Horde
+  only Warrior
+  zone Swamp of Sorrows
+  turnin 8423
+  accept 8424
+
+step War on the Shadowsworn
+  only Warrior
+  zone Blasted Lands
+  kill 6006 x20 quest 8424.1
+  kill 6004 x10 quest 8424.2
+  kill 6005 x20 quest 8424.3
+
+step Fallen Hero of the Horde
+  only Warrior
+  zone Swamp of Sorrows
+  turnin 8424
+  accept 8425
+
+step Elemental Mastery
+  only Shaman
+  zone Arathi Highlands
+  tip One each of Elemental Air, Fire, Earth and Water: Arathi's elementals drop all four.
+  collect 7069 quest 8410.1
+  collect 7068 quest 8410.2
+  collect 7067 quest 8410.3
+  collect 7070 quest 8410.4
+
+step Bath'rah the Windwatcher
+  only Shaman
+  zone Alterac Mountains
+  turnin 8410
+  accept 8412
+
+step Spirit Totem
+  only Shaman
+  zone Western Plaguelands
+  collect 20610 x8 quest 8412.1
+  collect 20611 x8 quest 8412.2
+
+step Bath'rah the Windwatcher
+  only Shaman
+  zone Alterac Mountains
+  turnin 8412
+  accept 8413
+
+step Lord Jorach Ravenholdt
+  only Rogue
+  zone Alterac Mountains
+  turnin 8233
+  accept 8234
+
+step Atal'ai Exile
+  zone The Hinterlands
+  turnin 1429
+  accept 1444
+  accept 1446
+
+step Witch Doctor Uzer'i
+  zone Feralas
+  tip At Camp Mojache.
+  accept 3380
+
+step Larion
+  zone Un'Goro Crater
+  tip At Marshal's Refuge.
+  accept 4145
+
+step Larion and Muigin
+  kill 6509 x5 quest 4145.1
+  kill 6512 x5 quest 4145.2
+  kill 6510 x5 quest 4145.3
+  kill 6511 x5 quest 4145.4
+
+step Larion
+  turnin 4145
+  accept 4147
+
+step Torwa Pathfinder
+  only Druid
+  zone Un'Goro Crater
+  turnin 9063
+  accept 9052
+
+step Bloodpetal Poison
+  only Druid
+  zone Un'Goro Crater
+  collect 22435 x8 quest 9052.1
+  collect 22434 x8 quest 9052.2
+
+step Torwa Pathfinder
+  only Druid
+  zone Un'Goro Crater
+  turnin 9052
+  accept 9051
+
+step Toxic Test
+  only Druid
+  zone Un'Goro Crater
+  tip Stab a Devilsaur with the Devilsaur Barb.
+  kill 6498 quest 9051.1
+
+step Torwa Pathfinder
+  only Druid
+  zone Un'Goro Crater
+  turnin 9051
+  accept 9053
+
+step Marvon Rivetseeker
+  zone Tanaris
+  turnin 3380
+  accept 3444
+
+step Yeh'kinya
+  when turnedin 4787
+  tip In Steamwheedle Port.
+  accept 3528
+
+step Marvon's Chest
+  zone The Barrens
+  tip In Ratchet.
+  collect 10556 quest 3444.1
+
+step Liv Rizzlefix
+  turnin 4147
+  accept 4146
+
+step Marvon Rivetseeker
+  zone Tanaris
+  turnin 3444
+  accept 3446
+  accept 3447
+
+step Ogtinc
+  only Hunter
+  zone Azshara
+  tip Atop the cliffs northeast of the Ruins of Eldarath.
+  turnin 8151
+  accept 8153
+
+step Courser Antlers
+  only Hunter
+  zone Azshara
+  collect 20017 x2 quest 8153.1
+
+step Ogtinc
+  only Hunter
+  zone Azshara
+  turnin 8153
+  accept 8231
+
+step Wavethrashing
+  only Hunter
+  zone Azshara
+  collect 20087 x6 quest 8231.1
+
+step Ogtinc
+  only Hunter
+  zone Azshara
+  turnin 8231
+  accept 8232
+
+step Ogtinc
+  only Priest
+  zone Azshara
+  tip Atop the cliffs northeast of the Ruins of Eldarath.
+  turnin 8254
+  accept 8255
+
+step Of Coursers We Know
+  only Priest
+  zone Azshara
+  collect 20027 x4 quest 8255.1
+
+step Ogtinc
+  only Priest
+  zone Azshara
+  turnin 8255
+  accept 8256
+
+step The Ichor of Undeath
+  only Priest
+  zone Azshara
+  collect 7972 quest 8256.1
+
+step Ogtinc
+  only Priest
+  zone Azshara
+  turnin 8256
+  accept 8257
+
+step Sanath Lim-yo
+  only Mage
+  zone Azshara
+  turnin 8250
+
+step Archmage Xylem
+  only Mage
+  zone Azshara
+  accept 8251
+
+step Magic Dust
+  only Mage
+  zone Azshara
+  collect 20028 x10 quest 8251.1
+
+step Archmage Xylem
+  only Mage
+  zone Azshara
+  turnin 8251
+  accept 8252
+
+step The Siren's Coral
+  only Mage
+  zone Azshara
+  collect 20029 x6 quest 8252.1
+
+step Archmage Xylem
+  only Mage
+  zone Azshara
+  turnin 8252
+  accept 8253
+
+step Sealed Azure Bag
+  only Rogue
+  zone Azshara
+  collect 19775 quest 8234.1
+
+step Archmage Xylem
+  only Rogue
+  zone Azshara
+  turnin 8234
+  accept 8235
+
+step Encoded Fragments
+  only Rogue
+  zone Azshara
+  collect 20023 x10 quest 8235.1
+
+step Archmage Xylem
+  only Rogue
+  zone Azshara
+  turnin 8235
+  accept 8236
+
+step Felcloth
+  only Warlock
+  zone Felwood
+  collect 14256 quest 8419.1
+
+step Impsy
+  only Warlock
+  zone Felwood
+  turnin 8419
+  accept 8421
+
+step The Wrong Stuff
+  only Warlock
+  zone Felwood
+  collect 20613 x10 quest 8421.1
+  collect 20614 x4 quest 8421.2
+
+step Impsy
+  only Warlock
+  zone Felwood
+  turnin 8421
+  accept 8422
+
+step Fel'zerul
+  zone Swamp of Sorrows
+  tip In Stonard.
+  turnin 1444
+  accept 1445
+
+step To the Sunken Temple
+  zone Swamp of Sorrows
+  tip A dungeon for five players of level 50 to 60.
+  enter "Sunken Temple" @69.9,53.5
+
+step Fetishes and haze
+  along until leave
+  collect 6181 x20 quest 1445.1 @69.9,53.5 group 5 -- The temple's trolls drop the Fetishes of Hakkar.
+  collect 11318 x5 quest 4146.1 @69.9,53.5 group 5 -- From the Murk Worms, Saturated Oozes and Deep Lurkers.
+
+step The circle of statues
+  tip Discover the secret hidden in the circle of statues: the Idol of Hakkar takes Secret of the Circle.
+  turnin 3447 object 148838 @69.9,53.5
+
+step Atal'alarion
+  only Druid
+  tip The first encounter in the client's journal. The guardian drops the Putrid Vine.
+  collect 22444 quest 9053.1 @69.9,53.5 group 5
+
+step The Altar of Hakkar
+  tip Into the Depths ends at the Altar of Hakkar.
+  turnin 3446 object 148836 @69.9,53.5
+
+step Avatar of Hakkar
+  when onquest 3528
+  tip The second encounter in the client's journal. The God Hakkar needs the Filled Egg and the Essence of Hakkar, which the Shade of Hakkar or the Avatar drops.
+  complete 3528 @69.9,53.5 group 5
+
+step Shade of Eranikus
+  tip The third encounter in the client's journal. The Essence of Eranikus starts a quest: place it in the Essence Font.
+  collect 10454 @69.9,53.5 group 5
+  accept 3373 @69.9,53.5
+  turnin 3373 object 148512 @69.9,53.5
+
+step Morphaz
+  tip After Hazzas in the client's journal. Morphaz drops what four class quests want.
+  collect 20019 quest 8232.1 @69.9,53.5 group 5 only Hunter
+  collect 20022 quest 8236.1 @69.9,53.5 group 5 only Rogue
+  collect 20085 quest 8253.1 @69.9,53.5 group 5 only Mage
+  collect 20025 quest 8257.1 @69.9,53.5 group 5 only Priest
+
+step Voodoo feathers
+  tip Gasher and Zul'Lor drop the amber feathers, Hukku and Mijan the blue ones, Zolo and Loro the green ones.
+  collect 20606 x2 quest 8413.1 @69.9,53.5 group 5 only Shaman
+  collect 20607 x2 quest 8413.2 @69.9,53.5 group 5 only Shaman
+  collect 20608 x2 quest 8413.3 @69.9,53.5 group 5 only Shaman
+  collect 20606 x2 quest 8422.1 @69.9,53.5 group 5 only Warlock
+  collect 20607 x2 quest 8422.2 @69.9,53.5 group 5 only Warlock
+  collect 20608 x2 quest 8422.3 @69.9,53.5 group 5 only Warlock
+  collect 20606 x2 quest 8425.1 @69.9,53.5 group 5 only Warrior
+  collect 20607 x2 quest 8425.2 @69.9,53.5 group 5 only Warrior
+  collect 20608 x2 quest 8425.3 @69.9,53.5 group 5 only Warrior
+
+step Jammal'an the Prophet
+  tip The last encounter in the client's journal, after Weaver and Dreamscythe.
+  collect 6212 quest 1446.1 @69.9,53.5 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the fetishes and the haze, finish it before you go.
+  collect 6181 x20 quest 1445.1 @69.9,53.5 group 5
+  collect 11318 x5 quest 4146.1 @69.9,53.5 group 5
+
+step Fel'zerul
+  zone Swamp of Sorrows
+  tip In Stonard.
+  turnin 1445
+
+step Fallen Hero of the Horde
+  only Warrior
+  zone Swamp of Sorrows
+  turnin 8425
+
+step Bath'rah the Windwatcher
+  only Shaman
+  zone Alterac Mountains
+  turnin 8413
+
+step Lord Jorach Ravenholdt
+  only Rogue
+  zone Alterac Mountains
+  turnin 8236
+
+step Atal'ai Exile
+  zone The Hinterlands
+  turnin 1446
+
+step Ogtinc
+  only Hunter
+  zone Azshara
+  turnin 8232
+
+step Archmage Xylem
+  only Mage
+  zone Azshara
+  turnin 8253
+
+step Greta Mosshoof
+  only Priest
+  zone Felwood
+  turnin 8257
+
+step Impsy
+  only Warlock
+  zone Felwood
+  turnin 8422
+
+step Larion
+  zone Un'Goro Crater
+  tip At Marshal's Refuge.
+  turnin 4146
+  accept 4148
+
+step Bloodpetal Sprouts
+  collect 11315 quest 4148.1
+
+step Larion
+  turnin 4148
+
+step Torwa Pathfinder
+  only Druid
+  zone Un'Goro Crater
+  turnin 9053
+
+step Yeh'kinya
+  when onquest 3528
+  zone Tanaris
+  tip In Steamwheedle Port.
+  turnin 3528
