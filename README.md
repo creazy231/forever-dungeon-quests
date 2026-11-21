@@ -14,6 +14,7 @@ Polestar.
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
+| City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 
 More of WoW Forever's dungeons come in later versions.
@@ -86,6 +87,24 @@ with one folder per dungeon.
   is still open: if you know, tell me.
 - Left out: Seeking Caitlin, Llana's breadcrumb in Astranaar. Caitlin gives
   her quest without it.
+
+## City of Dalaran
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| City of Dalaran (Horde) | Doctor Martin Felben, the Undercity | Tarren Mill, Modera's image by the lake, the dungeon, back to Tarren Mill and the Undercity |
+| City of Dalaran (Alliance) | Shylamiir, Stormwind | Southshore, Modera's image by the lake, the dungeon, back to Stormwind |
+
+- The dungeon is for five players of level 28 to 35; its quests start at 30.
+  Its door is on the shore of Lordamere Lake, behind Dalaran's sewers.
+- Inside, both guides follow a run of mine: Rexxie's quest by the sewer
+  entrance, Atrexis, Lyn the Ignored, the Arcane Anomaly, the Fel Ancient,
+  the Mana Elemental, the Unstable Sentinel, the Shade of the Archmage, then
+  the Mana Devourer.
+- The Horde guide waits for level 33 before Wordeen's lead-ins, whose mobs
+  are level 32 to 35.
+- Where Archmage Celindra stands (Friend of the Kirin Tor) is still open: if
+  you know, tell me.
 
 ## The Drowned City
 

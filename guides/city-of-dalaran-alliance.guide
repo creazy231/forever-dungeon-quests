@@ -1,0 +1,119 @@
+guide forever-dungeon-quests/city-of-dalaran-alliance
+title City of Dalaran (Alliance)
+category Dungeons
+folder City of Dalaran
+faction Alliance
+levels 30-35
+zone Stormwind City
+keywords City of Dalaran, Dalaran, Stormwind, Southshore, Shylamiir, Andromath, Emissary Jacques, Modera, Celindra, Fel Plant, Mana Elemental, Arcanic Enigma, Shade of the Archmage, remnant, Mana Echo, sewer, dungeon
+reward item 279835 279836
+reward item 279837 279838
+reward item 279839 279840 279841
+reward item 251962 279849
+why Every Alliance quest of the City of Dalaran in one run, lead-in included.
+
+# The City of Dalaran's Alliance quests in one guide: the pick-ups in
+# Stormwind, Emissary Jacques in Southshore, the Image of Archmage Modera by
+# the lake, one run through the dungeon, then the hand-ins. Steps already done
+# are passed over, so the guide picks up wherever the chain stands.
+#
+# The chain: Shylamiir's 92456 A Green Sample (a Fel Infused Blossom) and
+# High Sorcerer Andromath's 92489 Power Overwhelming (the Mana Elemental) in
+# Stormwind; Emissary Jacques' 92432 An Alarming Request -> Modera's 92457
+# Starving Arcane (remnants and a Mana Echo) and 92458 Heart of Disruption
+# (the Shade of the Archmage's Arcane Mote) -> 92459 Friend of the Kirin Tor
+# (to Archmage Celindra).
+#
+# Left out: nothing of the Alliance's.
+#
+# Inside: nothing in the data places the bosses or the Fel Plants inside, so
+# their goals stand at the door (@8.8,59.6, Alterac Mountains, by the lake)
+# with `group 5`. The bosses come in the order of a run of my own (as a Horde
+# character). Every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. Power Overwhelming's text asks for the Mana
+#   Elemental; its objective counts the Arcanic Enigma.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - What drops where: players' recordings (data/codex/recorded.json): the
+#   Fel Infused Blossom from the Fel Plants.
+# - A run of my own on 2026-11-12 (Horde, five players), which the Horde
+#   guide's header describes: the order of the bosses, and the remnants and
+#   Mana Echo met inside after the Fel Ancient.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   28 to 35). An Alarming Request needs level 30, so the guide starts there.
+# - Lint warns that the door is more than 50 yards from the data's spots for
+#   the Saturated Remnants, the Mana Echoes and the Arcanic Enigma: the data
+#   places them within Dalaran's walls on the Alterac map, while my run met
+#   them inside the dungeon. The goals stay at the door, where the group goes
+#   in.
+# INGAME: where does Archmage Celindra stand, in Dalaran or inside the
+#   dungeon? The data puts her at 14.2,60.1 in Alterac Mountains.
+
+step Shylamiir
+  tip In Stormwind.
+  accept 92456
+
+step High Sorcerer Andromath
+  accept 92489
+
+step Emissary Jacques
+  zone Hillsbrad Foothills
+  tip In Southshore.
+  accept 92432
+
+step Image of Archmage Modera
+  zone Silverpine Forest
+  tip By the lake, outside Dalaran's walls.
+  turnin 92432
+  accept 92457
+  accept 92458
+
+step To the City of Dalaran
+  zone Alterac Mountains
+  tip A dungeon for five players of level 28 to 35. Its door is on the shore of Lordamere Lake.
+  enter "City of Dalaran" @8.8,59.6
+
+step Starving Arcane and the blossom
+  along until leave
+  kill 247003 x8 quest 92457.1 @8.8,59.6 group 5
+  kill 247001 x8 quest 92457.2 @8.8,59.6 group 5
+  kill 246600 quest 92457.3 @8.8,59.6 group 5
+  collect 251983 quest 92456.1 @8.8,59.6 group 5 -- A Fel Plant gives the blossom.
+
+step Mana Elemental
+  tip On my run Atrexis, Lyn the Ignored, the Arcane Anomaly and the Fel Ancient came first; the remnants and Mana Echoes were about after the Fel Ancient. Power Overwhelming asks for the Mana Elemental, and the quest log calls the kill the Arcanic Enigma.
+  kill 246016 quest 92489.1 @8.8,59.6 group 5
+
+step Shade of the Archmage
+  tip The Unstable Sentinel came before him on my run. He drops the Arcane Mote.
+  collect 251961 quest 92458.1 @8.8,59.6 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short for Starving Arcane and the blossom, finish it before you go. The Mana Devourer was the last boss on my run.
+  kill 247003 x8 quest 92457.1 @8.8,59.6 group 5
+  kill 247001 x8 quest 92457.2 @8.8,59.6 group 5
+  kill 246600 quest 92457.3 @8.8,59.6 group 5
+  collect 251983 quest 92456.1 @8.8,59.6 group 5
+
+step Image of Archmage Modera
+  zone Silverpine Forest
+  turnin 92457
+  turnin 92458
+  accept 92459
+
+step Archmage Celindra
+  turnin 92459
+
+step Shylamiir
+  zone Stormwind City
+  turnin 92456
+
+step High Sorcerer Andromath
+  turnin 92489

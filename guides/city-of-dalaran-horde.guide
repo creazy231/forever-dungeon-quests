@@ -1,0 +1,152 @@
+guide forever-dungeon-quests/city-of-dalaran-horde
+title City of Dalaran (Horde)
+category Dungeons
+folder City of Dalaran
+faction Horde
+levels 30-35
+zone Undercity
+keywords City of Dalaran, Dalaran, Tarren Mill, Wordeen Voidglare, Melisara, Martin Felben, Modera, Rexxie Copperclutch, Atrexis, Lyn the Ignored, Shade of the Archmage, Unstable Sentinel, Mana Devourer, Sentry Core, sewer, dungeon
+reward item 279842 279843 279844
+reward item 251963 251965
+reward item 279845 279846
+reward item 279847 279848
+why Every Horde quest of the City of Dalaran in one run, lead-ins included.
+
+# The City of Dalaran's Horde quests in one guide: Doctor Martin Felben in
+# the Undercity, Magus Wordeen Voidglare's chain from Tarren Mill to the Image
+# of Archmage Modera, one run through the dungeon, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The chain: Wordeen's 544 Prison Break In and 93680 Key to the City -> 545
+# Dalaran Patrols -> 92434 Blood in the Streets (to Modera's image by the
+# lake) -> Modera's 96984 Heart of Disruption (the Shade of the Archmage's
+# Arcane Mote, back to Wordeen) -> 97287 Shrewd Negotiations (back to Modera).
+# Melisara's 96986
+# The Grave Knight (Atrexis) and Doctor Martin Felben's 96988 Source of Power
+# (six Cracked Sentry Cores). Inside, Rexxie Copperclutch gives 96987
+# Opportunistic Education (The Founding of Dalaran, from a Dalaran Tome).
+#
+# Left out: nothing of the Horde's. Modera's 92459 Friend of the Kirin Tor is the
+# Alliance's only.
+#
+# Inside: nothing in the data places the bosses, Rexxie or the tome inside,
+# so their goals stand at the door (@8.8,59.6, Alterac Mountains, by the lake)
+# with `group 5`. The steps follow a run of my own. Every quest goal is
+# counted by the quest log, so a group that takes them in another order still
+# gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - What drops where: players' recordings (data/codex/recorded.json): the
+#   Cracked Sentry Cores from Fragmented Sentries and the Unstable Sentinel.
+# - A run of my own on 2026-11-12 (Horde, five players, level 34), recorded
+#   with Polestar's recorder and shared with Polestar Client: Rexxie's quest
+#   taken first, then Atrexis, Lyn the Ignored, the Arcane Anomaly, the Fel
+#   Ancient, the Mana Elemental, the Unstable Sentinel (the Sentry Cores from
+#   the Fragmented Sentries on the way), the Shade of the Archmage, the tome,
+#   the Mana Devourer, and Rexxie's hand-in.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   28 to 35).
+# - The lead-ins need level 30, and their mobs are level 32 to 35
+#   (data/forever), so the guide starts at 30 and those steps wait for 33.
+
+step Doctor Martin Felben
+  tip In the Apothecarium.
+  accept 96988
+
+step Magus Wordeen Voidglare
+  zone Hillsbrad Foothills
+  tip In Tarren Mill.
+  accept 544
+  accept 93680
+
+step Melisara
+  accept 96986
+
+step Prison Break In
+  level 33
+  tip Four traitors in the hills carry the Bloodstones: Dermot, Ricter, Alina and Kegan Darkmar.
+  collect 3691 quest 544.1
+  collect 3689 quest 544.2
+  collect 3690 quest 544.3
+  collect 3688 quest 544.4
+
+step Key to the City
+  tip The Warden's Footlocker holds the Grimy Key.
+  collect 279469 quest 93680.1
+
+step Magus Wordeen Voidglare
+  turnin 544
+  turnin 93680
+  accept 545
+
+step Dalaran Patrols
+  level 33
+  kill 2358 x6 quest 545.1
+  kill 2359 x12 quest 545.2
+
+step Magus Wordeen Voidglare
+  turnin 545
+  accept 92434
+
+step Image of Archmage Modera
+  zone Silverpine Forest
+  tip By the lake, outside Dalaran's walls.
+  talk 269127 quest 92434.1
+  turnin 92434
+  accept 96984
+
+step To the City of Dalaran
+  zone Alterac Mountains
+  tip A dungeon for five players of level 28 to 35. Its door is on the shore of Lordamere Lake.
+  enter "City of Dalaran" @8.8,59.6
+
+step Rexxie Copperclutch
+  tip Near the sewer entrance, as you come in.
+  accept 96987 @8.8,59.6
+
+step Cracked Sentry Cores
+  along until leave
+  collect 275997 x6 quest 96988.1 @8.8,59.6 group 5 -- The Fragmented Sentries drop them, and so does the Unstable Sentinel.
+
+step Atrexis the Grave Knight
+  tip On my run, the first boss.
+  kill 247126 quest 96986.1 @8.8,59.6 group 5
+
+step Shade of the Archmage
+  tip On my run, Lyn the Ignored, the Arcane Anomaly, the Fel Ancient, the Mana Elemental and the Unstable Sentinel came before him. He drops the Arcane Mote.
+  collect 251961 quest 96984.1 @8.8,59.6 group 5
+
+step The Founding of Dalaran
+  tip A Dalaran Tome holds it. On my run it came after the Shade, before the Mana Devourer.
+  collect 275996 quest 96987.1 @8.8,59.6 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the six Sentry Cores, finish it before you go. The Mana Devourer was the last boss on my run.
+  collect 275997 x6 quest 96988.1 @8.8,59.6 group 5
+
+step Rexxie Copperclutch
+  turnin 96987 @8.8,59.6
+
+step Melisara
+  zone Hillsbrad Foothills
+  turnin 96986
+
+step Magus Wordeen Voidglare
+  turnin 96984
+  accept 97287
+
+step Image of Archmage Modera
+  zone Silverpine Forest
+  turnin 97287
+
+step Doctor Martin Felben
+  zone Undercity
+  turnin 96988
