@@ -1,0 +1,189 @@
+guide forever-dungeon-quests/wailing-caverns-horde
+title Wailing Caverns (Horde)
+category Dungeons
+folder Wailing Caverns
+faction Horde
+levels 17-24
+zone The Barrens
+keywords Wailing Caverns, The Barrens, Crossroads, Ratchet, Tonga Runetotem, Hamuul Runetotem, Nara Wildmane, Thunder Bluff, Apothecary Zamah, Serpentbloom, Nalpak, Ebru, Mebok Mizzyrix, Bigglefuzz, Mad Magglish, Sputtervalve, Falla Sagewind, Fanglord, Anacondra, Cobrahn, Pythas, Serpentis, Kresh, Skum, Verdan, Mutanus, Glowing Shard, deviate, dungeon
+reward item 6504 6505 270018
+reward item 6476 6481 8071
+reward item 10919 270008 270009
+reward item 918
+reward item 6480
+why Every Horde quest of the Wailing Caverns in one run, lead-ins included.
+
+# The Wailing Caverns' Horde quests in one guide: Tonga Runetotem's chain from
+# the Crossroads to Thunder Bluff, Ratchet's pick-ups, the druids at the
+# caverns, one run, then the hand-ins. Steps already done are passed over, so
+# the guide picks up wherever the chain stands.
+#
+# The chains: Tonga Runetotem's 870 The Forgotten Pools -> 877 The Stagnant
+# Oasis -> 880 Altered Beings -> 1489 Hamuul Runetotem -> 1490 Nara Wildmane ->
+# 914 Leaders of the Fang (the four Fanglords' gems). Apothecary Zamah's 962
+# Serpentbloom. Mebok Mizzyrix's 865 Raptor Horns -> 1491 Smart Drinks
+# (Wailing Essence); Crane Operator Bigglefuzz's 959 Trouble at the Docks
+# (Mad Magglish's port); Nalpak's 1486 Deviate Hides and Ebru's 1487 Deviate
+# Eradication; Mutanus's Glowing Shard (item 10441) starts 6981 The Glowing
+# Shard (Sputtervalve in Ratchet, then Falla Sagewind).
+#
+# Left out: nothing of the Horde's.
+#
+# Inside: nothing in the data places the bosses inside, so their goals stand
+# at the door (@46.7,35.7, The Barrens) with `group 5`. The bosses come in the
+# order of the client's dungeon journal (Lady Anacondra, Lord Cobrahn, Kresh,
+# Lord Pythas, Skum, Lord Serpentis, Verdan the Everliving, Mutanus the
+# Devourer), not of a recorded run. Every quest goal is counted by the quest
+# log, so a group that takes them in another order still gets each step
+# ticked. The Serpentbloom and Mad Magglish also stand in the caves outside
+# the dungeon, on the Barrens map around the door.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Forgotten Pools' spot is the data's.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   17 to 24).
+# - Lint warns that the door is more than 50 yards from the Devouring
+#   Ectoplasms on the Barrens map, which drop the Wailing Essence outside too;
+#   the goal stays at the door for the ectoplasms inside.
+
+step Tonga Runetotem
+  tip At the Crossroads.
+  accept 870
+
+step The Forgotten Pools
+  complete 870
+
+step Tonga Runetotem
+  turnin 870
+  accept 877
+
+step The Stagnant Oasis
+  tip Test the seeds at the Bubbling Fissure.
+  interact 3737 quest 877.1
+
+step Tonga Runetotem
+  turnin 877
+  accept 880
+
+step Altered Beings
+  tip The Oasis Snapjaws carry the shells.
+  collect 5098 x8 quest 880.1
+
+step Tonga Runetotem
+  turnin 880
+  accept 1489
+
+step Arch Druid Hamuul Runetotem
+  zone Thunder Bluff
+  turnin 1489
+  accept 1490
+
+step Nara Wildmane
+  turnin 1490
+  accept 914
+
+step Apothecary Zamah
+  accept 962
+
+step Mebok Mizzyrix
+  zone The Barrens
+  tip In Ratchet.
+  accept 865
+
+step Crane Operator Bigglefuzz
+  accept 959
+
+step Raptor Horns
+  tip The Sunscale Scytheclaws carry them.
+  collect 5055 x5 quest 865.1
+
+step Mebok Mizzyrix
+  turnin 865
+  accept 1491
+
+step Nalpak
+  tip On the hill above the caverns.
+  accept 1486
+
+step Ebru
+  accept 1487
+
+step The caverns' mouth
+  tip Outside the dungeon, in the caves around its door: the Serpentbloom grows here, and Mad Magglish wanders with the port.
+  collect 5339 x10 quest 962.1
+  collect 5334 quest 959.1
+
+step To the Wailing Caverns
+  tip A dungeon for five players of level 17 to 24.
+  enter "Wailing Caverns" @46.7,35.7
+
+step Hides, essences and the deviates
+  along until leave
+  collect 6443 x20 quest 1486.1 @46.7,35.7 group 5 -- The deviate creatures and several bosses drop them.
+  collect 6464 x6 quest 1491.1 @46.7,35.7 group 5 -- The Evolving and Nightmare Ectoplasms inside drop the essence; the Devouring Ectoplasms outside do too.
+  kill 3636 x7 quest 1487.1 @46.7,35.7 group 5
+  kill 5755 x7 quest 1487.2 @46.7,35.7 group 5
+  kill 5761 x7 quest 1487.3 @46.7,35.7 group 5
+  kill 5056 x7 quest 1487.4 @46.7,35.7 group 5
+
+step Lady Anacondra
+  tip The first Fanglord in the client's journal.
+  collect 9739 quest 914.2 @46.7,35.7 group 5
+
+step Lord Cobrahn
+  collect 9738 quest 914.1 @46.7,35.7 group 5
+
+step Lord Pythas
+  tip Kresh comes before him in the client's journal.
+  collect 9740 quest 914.3 @46.7,35.7 group 5
+
+step Lord Serpentis
+  tip Skum comes before him in the client's journal.
+  collect 9741 quest 914.4 @46.7,35.7 group 5
+
+step Mutanus the Devourer
+  tip The last boss, after Verdan the Everliving. He drops a Glowing Shard, which starts a quest.
+  collect 10441 @46.7,35.7 group 5
+  accept 6981 @46.7,35.7
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the hides, the essence and the deviates, finish it before you go.
+  collect 6443 x20 quest 1486.1 @46.7,35.7 group 5
+  collect 6464 x6 quest 1491.1 @46.7,35.7 group 5
+  kill 3636 x7 quest 1487.1 @46.7,35.7 group 5
+  kill 5755 x7 quest 1487.2 @46.7,35.7 group 5
+  kill 5761 x7 quest 1487.3 @46.7,35.7 group 5
+  kill 5056 x7 quest 1487.4 @46.7,35.7 group 5
+
+step Nalpak
+  turnin 1486
+
+step Ebru
+  turnin 1487
+
+step Mebok Mizzyrix
+  tip In Ratchet.
+  turnin 1491
+
+step Crane Operator Bigglefuzz
+  turnin 959
+
+step Sputtervalve
+  talk 3442 quest 6981.1
+
+step Falla Sagewind
+  tip Back on the hill above the caverns.
+  turnin 6981
+
+step Nara Wildmane
+  zone Thunder Bluff
+  turnin 914
+
+step Apothecary Zamah
+  turnin 962

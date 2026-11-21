@@ -15,6 +15,7 @@ Polestar.
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
 | The Deadmines | Westfall | Alliance | 17 to 26 |
+| Wailing Caverns | The Barrens | Horde, Alliance | 17 to 24 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
@@ -115,6 +116,21 @@ with one folder per dungeon.
   source for.
 - Where the forge for Destruction in Deadmines is inside is still open: if
   you know, tell me.
+
+## Wailing Caverns
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Wailing Caverns (Horde) | Tonga Runetotem, the Crossroads | Thunder Bluff, Ratchet, the caverns, back to Ratchet and Thunder Bluff |
+| Wailing Caverns (Alliance) | Mebok Mizzyrix, Ratchet | The caverns, back to Ratchet |
+
+- The dungeon is for five players of level 17 to 24. Its door is in the
+  Barrens.
+- The Horde guide takes Tonga Runetotem's chain to Nara Wildmane's Leaders
+  of the Fang first. The Serpentbloom and Mad Magglish's port can be had in
+  the caves around the door, outside the dungeon.
+- Mutanus the Devourer drops a Glowing Shard, which starts a quest for
+  both sides.
 
 ## Excavation Site: Wetlands
 
