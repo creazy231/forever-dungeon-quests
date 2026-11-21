@@ -14,6 +14,7 @@ Polestar.
 | Ragefire Chasm | Orgrimmar | Horde | 13 to 18 |
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
+| The Deadmines | Westfall | Alliance | 17 to 26 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
@@ -94,6 +95,26 @@ with one folder per dungeon.
   Heartweaver's trail are inside is still open: if you know, tell me.
 - Polestar has no map of the inside, so the arrow points at the door for
   every goal in there.
+
+## The Deadmines
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| The Deadmines (Alliance) | Gnoarn, Ironforge | Stormwind, Westfall, Redridge, Stormwind again, the dungeon, Westfall, Stormwind |
+
+- The dungeon is for five players of level 17 to 26. Its door is in
+  Westfall.
+- The guide takes the whole Defias Brotherhood chain and Alba Fairmoon's
+  new chain first, so it goes between Westfall, Redridge and Stormwind
+  before the run. Alba's A Dynamite Plan wants ten Rough Dynamite, an
+  engineer's make.
+- Left out: the Paladins' Test of Righteousness, whose chain needs
+  Shadowfang Keep. The Unsent Letter's follow-up, Bazil Thredd, is in the
+  Stockade guide. No Horde guide: the Horde's one quest here, the Scourge
+  Paladins' A Moon-Kissed Blade, wants three items the game's data gives no
+  source for.
+- Where the forge for Destruction in Deadmines is inside is still open: if
+  you know, tell me.
 
 ## Excavation Site: Wetlands
 

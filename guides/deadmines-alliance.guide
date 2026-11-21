@@ -1,0 +1,229 @@
+guide forever-dungeon-quests/deadmines-alliance
+title The Deadmines (Alliance)
+category Dungeons
+folder The Deadmines
+faction Alliance
+levels 17-26
+zone Ironforge
+keywords Deadmines, Westfall, Sentinel Hill, Moonbrook, Gryan Stoutmantle, Defias Brotherhood, Defias Traitor, Wiley the Black, Mathias Shaw, Scout Riell, Alba Fairmoon, Sprite Jumpsprocket, Jasper Fel, Wilder Thistlenettle, Gnoarn, Shoni, Baros Alexston, Rhahk'Zor, Sneed, Gilnid, Greenskin, Mr. Smite, Cookie, VanCleef, bandana, explosives, dungeon
+reward item 2041 2042 6087
+reward item 2074 2089 6094 270005
+reward item 7606 7607 270015 270016
+reward item 1893 270012 270013
+reward item 2036 2037 270007
+why Every Alliance quest of the Deadmines in one run, with the Defias Brotherhood and Alba Fairmoon's chains.
+
+# The Deadmines' Alliance quests in one guide: Gnoarn in Ironforge, the
+# pick-ups in Stormwind, the Defias Brotherhood chain and Alba Fairmoon's
+# chain between Westfall, Redridge and Stormwind, one run through the mines,
+# then the hand-ins. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The chains:
+# - Gryan Stoutmantle's 65 The Defias Brotherhood (to Wiley the Black) -> 132
+#   -> 135 (to Master Mathias Shaw) -> 141 -> 142 (A Mysterious Message) ->
+#   the Defias Traitor's 155 -> 166 (VanCleef's head); Scout Riell's 214 Red
+#   Silk Bandanas opens after 155.
+# - Alba Fairmoon's 92742 Testing the Wells and 92744 Murloc Gills -> 92745
+#   The State of the Mines -> 92747 Moonbrook Espionage -> 92748 Explosive
+#   Consultation (to Sprite Jumpsprocket) -> 92749 A Dynamite Plan and 92750,
+#   92751 Detonation at a Distance (Jasper Fel) -> 92752 -> 92753
+#   Destruction in Deadmines (the explosives by the forge inside) -> 92819
+#   (the Detonator at the mines' exit).
+# - Wilder Thistlenettle's 168 Collecting Memories and 167 Oh Brother...;
+#   Gnoarn's 2041 Speak with Shoni -> 2040 Underground Assault (Sneed's
+#   Shredder's Gnoam Sprecklesprocket); VanCleef's An Unsent Letter (item
+#   2874) starts 373, for Baros Alexston.
+#
+# Left out: the Paladins' 1654 and 1806 The Test of Righteousness, whose chain
+# needs Jordan's Hammer from Shadowfang Keep. The Unsent Letter's follow-up,
+# 389 Bazil Thredd, opens the Stockade's quests and is in the Stockade guide.
+# No Horde guide: the Horde's one quest here, the Scourge Paladins' 95036 A
+# Moon-Kissed Blade, wants three items the data gives no source for.
+#
+# Inside: nothing in the data places the bosses or the forge inside, so their
+# goals stand at the door (@41.9,72.8, Westfall) with `group 5`. The bosses
+# come in the order of the client's dungeon journal (Rhahk'Zor, Sneed, Miner
+# Johnson, Gilnid, Captain Greenskin, Mr. Smite, Cookie, Edwin VanCleef), not
+# of a recorded run. Every quest goal is counted by the quest log, so a group
+# that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The escort's end and the Detonator's spot are
+#   the data's; Rough Dynamite has no source there (an engineer's make).
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   17 to 26).
+# INGAME: where inside is the forge for Destruction in Deadmines?
+
+step Gnoarn
+  tip In Ironforge.
+  accept 2041
+
+step Shoni the Shilent
+  zone Stormwind City
+  turnin 2041
+  accept 2040
+
+step Wilder Thistlenettle
+  accept 168
+  accept 167
+
+step Gryan Stoutmantle
+  zone Westfall
+  tip At Sentinel Hill.
+  accept 65
+
+step Alba Fairmoon
+  accept 92742
+  accept 92744
+
+step Testing the Wells and Murloc Gills
+  collect 254546 quest 92742.1
+  collect 254547 quest 92742.2
+  collect 254548 x7 quest 92744.1
+
+step Alba Fairmoon
+  turnin 92742
+  turnin 92744
+  accept 92745
+
+step The State of the Mines
+  kill 1236 x4 quest 92745.1
+  kill 1426 x6 quest 92745.2
+
+step Miners' cards and the Foreman
+  tip The undead miners carry the Miners' Union Cards; Foreman Thistlenettle carries his badge.
+  collect 1894 x4 quest 168.1
+  collect 1875 quest 167.1
+
+step Alba Fairmoon
+  turnin 92745
+  accept 92747
+
+step Moonbrook Espionage
+  collect 254676 x8 quest 92747.1
+
+step Alba Fairmoon
+  turnin 92747
+  accept 92748
+
+step Wiley the Black
+  zone Redridge Mountains
+  turnin 65
+  accept 132
+
+step Gryan Stoutmantle
+  zone Westfall
+  turnin 132
+  accept 135
+
+step Master Mathias Shaw
+  zone Stormwind City
+  turnin 135
+  accept 141
+
+step Sprite Jumpsprocket
+  turnin 92748
+  accept 92749
+  accept 92750
+
+step Rough Dynamite
+  tip An engineer's make: craft it or buy it.
+  collect 4358 x10 anywhere
+
+step Jasper Fel
+  turnin 92750
+  accept 92751
+
+step Sprite Jumpsprocket
+  turnin 92751
+  turnin 92749
+  accept 92752
+
+step Wilder Thistlenettle
+  turnin 168
+  turnin 167
+
+step Gryan Stoutmantle
+  zone Westfall
+  turnin 141
+  accept 142
+
+step A Mysterious Message
+  tip A Defias Messenger carries it.
+  collect 1381 quest 142.1
+
+step Gryan Stoutmantle
+  turnin 142
+
+step The Defias Traitor
+  tip Escort him to where VanCleef hides.
+  accept 155
+  complete 155
+
+step Gryan Stoutmantle
+  turnin 155
+  accept 166
+
+step Scout Riell
+  accept 214
+
+step Alba Fairmoon
+  turnin 92752
+  accept 92753
+
+step To the Deadmines
+  tip A dungeon for five players of level 17 to 26.
+  enter "The Deadmines" @41.9,72.8
+
+step Red Silk Bandanas
+  along until leave
+  collect 915 x10 quest 214.1 @41.9,72.8 group 5 -- The Defias inside drop them, the Defias Watchmen too.
+
+step Sneed's Shredder
+  tip Rhahk'Zor comes first in the client's journal, then Sneed in his Shredder. The Shredder gives up the Gnoam Sprecklesprocket.
+  collect 7365 quest 2040.1 @41.9,72.8 group 5
+
+step The forge
+  tip Find the forge hidden in the mines and plant Alba's explosives nearby.
+  complete 92753 @41.9,72.8 group 5
+
+step Edwin VanCleef
+  tip The last boss in the client's journal, after Miner Johnson, Gilnid, Captain Greenskin, Mr. Smite and Cookie. He drops his head for Gryan, and An Unsent Letter, which starts a quest for Stormwind.
+  collect 3637 quest 166.1 @41.9,72.8 group 5
+  collect 2874 @41.9,72.8 group 5
+  accept 373 @41.9,72.8
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the bandanas, finish it before you go.
+  collect 915 x10 quest 214.1 @41.9,72.8 group 5
+
+step Alba Fairmoon
+  tip At the mines' exit.
+  turnin 92753
+  accept 92819
+
+step The Detonator
+  interact 581792 quest 92819.1
+
+step Alba Fairmoon
+  turnin 92819
+
+step Gryan Stoutmantle
+  turnin 166
+
+step Scout Riell
+  turnin 214
+
+step Baros Alexston
+  zone Stormwind City
+  turnin 373
+
+step Shoni the Shilent
+  turnin 2040
