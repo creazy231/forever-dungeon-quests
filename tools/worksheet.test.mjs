@@ -71,3 +71,9 @@ test("runlog: the recorded Drowned City run met its bosses in order", () => {
 	assert.ok(encounters.some((e) => e.join(",") === "3474,3475,3476,3478,3479"), JSON.stringify(encounters));
 	assert.ok(visits.some((v) => v.startsWith("2026-11-15")));
 });
+
+test("vendors are named with their zones, all of them", () => {
+	// Essence of Agony (8923) for 97291: the Undercity's Ezekiel Graves is one of many sellers.
+	const q = questBlock(worksheet("ruins-of-lordaeron", "H"), 97291);
+	assert.match(q, /97291\.3 item 8923 .*Ezekiel Graves \(npc 4585\) in Undercity/);
+});

@@ -128,7 +128,15 @@ function itemSources(id) {
 	if (inside.length) out.text.push(`inside: ${few(inside)}`);
 	for (const [z, names] of outside) out.text.push(`${zoneName(z)}: ${few(names)}`);
 	if (other.size) out.text.push(`other instances: ${[...other].join(", ")}`);
-	if (it.vendors?.length) { out.text.push(`vendors: ${it.vendors.slice(0, 3).join(", ")}`); out.outside = true; }
+	if (it.vendors?.length) {
+		const sellers = it.vendors.map((v) => {
+			const n = npcs[v];
+			const z = Object.keys(n?.spawns ?? {}).map(Number).map(zoneName);
+			return `${n?.name ?? "npc"} (npc ${v})${z.length ? ` in ${z.join(", ")}` : ""}${n?.faction ? ` [${n.faction}]` : ""}`;
+		});
+		out.text.push(`vendors: ${sellers.join(", ")}`);
+		out.outside = true;
+	}
 	if (!out.text.length) out.text.push("no source in the data");
 	return out;
 }
