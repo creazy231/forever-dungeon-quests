@@ -1,0 +1,113 @@
+guide forever-dungeon-quests/razorfen-downs-horde
+title Razorfen Downs (Horde)
+category Dungeons
+folder Razorfen Downs
+faction Horde
+levels 37-46
+zone Undercity
+keywords Razorfen Downs, The Barrens, Myriam Moonsinger, A Host of Evil, Belnistrasz, idol, Andrew Brownell, Skull of the Coldbringer, Sutara Plainstalker, Coldbringer's Eye, Varimathras, Ambassador Malcin, Tuten'kash, Plaguemaw, Mordresh, Ragglesnout, Glutton, Amnennar, dungeon
+reward item 10823
+reward item 10824 270081
+reward item 17039 17042 17043 270054
+reward item 10710
+why Every Horde quest of Razorfen Downs in one run.
+
+# Razorfen Downs' Horde quests in one guide: the pick-ups in the Undercity and
+# Mulgore, Myriam Moonsinger at the door, one run, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Andrew Brownell's 3341 Bring the End (Amnennar's skull); Sutara
+# Plainstalker's 97196 The Coldbringer's Eye; Myriam Moonsinger's 6626 A Host
+# of Evil (outside the door); for characters who handed in the first An
+# Unholy Alliance (6522, from Razorfen Kraul), Varimathras' 6521 An Unholy
+# Alliance (Ambassador Malcin's head, outside the door); inside, Belnistrasz'
+# 3523 Scourge of the Downs -> 3525 Extinguishing the Idol.
+#
+# Left out: 93604 Agamaggan's Blood, the end of a Shen'dralas chain one of
+# whose quests wants an item the data gives no source for.
+#
+# Inside: nothing in the data places the bosses, Belnistrasz or the Eye
+# inside, so their goals stand at the door (@49.0,93.9, The Barrens) with
+# `group 5`. The steps follow a run of my own: Tuten'kash, then Belnistrasz and
+# his ritual, Plaguemaw the Rotting, Glutton, Amnennar the Coldbringer, with
+# the Eye right after him. Every quest goal is counted by the quest log, so a
+# group that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Razorfen and the cultists outside are
+#   elites of level 33 to 34, Ambassador Malcin one of 36.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - A run of my own on 2026-11-16 (Horde, five players, level 40), recorded
+#   with Polestar's recorder and shared with Polestar Client: the order above,
+#   Scourge of the Downs taken and handed in to Belnistrasz after Tuten'kash,
+#   Extinguishing the Idol handed in after Plaguemaw, the skull and the Eye
+#   after Amnennar.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   37 to 46).
+
+step Andrew Brownell
+  tip In the Undercity.
+  accept 3341
+
+step Varimathras
+  when turnedin 6522
+  accept 6521
+
+step Sutara Plainstalker
+  zone Mulgore
+  accept 97196
+
+step Myriam Moonsinger
+  zone The Barrens
+  tip By the dungeon's door.
+  accept 6626
+
+step A Host of Evil
+  tip The Razorfen and the Death's Head Cultists around the door are elites: bring your group.
+  kill 7873 x8 quest 6626.1
+  kill 7874 x8 quest 6626.2
+  kill 7872 x8 quest 6626.3
+
+step Ambassador Malcin
+  when onquest 6521
+  tip An elite near the door, with the head Varimathras wants.
+  collect 17009 quest 6521.1
+
+step Myriam Moonsinger
+  turnin 6626
+
+step To Razorfen Downs
+  tip A dungeon for five players of level 37 to 46.
+  enter "Razorfen Downs" @49.0,93.9
+
+step Belnistrasz
+  tip After Tuten'kash on my run. Talk to him, then protect him while he performs the ritual to shut down the idol; his brazier takes the quest back.
+  accept 3523 @49.0,93.9
+  turnin 3523 @49.0,93.9
+  accept 3525 @49.0,93.9
+  complete 3525 @49.0,93.9 group 5
+
+step Belnistrasz's Brazier
+  turnin 3525 object 152097 @49.0,93.9
+
+step Amnennar the Coldbringer
+  tip The last boss, after Plaguemaw the Rotting and Glutton on my run. He drops his skull, and the Coldbringer's Eye is close by.
+  collect 10420 quest 3341.1 @49.0,93.9 group 5
+  collect 276916 quest 97196.1 @49.0,93.9 group 5
+
+step Sutara Plainstalker
+  zone Mulgore
+  turnin 97196
+
+step Andrew Brownell
+  zone Undercity
+  turnin 3341
+
+step Varimathras
+  when onquest 6521
+  turnin 6521

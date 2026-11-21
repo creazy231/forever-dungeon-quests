@@ -25,6 +25,7 @@ Polestar.
 | Razorfen Kraul | The Barrens | Horde, Alliance | 29 to 38 |
 | Scarlet Monastery | Tirisfal Glades | Horde, Alliance | 30 to 46 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
+| Razorfen Downs | The Barrens | Horde, Alliance | 37 to 46 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
@@ -308,6 +309,23 @@ with one folder per dungeon.
 These two guides were first written for Polestar itself, which carries them
 in version 0.4.1 under Miscellaneous. If your Polestar lists them there too,
 they are the same guides. This addon is where they get their updates.
+
+## Razorfen Downs
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Razorfen Downs (Horde) | Andrew Brownell, the Undercity | Mulgore, the Barrens, the dungeon, back again |
+| Razorfen Downs (Alliance) | Archbishop Benedictus, Stormwind | Dalaran, the Barrens, the dungeon, back again |
+
+- The dungeon is for five players of level 37 to 46. Its door is in the
+  southern Barrens, where Myriam Moonsinger's A Host of Evil is fought
+  among elites before the run.
+- Inside, both guides follow a run of mine: Tuten'kash, Belnistrasz and his
+  ritual, Plaguemaw, Glutton, then Amnennar with the Coldbringer's Eye.
+- The Horde's second An Unholy Alliance shows for characters who handed in
+  the first, from Razorfen Kraul.
+- Left out: Agamaggan's Blood, the end of a Shen'dralas chain with an item
+  the game's data gives no source for.
 
 ## Krol'dok Stronghold
 

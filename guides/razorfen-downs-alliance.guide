@@ -1,0 +1,97 @@
+guide forever-dungeon-quests/razorfen-downs-alliance
+title Razorfen Downs (Alliance)
+category Dungeons
+folder Razorfen Downs
+faction Alliance
+levels 37-46
+zone Stormwind City
+keywords Razorfen Downs, The Barrens, Myriam Moonsinger, A Host of Evil, Belnistrasz, idol, Archbishop Benedictus, Bring the Light, Archmage Lan'dalock, Dalaran, Coldbringer's Eye, Tuten'kash, Plaguemaw, Mordresh, Ragglesnout, Glutton, Amnennar, dungeon
+reward item 10823
+reward item 10824 270081
+reward item 10710
+why Every Alliance quest of Razorfen Downs in one run.
+
+# Razorfen Downs' Alliance quests in one guide: the pick-ups in Stormwind and
+# Dalaran, Myriam Moonsinger at the door, one run, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Archbishop Benedictus' 3636 Bring the Light (Amnennar);
+# Archmage Lan'dalock's 96773 The Coldbringer's Eye; Myriam Moonsinger's 6626
+# A Host of Evil (outside the door); inside, Belnistrasz' 3523 Scourge of the
+# Downs -> 3525 Extinguishing the Idol.
+#
+# Left out: 93604 Agamaggan's Blood, the end of a Shen'dralas chain one of
+# whose quests wants an item the data gives no source for.
+#
+# Inside: nothing in the data places the bosses, Belnistrasz or the Eye
+# inside, so their goals stand at the door (@49.0,93.9, The Barrens) with
+# `group 5`. The bosses come in the order of a run of my own (as a Horde
+# character: Tuten'kash, Belnistrasz and his ritual, Plaguemaw the Rotting,
+# Glutton, Amnennar the Coldbringer, the Eye right after him). Every quest goal
+# is counted by the quest log, so a group that takes them in another order
+# still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Razorfen and the cultists outside are
+#   elites of level 33 to 34.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - A run of my own on 2026-11-16 (Horde, five players), which the Horde
+#   guide's header describes.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   37 to 46).
+
+step Archbishop Benedictus
+  tip In Stormwind. He gives Bring the Light from level 39.
+  level 39
+  accept 3636
+
+step Archmage Lan'dalock
+  zone Alterac Mountains
+  tip In Dalaran.
+  accept 96773
+
+step Myriam Moonsinger
+  zone The Barrens
+  tip By the dungeon's door.
+  accept 6626
+
+step A Host of Evil
+  tip The Razorfen and the Death's Head Cultists around the door are elites: bring your group.
+  kill 7873 x8 quest 6626.1
+  kill 7874 x8 quest 6626.2
+  kill 7872 x8 quest 6626.3
+
+step Myriam Moonsinger
+  turnin 6626
+
+step To Razorfen Downs
+  tip A dungeon for five players of level 37 to 46.
+  enter "Razorfen Downs" @49.0,93.9
+
+step Belnistrasz
+  tip After Tuten'kash on my run. Talk to him, then protect him while he performs the ritual to shut down the idol; his brazier takes the quest back.
+  accept 3523 @49.0,93.9
+  turnin 3523 @49.0,93.9
+  accept 3525 @49.0,93.9
+  complete 3525 @49.0,93.9 group 5
+
+step Belnistrasz's Brazier
+  turnin 3525 object 152097 @49.0,93.9
+
+step Amnennar the Coldbringer
+  tip The last boss, after Plaguemaw the Rotting and Glutton on my run. The Coldbringer's Eye is close by.
+  kill 7358 quest 3636.1 @49.0,93.9 group 5
+  collect 276916 quest 96773.1 @49.0,93.9 group 5
+
+step Archmage Lan'dalock
+  zone Alterac Mountains
+  turnin 96773
+
+step Archbishop Benedictus
+  zone Stormwind City
+  turnin 3636

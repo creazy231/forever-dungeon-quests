@@ -33,6 +33,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Scarlet Monastery** (Tirisfal Glades, levels 30 to 46): Horde and Alliance. All four wings; Into The Scarlet Monastery and the Test of Lore chain for the Horde, In the Name of the Light and Brother Anton's chain for the Alliance; the books, Hearts of Zeal, Vorrel's Revenge, the Mages' Rituals of Power, and every hand-in.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
 
+- **Razorfen Downs** (the Barrens, levels 37 to 46): Horde and Alliance. A Host of Evil, Belnistrasz, the Coldbringer's Eye, Bring the End or Bring the Light, the second An Unholy Alliance, one run after a recorded one and every hand-in.
 - **Krol'dok Stronghold** (Riverglades, levels 40 to 47): Horde and Alliance. The whole Riverglades chain that opens its quests (Rog'mar's for the Horde, Farholde Keep's for the Alliance), one run (Grox to Mugg, Tunk's moulding) and every hand-in.
 
 - **Alcaz Prison** (Alcaz Island, Dustwallow Marsh, levels 48 to 55): Horde and Alliance. Sergeant Ulka's and Sully McCleary's chains, the story inside (Commander Folkar, the King's fate), Mason Connery's key and trunk, Zarla's Journal, one run (Wrex to Blazeroar) and every hand-in.
@@ -126,3 +127,7 @@ Adds Razorfen Kraul for the Horde and the Alliance, with the run in the order of
 ## Changelog for 2.17.0
 
 Adds Scarlet Monastery, all four wings, for the Horde and the Alliance.
+
+## Changelog for 2.18.0
+
+Adds Razorfen Downs for the Horde and the Alliance, with the run in the order of a recorded one.
