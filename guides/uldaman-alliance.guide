@@ -43,11 +43,11 @@ why Every Alliance quest of Uldaman in one run, lead-ins included.
 #   Stonemantle).
 # - Mages: 1953 Return to the Marsh -> Tabetha's 1954 The Infernal Orb ->
 #   1955 The Exorcism -> 1956 Power in Uldaman (the Obsidian Sentinel's power
-#   source).
+#   source) -> 1957 Mana Surges -> 1958 Celestial Power (both at Tabetha).
 #
 # Left out: 1192 Indurium Ore and 3375 Replacement Phial (repeatable), with
-# Indurium Ore's racing-camp chain (1104 to 1194); the Mages' 1957 Mana
-# Surges and the Platinum Discs' 2963, the next steps beyond.
+# Indurium Ore's racing-camp chain (1104 to 1194); the Platinum Discs' 2963,
+# the next step beyond.
 #
 # Inside: nothing in the data places the bosses, Baelog, the Remains or the
 # objects inside, so their goals stand at the door (@44.6,12.1, Badlands)
@@ -330,3 +330,15 @@ step Tabetha
   only Mage
   zone Dustwallow Marsh
   turnin 1956
+  accept 1957
+
+step Mana Surges
+  only Mage
+  tip Kill twelve Mana Surges in the time allowed.
+  kill 6550 x12 quest 1957.1
+
+step Tabetha
+  only Mage
+  turnin 1957
+  accept 1958
+  turnin 1958
