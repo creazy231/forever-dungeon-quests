@@ -16,6 +16,7 @@ Polestar.
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
+| Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 
 More of WoW Forever's dungeons come in later versions.
 
@@ -130,6 +131,24 @@ with one folder per dungeon.
 These two guides were first written for Polestar itself, which carries them
 in version 0.4.1 under Miscellaneous. If your Polestar lists them there too,
 they are the same guides. This addon is where they get their updates.
+
+## Krol'dok Stronghold
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Krol'dok Stronghold (Horde) | Krom'rosh, Rog'mar | All over Riverglades, the dungeon, back to Rog'mar |
+| Krol'dok Stronghold (Alliance) | Ranath Nightstride, Dalaran | Farholde Keep, the western front, the dungeon, back to Farholde Keep and Dalaran |
+
+- The dungeon is for five players of level 40 to 47. Its door is in
+  Riverglades.
+- Its quests open only at the end of each side's Riverglades chain (twenty
+  quests for the Horde, seven for the Alliance), so each guide takes the
+  whole chain first. Steps whose mobs are above level 40 wait for the level
+  they need.
+- Inside, Tunk drops the Krol'dok Moulding, which starts a quest back in
+  town; its Key Ingredients follow-up wants Thick Leather and Iron Bars.
+- Where Tunk (and, for the Alliance, Zalfan Moonshadow) stand inside is
+  still open: if you know, tell me.
 
 ## Next to Polestar's Dungeons window
 

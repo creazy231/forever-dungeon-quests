@@ -1,0 +1,233 @@
+guide forever-dungeon-quests/kroldok-stronghold-horde
+title Krol'dok Stronghold (Horde)
+category Dungeons
+folder Krol'dok Stronghold
+faction Horde
+levels 40-47
+zone Riverglades
+coords live
+keywords Krol'dok Stronghold, Riverglades, Rog'mar, Krom'rosh, Tran'gul, Clubtoe, Clugfist, Da'grosh, Kreza Darkthorn, Twilight's Hammer, Chogg'Zac, Klunk, Kilgar, Tunk, Grox, Zarmok, Ashka, Nar'gurk, Mugg, Cultist Ear, moulding, dungeon
+reward item 279859 279860
+reward item 279480 279852 279853
+reward item 267090
+why Every Horde quest of Krol'dok Stronghold in one run, with the Riverglades chain that opens them.
+
+# Krol'dok Stronghold's Horde quests in one guide: Rog'mar's chain through
+# Riverglades that opens them, one run through the dungeon, then the
+# hand-ins. Steps already done are passed over, so the guide picks up wherever
+# the chain stands.
+#
+# The chain, every quest a lead-in of the dungeon's three in the data:
+# Krom'rosh's 93786 A Message in Blood and 93787 Food for the Taking -> 94483
+# Show Them How It's Done; Tran'gul's 94680 Twilight Missives and 94672
+# Encroaching Twilight -> 94727 Digging for Answers (to Clubtoe) -> 95417 The
+# Purple Ones (to the Twilight Brute) -> 95601 The Purple Ones, and Clubtoe's
+# 95602 Sickening Lights -> 95427 Twilight No More! -> 95418 Spread the Word
+# (to Tran'gul) -> 95420 Land of Giants (to Clugfist) -> 95424 Might Makes
+# Right and 95425 Unworthy Champion -> 95428 Clugfist's Decree (to Krom'rosh)
+# -> 94744 The Wayward Warrior (to Da'grosh) -> 94745 Carving a Path and 94748
+# Break Their Chains -> 94768 Bring Me His Head. Then Da'grosh's 94975 A Token
+# of Vengeance (15 Cultist Ears) and 95278 It Is Time, Brother... (to
+# Krom'rosh), Krom'rosh's 94968 Eye of Mugg and Tran'gul's 94972 Tome of
+# Twilight. Inside, Tunk's Krol'dok Moulding (item 267137) starts 94973
+# Krol'dok Moulding, for Kreza Darkthorn, who gives 94974 Key Ingredients.
+#
+# Left out: nothing of the Horde's. QuestieDB 1.1.4 also lists 95056 Krol'dok
+# No More!, with no giver, ender or objective: nothing to write it from.
+#
+# Inside: nothing in the data places the bosses or Tunk inside, so their goals
+# stand at the door (@36.9,44.1) with `group 5`. The bosses come in the order
+# of the client's dungeon journal (Slavecrusher Grox, Twilight Commander
+# Zarmok, Handler Ashka, Nar'gurk, Overseer Mugg), not of a recorded run.
+# Every quest goal is counted by the quest log, so a group that takes them in
+# another order still gets each step ticked. Riverglades has only Forever's
+# map frame, so typed coordinates are `coords live`.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The scouts' and the ritual circles' spots are
+#   the data's for those objectives.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - What drops where: the reference data: the Cultist Ears from the Twilight
+#   Grunts and Warlocks and Zarmok, the tome from Nar'gurk, the eye from Mugg,
+#   the moulding from Tunk (an elite inside).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   40 to 47).
+# - Mob levels from data/forever set the waits: the ritualists 39 to 41, the
+#   maulers 41 to 42, the Twilight on the western front 42 to 44, Overlord
+#   Kilgar 46 (an elite).
+# INGAME: where inside does Tunk stand?
+
+step Krom'rosh
+  tip In Rog'mar.
+  accept 93786
+  accept 93787
+
+step A Message in Blood and Food for the Taking
+  kill 256383 x12 quest 93786.1
+  collect 262640 x6 quest 93787.1
+
+step Krom'rosh
+  turnin 93786
+  turnin 93787
+  accept 94483
+
+step Show Them How It's Done
+  kill 270667 x8 quest 94483.1
+  kill 257926 x12 quest 94483.2
+
+step Krom'rosh
+  turnin 94483
+
+step Tran'gul
+  accept 94680
+  accept 94672
+
+step Encroaching Twilight
+  tip The Twilight Shadowmancers carry the missives.
+  collect 265745 x3 quest 94680.1
+  kill 256952 x8 quest 94672.1
+  kill 254560 x8 quest 94672.2
+  kill 256798 x8 quest 94672.3
+
+step Tran'gul
+  turnin 94680
+  turnin 94672
+  accept 94727
+
+step Clubtoe
+  talk 260931 quest 94727.1
+  turnin 94727
+  accept 95417
+  accept 95602
+
+step Twilight Brute
+  turnin 95417
+  accept 95601
+
+step The Purple Ones
+  level 40
+  kill 261711 x5 quest 95601.1
+  kill 262169 x10 quest 95601.2
+  complete 95602
+
+step Clubtoe
+  turnin 95601
+  turnin 95602
+  accept 95427
+
+step Chogg'Zac
+  collect 265751 quest 95427.1
+  collect 265750 quest 95427.2
+
+step Clubtoe
+  turnin 95427
+  accept 95418
+
+step Tran'gul
+  turnin 95418
+  accept 95420
+
+step Clugfist
+  turnin 95420
+  accept 95424
+  accept 95425
+
+step Might Makes Right
+  level 41
+  kill 260968 x7 quest 95424.1
+  kill 261497 x7 quest 95424.2
+  collect 269257 quest 95425.1 -- Klunk carries the Skullbasher.
+
+step Clugfist
+  turnin 95424
+  turnin 95425
+  accept 95428
+
+step Krom'rosh
+  turnin 95428
+  accept 94744
+
+step Da'grosh
+  turnin 94744
+  accept 94745
+  accept 94748
+
+step Carving a Path
+  level 43
+  kill 256795 x8 quest 94745.1
+  kill 256797 x8 quest 94745.2
+  kill 256799 x8 quest 94745.3
+  complete 94748
+
+step Da'grosh
+  turnin 94745
+  turnin 94748
+  accept 94768
+
+step Overlord Kilgar
+  level 44
+  tip An elite: bring help.
+  collect 265837 quest 94768.1
+
+step Da'grosh
+  turnin 94768
+  accept 94975
+  accept 95278
+
+step Krom'rosh
+  turnin 95278
+  accept 94968
+
+step Tran'gul
+  accept 94972
+
+step To Krol'dok Stronghold
+  tip A dungeon for five players of level 40 to 47.
+  enter "Krol'dok Stronghold" @36.9,44.1
+
+step Cultist Ears
+  along until leave
+  collect 267091 x15 quest 94975.1 @36.9,44.1 group 5 -- The Twilight Grunts and Warlocks drop them, and so does Twilight Commander Zarmok.
+
+step Tunk
+  tip An elite no boss list names. He drops the Krol'dok Moulding, which starts a quest for Kreza Darkthorn in Rog'mar.
+  collect 267137 @36.9,44.1 group 5
+  accept 94973 @36.9,44.1
+
+step Nar'gurk
+  tip Slavecrusher Grox, Twilight Commander Zarmok and Handler Ashka come before him in the client's journal. He drops the Tome of Twilight.
+  collect 267104 quest 94972.1 @36.9,44.1 group 5
+
+step Overseer Mugg
+  tip The last boss in the client's journal. The Eye of Mugg is the proof Krom'rosh wants.
+  collect 267086 quest 94968.1 @36.9,44.1 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the 15 Cultist Ears, finish it before you go.
+  collect 267091 x15 quest 94975.1 @36.9,44.1 group 5
+
+step Da'grosh
+  turnin 94975
+
+step Tran'gul
+  turnin 94972
+
+step Krom'rosh
+  turnin 94968
+
+step Kreza Darkthorn
+  turnin 94973
+  accept 94974
+
+step Key Ingredients
+  tip Thick Leather and Iron Bars are trade goods: skin and smelt them, or buy them.
+  collect 4304 x4 anywhere
+  collect 3575 x12 anywhere
+
+step Kreza Darkthorn
+  turnin 94974

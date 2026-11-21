@@ -24,6 +24,8 @@ A community addon for Polestar with quest guides for WoW Forever's new dungeons.
 - **City of Dalaran** (by Lordamere Lake, levels 28 to 35): Horde and Alliance. Wordeen Voidglare's chain, Melisara and Doctor Martin Felben for the Horde; Shylamiir, Andromath and Emissary Jacques for the Alliance; Modera's image, one run after a recorded one (Atrexis to the Mana Devourer) and every hand-in.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
 
+- **Krol'dok Stronghold** (Riverglades, levels 40 to 47): Horde and Alliance. The whole Riverglades chain that opens its quests (Rog'mar's for the Horde, Farholde Keep's for the Alliance), one run (Grox to Mugg, Tunk's moulding) and every hand-in.
+
 More dungeons come in later versions.
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
@@ -53,3 +55,7 @@ Adds Excavation Site: Wetlands for the Horde and the Alliance, with the run in t
 ## Changelog for 2.4.0
 
 Adds the City of Dalaran for the Horde and the Alliance, with the run in the order of a recorded one.
+
+## Changelog for 2.5.0
+
+Adds Krol'dok Stronghold for the Horde and the Alliance, with the whole Riverglades chain that opens its quests.

@@ -1,0 +1,172 @@
+guide forever-dungeon-quests/kroldok-stronghold-alliance
+title Krol'dok Stronghold (Alliance)
+category Dungeons
+folder Krol'dok Stronghold
+faction Alliance
+levels 40-47
+zone Alterac Mountains
+coords live
+keywords Krol'dok Stronghold, Riverglades, Farholde Keep, Ashe Amberhall, Demar Brant, Sergeant Riftan, Alphonse Dumas, Ranath Nightstride, Zalfan Moonshadow, Dalaran, Twilight's Hammer, Kilgar, Tunk, Grox, Zarmok, Ashka, Nar'gurk, Mugg, bangle, moulding, dungeon
+reward item 279854 279855
+reward item 279480 279852 279853
+why Every Alliance quest of Krol'dok Stronghold in one run, with the Riverglades chain that opens them.
+
+# Krol'dok Stronghold's Alliance quests in one guide: Ranath Nightstride in
+# Dalaran, Farholde Keep's chain through Riverglades that opens the rest, one
+# run through the dungeon, then the hand-ins. Steps already done are passed
+# over, so the guide picks up wherever the chain stands.
+#
+# The chain, every quest a lead-in of the dungeon's ones in the data: Ashe
+# Amberhall's 94879 Scraps of Knowledge -> Demar Brant's 94886 The Western
+# Front (to Sergeant Riftan) -> 94888 No Soldier Left Behind and 94889
+# Carving a Path -> 94890 Bring Me His Head -> Riftan's 94983 Twilight
+# Mementos (Twilight Bangles) and Demar Brant's 94982 Eye of Mugg. Ashe's 94881
+# Curious Trinkets -> 94907 A Small Favor -> 94984 Tome of Twilight. Riftan's
+# 94997 Lingering Essence follows 94983, to Ashe. Ranath Nightstride in
+# Dalaran gives 96771 Vengeance of the Highborne (Zalfan Moonshadow, inside).
+# Inside, Tunk's Krol'dok Moulding (item 267138) starts 94980 Krol'dok
+# Moulding, for Alphonse Dumas, who gives 94981 Key Ingredients.
+#
+# Left out: nothing of the Alliance's.
+#
+# Inside: nothing in the data places the bosses, Tunk or Zalfan Moonshadow
+# inside, so their goals stand at the door (@36.9,44.1) with `group 5`. The
+# bosses come in the order of the client's dungeon journal (Slavecrusher Grox,
+# Twilight Commander Zarmok, Handler Ashka, Nar'gurk, Overseer Mugg), not of a
+# recorded run. Every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked. Riverglades has
+# only Forever's map frame, so typed coordinates are `coords live`.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The scouts' spot is the data's for that
+#   objective.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - What drops where: the reference data: the bangles from the Twilight
+#   Grunts and Warlocks and Zarmok, the tome from Nar'gurk, the eye from Mugg,
+#   the moulding from Tunk (an elite inside).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   40 to 47).
+# - Mob levels from data/forever set the waits: the Twilight on the western
+#   front 42 to 44, the Twilight Thrall 44, Overlord Kilgar 46 (an elite).
+# INGAME: where inside do Tunk and Zalfan Moonshadow stand?
+
+step Ranath Nightstride
+  tip In Dalaran.
+  accept 96771
+
+step Ashe Amberhall
+  zone Riverglades
+  tip At Farholde Keep.
+  accept 94879
+  accept 94881
+
+step Scraps of Knowledge and Curious Trinkets
+  tip The Twilight Shadowmancers and Neophytes carry the charms.
+  collect 266424 x5 quest 94879.1
+  collect 266425 x25 quest 94881.1
+
+step Ashe Amberhall
+  turnin 94879
+  turnin 94881
+  accept 94907
+
+step Demar Brant
+  accept 94886
+
+step A Small Favor
+  level 43
+  tip Capture a Twilight Thrall with what Ashe gave you.
+  kill 258652 quest 94907.1
+
+step Ashe Amberhall
+  turnin 94907
+  accept 94984
+
+step Sergeant Riftan
+  turnin 94886
+  accept 94888
+  accept 94889
+
+step The western front
+  level 43
+  complete 94888
+  kill 256795 x8 quest 94889.1
+  kill 256797 x8 quest 94889.2
+  kill 256799 x8 quest 94889.3
+
+step Sergeant Riftan
+  turnin 94888
+  turnin 94889
+  accept 94890
+
+step Overlord Kilgar
+  level 44
+  tip An elite: bring help.
+  collect 265837 quest 94890.1
+
+step Sergeant Riftan
+  turnin 94890
+  accept 94983
+
+step Demar Brant
+  tip Back at Farholde Keep.
+  accept 94982
+
+step To Krol'dok Stronghold
+  tip A dungeon for five players of level 40 to 47.
+  enter "Krol'dok Stronghold" @36.9,44.1
+
+step Twilight Bangles
+  along until leave
+  collect 267234 quest 94983.1 @36.9,44.1 group 5 -- The Twilight Grunts and Warlocks drop them, and so does Twilight Commander Zarmok.
+
+step Tunk and Zalfan Moonshadow
+  tip Two foes no boss list names. Tunk, an elite, drops the Krol'dok Moulding, which starts a quest for Alphonse Dumas at Farholde Keep. Zalfan Moonshadow is Ranath Nightstride's quarry.
+  collect 267138 @36.9,44.1 group 5
+  accept 94980 @36.9,44.1
+  kill 268423 quest 96771.1 @36.9,44.1 group 5
+
+step Nar'gurk
+  tip Slavecrusher Grox, Twilight Commander Zarmok and Handler Ashka come before him in the client's journal. He drops the Tome of Twilight.
+  collect 267104 quest 94984.1 @36.9,44.1 group 5
+
+step Overseer Mugg
+  tip The last boss in the client's journal. The Eye of Mugg is the proof Demar Brant wants.
+  collect 267086 quest 94982.1 @36.9,44.1 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the bangles, finish it before you go.
+  collect 267234 quest 94983.1 @36.9,44.1 group 5
+
+step Sergeant Riftan
+  turnin 94983
+  accept 94997
+
+step Ashe Amberhall
+  tip At Farholde Keep.
+  turnin 94984
+  turnin 94997
+
+step Demar Brant
+  turnin 94982
+
+step Alphonse Dumas
+  turnin 94980
+  accept 94981
+
+step Key Ingredients
+  tip Thick Leather and Iron Bars are trade goods: skin and smelt them, or buy them.
+  collect 4304 x4 anywhere
+  collect 3575 x12 anywhere
+
+step Alphonse Dumas
+  turnin 94981
+
+step Ranath Nightstride
+  zone Alterac Mountains
+  turnin 96771
