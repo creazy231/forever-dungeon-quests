@@ -1,0 +1,158 @@
+guide forever-dungeon-quests/stockade-alliance
+title The Stockade (Alliance)
+category Dungeons
+folder The Stockade
+faction Alliance
+levels 24-32
+zone Wetlands
+coords live
+keywords Stockade, Stormwind, Warden Thelwater, Nikova Raskol, Baros Alexston, Bazil Thredd, Guard Berton, Redridge, Lakeshire, Councilman Millstipe, Duskwood, Darkshire, Motley Garmason, Dun Modr, Dark Iron, Targorr, Kam Deepfury, Hamhock, Dextren Ward, Bruegal Ironknuckle, bandana, riot, dungeon
+reward item 1317 3400 270027
+reward item 2033 2906 270029
+reward item 1264 3562 270036
+why Every Alliance quest of the Stockade in one run, lead-ins included.
+
+# The Stockade's Alliance quests in one guide: Motley Garmason's Dark Iron
+# War in the Wetlands, the pick-ups in Stormwind, Redridge and Duskwood, one
+# run through the prison, then the hand-ins. Steps already done are passed
+# over, so the guide picks up wherever the chain stands.
+#
+# The quests: Motley Garmason's 303 The Dark Iron War -> 378 The Fury Runs
+# Deep (Kam Deepfury's head); Warden Thelwater's 387 Quell the Uprising;
+# Nikova Raskol's 388 The Color of Blood (ten Red Wool Bandanas); Guard
+# Berton's 386 What Comes Around... (Targorr's head); Councilman Millstipe's
+# 377 Crime and Punishment (Dextren Ward's hand). For characters who handed
+# in The Unsent Letter (373, from VanCleef in the Deadmines; the Deadmines
+# guide takes it): Baros Alexston's 389 Bazil Thredd -> Thelwater's 391 The
+# Stockade Riots (Bazil Thredd's head) -> 392 The Curious Visitor, back to
+# Baros.
+#
+# Left out: none of the Alliance's. The Stockade is a city dungeon of the
+# Alliance (its door is in Stormwind), so the pack has no Horde guide for it.
+# The Bazil Thredd chain's steps apply only once The Unsent Letter is handed
+# in, since it starts in the Deadmines.
+#
+# Inside: nothing in the data places the bosses inside, so their goals stand
+# at the door (@52.4,70.0, Stormwind; Forever's map frame, hence `coords
+# live`) with `group 5`. The bosses come in the order of the client's dungeon
+# journal (Targorr the Dread, Kam Deepfury, Hamhock, Dextren Ward, Bazil
+# Thredd; Bruegal Ironknuckle a rare), not of a recorded run. Every quest goal
+# is counted by the quest log, so a group that takes them in another order
+# still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon. The Dark Irons of Dun Modr are level 27 to 31, so that step
+#   waits for 30.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   24 to 32).
+
+step Motley Garmason
+  tip At Dun Modr.
+  accept 303
+
+step The Dark Iron War
+  level 30
+  kill 1051 x10 quest 303.1
+  kill 1053 x5 quest 303.2
+  kill 1052 x5 quest 303.3
+  kill 1054 x5 quest 303.4
+
+step Motley Garmason
+  turnin 303
+  accept 378
+
+step Warden Thelwater
+  zone Stormwind City
+  tip At the Stockade's gate.
+  accept 387
+
+step Nikova Raskol
+  accept 388
+
+step Baros Alexston
+  when turnedin 373
+  accept 389
+
+step Warden Thelwater
+  when onquest 389
+  turnin 389
+  accept 391
+
+step Guard Berton
+  zone Redridge Mountains
+  tip In Lakeshire.
+  accept 386
+
+step Councilman Millstipe
+  zone Duskwood
+  tip In Darkshire.
+  accept 377
+
+step To the Stockade
+  zone Stormwind City
+  tip A dungeon for five players of level 24 to 32.
+  enter "The Stockade" @52.4,70.0
+
+step The uprising
+  along until leave
+  kill 1706 x10 quest 387.1 @52.4,70.0 group 5
+  kill 1711 x8 quest 387.2 @52.4,70.0 group 5
+  kill 1715 x8 quest 387.3 @52.4,70.0 group 5
+  collect 2909 x10 quest 388.1 @52.4,70.0 group 5 -- The inmates drop the bandanas, and so do Dextren Ward and Bazil Thredd.
+
+step Targorr the Dread
+  tip The first boss in the client's journal. His head is for Guard Berton.
+  collect 3630 quest 386.1 @52.4,70.0 group 5
+
+step Kam Deepfury
+  tip His head is for Motley Garmason.
+  collect 3640 quest 378.1 @52.4,70.0 group 5
+
+step Dextren Ward
+  tip Hamhock comes before him in the client's journal. His hand is for Councilman Millstipe.
+  collect 3628 quest 377.1 @52.4,70.0 group 5
+
+step Bazil Thredd
+  when onquest 391
+  tip The last boss in the client's journal. His head is for Warden Thelwater.
+  collect 2926 quest 391.1 @52.4,70.0 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the uprising and the bandanas, finish it before you go.
+  kill 1706 x10 quest 387.1 @52.4,70.0 group 5
+  kill 1711 x8 quest 387.2 @52.4,70.0 group 5
+  kill 1715 x8 quest 387.3 @52.4,70.0 group 5
+  collect 2909 x10 quest 388.1 @52.4,70.0 group 5
+
+step Warden Thelwater
+  turnin 387
+
+step Warden Thelwater
+  when onquest 391
+  turnin 391
+  accept 392
+
+step Baros Alexston
+  when onquest 392
+  turnin 392
+
+step Nikova Raskol
+  turnin 388
+
+step Councilman Millstipe
+  zone Duskwood
+  turnin 377
+
+step Guard Berton
+  zone Redridge Mountains
+  turnin 386
+
+step Motley Garmason
+  zone Wetlands
+  turnin 378

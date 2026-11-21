@@ -18,6 +18,7 @@ Polestar.
 | Wailing Caverns | The Barrens | Horde, Alliance | 17 to 24 |
 | Shadowfang Keep | Silverpine Forest | Horde; Alliance Rogues and Warriors | 20 to 30 |
 | Blackfathom Deeps | Ashenvale | Horde, Alliance | 24 to 32 |
+| The Stockade | Stormwind | Alliance | 24 to 32 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
@@ -169,6 +170,20 @@ with one folder per dungeon.
   game's data.
 - Where Argent Guard Thaelrid, the Fathom Stone and the Pitted Iron Chest
   are inside is still open: if you know, tell me.
+
+## The Stockade
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| The Stockade (Alliance) | Motley Garmason, Dun Modr | Stormwind, Lakeshire, Darkshire, the dungeon, back again |
+
+- The dungeon is for five players of level 24 to 32. Its door is in
+  Stormwind. It is a city dungeon of the Alliance, so there is no Horde guide.
+- Motley Garmason's Dark Iron War waits for level 30, as its Dark Irons are
+  level 27 to 31.
+- Bazil Thredd's chain (The Stockade Riots, then The Curious Visitor) starts
+  with The Unsent Letter from the Deadmines: its steps show once you have
+  handed the letter in.
 
 ## Excavation Site: Wetlands
 

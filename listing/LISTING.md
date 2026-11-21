@@ -25,6 +25,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Wailing Caverns** (the Barrens, levels 17 to 24): Horde and Alliance. Tonga Runetotem's chain and Leaders of the Fang, Serpentbloom, Ratchet's and the druids' quests, one run (the Fanglords to Mutanus) and every hand-in.
 - **Shadowfang Keep** (Silverpine Forest, levels 20 to 30): Horde, and Alliance Rogues and Warriors. The Book of Ur, Deathstalkers in Shadowfang, Arugal Must Die, the Rogues' Horn of Xelthos and the Warriors' Dragonslayer's Helm.
 - **Blackfathom Deeps** (Ashenvale, levels 24 to 32): Horde and Alliance. Je'neu Sancrea's quests and the sapphires for the Horde; Gerrig, Darnassus' Thaelrid and pendants, and Gershala's brain stems for the Alliance; one run (Ghamoo-ra to Kelris) and every hand-in.
+- **The Stockade** (Stormwind, levels 24 to 32): Alliance. Motley Garmason's Dark Iron War, Thelwater, Nikova, Berton and Millstipe, Bazil Thredd's chain after the Deadmines' letter, one run (Targorr to Bazil Thredd) and every hand-in.
 - **Excavation Site: Wetlands** (the Wetlands, levels 26 to 33): Horde and Alliance. Borstan, Zaruk and the Deathstalker Agent for the Horde; Dorin Songblade, James Halloran, Rethiel's chain and the Grassmans for the Alliance; one run after a recorded one (Saltspine, Shadetooth, the Dragonmaw, the Relic Guardian) and every hand-in.
 - **City of Dalaran** (by Lordamere Lake, levels 28 to 35): Horde and Alliance. Wordeen Voidglare's chain, Melisara and Doctor Martin Felben for the Horde; Shylamiir, Andromath and Emissary Jacques for the Alliance; Modera's image, one run after a recorded one (Atrexis to the Mana Devourer) and every hand-in.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
@@ -106,3 +107,7 @@ Adds Blackfathom Deeps for the Horde and the Alliance.
 ## Changelog for 2.13.1
 
 Fixes from a review: every dungeon's door now stands where players walk in (Polestar's recorded entrances); The Return of the King? sends you to the Theramore Mage Tower; Blackmaw Pouches' second part is in; counts, level waits and a few tips corrected; trade goods are bought at the Auction House.
+
+## Changelog for 2.14.0
+
+Adds the Stockade for the Alliance.
