@@ -37,6 +37,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Krol'dok Stronghold** (Riverglades, levels 40 to 47): Horde and Alliance. The whole Riverglades chain that opens its quests (Rog'mar's for the Horde, Farholde Keep's for the Alliance), one run (Grox to Mugg, Tunk's moulding) and every hand-in.
 
 - **Uldaman** (Badlands, levels 41 to 51): Horde and Alliance. The Tablets of Will, Agmond's Fate, the Lost Dwarves and Talvash's necklace for the Alliance; Jarkal's necklace chain with a second run for the Horde; reagent runs, Power Stones, Solution to Doom, the Platinum Discs, and every hand-in.
+- **Zul'Farrak** (Tanaris, levels 44 to 54): Horde and Alliance. Talonaxe's chain to Nekrum's Medallion for the Alliance; the Venom Bottles to The Spider God and Summoning Shadra for the Horde; Tiara of the Deep, Scarab Shells, Troll Temper, the Divino-matic Rod, the Mosh'aru tablets and the Ancient Egg, Gahz'rilla (with the mallet), Zum'rah's head, the OOX-17/TN beacon, A Lesson in Literacy for Mages, and every hand-in.
 - **Alcaz Prison** (Alcaz Island, Dustwallow Marsh, levels 48 to 55): Horde and Alliance. Sergeant Ulka's and Sully McCleary's chains, the story inside (Commander Folkar, the King's fate), Mason Connery's key and trunk, Zarla's Journal, one run (Wrex to Blazeroar) and every hand-in.
 
 - **Blackmaw Hold** (Azshara, levels 55 to 60): Horde and Alliance. Beneath Nordrassil and the root caps, Blackmaw Magic, Ogtinc's claws and tusks, Ekkal's pouches, Gatekeeper Rageroar's Blackmaw Reclamation, the necklace, the Horde Paladins' Reliquary of Tyr, one run (Withermaw to the Unbound Spirit) and every hand-in.
@@ -136,3 +137,7 @@ Adds Razorfen Downs for the Horde and the Alliance, with the run in the order of
 ## Changelog for 2.19.0
 
 Adds Uldaman for the Horde (with the second run its necklace chain needs) and the Alliance.
+
+## Changelog for 2.20.0
+
+Adds Zul'Farrak for the Horde and the Alliance. Uldaman: Mages now also get Mana Surges and Celestial Power, the two quests after Power in Uldaman at Tabetha.

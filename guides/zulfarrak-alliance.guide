@@ -1,0 +1,285 @@
+guide forever-dungeon-quests/zulfarrak-alliance
+title Zul'Farrak (Alliance)
+category Dungeons
+folder Zul'Farrak
+faction Alliance
+levels 44-54
+zone Stormwind City
+keywords Zul'Farrak, Tanaris, Gadgetzan, Steamwheedle Port, Stormwind, Ironforge, Dalaran, The Hinterlands, Aerie Peak, Gryphon Master Talonaxe, Witherbark Cages, Altar of Zul, Thadius Grimshade, Nekrum's Medallion, Tabetha, Tiara of the Deep, Tran'rek, Scarab Shells, Troll Temper, Divino-matic Rod, Yeh'kinya, Mosh'aru, Ancient Egg, Wizzle Brassbolts, Gahz'rilla, Mallet of Zul'Farrak, OOX-17/TN, Lan'dalock, Zum'rah, Velratha, Theka, Nekrum, Sergeant Bly, Ukorz Sandscalp, dungeon
+reward item 9527 9531 270098
+reward item 9533 9534 270099
+reward item 11122
+reward item 221344
+why Every Alliance quest of Zul'Farrak in one run, lead-ins included.
+
+# Zul'Farrak's Alliance quests in one guide: the pick-ups in Stormwind,
+# Ironforge and Dalaran, Gryphon Master Talonaxe's chain in the Hinterlands
+# and the Blasted Lands, Booty Bay, Dustwallow Marsh, Tanaris, the Shimmering
+# Flats and Feralas (for Mages A Lesson in Literacy too), one run, then the
+# hand-ins. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The chains:
+# - Gryphon Master Talonaxe's 2988 Witherbark Cages -> 2989 The Altar of Zul
+#   -> 2990 Thadius Grimshade -> 2991 Nekrum's Medallion -> 2992 The
+#   Divination.
+# - Tabetha's Task 2861 (from Jennea Cannon) -> 2846 Tiara of the Deep.
+# - Krazek's 2864 Tran'rek -> 2865 Scarab Shells; Trenton Lighthammer's 3042
+#   Troll Temper; Chief Engineer Bilgewhizzle's 2768 Divino-matic Rod.
+# - Yeh'kinya's 3520 Screecher Spirits -> 3527 The Prophecy of Mosh'aru ->
+#   4787 The Ancient Egg.
+# - Klockmort Spannerspan's 2769 The Brassbolts Brothers -> 2770 Gahz'rilla.
+# - Archmage Lan'dalock's 96770 The Witch Doctor's Head.
+# - The OOX-17/TN Distress Beacon, a rare drop inside and in Tanaris, starts
+#   351 Find OOX-17/TN! -> 648 Rescue OOX-17/TN! (an escort, then Booty Bay).
+# - Mages: Garion Wendell's 82084 A Lesson in Literacy.
+#
+# Left out: 2993 Return to the Hinterlands and Saving Sharpbeak beyond it (the
+# Hinterlands' story after 2992); 3528 The God Hakkar after The Ancient Egg
+# (it needs the Sunken Temple, whose guide holds it); 3721 An OOX of Your Own
+# (it needs the other two OOX chains); 8676 Wildmane the Elder (the Lunar
+# Festival); the Rogues' 80411 The Talisman of Kazdor (not on the Codex page;
+# its text asks for the job to be done alone, not in a group's run).
+#
+# Gahz'rilla comes only when someone rings the gong by the sacred pool
+# with the Mallet of Zul'Farrak, and one mallet does it for the group.
+# Qiaga the Keeper, an elite on top of the Altar of Zul, drops the Sacred
+# Mallet; used at the altar at the very top of Jintha'Alor it becomes the
+# Mallet. The guide passes Qiaga for The Altar of Zul anyway, so the Sacred
+# Mallet is an optional goal there.
+#
+# Inside: nothing in the data places the bosses, Sergeant Bly or the graves
+# inside, so their goals stand at the door (@38.7,20.1, Tanaris) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Hydromancer Velratha, Gahz'rilla, Antu'sul, Theka the Martyr, Witch Doctor
+# Zum'rah, Nekrum Gutchewer, Shadowpriest Sezz'ziz, Chief Ukorz Sandscalp),
+# not of a recorded run. Every quest goal is counted by the quest log, so a
+# group that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Tiara, the tablets, the scale, the head,
+#   the medallion, the shells and the Troll Temper are quest items there: they
+#   drop only while their quest is held. Sergeant Bly carries the rod.
+# - The Mallet of Zul'Farrak: the Codex page's note on it (the gong, one
+#   mallet per group, Qiaga, Jintha'Alor); the data has Qiaga, an elite of
+#   level 50 at the Altar of Zul, drop the Sacred Mallet every time.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   44 to 54).
+# - Lint warns that the door is more than 50 yards from the beacon's droppers
+#   outside (in Tanaris and beyond); the optional goal stays at the door for
+#   the ones inside.
+# INGAME: where inside do Sergeant Bly and the Shallow Graves stand?
+
+step Jennea Cannon
+  tip In Stormwind.
+  accept 2861 npc 5497
+
+step Garion Wendell
+  only Mage
+  accept 82084 npc 211033
+
+step Klockmort Spannerspan
+  zone Ironforge
+  accept 2769
+
+step Archmage Lan'dalock
+  zone Alterac Mountains
+  tip In Dalaran.
+  accept 96770
+
+step Gryphon Master Talonaxe
+  zone The Hinterlands
+  tip At Aerie Peak.
+  accept 2988
+
+step Witherbark Cages
+  tip Check the cages at the two Witherbark villages.
+  interact 144066 quest 2988.1
+  interact 144067 quest 2988.2
+  interact 144068 quest 2988.3
+
+step Pristine Owlbeast Quill
+  only Mage
+  collect 221359 quest 82084.1
+
+step Gryphon Master Talonaxe
+  turnin 2988
+  accept 2989
+
+step The Altar of Zul
+  tip Check the top of the altar. It is full of elites: bring help.
+  complete 2989 @48.98,68.66
+
+step The Sacred Mallet
+  tip Only if no one in your group has the Mallet of Zul'Farrak: Qiaga the Keeper, the elite on top of the altar, drops the Sacred Mallet. Use it at the altar at the very top of Jintha'Alor to make the Mallet, which calls Gahz'rilla.
+  collect 9241 optional
+
+step Gryphon Master Talonaxe
+  turnin 2989
+  accept 2990
+
+step Thadius Grimshade
+  zone Blasted Lands
+  turnin 2990
+  accept 2991
+
+step Krazek
+  zone Stranglethorn Vale
+  tip In Booty Bay.
+  accept 2864
+
+step Tabetha
+  zone Dustwallow Marsh
+  turnin 2861
+  accept 2846
+
+step Tran'rek
+  zone Tanaris
+  tip In Gadgetzan.
+  turnin 2864
+  accept 2865
+
+step Trenton Lighthammer
+  accept 3042
+
+step Chief Engineer Bilgewhizzle
+  accept 2768
+
+step Yeh'kinya
+  tip In Steamwheedle Port.
+  accept 3520
+
+step Wizzle Brassbolts
+  zone Thousand Needles
+  tip In the Shimmering Flats.
+  turnin 2769
+  accept 2770
+
+step Screecher Spirits
+  zone Feralas
+  tip Use Yeh'kinya's Bramble to capture the spirits of three screechers.
+  kill 8612 x3 quest 3520.1
+
+step Zukk'ash Resin
+  only Mage
+  collect 221361 quest 82084.2
+
+step Yeh'kinya
+  zone Tanaris
+  turnin 3520
+  accept 3527
+
+step To Zul'Farrak
+  tip A dungeon for five players of level 44 to 54.
+  enter "Zul'Farrak" @38.7,20.1
+
+step Troll Temper and shells
+  along until leave
+  collect 9523 x20 quest 3042.1 @38.7,20.1 group 5 -- The Sandfury trolls drop Troll Temper.
+  collect 9238 x5 quest 2865.1 @38.7,20.1 group 5 -- From the Scarabs.
+  collect 221360 quest 82084.3 @38.7,20.1 group 5 only Mage -- From the Zul'Farrak Zombies and the Shallow Graves.
+  collect 8623 @38.7,20.1 group 5 optional -- A rare drop: the OOX-17/TN Distress Beacon starts Find OOX-17/TN!
+
+step Hydromancer Velratha
+  tip The first encounter in the client's journal. Velratha drops the Tiara of the Deep and the Second Mosh'aru Tablet.
+  collect 9234 quest 2846.1 @38.7,20.1 group 5
+  collect 10661 quest 3527.2 @38.7,20.1 group 5
+
+step Gahz'rilla
+  tip Gahz'rilla comes only when the gong by the sacred pool is rung with the Mallet of Zul'Farrak; one mallet does it for the group.
+  collect 8707 quest 2770.1 @38.7,20.1 group 5
+
+step Theka the Martyr
+  tip After Antu'sul in the client's journal. Theka drops the First Mosh'aru Tablet.
+  collect 10660 quest 3527.1 @38.7,20.1 group 5
+
+step Witch Doctor Zum'rah
+  collect 277112 quest 96770.1 @38.7,20.1 group 5
+
+step Nekrum Gutchewer
+  collect 9471 quest 2991.1 @38.7,20.1 group 5
+
+step Sergeant Bly
+  tip Sergeant Bly carries the Divino-matic Rod.
+  collect 8548 quest 2768.1 @38.7,20.1 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the Troll Temper and the shells, finish it before you go.
+  collect 9523 x20 quest 3042.1 @38.7,20.1 group 5
+  collect 9238 x5 quest 2865.1 @38.7,20.1 group 5
+  collect 221360 quest 82084.3 @38.7,20.1 group 5 only Mage
+
+step Tran'rek
+  tip In Gadgetzan.
+  turnin 2865
+
+step Trenton Lighthammer
+  turnin 3042
+
+step Chief Engineer Bilgewhizzle
+  turnin 2768
+
+step The Distress Beacon
+  when has 8623
+  accept 351
+
+step Homing Robot OOX-17/TN
+  when onquest 351
+  turnin 351
+  accept 648
+
+step Rescue OOX-17/TN!
+  when onquest 648
+  tip Escort OOX-17/TN to Steamwheedle Port.
+  complete 648 @67.06,23.16
+
+step Yeh'kinya
+  tip In Steamwheedle Port.
+  turnin 3527
+  accept 4787
+
+step Wizzle Brassbolts
+  zone Thousand Needles
+  turnin 2770
+
+step Tabetha
+  zone Dustwallow Marsh
+  turnin 2846
+
+step Oglethorpe Obnoticus
+  when onquest 648
+  zone Stranglethorn Vale
+  tip In Booty Bay.
+  turnin 648
+
+step Thadius Grimshade
+  zone Blasted Lands
+  tip Then wait until Grimshade performs the ritual of divination.
+  turnin 2991
+  accept 2992
+  talk 8022 quest 2992.1
+  turnin 2992
+
+step Garion Wendell
+  only Mage
+  zone Stormwind City
+  turnin 82084 npc 211033
+
+step Archmage Lan'dalock
+  zone Alterac Mountains
+  tip In Dalaran.
+  turnin 96770
+
+step The Ancient Egg
+  zone The Hinterlands
+  collect 12402 quest 4787.1
+
+step Yeh'kinya
+  zone Tanaris
+  turnin 4787

@@ -28,6 +28,7 @@ Polestar.
 | Razorfen Downs | The Barrens | Horde, Alliance | 37 to 46 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Uldaman | Badlands | Horde, Alliance | 41 to 51 |
+| Zul'Farrak | Tanaris | Horde, Alliance | 44 to 54 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
@@ -363,8 +364,36 @@ they are the same guides. This addon is where they get their updates.
 - The Horde guide runs the dungeon twice: Jarkal Mossmeld's Find the Gems
   and Power Source opens only after the first run's journal is handed in at
   Kargath, and its gems drop only while it is held.
-- Mages of both sides get Power in Uldaman.
+- Mages of both sides get Power in Uldaman, then Mana Surges and Celestial
+  Power at Tabetha.
 - Left out: Indurium Ore and Replacement Phial (repeatable).
+
+## Zul'Farrak
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Zul'Farrak (Horde) | Anastasia Hartwell, the Undercity | The Hinterlands, Tarren Mill, Sen'jin Village, Mulgore, Dustwallow Marsh, Tanaris, the Shimmering Flats, Feralas, the dungeon, back again; Summoning Shadra last |
+| Zul'Farrak (Alliance) | Jennea Cannon, Stormwind | Ironforge, Dalaran, Aerie Peak, the Blasted Lands, Booty Bay, Dustwallow Marsh, Tanaris, the Shimmering Flats, Feralas, the dungeon, back again |
+
+- The dungeon is for five players of level 44 to 54. Its door is in
+  northwestern Tanaris.
+- Gahz'rilla comes only when the gong by the sacred pool is rung with the
+  Mallet of Zul'Farrak, one per group. Both guides pass Qiaga the Keeper,
+  whose Sacred Mallet becomes the Mallet at the very top of Jintha'Alor;
+  that goal is optional.
+- The Alliance guide takes Gryphon Master Talonaxe's chain to Nekrum's
+  Medallion and The Divination. The Horde guide takes the Venom Bottles to
+  The Spider God; Summoning Shadra, its follow-up, is an elite of level 55
+  and comes last.
+- Both sides: Tiara of the Deep, Gadgetzan's Scarab Shells, Troll Temper
+  and Divino-matic Rod, Yeh'kinya's tablets and the Ancient Egg after them,
+  Gahz'rilla, and Zum'rah's head. A rare beacon starts Find OOX-17/TN! and
+  its escort. Mages get A Lesson in Literacy.
+- Left out: The God Hakkar (it needs the Sunken Temple), An OOX of Your Own
+  (it needs the other OOX chains), Return to the Hinterlands and Saving
+  Sharpbeak (past the follow-up), Wildmane the Elder (the Lunar Festival),
+  the Rogues' Talisman of Kazdor (done alone); for the Horde also Tran'rek,
+  the breadcrumb from Booty Bay.
 
 ## Alcaz Prison
 
