@@ -11,6 +11,7 @@ Polestar.
 
 | Dungeon | Where | Guides | Levels |
 |---|---|---|---|
+| Ragefire Chasm | Orgrimmar | Horde | 13 to 18 |
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
@@ -45,6 +46,21 @@ Ragefire Chasm to Scholomance, follow in later versions.
 In Polestar's guide menu (`/polestar guides`), the guides are under
 **Community guides** > **Forever Dungeon Quests**, in the Dungeons category,
 with one folder per dungeon.
+
+## Ragefire Chasm
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Ragefire Chasm (Horde) | Thrall, Orgrimmar | Durotar, Thunder Bluff, the Undercity, the dungeon, back to Orgrimmar, the Undercity and Thunder Bluff |
+
+- The dungeon is for five players of level 13 to 18. Its door is in
+  Orgrimmar. It is a city dungeon of the Horde, so there is no Alliance guide.
+- Its quests come from three capitals, so the guide makes one tour before
+  the run and one after: Thrall's Hidden Enemies, Neeru Fireblade and the
+  Burning Blade in Durotar, Rahauro in Thunder Bluff, Varimathras in the
+  Undercity.
+- Where Maur Grimtotem's corpse lies inside is still open: if you know, tell
+  me.
 
 ## The Hall of Thanes
 

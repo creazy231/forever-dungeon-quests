@@ -1,0 +1,137 @@
+guide forever-dungeon-quests/ragefire-chasm-horde
+title Ragefire Chasm (Horde)
+category Dungeons
+folder Ragefire Chasm
+faction Horde
+levels 13-18
+zone Orgrimmar
+keywords Ragefire Chasm, Orgrimmar, Thrall, Neeru Fireblade, Hidden Enemies, Burning Blade, Durotar, Rahauro, Thunder Bluff, Maur Grimtotem, satchel, Varimathras, Undercity, Searing Blade, Oggleflint, Taragaman, Jergosh, Bazzalan, trogg, dungeon
+reward item 15424 15443 15444 15445
+reward item 15452 15453 270003
+reward item 15449 15450 15451
+why Every Horde quest of Ragefire Chasm in one run, lead-ins included.
+
+# Ragefire Chasm's Horde quests in one guide: Thrall's Hidden Enemies in
+# Orgrimmar, the pick-ups in Thunder Bluff and the Undercity, one run through
+# the chasm, then the hand-ins. Steps already done are passed over, so the
+# guide picks up wherever the chain stands.
+#
+# The chain: Thrall's 5726 Hidden Enemies (a Lieutenant's Insignia from the
+# Burning Blade in Durotar) -> 5727 (a word with Neeru Fireblade) -> 5728
+# (Bazzalan and Jergosh the Invoker) -> 5729 (to Neeru) -> 5730 (back to
+# Thrall). Neeru Fireblade's 5761 Slaying the Beast (Taragaman the Hungerer's
+# heart). Rahauro's 5723 Testing an Enemy's Strength (troggs and shamans) and
+# 5722 Searching for the Lost Satchel (Maur Grimtotem's corpse inside) ->
+# 5724 Returning the Lost Satchel. Varimathras' 5725 The Power to Destroy...
+# (two books from the Searing Blade).
+#
+# Left out: none of the Horde's. Ragefire Chasm is a city dungeon of the
+# Horde (its door is in Orgrimmar), so the pack has no Alliance guide for it.
+#
+# Inside: nothing in the data places the bosses or Maur Grimtotem inside, so
+# their goals stand at the door (@49.3,95.1, Orgrimmar) with `group 5`. The
+# bosses come in the order of the client's dungeon journal (Oggleflint,
+# Taragaman the Hungerer, Jergosh the Invoker, Bazzalan), not of a recorded
+# run. Every quest goal is counted by the quest log, so a group that takes
+# them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon. The insignia drops from the Burning Blade Fanatics and
+#   Apprentices (level 9 to 11), the books from the Searing Blade Cultists and
+#   Warlocks inside.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   13 to 18).
+# INGAME: where inside does Maur Grimtotem's corpse lie?
+
+step Thrall
+  tip In Orgrimmar.
+  accept 5726
+
+step Lieutenant's Insignia
+  zone Durotar
+  tip The Burning Blade Fanatics and Apprentices carry it.
+  collect 14544 quest 5726.1
+
+step Thrall
+  zone Orgrimmar
+  turnin 5726
+  accept 5727
+
+step Neeru Fireblade
+  talk 3216 quest 5727.1
+  accept 5761
+
+step Thrall
+  turnin 5727
+  accept 5728
+
+step Rahauro
+  zone Thunder Bluff
+  tip In Thunder Bluff.
+  accept 5723
+  accept 5722
+
+step Varimathras
+  zone Undercity
+  tip In the Undercity.
+  accept 5725
+
+step To Ragefire Chasm
+  zone Orgrimmar
+  tip A dungeon for five players of level 13 to 18. Its door is in Orgrimmar.
+  enter "Ragefire Chasm" @49.3,95.1
+
+step Troggs, shamans and the books
+  along until leave
+  kill 11318 x8 quest 5723.1 @49.3,95.1 group 5
+  kill 11319 x8 quest 5723.2 @49.3,95.1 group 5
+  collect 14395 quest 5725.1 @49.3,95.1 group 5 -- The Searing Blade Cultists and Warlocks carry the books.
+  collect 14396 quest 5725.2 @49.3,95.1 group 5
+
+step Maur Grimtotem
+  tip His corpse lies in the chasm. Search it: the satchel is for Rahauro.
+  turnin 5722 @49.3,95.1
+  accept 5724 @49.3,95.1
+
+step Taragaman the Hungerer
+  tip Oggleflint comes before him in the client's journal. Taragaman's heart is for Neeru Fireblade.
+  collect 14540 quest 5761.1 @49.3,95.1 group 5
+
+step Jergosh and Bazzalan
+  tip The last two bosses in the client's journal, for Thrall.
+  kill 11518 quest 5728.2 @49.3,95.1 group 5
+  kill 11519 quest 5728.1 @49.3,95.1 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the troggs, the shamans and the books, finish it before you go.
+  kill 11318 x8 quest 5723.1 @49.3,95.1 group 5
+  kill 11319 x8 quest 5723.2 @49.3,95.1 group 5
+  collect 14395 quest 5725.1 @49.3,95.1 group 5
+  collect 14396 quest 5725.2 @49.3,95.1 group 5
+
+step Thrall
+  turnin 5728
+  accept 5729
+
+step Neeru Fireblade
+  turnin 5729
+  accept 5730
+  turnin 5761
+
+step Thrall
+  turnin 5730
+
+step Varimathras
+  zone Undercity
+  turnin 5725
+
+step Rahauro
+  zone Thunder Bluff
+  turnin 5723
+  turnin 5724

@@ -18,6 +18,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 
 ### Dungeons in this version
 
+- **Ragefire Chasm** (Orgrimmar, levels 13 to 18): Horde. Thrall's Hidden Enemies, Neeru Fireblade, Rahauro and Varimathras, one run (Oggleflint to Bazzalan) and every hand-in.
 - **The Hall of Thanes** (Ironforge, levels 13 to 18): Alliance. The Dark Iron Map chain, the pick-ups in Ironforge, one run (Faldrim Anvilmar, Infurnus, Plunder, Durgen Dirgehammer) and every hand-in.
 - **Ruins of Lordaeron** (by the Undercity, levels 15 to 22): Horde. Rear Guard Patrol and A Recipe For Death, the pick-ups in the Undercity, one run (Witherfang to Rath'mael, The Baron's head, the crest), the hand-ins and the Unending Torment chain.
 - **Excavation Site: Wetlands** (the Wetlands, levels 26 to 33): Horde and Alliance. Borstan, Zaruk and the Deathstalker Agent for the Horde; Dorin Songblade, James Halloran, Rethiel's chain and the Grassmans for the Alliance; one run after a recorded one (Saltspine, Shadetooth, the Dragonmaw, the Relic Guardian) and every hand-in.
@@ -77,3 +78,7 @@ Adds Blackmaw Hold for the Horde and the Alliance.
 ## Changelog for 2.8.0
 
 Adds the Shaper's Terrace for the Horde and the Alliance. Every one of WoW Forever's new dungeons is now in the addon.
+
+## Changelog for 2.9.0
+
+Adds Ragefire Chasm for the Horde, the first of the classic dungeons.
