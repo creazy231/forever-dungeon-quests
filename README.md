@@ -37,6 +37,7 @@ Polestar.
 | Dire Maul | Feralas | Horde, Alliance | 56 to 60 |
 | Blackrock Spire | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 57 to 60 |
 | Stratholme | Eastern Plaguelands | Horde, Alliance | 58 to 60 |
+| Scholomance | Western Plaguelands, on Caer Darrow | Horde, Alliance | 58 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
 Every one of WoW Forever's new dungeons is in. The classic dungeons, from
@@ -577,6 +578,27 @@ they are the same guides. This addon is where they get their updates.
   it, the other repeatables, the Blacksmithing quests, the paladin epic
   mount chain, the chromatic breastplate (Blackrock Spire), the Librams, the
   Dungeon Set 2 and Valthalak quests.
+
+## Scholomance
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Scholomance (Horde) | Betina Bigglezink, Light's Hope | The Bulwark, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Ras Frostwhisper after Stratholme, Chillwind Camp |
+| Scholomance (Alliance) | Betina Bigglezink, Light's Hope | Chillwind Camp, Caer Darrow, the dungeon with short returns to Eva Sarkhoff, Stromgarde, Light's Hope, Ras Frostwhisper after Stratholme, the Bulwark |
+
+- The dungeon is for five players of level 58 to 60. Its gate on Caer
+  Darrow needs the Skeleton Key; one key opens it for the group, and
+  Polestar's Dungeons window lists the key's chain.
+- Eva Sarkhoff's chain (Krastinov, his Bag of Horrors, Kirtonos) opens one
+  quest at a time outside by the gate, so the guides step out and back in.
+  Magistrate Marduke's chain runs through Stromgarde, Light's Hope and the
+  Stratholme guide's Menethil's Gift to Ras Frostwhisper.
+- Both sides: Plagued Hatchlings, the Barov Family Fortune and The Last
+  Barov (in the other side's camp).
+- Left out: the repeatables, Dawn's Gambit (its chain runs through
+  Blackrock Spire), the chromatic legplates (Blackrock Spire), the warlock
+  and paladin epic mount chains, the Librams, the Shamans' Darkreaver Menace
+  (two versions in the data), the Dungeon Set 2 and Valthalak quests.
 
 ## The Shaper's Terrace
 

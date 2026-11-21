@@ -1,0 +1,186 @@
+guide forever-dungeon-quests/scholomance-horde
+title Scholomance (Horde)
+category Dungeons
+folder Scholomance
+faction Horde
+levels 58-60
+zone Eastern Plaguelands
+keywords Scholomance, Caer Darrow, Western Plaguelands, Eva Sarkhoff, Doctor Theolen Krastinov, Krastinov's Bag of Horrors, Jandice Barov, Kirtonos the Herald, Blood of Innocents, Magistrate Marduke, Ras Frostwhisper, Keepsake of Remembrance, Stromgarde, Leonid Barthalomew, Soulbound Keepsake, Alexi Barov, Barov Family Fortune, The Last Barov, Weldon Barov, Betina Bigglezink, Plagued Hatchlings, Skeleton Key, Light's Hope, the Bulwark, dungeon
+why Every Horde quest of Scholomance, with the short returns to Eva Sarkhoff its chain needs.
+
+# Scholomance's Horde quests in one guide: Betina Bigglezink at Light's
+# Hope, Alexi Barov at the Bulwark, Eva Sarkhoff by the gate on Caer
+# Darrow, the run with short returns to Eva between its parts, Magistrate
+# Marduke's chain through Stromgarde and Light's Hope, Ras Frostwhisper once
+# the Stratholme guide's Menethil's Gift is done, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The chains:
+# - Eva Sarkhoff's 5382 Doctor Theolen Krastinov, the Butcher -> 5515
+#   Krastinov's Bag of Horrors -> 5384 Kirtonos the Herald -> Magistrate
+#   Marduke's 5461 The Human, Ras Frostwhisper -> 5462 The Dying, Ras
+#   Frostwhisper (to Leonid Barthalomew) -> (5463 and 5464 Menethil's Gift, in
+#   the Stratholme guide) -> 5465 Soulbound Keepsake -> 5466 The Lich, Ras
+#   Frostwhisper. Each of Eva's quests opens only after the last is handed in
+#   outside: she stands by the gate, so the guide steps out and back in.
+# - Alexi Barov's 5341 Barov Family Fortune -> 5342 The Last Barov.
+# - Betina Bigglezink's 5529 Plagued Hatchlings.
+#
+# The gate: Scholomance's gate needs the Skeleton Key, and one key opens it
+# for the group. Its quest chain (from High Executor Derrington's Scarlet
+# Diversions to The Key to Scholomance) is not one of the dungeon's quests; Polestar's Dungeons window lists it with the dungeon.
+#
+# Left out: 5582 Healthy Dragon Scale and the other repeatables (5067, 5068,
+# 8829); 4771 Dawn's Gambit (its chain runs through Blackrock Spire's Egg
+# Collection); 5167 (it needs the Upper Blackrock Spire's Gyth); 7629 Imp
+# Delivery (the warlock epic mount chain); 7479 Libram of Focus (as in the
+# Dire Maul guide); the Shamans' 7667 Material Assistance and The Darkreaver
+# Menace (the data holds two versions, 7668 and 8258, with the same lead-in,
+# and not which one the client gives); the Dungeon Set 2 and Valthalak quests.
+#
+# Inside: nothing in the data places the bosses or the objects inside, so
+# their goals stand at the gate (@69.7,73.2, Western Plaguelands) with `group
+# 5`. The bosses come in the order of the client's dungeon journal
+# (Kirtonos, Jandice Barov, Rattlegore, Marduk Blackpool, Vectus, Ras
+# Frostwhisper, Instructor Malicia, Doctor Theolen Krastinov, Lorekeeper
+# Polkelt, The Ravenian, Lord Alexei Barov, Lady Illucia Barov, Darkmaster
+# Gandling), not of a recorded run. Every quest goal is counted by the quest
+# log, so a group that takes them in another order still gets each step
+# ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon (its note on the Skeleton Key too).
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   58 to 60).
+# INGAME: where inside are the Barov deeds and the porch's brazier? Which
+#   Darkreaver Menace does Sagorne Creststrider give?
+
+step Betina Bigglezink
+  tip At Light's Hope.
+  accept 5529
+
+step Alexi Barov
+  zone Tirisfal Glades
+  tip At the Bulwark.
+  accept 5341
+
+step Eva Sarkhoff
+  zone Western Plaguelands
+  tip On Caer Darrow, by Scholomance's gate.
+  accept 5382
+
+
+step To Scholomance
+  tip A dungeon for five players of level 58 to 60. The gate needs the Skeleton Key; one key opens it for the group.
+  enter "Scholomance" @69.7,73.2
+
+step Plagued Hatchlings
+  along until leave
+  kill 10678 x20 quest 5529.1 @69.7,73.2 group 5
+
+step The Barov family fortune
+  tip Four deeds make up the fortune.
+  collect 13471 quest 5341.1 @69.7,73.2 group 5
+  collect 13448 quest 5341.2 @69.7,73.2 group 5
+  collect 13450 quest 5341.3 @69.7,73.2 group 5
+  collect 13451 quest 5341.4 @69.7,73.2 group 5
+
+step Doctor Theolen Krastinov
+  tip Destroy him, then burn the Remains of Eva Sarkhoff and the Remains of Lucien Sarkhoff.
+  kill 11261 quest 5382.1 @69.7,73.2 group 5
+  interact 176544 quest 5382.2 @69.7,73.2 group 5
+  interact 176545 quest 5382.3 @69.7,73.2 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the hatchlings, finish it before you go.
+  kill 10678 x20 quest 5529.1 @69.7,73.2 group 5
+
+step Eva Sarkhoff
+  tip Outside, by the gate.
+  turnin 5382
+  accept 5515
+
+step Back into Scholomance
+  enter "Scholomance" @69.7,73.2
+
+step Jandice Barov
+  tip Krastinov's Bag of Horrors is on her corpse.
+  collect 13725 quest 5515.1 @69.7,73.2 group 5
+
+step Eva Sarkhoff
+  tip Outside, by the gate.
+  turnin 5515
+  accept 5384
+
+step Back to the porch
+  enter "Scholomance" @69.7,73.2
+
+step Kirtonos the Herald
+  tip Place the Blood of Innocents in the brazier on the porch to call Kirtonos.
+  kill 10506 quest 5384.1 @69.7,73.2 group 5
+
+step Eva Sarkhoff
+  tip Outside, by the gate.
+  turnin 5384
+
+step Magistrate Marduke
+  accept 5461
+
+step The Keepsake of Remembrance
+  zone Arathi Highlands
+  tip In the ruins of Stromgarde.
+  collect 13585 quest 5461.1
+
+step Magistrate Marduke
+  zone Western Plaguelands
+  turnin 5461
+  accept 5462
+
+step Leonid Barthalomew the Revered
+  zone Eastern Plaguelands
+  tip At Light's Hope. Menethil's Gift, next, is in the Stratholme guide.
+  turnin 5462
+
+step Betina Bigglezink
+  turnin 5529
+
+step Leonid Barthalomew the Revered
+  when turnedin 5464
+  accept 5465
+
+step Magistrate Marduke
+  when onquest 5465
+  zone Western Plaguelands
+  turnin 5465
+  accept 5466
+
+step Ras Frostwhisper
+  when onquest 5466
+  tip Use the Soulbound Keepsake on him.
+  collect 13626 quest 5466.1 @69.7,73.2 group 5
+
+step Magistrate Marduke
+  when onquest 5466
+  turnin 5466
+
+step Alexi Barov
+  zone Tirisfal Glades
+  tip At the Bulwark.
+  turnin 5341
+  accept 5342
+
+step The Last Barov
+  zone Western Plaguelands
+  tip At Chillwind Camp, in Alliance territory: assassinate Weldon Barov and take his head.
+  collect 13469 quest 5342.1
+
+step Alexi Barov
+  zone Tirisfal Glades
+  turnin 5342
