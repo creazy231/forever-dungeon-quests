@@ -17,6 +17,7 @@ Polestar.
 | The Deadmines | Westfall | Alliance | 17 to 26 |
 | Wailing Caverns | The Barrens | Horde, Alliance | 17 to 24 |
 | Shadowfang Keep | Silverpine Forest | Horde; Alliance Rogues and Warriors | 20 to 30 |
+| Blackfathom Deeps | Ashenvale | Horde, Alliance | 24 to 32 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
@@ -149,6 +150,25 @@ with one folder per dungeon.
   need the Deadmines or Blackfathom Deeps.
 - Where Deathstalker Vincent, the Book of Ur, the chest and the helm are
   inside is still open: if you know, tell me.
+
+## Blackfathom Deeps
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Blackfathom Deeps (Horde) | Tsunaman, Stonetalon Mountains | Zoram'gar, the shore by the door, the dungeon, back to Zoram'gar and Thunder Bluff |
+| Blackfathom Deeps (Alliance) | Argos Nightwhisper, Stormwind | Ironforge, Darnassus, Auberdine, the dungeon, back again |
+
+- The dungeon is for five players of level 24 to 32. Its door is on the
+  Ashenvale coast.
+- The Horde's Sapphires of Aku'Mai lie on the shore around the door, outside
+  the dungeon. A Blackfathom Tide Priestess there may drop a Damp Note, and
+  Baron Aquanis inside a Strange Water Globe: both start quests, and their
+  steps show only if you have them.
+- Left out: the Warlocks' Orb of Soran'ruk (it needs Shadowfang Keep), and
+  The Heart of the Void and Amongst the Ruins, which have no giver in the
+  game's data.
+- Where Argent Guard Thaelrid, the Fathom Stone and the Pitted Iron Chest
+  are inside is still open: if you know, tell me.
 
 ## Excavation Site: Wetlands
 

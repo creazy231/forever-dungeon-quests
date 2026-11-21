@@ -1,0 +1,116 @@
+guide forever-dungeon-quests/blackfathom-deeps-horde
+title Blackfathom Deeps (Horde)
+category Dungeons
+folder Blackfathom Deeps
+faction Horde
+levels 24-32
+zone Stonetalon Mountains
+keywords Blackfathom Deeps, Ashenvale, Zoram'gar, Tsunaman, Je'neu Sancrea, Sapphire of Aku'Mai, Damp Note, Blackfathom Tide Priestess, Argent Guard Thaelrid, Bashana Runetotem, Fathom Stone, Ghamoo-ra, Sarevess, Lorgus Jett, Serra'kis, Kelris, Aku'mai, Baron Aquanis, dungeon
+reward item 17694 17695
+reward item 7001 7002 270031 270032
+reward item 16886 16887 270043
+why Every Horde quest of Blackfathom Deeps in one run, lead-in included.
+
+# Blackfathom Deeps' Horde quests in one guide: Tsunaman's lead-in, Je'neu
+# Sancrea at Zoram'gar, the shore by the door, one run, then the hand-ins.
+# Steps already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Tsunaman's 6562 Trouble in the Deeps (to Je'neu) -> 6563 The
+# Essence of Aku'Mai (twenty sapphires on the shore by the door); Je'neu's 6921
+# Amongst the Ruins (the Fathom Core inside); the Damp Note (item 16790, from
+# a Blackfathom Tide Priestess) starts 6564 Allegiance to the Old Gods -> 6565
+# (Lorgus Jett); Argent Guard Thaelrid's 6561 Blackfathom Villainy (taken
+# inside; Kelris' head, for Bashana Runetotem); Baron Aquanis' Strange Water
+# Globe (item 16782) starts 6922 Baron Aquanis.
+#
+# Left out: the Warlocks' 1740 The Orb of Soran'ruk (its large fragment comes
+# from Shadowfang Keep); 78917 The Heart of the Void and 908 Amongst the
+# Ruins, which have no giver in the data.
+#
+# Inside: nothing in the data places the bosses, Thaelrid or the Fathom Stone
+# inside, so their goals stand at the door (@15.1,13.2, Ashenvale) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett, Old Serra'kis, Twilight
+# Lord Kelris, Aku'mai; Baron Aquanis optional), not of a recorded run. Every
+# quest goal is counted by the quest log, so a group that takes them in
+# another order still gets each step ticked. The sapphires and the Tide
+# Priestess stand outside the dungeon, on the shore around the door.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   24 to 32).
+# INGAME: where inside do Argent Guard Thaelrid and the Fathom Stone stand?
+
+step Tsunaman
+  accept 6562
+
+step Je'neu Sancrea
+  zone Ashenvale
+  tip At Zoram'gar.
+  turnin 6562
+  accept 6563
+  accept 6921
+
+step The shore by the door
+  tip Outside the dungeon: the Sapphires of Aku'Mai lie around the door, and a Blackfathom Tide Priestess here may drop a Damp Note, which starts a quest.
+  collect 16784 x20 quest 6563.1
+  collect 16790 optional -- The Damp Note, if it drops.
+
+step The Damp Note
+  when has 16790
+  accept 6564
+
+step Je'neu Sancrea
+  turnin 6563
+
+step Je'neu Sancrea
+  when onquest 6564
+  turnin 6564
+  accept 6565
+
+step To Blackfathom Deeps
+  tip A dungeon for five players of level 24 to 32.
+  enter "Blackfathom Deeps" @15.1,13.2
+
+step Argent Guard Thaelrid
+  tip He waits inside, with a quest for the Horde too.
+  accept 6561 @15.1,13.2
+
+step The Fathom Stone
+  collect 16762 quest 6921.1 @15.1,13.2 group 5
+
+step Lorgus Jett
+  when onquest 6565
+  tip The fourth boss in the client's journal, after Ghamoo-ra, Lady Sarevess and Geilhast.
+  kill 12902 quest 6565.1 @15.1,13.2 group 5
+
+step Twilight Lord Kelris
+  tip The sixth boss in the client's journal, after Old Serra'kis; Aku'mai comes last. Kelris' head is for Bashana Runetotem. Baron Aquanis, a boss off the journal's line, may drop a Strange Water Globe, which starts a quest.
+  collect 5881 quest 6561.1 @15.1,13.2 group 5
+  collect 16782 @15.1,13.2 optional -- The Strange Water Globe, if you meet Baron Aquanis.
+
+step Baron Aquanis
+  when has 16782
+  accept 6922
+
+step Je'neu Sancrea
+  turnin 6921
+
+step Je'neu Sancrea
+  when onquest 6565
+  turnin 6565
+
+step Je'neu Sancrea
+  when onquest 6922
+  turnin 6922
+
+step Bashana Runetotem
+  zone Thunder Bluff
+  turnin 6561

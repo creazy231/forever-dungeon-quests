@@ -1,0 +1,117 @@
+guide forever-dungeon-quests/blackfathom-deeps-alliance
+title Blackfathom Deeps (Alliance)
+category Dungeons
+folder Blackfathom Deeps
+faction Alliance
+levels 24-32
+zone Stormwind City
+keywords Blackfathom Deeps, Ashenvale, Darkshore, Auberdine, Darnassus, Argos Nightwhisper, Gershala Nightwhisper, Gerrig Bonegrip, Dawnwatcher Shaedlass, Argent Guard Manados, Argent Guard Thaelrid, Dawnwatcher Selgorm, Lorgalis Manuscript, brain stem, Twilight Pendant, Ghamoo-ra, Sarevess, Lorgus Jett, Serra'kis, Kelris, Aku'mai, dungeon
+reward item 7001 7002 270031 270032
+reward item 7003 7004 270021
+reward item 6998 7000 270025
+reward item 6743
+why Every Alliance quest of Blackfathom Deeps in one run, lead-in included.
+
+# Blackfathom Deeps' Alliance quests in one guide: the pick-ups in Stormwind,
+# Ironforge, Darnassus and Auberdine, one run, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Argos Nightwhisper's 3765 The Corruption Abroad (to Gershala
+# Nightwhisper) -> 1275 Researching the Corruption (eight Corrupted Brain
+# Stems); Gerrig Bonegrip's 971 Knowledge in the Deeps (the Lorgalis
+# Manuscript, from a Pitted Iron Chest inside); Dawnwatcher Shaedlass' 1198 In
+# Search of Thaelrid (to Argent Guard Thaelrid inside) -> 1200 Blackfathom
+# Villainy (Kelris' head, for Dawnwatcher Selgorm); Argent Guard Manados' 1199
+# Twilight Falls (ten Twilight Pendants).
+#
+# Left out: the Warlocks' 1740 The Orb of Soran'ruk (its large fragment comes
+# from Shadowfang Keep); 78916 The Heart of the Void and 908 Amongst the
+# Ruins, which have no giver in the data.
+#
+# Inside: nothing in the data places the bosses, Thaelrid or the chest
+# inside, so their goals stand at the door (@15.1,13.2, Ashenvale) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett, Old Serra'kis, Twilight
+# Lord Kelris, Aku'mai), not of a recorded run. Every quest goal is counted by
+# the quest log, so a group that takes them in another order still gets each
+# step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The brain stems also drop from the naga and
+#   satyrs of Darkshore and Ashenvale; lint warns that the door is more than
+#   50 yards from those, and the goal stays at the door for the ones inside.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   24 to 32).
+# INGAME: where inside do Argent Guard Thaelrid and the Pitted Iron Chest
+#   stand?
+
+step Argos Nightwhisper
+  tip In Stormwind.
+  accept 3765
+
+step Gerrig Bonegrip
+  zone Ironforge
+  accept 971
+
+step Dawnwatcher Shaedlass
+  zone Darnassus
+  accept 1198
+
+step Argent Guard Manados
+  accept 1199
+
+step Gershala Nightwhisper
+  zone Darkshore
+  tip In Auberdine.
+  turnin 3765
+  accept 1275
+
+step To Blackfathom Deeps
+  zone Ashenvale
+  tip A dungeon for five players of level 24 to 32.
+  enter "Blackfathom Deeps" @15.1,13.2
+
+step Brain stems and pendants
+  along until leave
+  collect 5952 x8 quest 1275.1 @15.1,13.2 group 5 -- The naga and satyrs inside drop them, Lady Sarevess too.
+  collect 5879 x10 quest 1199.1 @15.1,13.2 group 5 -- The Twilight cultists drop them.
+
+step Argent Guard Thaelrid
+  tip He waits inside.
+  turnin 1198 @15.1,13.2
+  accept 1200 @15.1,13.2
+
+step The Lorgalis Manuscript
+  tip In a Pitted Iron Chest inside.
+  collect 5359 quest 971.1 @15.1,13.2 group 5
+
+step Twilight Lord Kelris
+  tip The sixth boss in the client's journal, after Ghamoo-ra, Lady Sarevess, Geilhast, Lorgus Jett and Old Serra'kis; Aku'mai comes last. Kelris' head is for Dawnwatcher Selgorm.
+  collect 5881 quest 1200.1 @15.1,13.2 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the brain stems and the pendants, finish it before you go.
+  collect 5952 x8 quest 1275.1 @15.1,13.2 group 5
+  collect 5879 x10 quest 1199.1 @15.1,13.2 group 5
+
+step Gershala Nightwhisper
+  zone Darkshore
+  turnin 1275
+
+step Dawnwatcher Selgorm
+  zone Darnassus
+  turnin 1200
+
+step Argent Guard Manados
+  turnin 1199
+
+step Gerrig Bonegrip
+  zone Ironforge
+  turnin 971
