@@ -19,6 +19,7 @@ A community addon for Polestar with quest guides for WoW Forever's new dungeons.
 ### Dungeons in this version
 
 - **The Hall of Thanes** (Ironforge, levels 13 to 18): Alliance. The Dark Iron Map chain, the pick-ups in Ironforge, one run (Faldrim Anvilmar, Infurnus, Plunder, Durgen Dirgehammer) and every hand-in.
+- **Ruins of Lordaeron** (by the Undercity, levels 15 to 22): Horde. Rear Guard Patrol and A Recipe For Death, the pick-ups in the Undercity, one run (Witherfang to Rath'mael, The Baron's head, the crest), the hand-ins and the Unending Torment chain.
 - **The Drowned City** (Stranglethorn Vale, levels 35 to 40): Horde and Alliance. Kin'weelay's and Sergeant Yohwa's chains, Krazek's two quests, the idol, one run (Zul'Alai, Var'Taka, Captain Dreadrise, the Deathless Guardians, Min'loth) and every hand-in.
 
 More dungeons come in later versions.
@@ -38,3 +39,7 @@ First published version, with The Drowned City for the Horde and the Alliance: t
 ## Changelog for 2.1.0
 
 Adds The Hall of Thanes for the Alliance: the Dark Iron Map chain, the pick-ups in Ironforge, one run and every hand-in.
+
+## Changelog for 2.2.0
+
+Adds the Ruins of Lordaeron for the Horde: both lead-in chains, the pick-ups in the Undercity, one run, every hand-in and the Unending Torment chain.

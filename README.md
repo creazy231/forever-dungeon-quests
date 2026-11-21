@@ -12,6 +12,7 @@ Polestar.
 | Dungeon | Where | Guides | Levels |
 |---|---|---|---|
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
+| Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 
 More of WoW Forever's dungeons come in later versions.
@@ -46,6 +47,23 @@ with one folder per dungeon.
 - Inside, a Ghostly Attendant gives An Ancient Grudge, and the Treaty of
   Understanding starts a quest for King Magni if you come across it. Where
   both are inside is still open: if you know, tell me.
+- Polestar has no map of the inside, so the arrow points at the door for
+  every goal in there.
+
+## Ruins of Lordaeron
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Ruins of Lordaeron (Horde) | Deathguard Linnea, Brill | The Sepulcher, the Undercity, the dungeon, back to Brill and the Sepulcher |
+
+- The dungeon is for five players of level 15 to 22. Its door is by the
+  Undercity. It is a city dungeon of the Horde, so there is no Alliance guide.
+- The guide takes the two lead-in chains first: Rear Guard Patrol in Brill
+  and A Recipe For Death between the Sepulcher and the Undercity.
+- Inside, The Baron drops the Abominable Head and a crest lies in the ruins:
+  both start quests. The Abominable Head opens Unending Torment, which runs
+  on in the Undercity after the run. Where The Baron, the crest and Edward
+  Heartweaver's trail are inside is still open: if you know, tell me.
 - Polestar has no map of the inside, so the arrow points at the door for
   every goal in there.
 
