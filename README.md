@@ -29,6 +29,7 @@ Polestar.
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Uldaman | Badlands | Horde, Alliance | 41 to 51 |
 | Zul'Farrak | Tanaris | Horde, Alliance | 44 to 54 |
+| Maraudon | Desolace | Horde, Alliance | 46 to 55 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
@@ -394,6 +395,28 @@ they are the same guides. This addon is where they get their updates.
   Sharpbeak (past the follow-up), Wildmane the Elder (the Lunar Festival),
   the Rogues' Talisman of Kazdor (done alone); for the Horde also Tran'rek,
   the breadcrumb from Booty Bay.
+
+## Maraudon
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Maraudon (Horde) | Uthel'nay, Orgrimmar | Mulgore, Shadowprey Village, the Centaur Pariah, Shen'dralas, Willow, the caves, the dungeon, back again, Moonglade |
+| Maraudon (Alliance) | Archmage Tervosh, Theramore | Nijel's Point, Willow, the Centaur Pariah, Shen'dralas, the caves, the dungeon, back again, Moonglade |
+
+- The dungeon is for five players of level 46 to 55; the client lists it as
+  one dungeon. Its door is a cave in western Desolace, and the caves before
+  the instance hold the orange crystal pool, the Shadowshards, three of the
+  five Khans and the Nameless Prophet, all elites.
+- Both guides take the Shen'dralas chain from the Strange Pylons to
+  Woodwyrd's Rot and Regret and Passing the Blame, the Pariah's Amulet of
+  Union, Legends of Maraudon and The Scepter of Celebras, Twisted Evils,
+  Vyletongue Corruption, Shadowshard Fragments, Corruption of Earth and Seed
+  and Seed of Life (to Remulos in Moonglade). The Horde also gets An'she's
+  Radiance.
+- Left out: Agamaggan's Blood after Passing the Blame (it needs Razorfen
+  Downs), Splitrock the Elder (the Lunar Festival), and for the Alliance the
+  Paladins' Materials of Significance (an item sold only in Blackrock
+  Depths).
 
 ## Alcaz Prison
 

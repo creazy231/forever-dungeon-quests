@@ -1,0 +1,262 @@
+guide forever-dungeon-quests/maraudon-horde
+title Maraudon (Horde)
+category Dungeons
+folder Maraudon
+faction Horde
+levels 46-55
+zone Orgrimmar
+coords live
+keywords Maraudon, Desolace, Orgrimmar, Uthel'nay, Shadowshard Fragments, Mulgore, Olana Brighthoof, An'she's Radiance, Shadowprey Village, Vark Battlescar, Vyletongue Corruption, Selendra, Corruption of Earth and Seed, Willow, Twisted Evils, Centaur Pariah, Amulet of Union, Khans, Shen'dralas, Mordent Evenshade, Mithera, Woodwyrd, Rot and Regret, Kog'thug, Cavindra, Legends of Maraudon, Celebras, Scepter of Celebras, Zaetar's Spirit, Seed of Life, Remulos, Noxxion, Vyletongue, Landslide, Theradras, dungeon
+reward item 17772 17773
+reward item 17775 17776 17777 17779
+reward item 17768 17770 17778
+reward item 17774
+reward item 17191
+reward item 272186 272187
+reward item 17705 17743 17753
+why Every Horde quest of Maraudon in one run, lead-ins included.
+
+# Maraudon's Horde quests in one guide: Orgrimmar, Mulgore, Shadowprey
+# Village, the Centaur Pariah, the Shen'dralas chain to Woodwyrd, Willow, the
+# caves before the door, one run, then the hand-ins and Moonglade. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The chains:
+# - Uthel'nay's 7068 Shadowshard Fragments (in the caves before the door).
+# - Olana Brighthoof's 96776 An'she's Radiance (inside).
+# - Vark Battlescar's 7029 Vyletongue Corruption; Selendra's 7064 Corruption
+#   of Earth and Seed (Princess Theradras).
+# - Willow's 7028 Twisted Evils.
+# - The Centaur Pariah's 7067 The Pariah's Instructions (the Amulet of Union:
+#   the quest needs the Amulet of Spirits and the five Khans' gems for it).
+# - Shen'dralas: the Shen'dralar Pylon's 92914 Strange Pylons -> Mordent
+#   Evenshade's 96010 Fragments of the Pylons -> 96018 Powering the Pylons ->
+#   93016 A Brief History Lesson -> 93394 Meeting the Magister -> Mithera's
+#   93341 Forlorn Gardens -> 93594 Word of the Woods -> Woodwyrd's 93404 Rot
+#   and Regret (the Vial of Earth Song Water inside) -> 93601 Passing the
+#   Blame (to Kog'thug the Brave).
+# - Cavindra's 7044 Legends of Maraudon -> Celebras the Redeemed's 7046 The
+#   Scepter of Celebras (both inside).
+# - Zaetar's Spirit's 7066 Seed of Life (inside, to Keeper Remulos in
+#   Moonglade).
+#
+# Left out: 93604 Agamaggan's Blood after Passing the Blame (it needs Razorfen
+# Downs); 8635 Splitrock the Elder (the Lunar Festival).
+#
+# Inside: nothing in the data places the bosses, the Vylestem Vines, Celebras
+# the Redeemed, Zaetar's Spirit, the Earth Song Splash or the Shard of Pure
+# Light inside, so their goals stand at the door (@29.1,62.5, Desolace) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Noxxion, Razorlash, Tinkerer Gizlock, Lord Vyletongue, Celebras the
+# Cursed, Landslide, Rotgrip, Princess Theradras; Maraudos and Veng
+# optional), not of a recorded run. Every quest goal is counted by the quest
+# log, so a group that takes them in another order still gets each step
+# ticked. The orange crystal pool, the Shadowshards, Kolk, Gelk, Magra, their
+# spirits and the Nameless Prophet stand on the Desolace map, in the caves
+# before the instance.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Pariah's quest lists the Amulet of
+#   Spirits and the five gems as the items it needs; each Khan and each Khan's
+#   spirit drops its gem, the Nameless Prophet the Amulet of Spirits.
+#   Players' recordings (data/recorded) have the Amulet of Union's goal done
+#   by Magra, in the caves (35.17,60.14); the data has no source for the
+#   amulet itself. The vial comes from an Earth Song Splash, An'she's
+#   Radiance from a Shard of Pure Light.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json). The client's group finder lists Maraudon as
+#   one dungeon, not as wings.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   46 to 55).
+# - Shen'dralas has only the live client's map, so the guide's coordinates
+#   are live ones (`coords live`); Desolace's are the same in both.
+# INGAME: where inside do the Vylestem Vines, Celebras the Redeemed, the
+#   Earth Song Splash and the Shard of Pure Light stand? How do the gems
+#   become the Amulet of Union?
+
+step Uthel'nay
+  tip In Orgrimmar.
+  accept 7068
+
+step Olana Brighthoof
+  zone Mulgore
+  accept 96776
+
+step Vark Battlescar
+  zone Desolace
+  tip In Shadowprey Village.
+  accept 7029
+
+step Selendra
+  tip Near Shadowprey Village.
+  accept 7064
+
+step Centaur Pariah
+  tip In southern Desolace. Read the Pariah's Instructions that come with the quest.
+  accept 7067
+
+step The Shen'dralar Pylon
+  zone Shen'dralas
+  accept 92914 object 577959
+
+step Strange Pylons
+  tip Find the western, eastern and temple pylons.
+  complete 92914
+
+step Mordent Evenshade
+  turnin 92914
+  accept 96010
+
+step Fragments of the Pylons
+  zone Desolace
+  collect 255656 quest 96010.1
+  collect 255657 quest 96010.2
+
+step Mordent Evenshade
+  zone Shen'dralas
+  tip Then take the Mana Sieve from within the temple, collect Ancient Mana Crystals with it, and empower the pylons.
+  turnin 96010
+  accept 96018
+
+step Mordent Evenshade
+  turnin 96018
+  accept 93016
+  talk 253471 quest 93016.1
+  turnin 93016
+  accept 93394
+
+step Magister Kirandis
+  tip Inside the temple of Shen'dralas.
+  turnin 93394
+
+step Mithera
+  accept 93341
+
+step Forlorn Gardens
+  tip Examine the pedestal.
+  complete 93341 @70.21,79.71
+
+step Mithera
+  turnin 93341
+  accept 93594
+
+step Woodwyrd
+  turnin 93594
+  accept 93404
+  talk 254674 quest 93404.1
+
+step Willow
+  zone Desolace
+  accept 7028
+
+step Cavindra
+  tip Near Maraudon's door.
+  accept 7044
+
+step The orange crystal pool
+  tip Fill the Coated Cerulean Vial at the orange crystal pool.
+  collect 17696 quest 7029.2
+
+step Shadowshard Fragments
+  tip The Shadowshard Rumblers and Smashers are elites: bring your group.
+  collect 17756 x10 quest 7068.1
+
+step Three Khans and the Nameless Prophet
+  tip The Pariah's quest needs the Amulet of Spirits, which the Nameless Prophet carries, and a gem from each of the five Khans: Kolk, Gelk and Magra (or their spirits) out here, Maraudos and Veng inside. All of them are elites.
+  collect 17757
+  collect 17761
+  collect 17762
+  collect 17763
+
+step To Maraudon
+  tip A dungeon for five players of level 46 to 55.
+  enter "Maraudon" @29.1,62.5
+
+step Crystal carvings
+  along until leave
+  collect 17684 x15 quest 7028.1 @29.1,62.5 group 5 -- Most of Maraudon's foes carry Theradric Crystal Carvings.
+
+step Noxxion
+  tip The first encounter in the client's journal. Noxxion or Noxxion's Spawn drops the Celebrian Rod.
+  collect 17702 quest 7044.2 @29.1,62.5 group 5
+
+step The Vylestem Vines
+  tip Use the Filled Cerulean Vial on the Vylestem Vines to force the Noxxious Scions out: each one killed heals a plant.
+  kill 13696 x8 quest 7029.1 @29.1,62.5 group 5
+
+step Lord Vyletongue
+  tip After Razorlash and Tinkerer Gizlock in the client's journal. Vyletongue drops the Celebrian Diamond.
+  collect 17703 quest 7044.1 @29.1,62.5 group 5
+
+step Maraudos and Veng
+  tip Optional encounters in the client's journal: the Fourth and Fifth Khans carry their gems.
+  collect 17764 @29.1,62.5 group 5
+  collect 17765 @29.1,62.5 group 5
+
+step Celebras the Redeemed
+  tip After Celebras the Cursed in the client's journal. Hand Celebras the Redeemed the Rod and the Diamond, assist while the Scepter is made, then speak with Celebras again.
+  turnin 7044 @29.1,62.5
+  accept 7046 @29.1,62.5
+  complete 7046 @29.1,62.5 group 5
+  turnin 7046 @29.1,62.5
+
+step The Earth Song Splash
+  tip An Earth Song Splash gives the Vial of Earth Song Water for Woodwyrd.
+  collect 258296 quest 93404.2 @29.1,62.5 group 5
+
+step The Shard of Pure Light
+  tip A Shard of Pure Light gives An'she's Radiance for Olana Brighthoof.
+  collect 277140 quest 96776.1 @29.1,62.5 group 5
+
+step Princess Theradras
+  tip The last encounter in the client's journal, after Landslide and Rotgrip. Zaetar's Spirit gives Seed of Life.
+  kill 12201 quest 7064.1 @29.1,62.5 group 5
+  accept 7066 @29.1,62.5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the carvings, finish it before you go.
+  collect 17684 x15 quest 7028.1 @29.1,62.5 group 5
+
+step The Amulet of Union
+  tip The Centaur Pariah wants the Amulet of Union; the quest needs the Amulet of Spirits and all five gems for it. Players' recordings have it done here, by Magra in the caves before the door.
+  collect 17758 quest 7067.1 @35.17,60.14
+
+step Centaur Pariah
+  turnin 7067
+
+step Woodwyrd
+  zone Shen'dralas
+  turnin 93404
+  accept 93601
+
+step Kog'thug the Brave
+  tip At the Bristleback Retreat.
+  turnin 93601
+
+step Willow
+  zone Desolace
+  turnin 7028
+
+step Vark Battlescar
+  tip In Shadowprey Village.
+  turnin 7029
+
+step Selendra
+  turnin 7064
+
+step Olana Brighthoof
+  zone Mulgore
+  turnin 96776
+
+step Uthel'nay
+  zone Orgrimmar
+  turnin 7068
+
+step Keeper Remulos
+  zone Moonglade
+  turnin 7066
