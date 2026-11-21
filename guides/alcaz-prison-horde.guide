@@ -1,0 +1,139 @@
+guide forever-dungeon-quests/alcaz-prison-horde
+title Alcaz Prison (Horde)
+category Dungeons
+folder Alcaz Prison
+faction Horde
+levels 48-55
+zone The Barrens
+keywords Alcaz Prison, Alcaz Island, Dustwallow Marsh, Nazeer Bloodpike, Sergeant Ulka, Commander Folkar, Kor'kron, Varian, Mason Connery, Eitrigg, Thrall, Nazgrel, Westfall, Connery's Trunk, Wrex, Ca'zass, Katerina, Questioner, Blazeroar, bandana, Strashaz, dungeon
+reward item 279474 279831 279833
+reward item 279824 279826 279829
+reward item 279448 279473
+why Every Horde quest of Alcaz Prison in one run, lead-ins included.
+
+# Alcaz Prison's Horde quests in one guide: Nazeer Bloodpike's lead-in,
+# Sergeant Ulka on Alcaz Island, one run through the prison, then the
+# hand-ins on the island, in Westfall and in Orgrimmar. Steps already done are
+# passed over, so the guide picks up wherever the chain stands.
+#
+# The chain: Nazeer Bloodpike's 95284 The Elite of the Elite (to Sergeant
+# Ulka) -> 95285 Right Place, Wrong Time -> 95309 No Orc Left Behind (to
+# Commander Folkar inside), 96332 A Little Payback (Strashaz naga and
+# Tidemistress Ca'zass's head) and 96334 Blood Red Bandanas (for Eitrigg).
+# Inside: Folkar's 95454 The Honor of the Kor'kron -> 96369 Bad News for
+# Folkar -> 95483 Thrall Needs to Know, for Thrall. The prisoner Mason
+# Connery's 96335 The Man in the Iron Chains (the Ornate Shackle Key from The
+# Questioner) -> 96337 More Valuable Than Gold (Connery's Trunk in Westfall)
+# -> Nazgrel's 96376 State Secrets (a Document Box).
+#
+# Left out: nothing of the Horde's.
+#
+# Inside: nothing in the data places the bosses, Folkar or Mason Connery
+# inside, so their goals stand at the door (@75.4,14.0, Alcaz Island) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Overseer Wrex, Tidemistress Ca'zass, Katerina the Cleaner, The Questioner,
+# Blazeroar), not of a recorded run; the journal ties No Orc Left Behind to
+# Katerina and The Honor of the Kor'kron to Blazeroar, so Folkar's steps sit
+# there. Every quest goal is counted by the quest log, so a group that takes
+# them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Shackle Key is a quest item there: it
+#   drops only while Mason's quest is in the log.
+# - Players' recordings, as Polestar holds them (data/codex/journal-quests.json):
+#   Folkar's three quests taken and handed in inside, Thrall Needs to Know
+#   taken inside, Mason's two quests taken inside and the trunk in Westfall,
+#   the bandanas from the human guards inside.
+# - The door, and the elite Strashaz naga of level 59 to 61 around it:
+#   players' recordings (data/codex/entrances.json) and the data's spawns.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   48 to 55).
+# INGAME: where inside do Commander Folkar and Mason Connery stand? Where does
+#   the Document Box for State Secrets come from? The data has no source for
+#   it, so its step only applies while the box is in your bags.
+
+step Nazeer Bloodpike
+  tip In the Barrens.
+  accept 95284
+
+step Sergeant Ulka
+  zone Dustwallow Marsh
+  tip On Alcaz Island, off north-eastern Dustwallow.
+  turnin 95284
+  accept 95285
+
+step Sergeant Ulka
+  turnin 95285
+  accept 95309
+  accept 96332
+  accept 96334
+
+step To Alcaz Prison
+  tip A dungeon for five players of level 48 to 55. Elite Strashaz naga of level 59 to 61 crowd the island around the door.
+  enter "Alcaz Prison" @75.4,14.0
+
+step Naga and bandanas
+  along until leave
+  kill 255995 x15 quest 96332.1 @75.4,14.0 group 5
+  kill 255373 x8 quest 96332.2 @75.4,14.0 group 5
+  collect 274028 x8 quest 96334.1 @75.4,14.0 group 5 -- The human guards drop them.
+
+step Tidemistress Ca'zass
+  tip Overseer Wrex comes before her in the client's journal. She drops her head for Sergeant Ulka.
+  collect 273883 quest 96332.3 @75.4,14.0 group 5
+
+step Commander Folkar
+  tip The client's journal ties him to Katerina the Cleaner, the third boss.
+  turnin 95309 @75.4,14.0
+  accept 95454 @75.4,14.0
+
+step Mason Connery
+  tip A prisoner. Take his quest before The Questioner dies: the key drops only while it is in your log.
+  accept 96335 @75.4,14.0
+
+step The Questioner
+  tip The fourth boss in the client's journal. He drops the Ornate Shackle Key.
+  collect 274029 quest 96335.1 @75.4,14.0 group 5
+
+step Mason Connery
+  turnin 96335 @75.4,14.0
+  accept 96337 @75.4,14.0
+
+step Blazeroar
+  tip The last boss. The client's journal ties The Honor of the Kor'kron to him: what became of King Varian, back to Folkar.
+  turnin 95454 @75.4,14.0
+  accept 96369 @75.4,14.0
+
+step Commander Folkar
+  turnin 96369 @75.4,14.0
+  accept 95483 @75.4,14.0
+
+step Before you leave
+  label leave
+  tip Whatever is still short for A Little Payback and the bandanas, finish it before you go.
+  kill 255995 x15 quest 96332.1 @75.4,14.0 group 5
+  kill 255373 x8 quest 96332.2 @75.4,14.0 group 5
+  collect 274028 x8 quest 96334.1 @75.4,14.0 group 5
+
+step Sergeant Ulka
+  turnin 96332
+
+step Connery's Trunk
+  zone Westfall
+  tip In Moonbrook, in Westfall: Alliance country, mind its guards on the way.
+  turnin 96337
+
+step Eitrigg
+  zone Orgrimmar
+  turnin 96334
+
+step Thrall
+  turnin 95483
+
+step Nazgrel
+  when has 274041
+  accept 96376
+  turnin 96376

@@ -17,6 +17,7 @@ Polestar.
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
+| Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 
 More of WoW Forever's dungeons come in later versions.
 
@@ -149,6 +150,25 @@ they are the same guides. This addon is where they get their updates.
   town; its Key Ingredients follow-up wants Thick Leather and Iron Bars.
 - Where Tunk (and, for the Alliance, Zalfan Moonshadow) stand inside is
   still open: if you know, tell me.
+
+## Alcaz Prison
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Alcaz Prison (Horde) | Nazeer Bloodpike, the Barrens | Alcaz Island, the dungeon, Westfall, Orgrimmar |
+| Alcaz Prison (Alliance) | Archmage Lan'dalock, Dalaran | Stormwind, Theramore, the dungeon, Westfall, Stormwind, Dalaran |
+
+- The dungeon is for five players of level 48 to 55. Its door is on Alcaz
+  Island, off north-eastern Dustwallow Marsh, among elite naga of level 59
+  to 61.
+- Inside, the prisoner Mason Connery gives a quest for The Questioner's key:
+  take it before The Questioner dies, as the key only drops while it is in
+  your log. Its follow-up leads to Connery's Trunk in Westfall.
+- State Secrets wants a Document Box whose source the game's data doesn't
+  name, so that step only shows when the box is in your bags.
+- Where Commander Folkar, Mason Connery and the window stand inside, and
+  what completes The Return of the King?, are still open: if you know, tell
+  me.
 
 ## Next to Polestar's Dungeons window
 

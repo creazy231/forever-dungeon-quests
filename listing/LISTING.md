@@ -26,6 +26,8 @@ A community addon for Polestar with quest guides for WoW Forever's new dungeons.
 
 - **Krol'dok Stronghold** (Riverglades, levels 40 to 47): Horde and Alliance. The whole Riverglades chain that opens its quests (Rog'mar's for the Horde, Farholde Keep's for the Alliance), one run (Grox to Mugg, Tunk's moulding) and every hand-in.
 
+- **Alcaz Prison** (Alcaz Island, Dustwallow Marsh, levels 48 to 55): Horde and Alliance. Sergeant Ulka's and Sully McCleary's chains, the story inside (Commander Folkar, the King's fate), Mason Connery's key and trunk, Zarla's Journal, one run (Wrex to Blazeroar) and every hand-in.
+
 More dungeons come in later versions.
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
@@ -59,3 +61,7 @@ Adds the City of Dalaran for the Horde and the Alliance, with the run in the ord
 ## Changelog for 2.5.0
 
 Adds Krol'dok Stronghold for the Horde and the Alliance, with the whole Riverglades chain that opens its quests.
+
+## Changelog for 2.6.0
+
+Adds Alcaz Prison for the Horde and the Alliance.

@@ -1,0 +1,144 @@
+guide forever-dungeon-quests/alcaz-prison-alliance
+title Alcaz Prison (Alliance)
+category Dungeons
+folder Alcaz Prison
+faction Alliance
+levels 48-55
+zone Alterac Mountains
+keywords Alcaz Prison, Alcaz Island, Dustwallow Marsh, Theramore, Mathias Shaw, Sully McCleary, SI:7, Varian, Mason Connery, Renzik, Lan'dalock, Dalaran, Westfall, Connery's Trunk, Zarla's Journal, Wrex, Ca'zass, Katerina, Questioner, Blazeroar, Strashaz, dungeon
+reward item 279825 279826 279829
+why Every Alliance quest of Alcaz Prison in one run, lead-ins included.
+
+# Alcaz Prison's Alliance quests in one guide: Archmage Lan'dalock in
+# Dalaran, Master Mathias Shaw in Stormwind, Sully McCleary in Theramore, one
+# run through the prison, then the hand-ins in Theramore, Westfall, Stormwind
+# and Dalaran. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The chain: Shaw's 95194 Our Man in Theramore (to Sully McCleary) -> 95196
+# Watch Yer Back (to the second Sully) -> 95198 The Return of the King? (with
+# an SI:7 Disguise Kit) -> 95262 The Secret Prison (handed in inside, at a
+# window) -> 95263 Somber News -> 95264 Shaw Needs To Know; and 96381 A Bit
+# of Wet Work (Strashaz naga and Tidemistress Ca'zass's head). Archmage
+# Lan'dalock's 96772 The Dragon's Journal (Zarla's Journal, from Blazeroar).
+# The prisoner Mason Connery's 96335 The Man in the Iron Chains (the Ornate
+# Shackle Key from The Questioner) -> 96337 More Valuable Than Gold
+# (Connery's Trunk in Westfall) -> Renzik "The Shiv"'s 96377 State Secrets
+# (a Document Box).
+#
+# Left out: nothing of the Alliance's.
+#
+# Inside: nothing in the data places the bosses, the window or Mason Connery
+# inside, so their goals stand at the door (@75.4,14.0, Alcaz Island) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Overseer Wrex, Tidemistress Ca'zass, Katerina the Cleaner, The Questioner,
+# Blazeroar), not of a recorded run; the journal ties The Secret Prison to
+# Blazeroar, so the window's steps sit there. Every quest goal is counted by
+# the quest log, so a group that takes them in another order still gets each
+# step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Shackle Key is a quest item there: it
+#   drops only while Mason's quest is in the log.
+# - Players' recordings, as Polestar holds them (data/codex/journal-quests.json):
+#   The Secret Prison handed in inside at a window and Somber News taken
+#   there, Mason's two quests taken inside and the trunk in Westfall.
+# - The door, and the elite Strashaz naga of level 59 to 61 around it:
+#   players' recordings (data/codex/entrances.json) and the data's spawns.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   48 to 55).
+# INGAME: what completes The Return of the King? (no objective in the data;
+#   Sully hands you an SI:7 Disguise Kit with it). Where inside do the window
+#   and Mason Connery stand? Where does the Document Box for State Secrets
+#   come from? The data has no source for it, so its step only applies while
+#   the box is in your bags.
+
+step Archmage Lan'dalock
+  tip In Dalaran.
+  accept 96772
+
+step Master Mathias Shaw
+  zone Stormwind City
+  tip At SI:7.
+  accept 95194
+
+step Sully McCleary
+  zone Dustwallow Marsh
+  tip In Theramore.
+  turnin 95194
+  accept 95196
+
+step Sully McCleary
+  tip The second Sully, a little north-west.
+  turnin 95196
+  accept 95198
+
+step The Return of the King?
+  tip Sully hands you an SI:7 Disguise Kit with the quest.
+  turnin 95198
+  accept 95262
+  accept 96381
+
+step To Alcaz Prison
+  tip A dungeon for five players of level 48 to 55, on Alcaz Island off north-eastern Dustwallow. Elite Strashaz naga of level 59 to 61 crowd the island around the door.
+  enter "Alcaz Prison" @75.4,14.0
+
+step Naga
+  along until leave
+  kill 255995 x15 quest 96381.1 @75.4,14.0 group 5
+  kill 255373 x8 quest 96381.2 @75.4,14.0 group 5
+
+step Tidemistress Ca'zass
+  tip Overseer Wrex comes before her in the client's journal. She drops her head for Sully.
+  collect 273883 quest 96381.3 @75.4,14.0 group 5
+
+step Mason Connery
+  tip A prisoner. Take his quest before The Questioner dies: the key drops only while it is in your log. Katerina the Cleaner, the third boss in the client's journal, comes before The Questioner.
+  accept 96335 @75.4,14.0
+
+step The Questioner
+  tip The fourth boss in the client's journal. He drops the Ornate Shackle Key.
+  collect 274029 quest 96335.1 @75.4,14.0 group 5
+
+step Mason Connery
+  turnin 96335 @75.4,14.0
+  accept 96337 @75.4,14.0
+
+step Blazeroar
+  tip The last boss. He drops Zarla's Journal. The client's journal ties The Secret Prison to him: at a window, you learn the King's fate.
+  collect 276890 quest 96772.1 @75.4,14.0 group 5
+  turnin 95262 @75.4,14.0
+  accept 95263 @75.4,14.0
+
+step Before you leave
+  label leave
+  tip Whatever is still short for A Bit of Wet Work, finish it before you go.
+  kill 255995 x15 quest 96381.1 @75.4,14.0 group 5
+  kill 255373 x8 quest 96381.2 @75.4,14.0 group 5
+
+step Sully McCleary
+  tip Back in Theramore.
+  turnin 96381
+  turnin 95263
+  accept 95264
+
+step Connery's Trunk
+  zone Westfall
+  tip In Moonbrook.
+  turnin 96337
+
+step Master Mathias Shaw
+  zone Stormwind City
+  turnin 95264
+
+step Renzik "The Shiv"
+  when has 274041
+  accept 96377
+  turnin 96377
+
+step Archmage Lan'dalock
+  zone Alterac Mountains
+  turnin 96772
