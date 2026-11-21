@@ -18,6 +18,7 @@ Polestar.
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
+| Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 
 More of WoW Forever's dungeons come in later versions.
 
@@ -169,6 +170,22 @@ they are the same guides. This addon is where they get their updates.
 - Where Commander Folkar, Mason Connery and the window stand inside, and
   what completes The Return of the King?, are still open: if you know, tell
   me.
+
+## Blackmaw Hold
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Blackmaw Hold (Horde) | Jediga, Valormok | Thunder Bluff, Mulgore, Azshara, the dungeon, back to Thunder Bluff and Mulgore |
+| Blackmaw Hold (Alliance) | Archmage Timear, Dalaran | Talrendis Point, Darnassus, Azshara, the dungeon, back to Darnassus and Dalaran |
+
+- The dungeon is for five players of level 55 to 60, in Azshara. No source
+  I may use names its door yet, so the arrow has no point for it or for the
+  goals inside: if you know where it is, tell me.
+- Horde Paladins also get the Knight of Mourning's Reliquary of Tyr, from
+  Tirisfal Glades.
+- Impaan and Varrox may drop the Feathered Charm Necklace, which starts A
+  Lost Memento; its steps show only if you have it.
+- Left out: Ekkal's repeat of Blackmaw Pouches.
 
 ## Next to Polestar's Dungeons window
 

@@ -1,0 +1,135 @@
+guide forever-dungeon-quests/blackmaw-hold-alliance
+title Blackmaw Hold (Alliance)
+category Dungeons
+folder Blackmaw Hold
+faction Alliance
+levels 55-60
+zone Alterac Mountains
+keywords Blackmaw Hold, Azshara, Talrendis Point, Commander Truesong, Mathrengyl Bearwalker, Darnassus, Archmage Timear, Dalaran, Ogtinc, Ekkal, Gatekeeper Rageroar, Ursolan, Unele, Withermaw, Impaan, Bloodmane, Bonesnout, Varrox, Behemoth, Unbound Spirit, root caps, pouch, necklace, dungeon
+reward item 260213 260214 260215
+why Every Alliance quest of Blackmaw Hold in one run, lead-in included.
+
+# Blackmaw Hold's Alliance quests in one guide: Archmage Timear in Dalaran,
+# Commander Truesong in Azshara and Mathrengyl Bearwalker in Darnassus, the
+# pick-ups in Azshara, one run through the dungeon, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Archmage Timear's 97173 Blackmaw Magic (Elder Shaman
+# Bloodmane's totem); Commander Truesong's 92345 Beneath Nordrassil (to
+# Mathrengyl Bearwalker) -> 92344 Get to the Roots of It (ten Nordrassil Root
+# Caps inside); Ogtinc's 92069 Claws That Rend, Tusks that Gore (Withermaw and
+# Bonesnout); Ekkal's 97327 Blackmaw Pouches; Gatekeeper Rageroar's 92065
+# Blackmaw Reclamation (Varrox Bleakhoof's head); the Feathered Charm
+# Necklace's 92070 A Lost Memento (for Unele).
+#
+# Left out: 96246 Blackmaw Pouches, Ekkal's repeat of the pouch quest.
+#
+# Inside: no source names the door: Polestar's entrances, its players'
+# recordings and the client's tables have none (checked 2026-11-21). So the
+# guide names the dungeon without a point, and the goals inside carry none.
+# The bosses come in the order of the client's dungeon journal (Withermaw,
+# Impaan the Imprisoner, Elder Shaman Bloodmane, Bonesnout the Unbroken,
+# Varrox Bleakhoof, the Blackmaw Behemoth, the Unbound Spirit), not of a
+# recorded run. Every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon. The Feathered Charm Necklace drops from Impaan and Varrox
+#   inside and from the Swarming Imps and Legashi of Azshara.
+# - Players' recordings, as Polestar holds them (data/codex/journal-quests.json):
+#   the Root Caps gathered inside Blackmaw Hold and handed in to Mathrengyl.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   55 to 60).
+# - Lint warns that the inside goals have no coordinates: no source places
+#   the door, and the data places nothing inside. They stay without, rather
+#   than at a guessed point.
+# INGAME: where is Blackmaw Hold's door, and where inside do the Root Caps
+#   grow?
+
+step Archmage Timear
+  tip In Dalaran.
+  accept 97173
+
+step Commander Truesong
+  zone Azshara
+  tip At Talrendis Point.
+  accept 92345
+
+step Mathrengyl Bearwalker
+  zone Darnassus
+  tip In the Cenarion Enclave.
+  turnin 92345
+  accept 92344
+
+step Ogtinc
+  zone Azshara
+  accept 92069
+
+step Ekkal
+  tip At the Ruins of Eldarath.
+  accept 97327
+
+step Gatekeeper Rageroar
+  tip At Ursolan.
+  accept 92065
+
+step To Blackmaw Hold
+  tip A dungeon for five players of level 55 to 60, in Azshara.
+  enter "Blackmaw Hold"
+
+step Root caps and pouches
+  along until leave
+  collect 250773 x10 quest 92344.1 group 5 -- The Nordrassil Root Caps grow inside.
+  collect 273050 x5 quest 97327.1 group 5 -- The Blackmaw and its bosses drop the pouches.
+
+step Withermaw
+  tip The first boss in the client's journal. He drops the Claws of the Great Bear.
+  collect 249697 quest 92069.1 group 5
+
+step Elder Shaman Bloodmane
+  tip Impaan the Imprisoner comes before him in the client's journal. Bloodmane drops the Blackmaw Ritual Totem.
+  collect 276893 quest 97173.1 group 5
+
+step Bonesnout the Unbroken
+  tip He drops the Tusks of the Unbroken.
+  collect 249696 quest 92069.2 group 5
+
+step Varrox Bleakhoof
+  tip He drops his head for Gatekeeper Rageroar. Impaan and Varrox may also drop the Feathered Charm Necklace, which starts a quest. The Blackmaw Behemoth and the Unbound Spirit come after him in the client's journal; no quest needs them but the pouches.
+  collect 249692 quest 92065.1 group 5
+  collect 249698 optional -- The Feathered Charm Necklace, if it drops.
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the Root Caps and the pouches, finish it before you go.
+  collect 250773 x10 quest 92344.1 group 5
+  collect 273050 x5 quest 97327.1 group 5
+
+step A Lost Memento
+  when has 249698
+  accept 92070
+
+step Ogtinc
+  turnin 92069
+
+step Ekkal
+  turnin 97327
+
+step Gatekeeper Rageroar
+  turnin 92065
+
+step Unele
+  when onquest 92070
+  turnin 92070
+
+step Mathrengyl Bearwalker
+  zone Darnassus
+  turnin 92344
+
+step Archmage Timear
+  zone Alterac Mountains
+  turnin 97173
