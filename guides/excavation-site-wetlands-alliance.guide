@@ -1,0 +1,163 @@
+guide forever-dungeon-quests/excavation-site-wetlands-alliance
+title Excavation Site: Wetlands (Alliance)
+category Dungeons
+folder Excavation Site: Wetlands
+faction Alliance
+levels 26-33
+zone Redridge Mountains
+keywords Excavation Site, Wetlands, Menethil Harbor, Lakeshire, Dorin Songblade, Daewyn Songblade, James Halloran, Fitzsimmons, Rethiel, Greenwarden, Caitlin Grassman, Ardin Grassman, Whelgar, Magellas, Saltspine, Shadetooth, Highland Horror, Relic Guardian, Titan Relic, raptor, dungeon
+reward item 271664 271667 271670
+reward item 271768 271769
+reward item 1710 3827
+reward item 271716 271766 271767
+why Every Alliance quest of the Excavation Site in one run, lead-ins included.
+
+# The Excavation Site's Alliance quests in one guide: Dorin Songblade in
+# Lakeshire, the pick-ups and lead-ins in Menethil Harbor and the Wetlands,
+# one run through the dungeon, then the hand-ins. Steps already done are
+# passed over, so the guide picks up wherever the chain stands.
+#
+# The chains:
+# - Dorin Songblade's 95772 Songblade Search, to his brother Daewyn inside,
+#   who gives 95795 Fallen in the Fen back to Dorin.
+# - James Halloran's 484 Young Crocolisk Skins -> 98815 Highland Hides (Thicket
+#   Raptor Hides).
+# - First Mate Fitzsimmons' 463 The Greenwarden -> Rethiel's 276 Tramping Paws
+#   -> 277 Fire Taboo -> 275 Blisters on the Land -> 95646 Horrors in the
+#   Highland (the Highland Horror's Rootcore).
+# - Caitlin Grassman's 95647 Lost in the Thicket Things, to Ardin Grassman
+#   inside, who gives 95809 Heartwoven back to Caitlin.
+# - The Relic Guardian's Titan Relic (item 270865) starts 95810 Lost Relic
+#   Carry, for Prospector Whelgar, who gives 98824 Prehistoric Prism, for High
+#   Explorer Magellas in Ironforge.
+#
+# Left out: 95737 Seeking Caitlin, Llana's breadcrumb in Astranaar,
+# Ashenvale: Caitlin gives her quest without it, and the trip to Kalimdor and
+# back is far off this route.
+#
+# Inside: nothing in the data places anything inside, so the goals stand at
+# the door (@50.8,61.1) with `group 5`. The bosses come in the order of a run
+# of my own (as a Horde character: Saltspine, Shadetooth, then the Relic
+# Guardian) with the Highland Horror where the client's journal puts him,
+# third; that run did not meet him. Every quest goal is counted by the quest
+# log, so a group that takes them in another order still gets each step
+# ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - A run of my own on 2026-11-12 (Horde, five players), which the Horde
+#   guide's header describes: the bosses' order and the raptors around
+#   Shadetooth.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   26 to 33).
+# INGAME: where inside do Ardin Grassman, Daewyn Songblade and the Highland
+#   Horror stand?
+
+step Dorin Songblade
+  tip In Lakeshire.
+  accept 95772
+
+step James Halloran
+  zone Wetlands
+  tip In Menethil Harbor.
+  accept 484
+
+step First Mate Fitzsimmons
+  accept 463
+
+step Caitlin Grassman
+  accept 95647
+
+step Young Crocolisk Skins
+  collect 3397 x4 quest 484.1
+
+step James Halloran
+  turnin 484
+  accept 98815
+
+step Rethiel the Greenwarden
+  turnin 463
+  accept 276
+
+step Tramping Paws
+  kill 1007 x15 quest 276.1
+  kill 1008 x10 quest 276.2
+
+step Rethiel the Greenwarden
+  turnin 276
+  accept 277
+
+step Fire Taboo
+  tip The Mosshide gnolls carry the flint.
+  collect 2611 x9 quest 277.1
+
+step Rethiel the Greenwarden
+  turnin 277
+  accept 275
+
+step Blisters on the Land
+  kill 1040 x12 quest 275.1
+
+step Rethiel the Greenwarden
+  turnin 275
+  accept 95646
+
+step To the Excavation Site
+  tip A dungeon for five players of level 26 to 33.
+  enter "Excavation Site: Wetlands" @50.8,61.1
+
+step Thicket Raptor Hides
+  along until leave
+  collect 284845 x4 quest 98815.1 @50.8,61.1 group 5 -- The Thicket raptors and Shadetooth drop them.
+
+step Ardin Grassman
+  tip Caitlin's husband is somewhere in the site. He has a quest back to her.
+  talk 262681 quest 95647.1 @50.8,61.1
+  turnin 95647 @50.8,61.1
+  accept 95809 @50.8,61.1
+
+step Daewyn Songblade
+  tip Dorin's brother is somewhere in the site. He has a quest back to Dorin.
+  turnin 95772 @50.8,61.1
+  accept 95795 @50.8,61.1
+
+step Highland Horror
+  tip Saltspine and Shadetooth come first. The Highland Horror, third in the client's journal, drops the Horrible Rootcore.
+  collect 270180 quest 95646.1 @50.8,61.1 group 5
+
+step Relic Guardian
+  tip The last boss. He drops a Titan Relic, which starts a quest for Prospector Whelgar.
+  collect 270865 @50.8,61.1 group 5
+  accept 95810 @50.8,61.1
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the four hides, finish it before you go.
+  collect 284845 x4 quest 98815.1 @50.8,61.1 group 5
+
+step Rethiel the Greenwarden
+  turnin 95646
+
+step Prospector Whelgar
+  turnin 95810
+  accept 98824
+
+step James Halloran
+  turnin 98815
+
+step Caitlin Grassman
+  turnin 95809
+
+step High Explorer Magellas
+  zone Ironforge
+  tip In the Hall of Explorers.
+  turnin 98824
+
+step Dorin Songblade
+  zone Redridge Mountains
+  turnin 95795

@@ -1,0 +1,99 @@
+guide forever-dungeon-quests/excavation-site-wetlands-horde
+title Excavation Site: Wetlands (Horde)
+category Dungeons
+folder Excavation Site: Wetlands
+faction Horde
+levels 26-33
+zone Orgrimmar
+keywords Excavation Site, Wetlands, Dragonmaw, Deathstalker Agent, Zaruk, Hammerfall, Borstan, Bashana Runetotem, Muln Earthfury, Saltspine, Shadetooth, Relic Guardian, Titan Relic, raptor, dungeon
+reward item 271732 271740
+reward item 280766 280805
+reward item 271719 271766 271767
+why Every Horde quest of the Excavation Site in one run, lead-in included.
+
+# The Excavation Site's Horde quests in one guide: the pick-ups in
+# Orgrimmar and Hammerfall, the Deathstalker Agent above the Dragonmaw camp,
+# one run through the dungeon, then the hand-ins. Steps already done are
+# passed over, so the guide picks up wherever the chain stands.
+#
+# The chain: Borstan's 95697 Changing Tastes (Thicket Raptor Meat); Zaruk's
+# 95663 Dragonmaw Rumors -> the Deathstalker Agent's 95682 Open the Maw
+# (Dragonmaw Saboteurs and Warders, the Dragonmaw Dispatch). Inside, the
+# Relic Guardian's Titan Relic (item 270866) starts 95664 Elder Knowledge, for
+# Bashana Runetotem in Thunder Bluff, who gives 98823 Earthen Echo, for Muln
+# Earthfury in Mulgore.
+#
+# Left out: nothing of the Horde's.
+#
+# Inside: nothing in the data places anything inside, so the goals stand at
+# the door (@50.8,61.1) with `group 5`. The steps follow a run of my own:
+# Saltspine, the raptors and Shadetooth, the Dragonmaw, then the Relic
+# Guardian. Every quest goal is counted by the quest log, so a group that
+# takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items and rewards: Polestar's reference data (data/forever,
+#   built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's Codex page for
+#   the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json); my own run went in at the same point.
+# - A run of my own on 2026-11-12 (Horde, five players, level 33), recorded
+#   with Polestar's recorder and shared with Polestar Client: Saltspine,
+#   then the Thicket raptors (the meat from Thicket Hunters and Lurkers) and
+#   Shadetooth, then the Dragonmaw (the Dispatch from a Dragonmaw
+#   Thaumaturgist), a Highland Lurker, and the Relic Guardian, who dropped
+#   the Titan Relic.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   26 to 33).
+
+step Borstan
+  tip In Orgrimmar.
+  accept 95697
+
+step Zaruk
+  zone Arathi Highlands
+  tip At Hammerfall.
+  accept 95663
+
+step Deathstalker Agent
+  zone Wetlands
+  tip In the hills above the Dragonmaw camp, close to the dungeon's door.
+  turnin 95663
+  accept 95682
+
+step To the Excavation Site
+  tip A dungeon for five players of level 26 to 33.
+  enter "Excavation Site: Wetlands" @50.8,61.1
+
+step Shadetooth and the raptors
+  tip Saltspine comes first. Past him, the Thicket Hunters and Lurkers drop the raptor meat, and so does Shadetooth.
+  collect 271100 quest 95697.1 @50.8,61.1 group 5
+
+step The Dragonmaw
+  tip The Dragonmaw hold the next part of the site. A Dragonmaw Thaumaturgist drops the Dispatch.
+  kill 275045 x2 quest 95682.1 @50.8,61.1 group 5
+  kill 275044 x4 quest 95682.2 @50.8,61.1 group 5
+  collect 284844 quest 95682.3 @50.8,61.1 group 5
+
+step Relic Guardian
+  tip The last boss. He drops a Titan Relic, which starts a quest for Thunder Bluff.
+  collect 270866 @50.8,61.1 group 5
+  accept 95664 @50.8,61.1
+
+step Deathstalker Agent
+  turnin 95682
+
+step Borstan
+  zone Orgrimmar
+  turnin 95697
+
+step Bashana Runetotem
+  zone Thunder Bluff
+  tip On the Elder Rise.
+  turnin 95664
+  accept 98823
+
+step Muln Earthfury
+  zone Mulgore
+  turnin 98823

@@ -13,6 +13,7 @@ Polestar.
 |---|---|---|---|
 | The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | Ruins of Lordaeron | Tirisfal Glades, by the Undercity | Horde | 15 to 22 |
+| Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 
 More of WoW Forever's dungeons come in later versions.
@@ -66,6 +67,25 @@ with one folder per dungeon.
   Heartweaver's trail are inside is still open: if you know, tell me.
 - Polestar has no map of the inside, so the arrow points at the door for
   every goal in there.
+
+## Excavation Site: Wetlands
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Excavation Site: Wetlands (Horde) | Borstan, Orgrimmar | Hammerfall, the Wetlands, the dungeon, Thunder Bluff, Mulgore |
+| Excavation Site: Wetlands (Alliance) | Dorin Songblade, Lakeshire | Menethil Harbor, the Wetlands, the dungeon, Ironforge, back to Lakeshire |
+
+- The dungeon is for five players of level 26 to 33. Its door is in the
+  Wetlands.
+- Inside, both guides follow a run of mine: Saltspine, the raptors and
+  Shadetooth, the Dragonmaw, then the Relic Guardian. The Alliance's
+  Highland Horror, whom my run passed by, comes third, as in the game's
+  journal.
+- The Relic Guardian drops a Titan Relic that starts a quest for each side.
+- Where Ardin Grassman, Daewyn Songblade and the Highland Horror are inside
+  is still open: if you know, tell me.
+- Left out: Seeking Caitlin, Llana's breadcrumb in Astranaar. Caitlin gives
+  her quest without it.
 
 ## The Drowned City
 
