@@ -34,6 +34,7 @@ Polestar.
 | Sunken Temple | Swamp of Sorrows | Horde, Alliance | 50 to 60 |
 | Blackrock Depths | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 52 to 60 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
+| Dire Maul | Feralas | Horde, Alliance | 56 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
 Every one of WoW Forever's new dungeons is in. The classic dungeons, from
@@ -505,6 +506,29 @@ they are the same guides. This addon is where they get their updates.
   Lost Memento; its steps show only if you have it.
 - Ekkal's Blackmaw Pouches has a second part: more pouches, which the
   Blackmaw outside drop too.
+
+## Dire Maul
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Dire Maul (Horde) | Pix Xizzix, Booty Bay (from level 60) | Moonglade, Silithus, Camp Mojache, the three wings, back again |
+| Dire Maul (Alliance) | Pix Xizzix, Booty Bay (from level 60) | Moonglade, Silithus, Feathermoon, the three wings, back again |
+
+- The client lists three wings, each its own instance behind the Dire Maul
+  gate in Feralas: East (the Warpwood Quarter, 54 to 60), West (the
+  Athenaeum, 56 to 60) and North (the Gordok wing, 56 to 60). The guides
+  take them in that order and go back into a wing where a quest asks for
+  it.
+- Both sides: Lethtendris's Web, Elven Legends, Pusillin, Shards of the
+  Felvine (with the Reliquary of Purity from Silithus), The Madness Within
+  and the Shen'dralar treasure, Free Knot!, The Gordok Ogre Suit (bring the
+  cloth, leather and thread), The Gordok Taste Test, Unfinished Gordok
+  Business, In Demand at level 60, Arcane Refreshment for Mages at 60, and
+  the class books the bosses drop.
+- Left out: the breadcrumbs from the capitals, Blind Vengeance (Mount
+  Hyjal), the repeatables and the Librams, Quel'Serrar (it needs Onyxia),
+  the warlock and paladin epic mount chains, the Dungeon Set 2 and
+  Valthalak quests.
 
 ## The Shaper's Terrace
 

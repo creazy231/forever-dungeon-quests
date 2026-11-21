@@ -1,0 +1,324 @@
+guide forever-dungeon-quests/dire-maul-alliance
+title Dire Maul (Alliance)
+category Dungeons
+folder Dire Maul
+faction Alliance
+levels 56-60
+zone Stranglethorn Vale
+keywords Dire Maul, Feralas, Feathermoon, Latronicus Moonspear, Lethtendris, Scholar Runethorn, Elven Legends, Telmius Dreamseeker, Azj'Tordin, Pusillin, Rabine Saturna, Moonglade, Reliquary of Purity, Silithus, Felvine, Alzzin, Warpwood Quarter, Athenaeum, Shen'dralar Ancient, Immol'thar, Prince Tortheldrin, Treasure of the Shen'dralar, Lorekeeper Lydros, Hydrospawn, Gordok, Knot Thimblejack, Ogre Suit, Stomper Kreeg, Captain Kromcrush, Gauntlet of Gordok Might, King Gordok, Pix Xizzix, In Demand, class books, dungeon
+reward item 18491
+reward item 18410 18411
+reward item 18535 18536
+reward item 18258
+reward item 18366 18367 18368 18369
+reward item 18420 18421 18424
+reward item 18269 18284
+why Every Alliance quest of Dire Maul's three wings in one run, lead-ins included.
+
+# Dire Maul's Alliance quests in one guide: Pix Xizzix in Booty Bay (from
+# level 60), the goods for Knot's suit, Rabine Saturna in Moonglade and the
+# Reliquary of Purity in Silithus, Feathermoon and Azj'Tordin in Feralas, the
+# three wings one after the other (with short returns into a wing where a
+# quest asks for it), then the hand-ins. Steps already done are passed over,
+# so the guide picks up wherever the chain stands.
+#
+# The chains:
+# - Latronicus Moonspear's 7488 Lethtendris's Web; Scholar Runethorn's 7482
+#   Elven Legends; Azj'Tordin's 7441 Pusillin and the Elder Azj'Tordin.
+# - Rabine Saturna's 5527 A Reliquary of Purity -> 5526 Shards of the
+#   Felvine.
+# - Inside: the Shen'dralar Ancient's 7461 The Madness Within -> 7462 The
+#   Treasure of the Shen'dralar; Knot Thimblejack's 5525 Free Knot! and 5518
+#   The Gordok Ogre Suit; Stomper Kreeg's 5528 The Gordok Taste Test; Captain
+#   Kromcrush's 7703 Unfinished Gordok Business; for Mages of level 60,
+#   Lorekeeper Lydros' 7463 Arcane Refreshment; the class books (7498 to
+#   7506), which bosses drop and the lorekeepers take.
+# - Pix Xizzix's 96076 In Demand - Ancient Elven Curiosities (level 60).
+#
+# Left out: 7494 Feathermoon Stronghold (a breadcrumb from the capitals, off
+# this guide's way); 97009 and 97010 Blind Vengeance (Mount Hyjal quests with
+# nothing in Dire Maul); 1318 Unfinished Gordok Business (no giver in the
+# data; Kromcrush's 7703 is in); the repeatable 1193, 5519, 7429 and the
+# Librams 7483 to 7485; 7507 Foror's Compendium and Quel'Serrar (it needs
+# Onyxia); 7581 The Prison's Bindings, 7631 Dreadsteed of Xoroth, 7643 and
+# 7647 (the warlock and paladin epic mount chains); 8948, 8949, 8950, 8967
+# and 8990 (the Dungeon Set 2 and Valthalak chains); the off-page profession,
+# Midsummer and Thorium Brotherhood quests.
+#
+# Inside: nothing in the data places the bosses, the NPCs or the objects
+# inside, so their goals stand at the gate (@59.2,45.1, Feralas) with
+# `group 5`. The client's group finder lists three wings, each its own
+# instance with its own door in the ruins: East (levels 54 to 60, the
+# Warpwood Quarter), West (56 to 60, the Athenaeum) and North (56 to 60, the
+# Gordok wing); the guide takes them in that order, the bosses in the
+# client's dungeon journal's order within them. Every quest goal is counted
+# by the quest log, so a group that takes them in another order still gets
+# each step ticked. Most of these quests ask for level 56, so the guide does.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The wings' names come from the quest texts.
+#   The Felvine Shard comes from the Felvine, the Gauntlet of Gordok Might
+#   from The Prince's Chest, the Ogre Tannin from a basket; the data has no
+#   source for the Sealed Reliquary itself.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json): the Dire Maul gate.
+# - The wings and their levels: the client's group finder; the bosses: its
+#   dungeon journal (as Polestar's Codex page holds it).
+# INGAME: where in the wings do Knot, Kreeg, Kromcrush, the Shen'dralar
+#   Ancient, the lorekeepers, the Felvine and The Prince's Chest stand?
+
+step Pix Xizzix
+  when available 96076
+  level 60
+  tip In Booty Bay. From level 60.
+  accept 96076
+
+step Goods for Knot's suit
+  tip Knot Thimblejack, inside, wants 4 Bolts of Runecloth, 8 Rugged Leather and 2 Rune Threads for his suit: bring them along.
+  auction 14048 x4
+  auction 8170 x8
+  buy 14341 x2 nearest
+
+step Rabine Saturna
+  zone Moonglade
+  accept 5527
+
+step A Reliquary of Purity
+  zone Silithus
+  tip In the ruins of Southwind Village.
+  collect 22201 quest 5527.1
+
+step Rabine Saturna
+  zone Moonglade
+  turnin 5527
+  accept 5526
+
+step Latronicus Moonspear
+  zone Feralas
+  tip At Feathermoon.
+  accept 7488
+
+step Scholar Runethorn
+  accept 7482
+
+step Azj'Tordin
+  accept 7441
+
+step To Dire Maul
+  tip Three wings for five players each, every one its own instance in the ruins. Bosses here can drop a class book that starts a quest for its class: the guide takes it up after the wings.
+  enter "Dire Maul" @59.2,45.1
+
+step Pusillin
+  tip In the Warpwood Quarter. The imp has Azj'Tordin's Book of Incantations.
+  collect 18261 quest 7441.1 @59.2,45.1 group 5
+
+step Lethtendris
+  collect 18426 quest 7488.1 @59.2,45.1 group 5
+
+step Alzzin the Wildshaper
+  tip With Alzzin's demise, take a shard from the Felvine for the Reliquary of Purity.
+  collect 18501 @59.2,45.1 group 5
+  complete 5526 @59.2,45.1 group 5
+
+step The Shen'dralar Ancient
+  tip In the Athenaeum's wing. Destroy the guardians around the five pylons that power the Prison of Immol'thar.
+  accept 7461 @59.2,45.1
+
+step Immol'thar
+  kill 11496 quest 7461.1 @59.2,45.1 group 5
+
+step Prince Tortheldrin
+  kill 11486 quest 7461.2 @59.2,45.1 group 5
+
+step The Shen'dralar Ancient
+  turnin 7461 @59.2,45.1
+  accept 7462 @59.2,45.1
+
+step The Treasure of the Shen'dralar
+  tip In the Athenaeum.
+  turnin 7462 object 179517 @59.2,45.1
+
+step Telmius Dreamseeker
+  interact 179544 quest 7482.1 @59.2,45.1 group 5
+
+step Lorekeeper Lydros
+  only Mage
+  when available 7463
+  level 60
+  accept 7463 @59.2,45.1
+
+step Knot Thimblejack
+  tip Chained inside the Gordok wing.
+  accept 5518 @59.2,45.1
+
+step Free Knot!
+  when available 5525
+  level 57
+  accept 5525 @59.2,45.1
+
+step Gordok Shackle Key
+  when onquest 5525
+  tip The Gordok guards and ogres drop it.
+  collect 18250 quest 5525.1 @59.2,45.1 group 5
+
+step Ogre Tannin
+  collect 18240 quest 5518.4 @59.2,45.1 group 5
+
+step Knot Thimblejack
+  turnin 5518 @59.2,45.1
+
+step Knot freed
+  when onquest 5525
+  turnin 5525 @59.2,45.1
+
+step Stomper Kreeg
+  when available 5528
+  level 57
+  accept 5528 @59.2,45.1
+
+step The Gordok Taste Test
+  when onquest 5528
+  turnin 5528 @59.2,45.1
+
+step Captain Kromcrush
+  tip The Gauntlet of Gordok Might lies in The Prince's Chest.
+  accept 7703 @59.2,45.1
+
+step In Demand
+  when onquest 96076
+  tip Alzzin the Wildshaper drops the Felvine Seed, King Gordok the ring, Prince Tortheldrin the Ancient Memento.
+  collect 272020 quest 96076.1 @59.2,45.1 group 5
+  collect 272022 quest 96076.2 @59.2,45.1 group 5
+  collect 272021 quest 96076.3 @59.2,45.1 group 5
+
+step The Prince's Chest
+  when onquest 7703
+  collect 18336 quest 7703.1 @59.2,45.1 group 5
+
+step Captain Kromcrush
+  when onquest 7703
+  turnin 7703 @59.2,45.1
+
+step Hydrospawn
+  only Mage
+  when onquest 7463
+  tip In the Warpwood Quarter.
+  collect 18299 quest 7463.1 @59.2,45.1 group 5
+
+step Lorekeeper Lydros
+  only Mage
+  when onquest 7463
+  turnin 7463 @59.2,45.1
+
+step Garona: A Study on Stealth and Treachery
+  only Rogue
+  when has 18356
+  accept 7498 @59.2,45.1
+
+step Lorekeeper Kildrath
+  only Rogue
+  when onquest 7498
+  turnin 7498 @59.2,45.1
+
+step Codex of Defense
+  only Warrior
+  when has 18357
+  accept 7499 @59.2,45.1
+
+step Lorekeeper Kildrath
+  only Warrior
+  when onquest 7499
+  turnin 7499 @59.2,45.1
+
+step The Arcanist's Cookbook
+  only Mage
+  when has 18358
+  accept 7500 @59.2,45.1
+
+step Lorekeeper Kildrath
+  only Mage
+  when onquest 7500
+  turnin 7500 @59.2,45.1
+
+step The Light and How To Swing It
+  only Paladin
+  when has 18359
+  accept 7501 @59.2,45.1
+
+step Lorekeeper Mykos
+  only Paladin
+  when onquest 7501
+  turnin 7501 @59.2,45.1
+
+step Harnessing Shadows
+  only Warlock
+  when has 18360
+  accept 7502 @59.2,45.1
+
+step Lorekeeper Mykos
+  only Warlock
+  when onquest 7502
+  turnin 7502 @59.2,45.1
+
+step The Greatest Race of Hunters
+  only Hunter
+  when has 18361
+  accept 7503 @59.2,45.1
+
+step Lorekeeper Mykos
+  only Hunter
+  when onquest 7503
+  turnin 7503 @59.2,45.1
+
+step Holy Bologna: What the Light Won't Tell You
+  only Priest
+  when has 18362
+  accept 7504 @59.2,45.1
+
+step Lorekeeper Javon
+  only Priest
+  when onquest 7504
+  turnin 7504 @59.2,45.1
+
+step Frost Shock and You
+  only Shaman
+  when has 18363
+  accept 7505 @59.2,45.1
+
+step Lorekeeper Javon
+  only Shaman
+  when onquest 7505
+  turnin 7505 @59.2,45.1
+
+step The Emerald Dream...
+  only Druid
+  when has 18364
+  accept 7506 @59.2,45.1
+
+step Lorekeeper Javon
+  only Druid
+  when onquest 7506
+  turnin 7506 @59.2,45.1
+
+step Latronicus Moonspear
+  zone Feralas
+  tip At Feathermoon.
+  turnin 7488
+
+step Scholar Runethorn
+  turnin 7482
+
+step Azj'Tordin
+  turnin 7441
+
+step Rabine Saturna
+  zone Moonglade
+  turnin 5526
+
+step Pix Xizzix
+  when onquest 96076
+  zone Stranglethorn Vale
+  tip In Booty Bay.
+  turnin 96076
