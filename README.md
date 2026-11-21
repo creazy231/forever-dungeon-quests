@@ -11,6 +11,7 @@ Polestar.
 
 | Dungeon | Where | Guides | Levels |
 |---|---|---|---|
+| The Hall of Thanes | Ironforge, beneath Old Ironforge | Alliance | 13 to 18 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 
 More of WoW Forever's dungeons come in later versions.
@@ -24,11 +25,29 @@ More of WoW Forever's dungeons come in later versions.
 - **One run.** Every quest that needs the dungeon is in your log before you
   go in, so one run is enough.
 - **Boss by boss.** Inside, the steps follow the bosses in the order of a
-  recorded run, and each step says which kill, drop or object comes there.
+  recorded run where there is one, else in the order of the game's dungeon
+  journal, and each step says which kill, drop or object comes there. Every
+  quest goal is counted by the quest log, so another order works too.
 
 In Polestar's guide menu (`/polestar guides`), the guides are under
 **Community guides** > **Forever Dungeon Quests**, in the Dungeons category,
 with one folder per dungeon.
+
+## The Hall of Thanes
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| The Hall of Thanes (Alliance) | The Dark Iron Spies, eastern Dun Morogh | Earthseer Farsen, Ironforge, the dungeon |
+
+- The dungeon is for five players of level 13 to 18. Its door is in
+  Ironforge. It is a city dungeon of the Alliance, so there is no Horde guide.
+- The Dark Iron Map, which starts the chain, drops from the Dark Iron Spies
+  and Captain Beld.
+- Inside, a Ghostly Attendant gives An Ancient Grudge, and the Treaty of
+  Understanding starts a quest for King Magni if you come across it. Where
+  both are inside is still open: if you know, tell me.
+- Polestar has no map of the inside, so the arrow points at the door for
+  every goal in there.
 
 ## The Drowned City
 

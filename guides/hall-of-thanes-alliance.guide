@@ -1,0 +1,115 @@
+guide forever-dungeon-quests/hall-of-thanes-alliance
+title The Hall of Thanes (Alliance)
+category Dungeons
+folder The Hall of Thanes
+faction Alliance
+levels 13-18
+zone Dun Morogh
+keywords Hall of Thanes, Old Ironforge, Ironforge, Dun Morogh, Dark Iron Map, Earthseer Farsen, Afadra Dunwall, Thom Filch, Magni, Ghostly Attendant, Faldrim Anvilmar, Infurnus, Plunder, Durgen Dirgehammer, heirloom, treaty, dungeon
+reward item 279894 279895 279896
+reward item 279897 280095
+reward item 279898 280096
+reward item 279899 279900
+why Every Alliance quest of the Hall of Thanes in one run, lead-in included.
+
+# The Hall of Thanes' Alliance quests in one guide: the Dark Iron Map in Dun
+# Morogh, the pick-ups in Ironforge, one run through the dungeon, then the
+# hand-ins. Steps already done are passed over, so the guide picks up wherever
+# the chain stands.
+#
+# The chain: the Dark Iron Map (item 274268, from the Dark Iron Spies and
+# Captain Beld in eastern Dun Morogh) starts 96391 Underground Map, for
+# Earthseer Farsen, who gives 96393 Old Ironforge Incursion (Durgen
+# Dirgehammer's Head, for King Magni). In Ironforge, Afadra Dunwall gives 96394
+# The Restless Dead and Thom Filch 96403 Important Heirlooms. Inside, a Ghostly
+# Attendant gives 96395 An Ancient Grudge (Faldrim Anvilmar), and the Treaty of
+# Understanding (object 673474) starts 98423 The Treaty of Understanding, for
+# King Magni.
+#
+# Left out: nothing of the Alliance's. The Hall of Thanes is a city dungeon of
+# the Alliance (its door is in Ironforge), so the pack has no Horde guide for
+# it.
+#
+# Inside: nothing in the data places the Ghostly Attendant, the treaty, the
+# heirlooms or the bosses inside, so their goals stand at the door
+# (@15.1,86.0, Ironforge) with `group 5`. The bosses come in the order of the
+# client's dungeon journal (Faldrim Anvilmar, Infurnus, Plunder, Durgen
+# Dirgehammer), not of a recorded run. Every quest goal is counted by the quest
+# log, so a group that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - What drops where: players' recordings (data/codex/recorded.json): the head
+#   from Durgen Dirgehammer, the heirlooms from objects 652227 and 652228.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   13 to 18).
+# INGAME: where inside do the Ghostly Attendant and the Treaty of Understanding
+#   stand? No recording has the treaty's object.
+
+step The Dark Iron Map
+  tip The Dark Iron Spies and Captain Beld in eastern Dun Morogh drop it. The map starts a quest.
+  collect 274268
+  accept 96391
+
+step Earthseer Farsen
+  turnin 96391
+  accept 96393
+
+step Afadra Dunwall
+  zone Ironforge
+  accept 96394
+
+step Thom Filch
+  accept 96403
+
+step To the Hall of Thanes
+  tip A dungeon for five players of level 13 to 18. Its door is in Ironforge.
+  enter "The Hall of Thanes" @15.1,86.0
+
+step The Restless Dead and the heirlooms
+  along until leave
+  kill 263389 x15 quest 96394.1 @15.1,86.0 group 5
+  kill 263390 x10 quest 96394.2 @15.1,86.0 group 5
+  collect 274289 x8 quest 96403.1 @15.1,86.0 group 5 -- The heirlooms lie about the halls: click them.
+
+step Faldrim Anvilmar
+  tip A Ghostly Attendant inside asks you to put the spirit of Faldrim Anvilmar to rest. Faldrim is the first boss in the client's journal.
+  accept 96395 @15.1,86.0 group 5
+  kill 261306 quest 96395.1 @15.1,86.0 group 5
+
+step Ghostly Attendant
+  turnin 96395 @15.1,86.0
+
+step Durgen Dirgehammer
+  tip Infurnus and Plunder come before him in the client's journal; no quest needs them. Durgen drops his head for King Magni.
+  collect 274286 quest 96393.1 @15.1,86.0 group 5
+  collect 281030 @15.1,86.0 optional -- The Treaty of Understanding, if you come across it: it starts a quest for King Magni.
+
+step Before you leave
+  label leave
+  tip Whatever is still short for The Restless Dead and the heirlooms, finish it before you go.
+  kill 263389 x15 quest 96394.1 @15.1,86.0 group 5
+  kill 263390 x10 quest 96394.2 @15.1,86.0 group 5
+  collect 274289 x8 quest 96403.1 @15.1,86.0 group 5
+
+step The Treaty of Understanding
+  when has 281030
+  accept 98423
+
+step King Magni Bronzebeard
+  turnin 96393
+
+step King Magni Bronzebeard
+  when onquest 98423
+  turnin 98423
+
+step Afadra Dunwall
+  turnin 96394
+
+step Thom Filch
+  turnin 96403
