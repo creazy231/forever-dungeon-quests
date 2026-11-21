@@ -1,0 +1,182 @@
+guide forever-dungeon-quests/razorfen-kraul-horde
+title Razorfen Kraul (Horde)
+category Dungeons
+folder Razorfen Kraul
+faction Horde
+levels 30-38
+zone Thunder Bluff
+keywords Razorfen Kraul, The Barrens, Ratchet, Mebok Mizzyrix, Blueleaf Tuber, Snufflenose, Auld Stonespire, Thunder Bluff, Master Apothecary Faranell, Kraul Guano, Blind Hunter, Varimathras, Small Scroll, Willix the Importer, Charlga Razorflank, Roogug, Agathelos, Torm Ragetotem, Ruga Ragetotem, Thun'grim Firegaze, Xanis Flameweaver, Prate Cloudseer, Rau Cliffrunner, dungeon
+reward item 274084
+reward item 4197 6725 6742
+reward item 6748 6749 6750 274078
+reward item 6755
+why Every Horde quest of Razorfen Kraul in one run, lead-ins included.
+
+# Razorfen Kraul's Horde quests in one guide: the pick-ups in Thunder Bluff,
+# the Undercity and Ratchet (for Warriors and Shamans their class chains too),
+# one run, then the hand-ins. Steps already done are passed over, so the guide
+# picks up wherever the chain stands.
+#
+# The quests: Auld Stonespire's 1102 A Vengeful Fate (Charlga's heart); Master
+# Apothecary Faranell's 1109 Going, Going, Guano!; Mebok Mizzyrix's 1221
+# Blueleaf Tubers (with the crate, manual and command stick by him); inside,
+# Charlga's Small Scroll (item 17008) starts 6522 An Unholy Alliance (for
+# Varimathras), and Willix the Importer gives 1144 (an escort). Warriors: Torm
+# Ragetotem's 1823 -> Ruga Ragetotem's 1824 Trial at the Field of Giants ->
+# 1825 -> Thun'grim Firegaze's 1838 Brutal Armor (Smoky Iron Ingots in
+# Stonetalon, Powdered Azurite in Hillsbrad, Iron Bars, Roogug's Vial of
+# Phlogiston). Shamans: Xanis Flameweaver's 1532 Call of Air -> Prate
+# Cloudseer's 79360 Elemental Aid (Charlga's Tattered Note, for Rau
+# Cliffrunner).
+#
+# Left out: 1113 Hearts of Zeal, Faranell's follow-up (Scarlet Monastery), and
+# 6521 An Unholy Alliance, Varimathras' (Razorfen Downs): they are in those
+# dungeons' guides. 1531 and 96136 Call of Air are the same Shaman lead-in from
+# Orgrimmar and (for Skyborne) Mulgore.
+#
+# Inside: nothing in the data places the bosses or Willix inside, so their
+# goals stand at the door (@42.9,90.2, The Barrens) with `group 5`. The steps
+# follow a run of my own: Death Speaker Jargba, Aggem Thorncurse, Overlord
+# Ramtusk, Roogug, the guano from the bats, Agathelos, Charlga Razorflank, then
+# Willix's escort. Every quest goal is counted by the quest log, so a group
+# that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The guano drops from the Kraul Bats and the
+#   Blind Hunter.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - A run of my own on 2026-11-11 (Horde, five players, level 31), recorded
+#   with Polestar's recorder and shared with Polestar Client: the bosses in the
+#   order above, the guano after Roogug, Charlga's heart and the Small Scroll,
+#   Willix taken and escorted after Charlga, the tubers along the way.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   29 to 38). Several of its quests need level 30, so the guide starts there.
+
+step Torm Ragetotem
+  only Warrior
+  tip In Thunder Bluff.
+  accept 1823
+
+step Xanis Flameweaver
+  only Shaman
+  accept 1532
+
+step Auld Stonespire
+  accept 1102
+
+step Ruga Ragetotem
+  only Warrior
+  zone The Barrens
+  turnin 1823
+  accept 1824
+
+step Trial at the Field of Giants
+  only Warrior
+  tip The silithids carry the antennae.
+  collect 7119 x5 quest 1824.1
+
+step Ruga Ragetotem
+  only Warrior
+  turnin 1824
+  accept 1825
+
+step Thun'grim Firegaze
+  only Warrior
+  turnin 1825
+  accept 1838
+
+step Smoky Iron Ingots
+  only Warrior
+  zone Stonetalon Mountains
+  tip The Windshear kobolds carry them.
+  collect 7126 x15 quest 1838.1
+
+step Powdered Azurite
+  only Warrior
+  zone Hillsbrad Foothills
+  tip The Hillsbrad Miners carry it.
+  collect 7127 x10 quest 1838.2
+
+step Iron Bars
+  only Warrior
+  tip Buy them at the Auction House, unless you have them.
+  auction 3575 x10
+
+step Master Apothecary Faranell
+  zone Undercity
+  accept 1109
+
+step Prate Cloudseer
+  only Shaman
+  zone Thousand Needles
+  turnin 1532
+  accept 79360
+
+step Mebok Mizzyrix
+  zone The Barrens
+  tip In Ratchet. The crate, the manual and the command stick for his quest lie right by him.
+  accept 1221
+  collect 5880 quest 1221.2
+  collect 5897 quest 1221.3
+  collect 6684 quest 1221.4
+
+step To Razorfen Kraul
+  tip A dungeon for five players of level 29 to 38.
+  enter "Razorfen Kraul" @42.9,90.2
+
+step Tubers and guano
+  along until leave
+  collect 5876 x6 quest 1221.1 @42.9,90.2 group 5 -- The Snufflenose Gopher in the crate finds the Blueleaf Tubers.
+  collect 5801 quest 1109.1 @42.9,90.2 group 5 -- The Kraul Bats and the Blind Hunter drop it.
+
+step Roogug
+  only Warrior
+  tip On my run Death Speaker Jargba, Aggem Thorncurse and Overlord Ramtusk came first, then Roogug. He drops the Vial of Phlogiston.
+  collect 6841 quest 1838.4 @42.9,90.2 group 5
+
+step Charlga Razorflank
+  tip After Agathelos the Raging on my run. Charlga drops her heart, a Small Scroll that starts a quest for Varimathras, and for Shamans the Tattered Note.
+  collect 5793 quest 1102.1 @42.9,90.2 group 5
+  collect 17008 @42.9,90.2 group 5
+  accept 6522 @42.9,90.2
+  collect 274463 quest 79360.1 @42.9,90.2 group 5 only Shaman
+
+step Willix the Importer
+  tip On my run he was taken and escorted out after Charlga.
+  accept 1144 @42.9,90.2
+  complete 1144 @42.9,90.2 group 5
+  turnin 1144 @42.9,90.2
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the tubers and the guano, finish it before you go.
+  collect 5876 x6 quest 1221.1 @42.9,90.2 group 5
+  collect 5801 quest 1109.1 @42.9,90.2 group 5
+
+step Mebok Mizzyrix
+  tip In Ratchet.
+  turnin 1221
+
+step Thun'grim Firegaze
+  only Warrior
+  turnin 1838
+
+step Rau Cliffrunner
+  only Shaman
+  zone Thousand Needles
+  turnin 79360
+
+step Auld Stonespire
+  zone Thunder Bluff
+  turnin 1102
+
+step Master Apothecary Faranell
+  zone Undercity
+  turnin 1109
+
+step Varimathras
+  turnin 6522

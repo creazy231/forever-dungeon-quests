@@ -22,6 +22,7 @@ Polestar.
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
 | Gnomeregan | Dun Morogh | Horde, Alliance | 29 to 38 |
+| Razorfen Kraul | The Barrens | Horde, Alliance | 29 to 38 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
@@ -241,6 +242,24 @@ with one folder per dungeon.
 - Left out: the Sparklematic quests of the other two machines (the same
   quest), the repeatable More Sparklematic Action, and the Horde's The Mad
   King, which has no giver in the game's data.
+
+## Razorfen Kraul
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Razorfen Kraul (Horde) | Thunder Bluff | The Barrens, the Undercity, Thousand Needles, Ratchet, the dungeon, back again |
+| Razorfen Kraul (Alliance) | Ironforge | Thousand Needles, Feralas, Ratchet, the dungeon, back to Feralas and Darnassus |
+
+- The dungeon is for five players of level 29 to 38; several of its quests
+  start at 30. Its door is in the southern Barrens.
+- Inside, both guides follow a run of mine: Death Speaker Jargba, Aggem
+  Thorncurse, Overlord Ramtusk, Roogug, Agathelos, Charlga Razorflank, then
+  Willix's escort.
+- Warriors (Fire Hardened Mail, Brutal Armor) and Shamans (Elemental Aid)
+  get their class chains too, whose steps only they see.
+- Left out: the Horde's Hearts of Zeal and the second An Unholy Alliance
+  (they need Scarlet Monastery and Razorfen Downs), and the Alliance
+  Shamans' Storm, Earth, and Fire, which the data hands in to a Horde NPC.
 
 ## The Drowned City
 

@@ -1,0 +1,179 @@
+guide forever-dungeon-quests/razorfen-kraul-alliance
+title Razorfen Kraul (Alliance)
+category Dungeons
+folder Razorfen Kraul
+faction Alliance
+levels 30-38
+zone Ironforge
+keywords Razorfen Kraul, The Barrens, Ratchet, Mebok Mizzyrix, Blueleaf Tuber, Snufflenose, Thousand Needles, Lonebrow's Journal, Falfindel Waywarder, Feralas, Heralath Fallowbrook, Treshala Fallowbrook, Darnassus, Willix the Importer, Charlga Razorflank, Roogug, Agathelos, Kelv Sternhammer, Yorus Barleybrew, Furen Longbeard, Eldrun Stormbreaker, Veyric Thunderhame, dungeon
+reward item 274084
+reward item 4197 6725 6742
+reward item 6751 6752 270047
+reward item 6748 6749 6750 274078
+reward item 6755
+why Every Alliance quest of Razorfen Kraul in one run, lead-ins included.
+
+# Razorfen Kraul's Alliance quests in one guide: the lead-ins (for Warriors and
+# Shamans their class chains too), Mebok Mizzyrix in Ratchet, one run, then
+# the hand-ins. Steps already done are passed over, so the guide picks up
+# wherever the chain stands.
+#
+# The quests: Mebok Mizzyrix's 1221 Blueleaf Tubers (with the crate, manual
+# and command stick by him); Henrig Lonebrow's Journal (object 19861, Thousand
+# Needles) starts 1100 Lonebrow's Journal -> Falfindel Waywarder's 1101 The
+# Crone of the Kraul (Razorflank's Medallion); inside, Heralath Fallowbrook's
+# 1142 Mortality Wanes (Treshala's Pendant, for Treshala in Darnassus) and
+# Willix the Importer's 1144 (an escort). Warriors: Kelv Sternhammer's 1698 ->
+# Yorus Barleybrew's 1699 The Rethban Gauntlet -> 1702 -> Furen Longbeard's
+# 1701 Fire Hardened Mail (spider fangs in the Wetlands, chimaera horns in
+# Stonetalon, Roogug's Vial of Phlogiston). Shamans: Eldrun Stormbreaker's
+# 94789 Call of Air -> Veyric Thunderhame's 96264 Elemental Aid (Charlga's
+# Tattered Note).
+#
+# Left out: 79358 Storm, Earth, and Fire, the Shamans' follow-up, whose ender
+# in the data (Rau Cliffrunner) is a Horde NPC.
+#
+# Inside: nothing in the data places the bosses, Heralath or Willix inside, so
+# their goals stand at the door (@42.9,90.2, The Barrens) with `group 5`. The
+# bosses come in the order of a run of my own (as a Horde character: Death
+# Speaker Jargba, Aggem Thorncurse, Overlord Ramtusk, Roogug, Agathelos,
+# Charlga Razorflank, then Willix's escort). Every quest goal is counted by the
+# quest log, so a group that takes them in another order still gets each step
+# ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - A run of my own on 2026-11-11 (Horde, five players, level 31), recorded
+#   with Polestar's recorder and shared with Polestar Client: the bosses in the
+#   order above, the tubers dug along the way, Willix taken and escorted after
+#   Charlga.
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   29 to 38). Several of its quests need level 30, so the guide starts there.
+# INGAME: where inside does Heralath Fallowbrook stand?
+
+step Kelv Sternhammer
+  only Warrior
+  tip In Ironforge.
+  accept 1698
+
+step Eldrun Stormbreaker
+  only Shaman
+  accept 94789
+
+step Veyric Thunderhame
+  only Shaman
+  turnin 94789
+  accept 96264
+
+step Yorus Barleybrew
+  only Warrior
+  zone Redridge Mountains
+  turnin 1698
+  accept 1699
+
+step The Rethban Gauntlet
+  only Warrior
+  complete 1699
+
+step Yorus Barleybrew
+  only Warrior
+  turnin 1699
+  accept 1702
+
+step Furen Longbeard
+  only Warrior
+  zone Stormwind City
+  turnin 1702
+  accept 1701
+
+step Scorched Spider Fangs
+  only Warrior
+  zone Wetlands
+  tip The Leech Stalkers and Cave Stalkers carry them.
+  collect 6838 x50 quest 1701.1
+
+step Charred and Galvanized Horns
+  only Warrior
+  zone Stonetalon Mountains
+  tip The young chimaeras carry the charred horns, a Chimaera Matriarch the galvanized one.
+  collect 6839 x12 quest 1701.2
+  collect 6840 quest 1701.3
+
+step Henrig Lonebrow's Journal
+  zone Thousand Needles
+  collect 5791
+  accept 1100
+
+step Falfindel Waywarder
+  zone Feralas
+  turnin 1100
+  accept 1101
+
+step Mebok Mizzyrix
+  zone The Barrens
+  tip In Ratchet. The crate, the manual and the command stick for his quest lie right by him.
+  accept 1221
+  collect 5880 quest 1221.2
+  collect 5897 quest 1221.3
+  collect 6684 quest 1221.4
+
+step To Razorfen Kraul
+  tip A dungeon for five players of level 29 to 38.
+  enter "Razorfen Kraul" @42.9,90.2
+
+step Heralath Fallowbrook
+  tip He gives Mortality Wanes, for his wife Treshala in Darnassus.
+  accept 1142 @42.9,90.2
+
+step Tubers and the pendant
+  along until leave
+  collect 5876 x6 quest 1221.1 @42.9,90.2 group 5 -- The Snufflenose Gopher in the crate finds the Blueleaf Tubers.
+  collect 5825 quest 1142.1 @42.9,90.2 group 5 -- Treshala's Pendant: the Kraul's bosses and quilboar drop it.
+
+step Roogug
+  only Warrior
+  tip On my run Death Speaker Jargba, Aggem Thorncurse and Overlord Ramtusk came first, then Roogug. He drops the Vial of Phlogiston.
+  collect 6841 quest 1701.4 @42.9,90.2 group 5
+
+step Charlga Razorflank
+  tip After Agathelos the Raging on my run. Charlga drops her medallion, and for Shamans the Tattered Note.
+  collect 5792 quest 1101.1 @42.9,90.2 group 5
+  collect 274463 quest 96264.1 @42.9,90.2 group 5 only Shaman
+
+step Willix the Importer
+  tip On my run he was taken and escorted out after Charlga.
+  accept 1144 @42.9,90.2
+  complete 1144 @42.9,90.2 group 5
+  turnin 1144 @42.9,90.2
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the tubers and the pendant, finish it before you go.
+  collect 5876 x6 quest 1221.1 @42.9,90.2 group 5
+  collect 5825 quest 1142.1 @42.9,90.2 group 5
+
+step Mebok Mizzyrix
+  tip In Ratchet.
+  turnin 1221
+
+step Falfindel Waywarder
+  zone Feralas
+  turnin 1101
+
+step Treshala Fallowbrook
+  zone Darnassus
+  turnin 1142
+
+step Veyric Thunderhame
+  only Shaman
+  turnin 96264
+
+step Furen Longbeard
+  only Warrior
+  zone Stormwind City
+  turnin 1701
