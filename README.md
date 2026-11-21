@@ -32,6 +32,7 @@ Polestar.
 | Maraudon | Desolace | Horde, Alliance | 46 to 55 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
 | Sunken Temple | Swamp of Sorrows | Horde, Alliance | 50 to 60 |
+| Blackrock Depths | Blackrock Mountain, by the Searing Gorge | Horde, Alliance | 52 to 60 |
 | Blackmaw Hold | Azshara | Horde, Alliance | 55 to 60 |
 | The Shaper's Terrace | Un'Goro Crater | Horde, Alliance | 60 |
 
@@ -459,6 +460,34 @@ they are the same guides. This addon is where they get their updates.
 - Left out: Eranikus, Tyrant of the Dream (it needs Blackwing Lair), the
   Essence of Eranikus' second part (it starts from an item, not at the
   font), The Lost Tablets of Mosh'aru (another NPC gives it).
+
+## Blackrock Depths
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Blackrock Depths (Horde) | Alaana Stormwalker, Mulgore | The Undercity, Kargath, Blackrock Mountain, the Burning Steppes, the dungeon, Kargath, Orgrimmar, Azshara and Un'Goro Crater, the dungeon again, Grark Lorkrub, back to Kargath and Thrall |
+| Blackrock Depths (Alliance) | Royal Historian Archesonus, Ironforge | Dun Morogh, the Burning Steppes, Redridge, Stormwind, Ironforge, Morgan's Vigil, the dungeon, the hand-ins, Azshara and Un'Goro Crater, the dungeon again, Morgan's Vigil and Magni |
+
+- The dungeon is for five players of level 52 to 60. Its door is in
+  Blackrock Mountain, reached from the Searing Gorge.
+- Both guides run it twice: the princess's rescue (Magni's or Thrall's),
+  Windsor's chain for the Alliance and Goretooth's second poster for the
+  Horde open only after a hand-in outside, and The Love Potion is taken and
+  handed in inside.
+- Alliance: The Smoldering Ruins of Thaurissan to The Princess's Surprise,
+  Dragonkin Menace and The True Masters to Jail Break!, Hurley Blackbreath,
+  Incendius! and The Good Stuff. Horde: Disharmony of Flame and Fire, What
+  Is Going On? to The Princess Saved?, The Last Element, Lost Thunderbrew
+  Recipe, the KILL ON SIGHT posters to Precarious Predicament, The Rise of
+  the Machines and Fragment of the Firelands. Both: The Heart of the
+  Mountain, A Taste of Flame, Dark Iron Legacy (the Shadowforge Key),
+  Ribbly Screwspigot and The Love Potion.
+- Left out: Operation: Death to Angerforge (it would need a third run),
+  Rocknot's Ale (repeatable), The Spectral Chalice (a Mining quest), A
+  Binding Contract (Molten Core), the Dungeon Set 2 and Valthalak quests,
+  Stormwind Rendezvous and the Onyxia attunement after Jail Break!, the
+  breadcrumbs from Tanaris and the Blasted Lands, and the Searing Gorge
+  chain to the other A Taste of Flame.
 
 ## Blackmaw Hold
 

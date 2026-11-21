@@ -42,6 +42,7 @@ A community addon for Polestar with quest guides for WoW Forever's dungeons. For
 - **Alcaz Prison** (Alcaz Island, Dustwallow Marsh, levels 48 to 55): Horde and Alliance. Sergeant Ulka's and Sully McCleary's chains, the story inside (Commander Folkar, the King's fate), Mason Connery's key and trunk, Zarla's Journal, one run (Wrex to Blazeroar) and every hand-in.
 
 - **Sunken Temple** (Swamp of Sorrows, levels 50 to 60): Horde and Alliance. Brohann's chain through Rhapsody Shindigger for the Alliance, Fel'zerul's to the Fetishes of Hakkar for the Horde; Marvon's Stone Circle quests, Jammal'an the Prophet, Muigin's or Larion's haze, The Essence of Eranikus, The God Hakkar after Zul'Farrak, every class's Sunken Temple chain from its trainer, and every hand-in.
+- **Blackrock Depths** (Blackrock Mountain, levels 52 to 60): Horde and Alliance, with the second run the princess's rescue needs. Magni's chain and Windsor's Jail Break! for the Alliance; Thrall's chain, the KILL ON SIGHT posters and Kargath's quests for the Horde; The Heart of the Mountain, A Taste of Flame, Dark Iron Legacy, Ribbly, The Love Potion, and every hand-in.
 - **Blackmaw Hold** (Azshara, levels 55 to 60): Horde and Alliance. Beneath Nordrassil and the root caps, Blackmaw Magic, Ogtinc's claws and tusks, Ekkal's pouches, Gatekeeper Rageroar's Blackmaw Reclamation, the necklace, the Horde Paladins' Reliquary of Tyr, one run (Withermaw to the Unbound Spirit) and every hand-in.
 
 - **The Shaper's Terrace** (Un'Goro Crater, level 60): Horde and Alliance. Faranell's, Fuely's and Mayena's crystals and slimes for the Horde; Curator Thorius' ravasaurs and explorer's map for the Alliance; one run and every hand-in.
@@ -151,3 +152,7 @@ Adds Maraudon for the Horde and the Alliance. Razorfen Downs: the reason Agamagg
 ## Changelog for 2.22.0
 
 Adds the Sunken Temple for the Horde and the Alliance, with every class's chain.
+
+## Changelog for 2.23.0
+
+Adds Blackrock Depths for the Horde and the Alliance, each with a second run.

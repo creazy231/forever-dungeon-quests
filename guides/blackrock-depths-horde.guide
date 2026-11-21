@@ -1,0 +1,334 @@
+guide forever-dungeon-quests/blackrock-depths-horde
+title Blackrock Depths (Horde)
+category Dungeons
+folder Blackrock Depths
+faction Horde
+levels 52-60
+zone Mulgore
+keywords Blackrock Depths, Blackrock Mountain, Searing Gorge, Burning Steppes, Badlands, Kargath, Mulgore, Alaana Stormwalker, Fragment of the Firelands, Magmus, Undercity, Apothecary Zinge, Vivian Lagrave, Lost Thunderbrew Recipe, Hurley Blackbreath, The Last Element, Thunderheart, Overmaster Pyron, Incendius, Galamav, Commander Gor'shak, Kharan Mighthammer, Thrall, Princess Moira, Emperor Dagran Thaurissan, Warlord Goretooth, KILL ON SIGHT, Lexlort, Grark Lorkrub, Theodora Mulvadania, Lotwil Veriatus, Rise of the Machines, Argelmach, Maxwort Uberglint, Heart of the Mountain, Cyrus Therepentous, Bael'Gar, Franclorn Forgewright, Ironfel, Shadowforge Key, Yuka Screwspigot, Ribbly, Mistress Nagmara, Love Potion, dungeon
+reward item 11000
+reward item 12544 12545
+reward item 12038 270119
+reward item 12112 12113 12114 12115
+reward item 12108 12109 12110 12111
+reward item 3928 6149 11964 12000 270123
+reward item 12066 12082 12083
+reward item 11865 11963 12049
+reward item 11866 11962 270120 270121
+why Every Horde quest of Blackrock Depths, with the second run Thrall's chain needs.
+
+# Blackrock Depths' Horde quests in one guide: Mulgore, the Undercity, Kargath
+# in the Badlands, Blackrock Mountain's quarry, the Burning Steppes, a first
+# run, the hand-ins with Thrall in Orgrimmar and The Love Potion's errands in
+# Azshara and Un'Goro Crater, a second run, then the last hand-ins and Grark
+# Lorkrub. Steps already done are passed over, so the guide picks up wherever
+# the chain stands.
+#
+# The chains:
+# - Thunderheart's 3906 Disharmony of Flame -> 3907 Disharmony of Fire;
+#   Galamav the Marksman's 3981 Commander Gor'shak -> Gor'shak's 3982 -> 4001
+#   What Is Going On? -> Thrall's 4002 The Eastern Kingdom -> 4003 The Royal
+#   Rescue (the second run: the Emperor) -> Princess Moira's 4004 The
+#   Princess Saved?; Vivian Lagrave's 7201 The Last Element.
+# - Apothecary Zinge's 4133 Vivian Lagrave -> 4134 Lost Thunderbrew Recipe.
+# - The WANTED poster's 4081 KILL ON SIGHT: Dark Iron Dwarves -> the second
+#   poster's 4082 (its kills in the second run) -> Lexlort's 4122 Grark
+#   Lorkrub -> 4121 Precarious Predicament.
+# - Hierophant Theodora Mulvadania's 4061 -> 4062 -> Lotwil Veriatus' 4063 The
+#   Rise of the Machines.
+# - Alaana Stormwalker's 97197 Fragment of the Firelands; Maxwort Uberglint's
+#   4123 The Heart of the Mountain; Cyrus Therepentous' 4023 -> 4024 A Taste of
+#   Flame; Franclorn Forgewright's 3801 -> 3802 Dark Iron Legacy (the
+#   Shadowforge Key); Yuka Screwspigot's 4136 Ribbly Screwspigot.
+# - Mistress Nagmara's 4201 The Love Potion (taken inside, handed in on the
+#   second run).
+#
+# Left out: 4132 Operation: Death to Angerforge (it opens only after the
+# second run's kills, so it would need a third run); 4295 Rocknot's Ale
+# (repeatable); 4083 The Spectral Chalice (it needs the Mining skill); 3911,
+# the giverless The Last Element; 7604 A Binding Contract (it needs Molten
+# Core); 8961 Three Kings of Flame and 9015 The Challenge (the Dungeon Set 2
+# and Valthalak chains); the breadcrumb 4324 Yuka Screwspigot from Tanaris
+# (off this guide's way; Ribbly opens without it); 4022 and the Searing Gorge
+# chain before it (4023, the other A Taste of Flame, opens 4024 without
+# them); the Thorium Brotherhood's favours (repeatable).
+#
+# Inside: nothing in the data places the bosses, Commander Gor'shak, Kharan,
+# Mistress Nagmara, Princess Moira or the Monument of Franclorn Forgewright
+# inside, so their goals stand at the door (@34.8,85.3, Searing Gorge) with
+# `group 5`. The bosses come in the order of the client's dungeon journal,
+# not of a recorded run; every quest goal is counted by the quest log, so a
+# group that takes them in another order still gets each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Heart of the Mountain's quest needs a
+#   Relic Coffer Key, which the Anvilrage dwarves drop; the data names no
+#   source for the Heart itself. Cyrus's Frenzied Black Drake drops the
+#   Black Dragonflight Molt. The quest texts place Pyron in the quarry, Kharan
+#   in a cell near Gor'shak, and Grark's escort through Blackrock Mountain.
+#   Lint warns that the door is more than 50 yards from the Anvilrage
+#   Wardens and the essences' sources outside (in the Searing Gorge); those
+#   goals stay at the door for the ones inside.
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   52 to 60).
+# INGAME: where inside do Commander Gor'shak, Kharan, Mistress Nagmara, the
+#   Monument and the Heart of the Mountain stand?
+
+step Alaana Stormwalker
+  accept 97197
+
+step Apothecary Zinge
+  zone Undercity
+  accept 4133
+
+step Shadowmage Vivian Lagrave
+  zone Badlands
+  tip In Kargath.
+  turnin 4133
+  accept 4134
+
+step Thunderheart
+  accept 3906
+
+step WANTED
+  accept 4081 object 164867
+
+step Hierophant Theodora Mulvadania
+  accept 4061
+
+step Overmaster Pyron
+  zone Searing Gorge
+  tip In the quarry in Blackrock Mountain. An elite.
+  kill 9026 quest 3906.1
+
+step Fractured Elemental Shards
+  zone Burning Steppes
+  tip The region's golems and elementals carry them.
+  collect 11266 x10 quest 4061.1
+
+step Maxwort Uberglint
+  tip At Flame Crest.
+  accept 4123
+
+step Cyrus Therepentous
+  accept 4023
+
+step Frenzied Black Drake
+  tip Cyrus's drake, an elite, drops the Black Dragonflight Molt.
+  collect 10575 quest 4023.1
+
+step Cyrus Therepentous
+  turnin 4023
+  accept 4024
+
+step Franclorn Forgewright
+  accept 3801
+  turnin 3801
+  accept 3802
+
+step Thunderheart
+  zone Badlands
+  tip In Kargath.
+  turnin 3906
+  accept 3907
+
+step Galamav the Marksman
+  accept 3981
+
+step Shadowmage Vivian Lagrave
+  accept 7201
+
+step Hierophant Theodora Mulvadania
+  turnin 4061
+  accept 4062
+
+step Lotwil Veriatus
+  turnin 4062
+  accept 4063
+
+step Yuka Screwspigot
+  zone Searing Gorge
+  accept 4136
+
+step To Blackrock Depths
+  zone Searing Gorge
+  tip A dungeon for five players of level 52 to 60.
+  enter "Blackrock Depths" @34.8,85.3
+
+step Anvilrage, essences and cores
+  along until leave
+  kill 8891 x15 quest 4081.1 @34.8,85.3 group 5 -- Anvilrage Guardsmen.
+  kill 8890 x10 quest 4081.2 @34.8,85.3 group 5 -- Anvilrage Wardens.
+  kill 8892 x5 quest 4081.3 @34.8,85.3 group 5 -- Anvilrage Footmen.
+  collect 11129 x10 quest 7201.1 @34.8,85.3 group 5 -- Essence of the Elements, from the golems and elementals.
+  collect 11269 x10 quest 4063.2 @34.8,85.3 group 5 -- Intact Elemental Cores, from the Ragereaver Golems and Warbringer Constructs.
+
+step Commander Gor'shak
+  tip Kharan Mighthammer is held in a cell nearby.
+  turnin 3981 @34.8,85.3
+  accept 3982 @34.8,85.3
+  talk 9020 quest 3982.1 @34.8,85.3
+  turnin 3982 @34.8,85.3
+  accept 4001 @34.8,85.3
+
+step Kharan Mighthammer
+  talk 9021 quest 4001.1 @34.8,85.3
+
+step Lord Incendius
+  tip The sixth encounter in the client's journal. Take the Tablet of Kurniya too.
+  kill 9017 quest 3907.1 @34.8,85.3 group 5
+  collect 11126 quest 3907.2 @34.8,85.3 group 5
+
+step Fineous Darkvire
+  tip Darkvire drops Ironfel: lay it at the Monument of Franclorn Forgewright.
+  collect 10999 quest 3802.1 @34.8,85.3 group 5
+  turnin 3802 object 164689 @34.8,85.3
+
+step Bael'Gar
+  tip Bael'Gar gives up the Encased Fiery Essence.
+  collect 11230 quest 4024.1 @34.8,85.3 group 5
+
+step Golem Lord Argelmach
+  collect 11268 quest 4063.1 @34.8,85.3 group 5
+
+step Hurley Blackbreath
+  collect 11312 quest 4134.1 @34.8,85.3 group 5
+
+step Ribbly Screwspigot
+  collect 11313 quest 4136.1 @34.8,85.3 group 5
+
+step Mistress Nagmara
+  tip The Love Potion's goods are outside; it is handed in on the second run.
+  accept 4201 @34.8,85.3
+
+step The Heart of the Mountain
+  tip The quest needs a Relic Coffer Key, which the Anvilrage dwarves drop. The data names no source for the Heart itself.
+  collect 11309 quest 4123.1 @34.8,85.3 group 5
+
+step Magmus
+  collect 277129 quest 97197.1 @34.8,85.3 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the kills, the essences and the cores, finish it before you go.
+  kill 8891 x15 quest 4081.1 @34.8,85.3 group 5
+  kill 8890 x10 quest 4081.2 @34.8,85.3 group 5
+  kill 8892 x5 quest 4081.3 @34.8,85.3 group 5
+  collect 11129 x10 quest 7201.1 @34.8,85.3 group 5
+  collect 11269 x10 quest 4063.2 @34.8,85.3 group 5
+
+step Yuka Screwspigot
+  zone Searing Gorge
+  turnin 4136
+
+step Warlord Goretooth
+  zone Badlands
+  tip In Kargath.
+  turnin 4081
+
+step KILL ON SIGHT
+  accept 4082 object 164868
+
+step Thunderheart
+  turnin 3907
+
+step Shadowmage Vivian Lagrave
+  turnin 7201
+  turnin 4134
+
+step Lotwil Veriatus
+  turnin 4063
+
+step Maxwort Uberglint
+  zone Burning Steppes
+  tip At Flame Crest.
+  turnin 4123
+
+step Cyrus Therepentous
+  turnin 4024
+
+step Thrall
+  zone Orgrimmar
+  turnin 4001
+  accept 4002
+  turnin 4002
+  accept 4003
+
+step Giant Silver Veins
+  zone Azshara
+  tip The cliff giants carry them.
+  collect 11405 x10 quest 4201.2
+
+step Alaana Stormwalker
+  zone Mulgore
+  turnin 97197
+
+step Nagmara's Filled Vial
+  zone Un'Goro Crater
+  tip Fill Nagmara's Vial at the Golakka Crater.
+  collect 11413 quest 4201.3
+
+step Gromsblood
+  tip Mobs in many zones drop it now and then.
+  collect 8846 x4 anywhere
+
+step Back into Blackrock Depths
+  zone Searing Gorge
+  tip The second run, for Thrall's, Goretooth's and Nagmara's quests.
+  enter "Blackrock Depths" @34.8,85.3
+
+step High ranking officials
+  along until leave2
+  kill 8894 x10 quest 4082.1 @34.8,85.3 group 5 -- Anvilrage Medics.
+  kill 8893 x10 quest 4082.2 @34.8,85.3 group 5 -- Anvilrage Soldiers.
+  kill 8895 x10 quest 4082.3 @34.8,85.3 group 5 -- Anvilrage Officers.
+
+step Mistress Nagmara
+  turnin 4201 @34.8,85.3
+
+step Emperor Dagran Thaurissan
+  tip The last encounter in the client's journal.
+  kill 9019 quest 4003.1 @34.8,85.3 group 5
+
+step Princess Moira Bronzebeard
+  turnin 4003 @34.8,85.3
+  accept 4004 @34.8,85.3
+
+step Before you leave
+  label leave2
+  tip Whatever is still short of the officials, finish it before you go.
+  kill 8894 x10 quest 4082.1 @34.8,85.3 group 5
+  kill 8893 x10 quest 4082.2 @34.8,85.3 group 5
+  kill 8895 x10 quest 4082.3 @34.8,85.3 group 5
+
+step Warlord Goretooth
+  zone Badlands
+  tip In Kargath.
+  turnin 4082
+
+step Lexlort
+  accept 4122
+
+step Grark Lorkrub
+  zone Burning Steppes
+  tip He was last seen in a massive Blackrock fortress.
+  turnin 4122
+  accept 4121
+
+step Precarious Predicament
+  tip Bind Grark with the Thorium Shackles and lead him through Blackrock Mountain to the Searing Gorge, where Lexlort's men wait.
+  complete 4121 @25.73,27.1
+
+step Lexlort
+  zone Badlands
+  tip In Kargath.
+  turnin 4121
+
+step Thrall
+  zone Orgrimmar
+  turnin 4004
