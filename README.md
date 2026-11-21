@@ -21,6 +21,7 @@ Polestar.
 | The Stockade | Stormwind | Alliance | 24 to 32 |
 | Excavation Site: Wetlands | The Wetlands | Horde, Alliance | 26 to 33 |
 | City of Dalaran | Alterac Mountains, by Lordamere Lake | Horde, Alliance | 28 to 35 |
+| Gnomeregan | Dun Morogh | Horde, Alliance | 29 to 38 |
 | The Drowned City | Stranglethorn Vale, under the Vile Reef | Horde, Alliance | 35 to 40 |
 | Krol'dok Stronghold | Riverglades | Horde, Alliance | 40 to 47 |
 | Alcaz Prison | Dustwallow Marsh, on Alcaz Island | Horde, Alliance | 48 to 55 |
@@ -219,6 +220,27 @@ with one folder per dungeon.
   the Mana Devourer.
 - The Horde guide waits for level 34 before Wordeen's lead-ins, whose mobs
   are level 32 to 35.
+
+## Gnomeregan
+
+| Guide | Starts at | Takes you to |
+|---|---|---|
+| Gnomeregan (Horde) | Nogg, Orgrimmar | Booty Bay, the dungeon, back to Booty Bay and Orgrimmar |
+| Gnomeregan (Alliance) | Mathiel, Darnassus | Stonetalon Mountains, Stormwind, Ironforge, Dun Morogh, the dungeon, back again, Booty Bay |
+
+- The dungeon is for five players of level 29 to 38. Its door is in Dun
+  Morogh.
+- The Alliance's quests need their lead-ins first, and the game's data
+  makes three of them prerequisites: Mathiel's in Darnassus, Gaxim
+  Rustfizzle's in Stonetalon Mountains and Brother Sarno's in Stormwind. So
+  the Alliance guide starts with a long tour.
+- Inside, take the Sparklematic 5200's quest before you look for a
+  Grime-Encrusted Object: they only drop while it is in your log. The
+  machine wants three silver coins. The Grime-Encrusted Ring's chain shows
+  only if a Dark Iron Agent drops the ring.
+- Left out: the Sparklematic quests of the other two machines (the same
+  quest), the repeatable More Sparklematic Action, and the Horde's The Mad
+  King, which has no giver in the game's data.
 
 ## The Drowned City
 

@@ -1,0 +1,144 @@
+guide forever-dungeon-quests/gnomeregan-horde
+title Gnomeregan (Horde)
+category Dungeons
+folder Gnomeregan
+faction Horde
+levels 29-38
+zone Orgrimmar
+keywords Gnomeregan, Dun Morogh, Orgrimmar, Nogg, Sovik, Scooty, Booty Bay, Goblin Transponder, Kernobee, Sparklematic, Rig Wars, Thermaplugg, Grubbis, Viscous Fallout, Electrocutioner, Crowd Pummeler, ring, dungeon
+reward item 9623 9624 9625
+reward item 9535 9536 270042
+reward item 9173
+why Every Horde quest of Gnomeregan in one run.
+
+# Gnomeregan's Horde quests in one guide: Nogg and Sovik in Orgrimmar,
+# Scooty in Booty Bay, one run through the city, then the hand-ins. Steps
+# already done are passed over, so the guide picks up wherever the chain
+# stands.
+#
+# The quests: Nogg's 2841 Rig Wars (the Rig Blueprints from Thermaplugg's
+# Safe and Thermaplugg's Safe Combination); Sovik's 2842 Chief Engineer Scooty
+# -> 2843 Gnomer-gooooone! (the Goblin Transponder). Inside: Kernobee's 2904 A
+# Fine Mess (an escort, for Scooty); the Sparklematic 5200's 2951 and 2952;
+# the Grime-Encrusted Ring (item 9326, from the Dark Iron Agents) starts 2945,
+# handed in at the Sparklematic -> 2949 Return of the Ring -> Nogg's 2950
+# Nogg's Ring Redo.
+#
+# Left out: 4601, 4602, 4605 and 4606, the Sparklematic quests of the city's
+# other two machines (alternatives to 2951 and 2952); 2953, 4603 and 4604 More
+# Sparklematic Action (repeatable); 80325 The Mad King, which has no giver in
+# the data.
+#
+# Inside: nothing in the data places the bosses, Kernobee, the machines or
+# the safe inside, so their goals stand at the door (@24.3,39.8, Dun Morogh)
+# with `group 5`. The bosses come in the order of the client's dungeon journal
+# (Grubbis, Viscous Fallout, Electrocutioner 6000, Crowd Pummeler 9-60,
+# Mekgineer Thermaplugg), not of a recorded run. Every quest goal is counted
+# by the quest log, so a group that takes them in another order still gets
+# each step ticked. Gnomeregan is in Dun Morogh, Alliance land.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Sparklematic wants three silver coins, as
+#   2951's text says; Nogg thirty, as 2950's says. The ring drops from the
+#   Dark Iron Agents (35% in the data).
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   29 to 38).
+# - Lint warns that the door is more than 50 yards from the grime objects'
+#   droppers outside the city; the goal stays at the door for the ones inside.
+# INGAME: where inside do Kernobee, the Sparklematic 5200 and Thermaplugg's
+#   Safe stand?
+
+step Nogg
+  tip In Orgrimmar.
+  accept 2841
+
+step Sovik
+  accept 2842
+
+step Scooty
+  zone Stranglethorn Vale
+  tip In Booty Bay.
+  turnin 2842
+  accept 2843
+
+step Gnomer-gooooone!
+  tip Wait for Scooty to calibrate the Goblin Transponder.
+  talk 7853 quest 2843.1
+  turnin 2843
+
+step To Gnomeregan
+  zone Dun Morogh
+  tip A dungeon for five players of level 29 to 38, in Dun Morogh: Alliance land.
+  enter "Gnomeregan" @24.3,39.8
+
+step The ring
+  along until leave
+  collect 9326 @24.3,39.8 optional -- The Grime-Encrusted Ring, if a Dark Iron Agent drops it.
+
+step Kernobee
+  tip Escort him to the Clockwerk Run exit.
+  accept 2904 @24.3,39.8
+  complete 2904 @24.3,39.8 group 5
+
+step The Grime-Encrusted Ring
+  when has 9326
+  accept 2945
+
+step The Sparklematic 5200
+  tip The machine's quest comes first: a Grime-Encrusted Object only drops while it is in your log.
+  accept 2951 @24.3,39.8
+
+step A Grime-Encrusted Object
+  tip Grubbis, the Dark Iron Ambassador and the city's foes drop them.
+  collect 9308 quest 2951.1 @24.3,39.8 group 5
+
+step The Sparklematic 5200
+  tip Have three silver coins to start the machine.
+  money 3s
+  turnin 2951 @24.3,39.8
+  accept 2952 @24.3,39.8
+  turnin 2952 @24.3,39.8
+
+step The Sparklematic 5200
+  when onquest 2945
+  turnin 2945 @24.3,39.8
+  accept 2949 @24.3,39.8
+
+step Mekgineer Thermaplugg
+  tip The last boss in the client's journal, after Grubbis, Viscous Fallout, Electrocutioner 6000 and Crowd Pummeler 9-60. He drops his Safe Combination; the Rig Blueprints are in Thermaplugg's Safe.
+  collect 9299 quest 2841.2 @24.3,39.8 group 5
+  collect 9153 quest 2841.1 @24.3,39.8 group 5
+
+step Before you leave
+  label leave
+  tip Leave once the ring has turned up, or you have given up on it.
+  collect 9299 quest 2841.2 @24.3,39.8 group 5
+
+step Scooty
+  zone Stranglethorn Vale
+  turnin 2904
+
+step Nogg
+  zone Orgrimmar
+  turnin 2841
+
+step Nogg
+  when onquest 2949
+  turnin 2949
+  accept 2950
+
+step Nogg's Ring Redo
+  when onquest 2950
+  tip Nogg wants a Silver Bar, a Moss Agate and thirty silver coins with the ring.
+  auction 2842 x1
+  auction 1206 x1
+  money 30s
+
+step Nogg
+  when onquest 2950
+  turnin 2950

@@ -1,0 +1,211 @@
+guide forever-dungeon-quests/gnomeregan-alliance
+title Gnomeregan (Alliance)
+category Dungeons
+folder Gnomeregan
+faction Alliance
+levels 29-38
+zone Darnassus
+keywords Gnomeregan, Dun Morogh, Ironforge, Tinker Town, Mathiel, Gaxim Rustfizzle, Brother Sarno, Shoni the Shilent, Gnoarn, Tinkmaster Overspark, Castpipe, Klockmort Spannerspan, Mekkatorque, Ozzie Togglevolt, Techbot, Kernobee, Scooty, Sparklematic, Talvash del Kissel, Grubbis, Viscous Fallout, Electrocutioner, Crowd Pummeler, Thermaplugg, dungeon
+reward item 9535 9536 270042
+reward item 9608 9609 270045
+reward item 9623 9624 9625
+reward item 9604
+reward item 9605
+why Every Alliance quest of Gnomeregan in one run, lead-ins included.
+
+# Gnomeregan's Alliance quests in one guide: the lead-ins in Darnassus,
+# Stonetalon and Stormwind, the pick-ups in Ironforge and Dun Morogh, one run
+# through the city, then the hand-ins. Steps already done are passed over, so
+# the guide picks up wherever the chain stands.
+#
+# The chains, each lead-in a prerequisite in the data:
+# - Mathiel's 2925 Klockmort's Essentials -> Klockmort Spannerspan's 2924
+#   Essential Artificials (twelve, from the Artificial Extrapolators inside).
+# - Gaxim Rustfizzle's 2931 Castpipe's Task -> Master Mechanic Castpipe's 2930
+#   Data Rescue (a Prismatic Punch Card from the Matrix Punchograph 3005-D).
+# - Brother Sarno's 2923 Tinkmaster Overspark -> 2922 Save Techbot's Brain!
+#   (Techbot, outside the city).
+# - Gnoarn's 2927 The Day After -> Ozzie Togglevolt's 2926 Gnogaine (a phial
+#   from the Irradiated Invaders outside) -> 2962 The Only Cure is More Green
+#   Glow (from the slimes and horrors inside).
+# - Shoni the Shilent's 2928 Gyrodrillmatic Excavationators; High Tinker
+#   Mekkatorque's 2929 The Grand Betrayal (Mekgineer Thermaplugg).
+# - Inside: Kernobee's 2904 A Fine Mess (an escort, for Scooty in Booty Bay);
+#   the Sparklematic 5200's 2951 and 2952; the Grime-Encrusted Ring (item
+#   9326, from the Dark Iron Agents) starts 2945, handed in at the Sparklematic
+#   -> 2947 Return of the Ring -> Talvash del Kissel's 2948 Gnome Improvement.
+#
+# Left out: 4601, 4602, 4605 and 4606, the Sparklematic quests of the city's
+# other two machines (alternatives to 2951 and 2952); 2953, 4603 and 4604 More
+# Sparklematic Action (repeatable).
+#
+# Inside: nothing in the data places the bosses, Kernobee or the machines
+# inside, so their goals stand at the door (@24.3,39.8, Dun Morogh) with
+# `group 5`. The bosses come in the order of the client's dungeon journal
+# (Grubbis, Viscous Fallout, Electrocutioner 6000, Crowd Pummeler 9-60,
+# Mekgineer Thermaplugg), not of a recorded run. Every quest goal is counted
+# by the quest log, so a group that takes them in another order still gets
+# each step ticked.
+#
+# Sources (facts only):
+# - Quests, NPCs, items, objects and rewards: Polestar's reference data
+#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
+#   Codex page for the dungeon. The Sparklematic wants three silver coins, as
+#   2951's text says; Talvash thirty, as 2948's says. The ring drops from the
+#   Dark Iron Agents (35% in the data).
+# - The door: players' recordings, as Polestar's Codex holds them
+#   (data/codex/entrances.json).
+# - The dungeon's size, levels and bosses: the client's group finder and
+#   dungeon journal, as Polestar's Codex page holds them (five players, levels
+#   29 to 38).
+# - Lint warns that the door is more than 50 yards from the guts' and the
+#   grime objects' droppers outside the city in Dun Morogh; the goals stay at
+#   the door for the ones inside.
+# INGAME: where inside do Kernobee, the Sparklematic 5200 and the Matrix
+#   Punchograph stand?
+
+step Mathiel
+  tip In Darnassus.
+  accept 2925
+
+step Gaxim Rustfizzle
+  zone Stonetalon Mountains
+  accept 2931
+
+step Brother Sarno
+  zone Stormwind City
+  accept 2923
+
+step Shoni the Shilent
+  accept 2928
+
+step Gnoarn
+  zone Ironforge
+  accept 2927
+
+step Tinkmaster Overspark
+  turnin 2923
+  accept 2922
+
+step Master Mechanic Castpipe
+  turnin 2931
+  accept 2930
+
+step Klockmort Spannerspan
+  turnin 2925
+  accept 2924
+
+step High Tinker Mekkatorque
+  accept 2929
+
+step Ozzie Togglevolt
+  zone Dun Morogh
+  turnin 2927
+  accept 2926
+
+step Gnogaine
+  tip Use the phial on the Irradiated Invaders outside the city.
+  collect 9284 quest 2926.1
+
+step Ozzie Togglevolt
+  turnin 2926
+  accept 2962
+
+step Techbot
+  tip Outside the city, near its door.
+  collect 9277 quest 2922.1
+
+step To Gnomeregan
+  tip A dungeon for five players of level 29 to 38.
+  enter "Gnomeregan" @24.3,39.8
+
+step Guts, artificials, fallout and grime
+  along until leave
+  collect 9309 x4 quest 2928.1 @24.3,39.8 group 5 -- The machines drop the guts, the Electrocutioner, the Crowd Pummeler and Thermaplugg too.
+  collect 9278 x12 quest 2924.1 @24.3,39.8 group 5 -- From the Artificial Extrapolators.
+  collect 9365 quest 2962.1 @24.3,39.8 group 5 -- The Irradiated Slimes, Corrosive Lurkers and Irradiated Horrors drop it.
+  collect 9326 @24.3,39.8 optional -- The Grime-Encrusted Ring, if a Dark Iron Agent drops it.
+
+step Kernobee
+  tip Escort him to the Clockwerk Run exit.
+  accept 2904 @24.3,39.8
+  complete 2904 @24.3,39.8 group 5
+
+step The Matrix Punchograph
+  collect 9316 quest 2930.1 @24.3,39.8 group 5
+
+step The Grime-Encrusted Ring
+  when has 9326
+  accept 2945
+
+step The Sparklematic 5200
+  tip The machine's quest comes first: a Grime-Encrusted Object only drops while it is in your log.
+  accept 2951 @24.3,39.8
+
+step A Grime-Encrusted Object
+  tip Grubbis, the Dark Iron Ambassador and the city's foes drop them.
+  collect 9308 quest 2951.1 @24.3,39.8 group 5
+
+step The Sparklematic 5200
+  tip Have three silver coins to start the machine.
+  money 3s
+  turnin 2951 @24.3,39.8
+  accept 2952 @24.3,39.8
+  turnin 2952 @24.3,39.8
+
+step The Sparklematic 5200
+  when onquest 2945
+  turnin 2945 @24.3,39.8
+  accept 2947 @24.3,39.8
+
+step Mekgineer Thermaplugg
+  tip The last boss in the client's journal, after Grubbis, Viscous Fallout, Electrocutioner 6000 and Crowd Pummeler 9-60.
+  kill 7800 quest 2929.1 @24.3,39.8 group 5
+
+step Before you leave
+  label leave
+  tip Whatever is still short of the guts, the artificials and the fallout, finish it before you go.
+  collect 9309 x4 quest 2928.1 @24.3,39.8 group 5
+  collect 9278 x12 quest 2924.1 @24.3,39.8 group 5
+  collect 9365 quest 2962.1 @24.3,39.8 group 5
+
+step Ozzie Togglevolt
+  turnin 2962
+
+step Tinkmaster Overspark
+  zone Ironforge
+  turnin 2922
+
+step Master Mechanic Castpipe
+  turnin 2930
+
+step Klockmort Spannerspan
+  turnin 2924
+
+step High Tinker Mekkatorque
+  turnin 2929
+
+step Talvash del Kissel
+  when onquest 2947
+  turnin 2947
+  accept 2948
+
+step Gnome Improvement
+  when onquest 2948
+  tip Talvash wants a Silver Bar, a Moss Agate and thirty silver coins with the ring.
+  auction 2842 x1
+  auction 1206 x1
+  money 30s
+
+step Talvash del Kissel
+  when onquest 2948
+  turnin 2948
+
+step Shoni the Shilent
+  zone Stormwind City
+  turnin 2928
+
+step Scooty
+  zone Stranglethorn Vale
+  tip In Booty Bay.
+  turnin 2904
