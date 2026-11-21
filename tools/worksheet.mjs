@@ -53,6 +53,7 @@ const items = load("items.json");
 const objects = load("objects.json");
 const zones = load("zones.json");
 const races = load("races.json");
+const frames = load("map-frames.json");
 
 const { summary, page } = codex;
 const map = summary.map;
@@ -313,6 +314,8 @@ function sideSection(side) {
 	out.push(`# ${summary.name} (${opts.key}): ${SIDE[side]}`);
 	out.push(`- levels ${summary.minLevel}-${summary.maxLevel} (floor ${summary.floor}), ${summary.players} players${summary.playersMax ? ` (up to ${summary.playersMax})` : ""}, instance map ${map}, zone ${summary.zoneName ?? zoneName(summary.zone)} (${summary.zone})`);
 	out.push(`- entrance: ${ent ? `${zoneName(ent.map)} ${ent.x},${ent.y}` : "none in the data"}`);
+	if (ent && JSON.stringify(frames.era?.[ent.map]) !== JSON.stringify(frames.forever?.[ent.map]))
+		out.push(`- FRAME-DIFF: ${zoneName(ent.map)}'s era and Forever map frames differ; the door point is Forever's, so typed coordinates there need \`live\` (or \`coords live\`)`);
 	if (CITY[opts.key] && CITY[opts.key] !== side) out.push(`- CITY-OTHER-SIDE: a city dungeon of the ${SIDE[CITY[opts.key]]}; no ${SIDE[side]} guide`);
 
 	const list = page.quests.filter((q) => !q.faction || q.faction === side);

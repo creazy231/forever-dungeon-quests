@@ -95,3 +95,8 @@ test("a dropper with no place in the data is still named", () => {
 	// The Eye of Mugg (267086) drops from Overlord Mugg, whom the data places nowhere.
 	assert.match(questBlock(worksheet("kroldok-stronghold", "H"), 94968), /94968\.1 item 267086 .*Overlord Mugg \(npc \d+\), no place/);
 });
+
+test("a door on a map whose era and Forever frames differ is flagged", () => {
+	assert.match(worksheet("stormwind-stockade", "A"), /FRAME-DIFF/);
+	assert.doesNotMatch(worksheet("the-hall-of-thanes", "A"), /FRAME-DIFF/);
+});
