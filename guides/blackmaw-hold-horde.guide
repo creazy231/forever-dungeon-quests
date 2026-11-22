@@ -119,7 +119,7 @@ step Before you leave
 
 step A Lost Memento
   when has 249698
-  accept 92070
+  accept 92070 "A Lost Memento"
 
 step Ogtinc
   turnin 92069
@@ -140,7 +140,7 @@ step Gatekeeper Rageroar
 
 step Unele
   when onquest 92070
-  turnin 92070
+  turnin 92070 "A Lost Memento" npc 249855
 
 step Nara Wildmane
   zone Thunder Bluff

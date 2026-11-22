@@ -180,3 +180,7 @@ Adds Scholomance for the Horde and the Alliance.
 ## Changelog for 2.28.0
 
 A review pass. Follow-up quests no longer drop when the quest before them is handed in, and a new check keeps it so. The Deadmines' miners' quests move into the run. Maraudon's Woodwyrd step no longer waits on the wrong line. Blackrock Spire no longer says the seal opens the Upper Spire (Forever's takes no key), and its gemstones are optional. Stratholme's Scourge half leads to the service entrance, Dire Maul's goals to each wing's door. Menethil's Gift moves into the Scholomance guide, so the Ras Frostwhisper chain works in any order. Gahz'rilla's scale is optional for a group without a mallet. More follow-ups: In Nightmares, Mura Runetotem, Final Passage, Items of Power and Mage's Wand, the Warriors' armour, Storm, Earth, and Fire, Eyes on the Sky, Yagyin's Digest, Shadow of the Past. Profession quests are out everywhere. The Stockade and Scarlet Monastery guides no longer stop for a level at their start, and the doors' source is named right.
+
+## Changelog for 2.28.1
+
+A Lost Memento (Blackmaw Hold) and End of the Dark Horde (Blackrock Spire, Alliance) now show their quest names, and their hand-ins name Unele and Master Mathias Shaw.

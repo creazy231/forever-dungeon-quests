@@ -334,9 +334,9 @@ step Count Remington Ridgewell
 step The Head of Rend Blackhand
   when has 227911
   level 60
-  accept 84377
+  accept 84377 "End of the Dark Horde"
 
 step End of the Dark Horde
   when onquest 84377
   zone Stormwind City
-  turnin 84377
+  turnin 84377 "End of the Dark Horde" npc 332
