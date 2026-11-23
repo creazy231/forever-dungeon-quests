@@ -6,7 +6,7 @@ faction Horde
 levels 40-47
 zone Riverglades
 coords live
-keywords Krol'dok Stronghold, Riverglades, Rog'mar, Krom'rosh, Tran'gul, Clubtoe, Clugfist, Da'grosh, Kreza Darkthorn, Twilight's Hammer, Chogg'Zac, Klunk, Kilgar, Tunk, Grox, Zarmok, Ashka, Nar'gurk, Mugg, Cultist Ear, moulding, dungeon
+keywords Krol'dok Stronghold, Riverglades, Rog'mar, Krom'rosh, Tran'gul, Clubtoe, Clugfist, Da'grosh, Crag'rog, Kreza Darkthorn, Twilight's Hammer, Chogg'Zac, Klunk, Kilgar, Tunk, Grox, Zarmok, Ashka, Nar'gurk, Mugg, Cultist Ear, moulding, dungeon
 reward item 279859 279860
 reward item 279480 279852 279853
 reward item 267090
@@ -26,14 +26,18 @@ why Every Horde quest of Krol'dok Stronghold in one run, with the Riverglades ch
 # (to Tran'gul) -> 95420 Land of Giants (to Clugfist) -> 95424 Might Makes
 # Right and 95425 Unworthy Champion -> 95428 Clugfist's Decree (to Krom'rosh)
 # -> 94744 The Wayward Warrior (to Da'grosh) -> 94745 Carving a Path and 94748
-# Break Their Chains -> 94768 Bring Me His Head. Then Da'grosh's 94975 A Token
-# of Vengeance (15 Cultist Ears) and 95278 It Is Time, Brother... (to
-# Krom'rosh), Krom'rosh's 94968 Eye of Mugg and Tran'gul's 94972 Tome of
-# Twilight. Inside, Tunk's Krol'dok Moulding (item 267137) starts 94973
-# Krol'dok Moulding, for Kreza Darkthorn, who gives 94974 Key Ingredients.
+# Break Their Chains -> 94768 Bring Me His Head. Da'grosh also gives 95431
+# Rumblings of Discontent (to Crag'rog) -> 95432 Rise Up!, which Polestar
+# 0.4.2.2's data (players' recordings) counts among 94972's lead-ins too. Then
+# Da'grosh's 94975 A Token of Vengeance (15 Cultist Ears) and 95278 It Is
+# Time, Brother... (to Krom'rosh), Krom'rosh's 94968 Eye of Mugg and
+# Tran'gul's 94972 Tome of Twilight. Inside, Tunk's Krol'dok Moulding (item
+# 267137) starts 94973 Krol'dok Moulding, for Kreza Darkthorn, who gives 94974
+# Key Ingredients.
 #
-# Left out: nothing of the Horde's. QuestieDB 1.1.4 also lists 95056 Krol'dok
-# No More!, with no giver, ender or objective: nothing to write it from.
+# Left out: Crag'rog's 95433 Death to the Executioner, which no dungeon quest
+# needs. QuestieDB 1.1.4 also lists 95056 Krol'dok No More!, with no giver,
+# ender or objective: nothing to write it from.
 #
 # Inside: nothing in the data places the bosses or Tunk inside, so their goals
 # stand at the door (@37.5,38.2) with `group 5`. The bosses come in the order
@@ -45,9 +49,10 @@ why Every Horde quest of Krol'dok Stronghold in one run, with the Riverglades ch
 #
 # Sources (facts only):
 # - Quests, NPCs, items, objects and rewards: Polestar's reference data
-#   (data/forever, built from QuestieDB Forever 1.1.4) and Polestar 0.4.1.1's
-#   Codex page for the dungeon. The scouts' and the ritual circles' spots are
-#   the data's for those objectives.
+#   (data/forever, built from QuestieDB Forever 1.1.4, rechecked on 1.1.5)
+#   and Polestar 0.4.1.1's Codex page for the dungeon. The scouts' and the
+#   ritual circles' spots are the data's for those objectives. Crag'rog's
+#   cave: Rumblings of Discontent's own text.
 # - The door: players' recordings, as Polestar's Codex holds them
 #   (data/codex/entrances.json).
 # - What drops where: the reference data: the Cultist Ears from the Twilight
@@ -155,6 +160,19 @@ step Da'grosh
   turnin 94744
   accept 94745
   accept 94748
+  accept 95431
+
+step Crag'rog
+  tip In the nearby cave, west of Da'grosh.
+  turnin 95431
+  accept 95432
+
+step Rise Up!
+  tip Recruit five of the Ogre Miners beside him.
+  talk 260995 quest 95432.1
+
+step Crag'rog
+  turnin 95432
 
 step Carving a Path
   level 43

@@ -120,7 +120,7 @@ step Braug Dimspirit
 
 step Braug's question
   tip Answer his question correctly.
-  complete 6627
+  talk 4489 quest 6627.1
 
 step Braug Dimspirit
   turnin 6627
@@ -207,7 +207,7 @@ step Parqual Fintallas
   accept 6628
 
 step Parqual's test
-  complete 6628
+  talk 4488 quest 6628.1
 
 step Parqual Fintallas
   turnin 6628

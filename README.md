@@ -348,7 +348,7 @@ they are the same guides. This addon is where they get their updates.
 
 - The dungeon is for five players of level 40 to 47. Its door is in
   Riverglades.
-- Its quests open only at the end of each side's Riverglades chain (twenty
+- Its quests open only at the end of each side's Riverglades chain (twenty-two
   quests for the Horde, seven for the Alliance), so each guide takes the
   whole chain first. Steps whose mobs are above level 40 wait for the level
   they need.

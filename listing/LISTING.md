@@ -184,3 +184,7 @@ A review pass. Follow-up quests no longer drop when the quest before them is han
 ## Changelog for 2.28.1
 
 A Lost Memento (Blackmaw Hold) and End of the Dark Horde (Blackrock Spire, Alliance) now show their quest names, and their hand-ins name Unele and Master Mathias Shaw.
+
+## Changelog for 2.28.2
+
+Krol'dok Stronghold: the Alliance guide now takes Curios of Curiosity, Ashe Amberhall's follow-up to Lingering Essence, to Melanie Sable. The Horde guide takes Rumblings of Discontent and Rise Up! from Da'grosh and Crag'rog, which Polestar 0.4.2.2's data counts among Tome of Twilight's lead-ins. Scarlet Monastery (Horde): the two Test of Lore questions now point to Braug Dimspirit and Parqual Fintallas.
