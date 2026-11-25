@@ -626,6 +626,12 @@ your character. This addon gives you a dungeon's quests as one fixed route
 per faction, from the first lead-in to the last hand-in, with the run in
 between.
 
+## Languages
+
+The guides read in English and in Brazilian Portuguese. The Portuguese texts
+(`locales/ptBR/`) are by soulrocha. Polestar loads them only on a Portuguese
+(Brazil) client; a text without a translation shows in English.
+
 ## Install
 
 - **Polestar Client:** open **Community**, find **Forever Dungeon Quests**
@@ -652,7 +658,8 @@ own tables. The way through a dungeon comes from a run of my own, recorded
 with Polestar's recorder, where I have one, else from the order of the game's
 dungeon journal. Nothing comes from websites or other guides.
 
-Credits: creazy231. Licence: CC-BY-4.0 (see `LICENSE`).
+Credits: creazy231; Brazilian Portuguese translation by soulrocha. Licence:
+CC-BY-4.0 (see `LICENSE`).
 
 ## For authors
 

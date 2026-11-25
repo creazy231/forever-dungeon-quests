@@ -55,6 +55,8 @@ Every one of WoW Forever's new dungeons is in, and so is every classic dungeon f
 
 The guides are under **Community guides > Forever Dungeon Quests** in Polestar's guide menu (`/polestar guides`). Polestar's own Dungeons window (`/polestar dungeons`) plans a pick-up and a hand-in guide for your character; this addon gives you a dungeon's quests as one fixed route instead. The Drowned City's guides were first written for Polestar itself, which carries them in 0.4.1 under Miscellaneous; this addon is where they get their updates.
 
+The guides also read in Brazilian Portuguese, translated by soulrocha: a Portuguese (Brazil) client shows them in Portuguese, every other language as before.
+
 Every fact comes from the game's data, players' recordings and runs of my own, never from websites. Found a wrong step? Tell me in the discussion here.
 
 ## Tags (up to 6)
@@ -188,3 +190,7 @@ A Lost Memento (Blackmaw Hold) and End of the Dark Horde (Blackrock Spire, Allia
 ## Changelog for 2.28.2
 
 Krol'dok Stronghold: the Alliance guide now takes Curios of Curiosity, Ashe Amberhall's follow-up to Lingering Essence, to Melanie Sable. The Horde guide takes Rumblings of Discontent and Rise Up! from Da'grosh and Crag'rog, which Polestar 0.4.2.2's data counts among Tome of Twilight's lead-ins. Scarlet Monastery (Horde): the two Test of Lore questions now point to Braug Dimspirit and Parqual Fintallas.
+
+## Changelog for 2.29.0
+
+Brazilian Portuguese: every text of the guides now has a translation, by soulrocha. A Portuguese (Brazil) client shows the guides in Portuguese; other languages see them as before.
