@@ -5,21 +5,22 @@ folder Blackrock Spire
 faction Horde
 levels 57-60
 zone Badlands
-keywords Blackrock Spire, Lower Blackrock Spire, Upper Blackrock Spire, Blackrock Mountain, Burning Steppes, Kargath, Flame Crest, Warlord Goretooth, Warlord's Command, Eitrigg, Thrall, For The Horde, Lexlort, Bijou, Galamav, Halycon, Vivian Lagrave, Darkstone Tablet, Kibler, Worg Pup, Spire Spider Eggs, Ragged John, Mother's Milk, Mother Smolderweb, Warosh, Urok Doomhowl, Tinkee Steamboil, Egg Freezing, Seal of Ascension, Vaelan, Emberstrife, Duke Hydraxis, Eye of the Emberseer, Awbee, Haleh, Pip Quickwit, Malyfous Darkhammer, Prospector Ironboot, Mosh'aru, Rend Blackhand, dungeon
+keywords Blackrock Spire, Lower Blackrock Spire, Upper Blackrock Spire, Blackrock Mountain, Burning Steppes, Kargath, Flame Crest, Warlord Goretooth, Warlord's Command, Eitrigg, Thrall, For The Horde, Lexlort, Bijou, Galamav, Halycon, Vivian Lagrave, Darkstone Tablet, Kibler, Worg Pup, Spire Spider Eggs, Ragged John, Mother's Milk, Mother Smolderweb, Warosh, Urok Doomhowl, Tinkee Steamboil, Egg Freezing, Seal of Ascension, Vaelan, Emberstrife, Blood and Thunder, Awbee, Haleh, Pip Quickwit, Malyfous Darkhammer, Prospector Ironboot, Mosh'aru, Rend Blackhand, dungeon
 why Every Horde quest of Blackrock Spire, the Lower Spire first and the Upper Spire on the second run.
 
 # Blackrock Spire's Horde quests in one guide: Kargath, Flame Crest,
-# Prospector Ironboot in Tanaris, Duke Hydraxis in Azshara, Winterspring,
-# Silithus, the Eastern Plaguelands, back to Flame Crest, a first
+# Prospector Ironboot in Tanaris, Winterspring, the Eastern Plaguelands,
+# back to Flame Crest, a first
 # run in the Lower Spire, the hand-ins and the Seal of Ascension's forging in
 # the Wyrmbog, a second run back through the Lower Spire into the Upper
 # Spire, then the last hand-ins. Steps already done are passed over, so the
 # guide picks up wherever the chain stands.
 #
 # The chains:
-# - Warlord Goretooth's 4903 Warlord's Command -> 4941 Eitrigg's Wisdom ->
-#   Thrall's 4974 For The Horde! (Rend's head, the second run); Goretooth's
-#   98325 Blood and Thunder.
+# - Warlord Goretooth's 98325 Blood and Thunder -> 4903 Warlord's Command
+#   (from his written command, once Blood and Thunder is handed in) -> 4941
+#   Eitrigg's Wisdom -> Thrall's 4974 For The Horde! (Rend's head, the second
+#   run).
 # - Lexlort's 4981 Operative Bijou -> Bijou's 4982 Bijou's Belongings -> 4983
 #   Bijou's Reconnaissance Report; Galamav the Marksman's 4724 The Pack
 #   Mistress; Vivian Lagrave's 4768 The Darkstone Tablet.
@@ -32,8 +33,6 @@ why Every Horde quest of Blackrock Spire, the Lower Spire first and the Upper Sp
 #   Spire takes no key).
 # - Warosh's 4867 Urok Doomhowl; Awbee's 5160 The Matron Protectorate ->
 #   Haleh's 5161; Pip Quickwit's 5047 (to Malyfous Darkhammer).
-# - Duke Hydraxis' 6804 Poisoned Water and 6805 Stormers and Rumblers -> 6821
-#   Eye of the Emberseer.
 # - For characters who handed in The God Hakkar (3528, in the Sunken Temple
 #   guide), Prospector Ironboot's 5065 The Lost Tablets of Mosh'aru -> 4788
 #   The Final Tablets.
@@ -46,9 +45,12 @@ why Every Horde quest of Blackrock Spire, the Lower Spire first and the Upper Sp
 # after Egg Freezing's hand-in outside, so it would need a third run); the
 # breadcrumbs 4907 (behind a Winterspring chain) and 4769 from the
 # Undercity;
-# 5162 and on after Haleh, 6822 The Molten Core after Hydraxis, 8181 after
+# 5162 and on after Haleh, 8181 after
 # The Final Tablets; 5166 and 5167 (they need Stratholme and Scholomance);
-# the Dungeon Set 2 and Valthalak quests (8931 to 9006).
+# the Dungeon Set 2 and Valthalak quests (8931 to 9006); Duke Hydraxis's chain
+# (6804 Poisoned Water, 6805 Stormers and Rumblers, 6821 Eye of the Emberseer,
+# 6822 The Molten Core), which Polestar's data leaves out since 0.4.3: on
+# Forever the Duke offers none of it for now.
 #
 # Inside: nothing in the data places the bosses, the NPCs or the objects
 # inside, so their goals stand at the door (@34.8,85.3, Searing Gorge): the
@@ -72,14 +74,17 @@ why Every Horde quest of Blackrock Spire, the Lower Spire first and the Upper Sp
 #   door for the ones inside.
 # - The door: QuestieDB's list of Forever's dungeons, as Polestar's Codex holds it
 #   (data/codex/entrances.json).
+# - Blood and Thunder before Warlord's Command, and Duke Hydraxis's chain left
+#   out: Polestar 0.4.3's reference data, from players' recordings and in-game
+#   checks.
 # INGAME: where inside do Vaelan, Bijou, Warosh, Awbee, Pip Quickwit and
 #   the Darkstone Tablet stand?
 
 step Warlord Goretooth
   tip In Kargath.
-  accept 4903
   accept 98325
   turnin 98325
+  accept 4903
 
 step Galamav the Marksman
   accept 4724
@@ -115,11 +120,6 @@ step Prospector Ironboot
   zone Tanaris
   accept 5065
 
-step Duke Hydraxis
-  zone Azshara
-  accept 6804
-  accept 6805
-
 step Felnok Steelspring
   zone Winterspring
   turnin 4808
@@ -131,16 +131,6 @@ step Chillwind Horns
 step Felnok Steelspring
   turnin 4809
   accept 4810
-
-step Stormers and Rumblers
-  zone Silithus
-  kill 11744 x15 quest 6805.1
-  kill 11746 x15 quest 6805.2
-
-step Poisoned Water
-  zone Eastern Plaguelands
-  tip Use the Aspect of Neptulon on the poisoned elementals.
-  collect 17309 x12 quest 6804.1
 
 step The Lost Tablets of Mosh'aru
   when onquest 5065
@@ -156,12 +146,6 @@ step Prospector Ironboot
 step Prospector Ironboot
   when turnedin 5065
   accept 4788
-
-step Duke Hydraxis
-  zone Azshara
-  turnin 6804
-  turnin 6805
-  accept 6821
 
 step Tinkee Steamboil
   zone Burning Steppes
@@ -296,10 +280,6 @@ step Scarshield Infiltrator
   when onquest 4743
   turnin 4743 @34.8,85.3
 
-step Pyroguard Emberseer
-  tip The first encounter of the Upper Spire in the client's journal.
-  collect 17322 quest 6821.1 @34.8,85.3 group 10
-
 step The Rookery
   tip Use the Eggscilloscope Prototype on an egg.
   complete 4734 @34.8,85.3 group 10
@@ -327,10 +307,6 @@ step Prospector Ironboot
   when onquest 4788
   zone Tanaris
   turnin 4788
-
-step Duke Hydraxis
-  zone Azshara
-  turnin 6821
 
 step Malyfous Darkhammer
   zone Winterspring

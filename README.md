@@ -323,9 +323,9 @@ with one folder per dungeon.
 - One pass through the pirates may give fewer than ten artifacts for Shady
   Saltseers. Krazek takes the quest whenever you have them.
 
-These two guides were first written for Polestar itself, which carries them
-in version 0.4.1 under Miscellaneous. If your Polestar lists them there too,
-they are the same guides. This addon is where they get their updates.
+These two guides were first written for Polestar itself, which carried them
+under Miscellaneous from version 0.4.1 to 0.4.2. Since Polestar 0.4.3 they
+are only here, and this addon is where they get their updates.
 
 ## Razorfen Downs
 
@@ -547,25 +547,28 @@ they are the same guides. This addon is where they get their updates.
 
 | Guide | Starts at | Takes you to |
 |---|---|---|
-| Blackrock Spire (Horde) | Warlord Goretooth, Kargath | Flame Crest, Tanaris, Azshara, Winterspring, Silithus, the Eastern Plaguelands, the Lower Spire, Kargath, Orgrimmar, the Wyrmbog, both Spires, back again |
-| Blackrock Spire (Alliance) | Tinkee Steamboil, Flame Crest | Morgan's Vigil, Tanaris, Azshara, Winterspring, Silithus, the Eastern Plaguelands, the Lower Spire, Morgan's Vigil, the Wyrmbog, both Spires, back again |
+| Blackrock Spire (Horde) | Warlord Goretooth, Kargath | Flame Crest, Tanaris, Winterspring, the Eastern Plaguelands, the Lower Spire, Kargath, Orgrimmar, the Wyrmbog, both Spires, back again |
+| Blackrock Spire (Alliance) | Tinkee Steamboil, Flame Crest | Morgan's Vigil, Tanaris, Winterspring, the Eastern Plaguelands, the Lower Spire, Morgan's Vigil, the Wyrmbog, both Spires, back again |
 
 - The client lists the Lower Spire (five players, 55 to 60) and the Upper
   Spire (ten players, 59 to 60). The guides run the Lower Spire first, then
   go back with up to ten players into the Upper Spire, which in Forever
   takes no key. Most quests ask for level 57.
 - Both sides: the Seal of Ascension quests, Kibler's pets and eggs, Mother's
-  Milk, Urok Doomhowl, Tinkee's chain to Egg Freezing, Duke Hydraxis' chain to the Eye of the Emberseer, The Matron
+  Milk, Urok Doomhowl, Tinkee's chain to Egg Freezing, The Matron
   Protectorate, Pip Quickwit's quest, and The Final Tablets after the
   Sunken Temple. Alliance: Bijou and Maxwell's Mission, General
   Drakkisath's Command and Demise, Put Her Down, Doomrigger's Clasp, End
-  of the Dark Horde at 60. Horde: Warlord's Command to For The Horde!, The
-  Pack Mistress, Bijou's report, The Darkstone Tablet.
+  of the Dark Horde at 60. Horde: Blood and Thunder, then Warlord's Command
+  to For The Horde!, The Pack Mistress, Bijou's report, The Darkstone
+  Tablet.
 - Left out: the Onyxia attunement (Drakefire Amulet; What the Wind
   Carries and on), Blackhand's Command (Blackwing Lair), Egg Collection (it
   would need a third run), two breadcrumbs, the Blacksmithing quests (the Snakestone, The Demon
   Forge), the chromatic armour quests
-  (Stratholme, Scholomance), the Dungeon Set 2 and Valthalak quests.
+  (Stratholme, Scholomance), the Dungeon Set 2 and Valthalak quests, and
+  Duke Hydraxis' chain to the Eye of the Emberseer: on Forever the Duke
+  offers none of it for now, so Polestar's data leaves it out since 0.4.3.
 
 ## Stratholme
 

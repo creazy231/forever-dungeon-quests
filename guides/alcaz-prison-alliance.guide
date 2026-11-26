@@ -79,7 +79,7 @@ step Sully McCleary
 
 step The Mage Tower
   tip Use the SI:7 Disguise Kit Sully gave you to eavesdrop on Jaina and her inner circle at the Theramore Mage Tower.
-  use 269000 @66.4,49.4
+  use 269000 quest 95198.1 @66.4,49.4
 
 step Sully McCleary
   turnin 95198
