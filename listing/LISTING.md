@@ -194,3 +194,7 @@ Krol'dok Stronghold: the Alliance guide now takes Curios of Curiosity, Ashe Ambe
 ## Changelog for 2.29.0
 
 Brazilian Portuguese: every text of the guides now has a translation, by soulrocha. A Portuguese (Brazil) client shows the guides in Portuguese; other languages see them as before.
+
+## Changelog for 2.29.1
+
+The Drowned City: where you open the guide now decides when you take the idol quest. Opened in Hillsbrad or the Alterac Mountains, the Alliance guide takes Archmage Timear's Ancient Gurubashi Secrets in Dalaran first; anywhere outside Stranglethorn, the Horde guide takes Mazu'kon's Ancient Gurubashi Idol in Mulgore first, which spares a trip back across the sea. Sergeant Yohwa's tip says the Rebel Camp lies just south of Duskwood. Thanks to holyjezus for the report.

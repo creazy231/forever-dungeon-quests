@@ -32,8 +32,10 @@ why Every Alliance quest of the Drowned City in one run, lead-ins included.
 # and 95798 The Web of Magic (Abra Cadabra, Dalaran). Archmage Timear in
 # Dalaran gives 97130 Ancient Gurubashi Secrets from level 34; the idol drops
 # from Deathless Marrow only while the quest is in the log, so he comes before
-# the run. Krazek in Booty Bay gives both factions 95789 Shady Saltseers and
-# 95791 The Saltseer Captain, from level 34.
+# the run: first of all for a character who opens the guide in Hillsbrad or
+# the Alterac Mountains (Dalaran's zone, next door), else right after Dibbs.
+# Krazek in Booty Bay gives both factions 95789 Shady Saltseers and 95791 The
+# Saltseer Captain, from level 34.
 #
 # Inside: as in the Horde guide (forever-dungeon-quests/drowned-city-horde), the goals stand
 # at the entrance (@21.8,27.6, Sunken Hollow) with `group 5`, and the steps
@@ -57,8 +59,25 @@ why Every Alliance quest of the Drowned City in one run, lead-ins included.
 # INGAME: where exactly do the tablets and the barrier stand inside? The
 #   recorder has no positions in the dungeon.
 
+# Opened next to Dalaran: Timear's quest first. Anywhere else these two pass,
+# and he comes after Dibbs.
+step Archmage Timear
+  when zone "Hillsbrad Foothills"
+  when level>=34
+  zone Alterac Mountains
+  tip In Dalaran. He gives this from level 34.
+  accept 97130
+
+step Archmage Timear
+  when zone "Alterac Mountains"
+  when level>=34
+  zone Alterac Mountains
+  tip In Dalaran. He gives this from level 34.
+  accept 97130
+
 step Sergeant Yohwa
-  tip At the Rebel Camp in northern Stranglethorn.
+  zone Stranglethorn Vale
+  tip At the Rebel Camp, on Stranglethorn's northern edge just south of Duskwood.
   accept 203
   accept 204
 

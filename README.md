@@ -309,7 +309,12 @@ with one folder per dungeon.
   the shore. Water breathing helps.
 - The idol quest (from Mazu'kon in Mulgore for the Horde, from Archmage
   Timear in Dalaran for the Alliance) comes before the run: the idol only
-  drops while that quest is in your log.
+  drops while that quest is in your log. Where you open the guide decides
+  when: the Horde guide takes it first anywhere outside Stranglethorn, which
+  spares a trip back across the sea; the Alliance guide takes it first in
+  Hillsbrad and the Alterac Mountains, next door to Dalaran.
+- The Rebel Camp lies on Stranglethorn's northern edge, just south of
+  Duskwood, so the way there often leads through Duskwood.
 - The Alliance guide waits for level 39 before Troll Witchery, whose
   Skullsplitter trolls are level 39 to 42.
 - Polestar has no map of the inside, so the arrow points at the entrance for

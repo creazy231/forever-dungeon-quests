@@ -28,8 +28,10 @@ why Every Horde quest of the Drowned City in one run, lead-ins included.
 # in, and his 95776 The Only Good Brinescale... (Var'Taka) follows it.
 # Mazu'kon in Mulgore gives 96774 Ancient Gurubashi Idol; the idol drops from
 # Deathless Marrow only while the quest is in the log, so he comes before the
-# run. Krazek in Booty Bay gives both factions 95789 Shady Saltseers and 95791
-# The Saltseer Captain, from level 34.
+# run: first of all for a character who opens the guide outside Stranglethorn
+# (from Kalimdor or the Undercity that saves a trip across the sea), else
+# after Krazek. Krazek in Booty Bay gives both factions 95789 Shady Saltseers
+# and 95791 The Saltseer Captain, from level 34.
 #
 # Inside: nothing in the data places the tablets or the bosses inside the
 # dungeon, so their goals stand at the entrance (@21.8,27.6, Sunken Hollow)
@@ -72,7 +74,17 @@ why Every Horde quest of the Drowned City in one run, lead-ins included.
 # INGAME: where exactly do the tablets and the barrier stand inside? The
 #   recorder has no positions in the dungeon.
 
+# Opened outside Stranglethorn: Mazu'kon's quest first, before the sea
+# crossing. In Stranglethorn this step passes, and he comes after Krazek.
+step Mazu'kon
+  when !zone "Stranglethorn Vale"
+  when level>=30
+  zone Mulgore
+  tip Northern Mulgore. Taking it before Stranglethorn spares a trip back: the idol only drops while his quest is in your log.
+  accept 96774
+
 step Kin'weelay
+  zone Stranglethorn Vale
   accept 629
 
 step The Vile Reef
